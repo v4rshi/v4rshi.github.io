@@ -3,10 +3,8 @@ logo: "/images/photo.png?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
   Hi, I'm Varshi! <br> I'm a data scientist with a background in Operations Research. I love helping companies succeed through data-driven solutions using tools like Python, Tableau, and SQL. Outside of work, I enjoy web design, photography, cooking, and making latte art!
   <br><br>
-  # Second description 
-  # <br><br>
   <a href="https://www.linkedin.com/in/sriniv37/">View My LinkedIn Profile</a> 
-  
+   <a href="https://github.com/v4rshi">View My GitHub Profile</a> 
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
 - jekyll-remote-theme
