@@ -1,9 +1,9 @@
 title: Varshi Srinivas # your name (or website title) here
-email: v4rshi.srini@gmail.com
 logo: "/images/photo.png?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
-  Hi, I'm Varshi! <br> I'm a data scientist with a background in Industrial Engineering & Operations Research. I love storytelling with data using tools like Python, Tableau, and SQL. Outside of work, I enjoy cooking, linocut print making, and writing poetry!
+  Hi, I'm Varshi! <br><br> I'm a data scientist with a background in Industrial Engineering & Operations Research. I love storytelling with data using tools like Python, Tableau, and SQL. Outside of work, I enjoy cooking, linocut print-making, and writing poetry!
   <br><br>
+  <a href="mailto:v4rshi.srini@gmail.com">Email Me</a>
   <a href="https://www.linkedin.com/in/sriniv37/">View My Linkedin Profile</a> 
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
