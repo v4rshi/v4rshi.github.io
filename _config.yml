@@ -9,6 +9,7 @@ description: > # your text below (remove <br> elements if you don't need line br
   <a href="mailto:v4rshi.srini@gmail.com">Email Me</a>  <br>
   <a href="https://www.linkedin.com/in/sriniv37/">View My LinkedIn Profile</a>  <br>
   <a href="https://drive.google.com/file/d/1oRqjMOlp1Q9Lm2J1e4vcG9Cd9e3lUMpA/view?usp=sharing" target="_blank">Download My Resume</a>
+  <a href="https://github.com/v4rshi">View My GitHub Profile</a></p>
   <br>
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
