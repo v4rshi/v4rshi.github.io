@@ -1,10 +1,10 @@
 title: Varshini Srinivas # your name (or website title) here
 logo: "/images/logo.png?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
-  Hi, my name is Varshi!  
+  Hi, my name is Varshi! <br>
   I'm a data scientist with a background in consulting, industrial engineering, and operations research. I specialize in storytelling with data, leveraging tools like Python, Tableau, and SQL.  
   In my spare time, I love to cook, make linocut prints, write poetry, and volunteer at Muttville San Francisco!  
-  <br>
+  <br><br>
   <a href="mailto:v4rshi.srini@gmail.com">Email Me</a>  <br>
   <a href="https://www.linkedin.com/in/sriniv37/">View My LinkedIn Profile</a>  <br>
   <a href="https://drive.google.com/file/d/1oRqjMOlp1Q9Lm2J1e4vcG9Cd9e3lUMpA/view?usp=sharing" target="_blank">Download My Resume</a>
