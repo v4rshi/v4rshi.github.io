@@ -4,7 +4,7 @@
 
 ### Spotify Seasonality Analysis
 
-[Project 1 Title](/sample_page)
+[Spotify Seasonality Analysis EDA](/sample_page)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
