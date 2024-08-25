@@ -4,11 +4,11 @@
 
 ### Data Analytics Projects 
 
-[Spotify Seasonality Analysis EDA](/sample_page)
+[Spotify Seasonality Analysis EDA](/seasons_eda)
 <img src="images/seasons_eda.png?raw=true"/>
 
 ---
-[Spotify Sentiment Analysis](/pdf/sample_presentation.pdf)
+[Spotify Sentiment Analysis](/sentiment_analysis)
 <img src="images/sentiment_analysis.png?raw=true"/>
 
 ---
