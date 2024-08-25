@@ -8,8 +8,8 @@
 <img src="images/seasons_eda.png?raw=true"/>
 
 ---
-[Project 2 Title](/pdf/sample_presentation.pdf)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[Spotify Sentiment Analysis](/pdf/sample_presentation.pdf)
+<img src="images/sentiment_analysis.png?raw=true"/>
 
 ---
 [Project 3 Title](http://example.com/)
