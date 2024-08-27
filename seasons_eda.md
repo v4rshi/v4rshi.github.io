@@ -43,6 +43,8 @@ artist_counts = count_artists(df_subset[['Artist Name(s)']])
 top_artists = artist_counts.nlargest(20)
 ```
 
+<img src="images/dummy_thumbnail.jpg?raw=true"/>
+
 ### 2. Assess assumptions on which statistical inference will be based
 
 ```javascript
