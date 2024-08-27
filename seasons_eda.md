@@ -1,4 +1,23 @@
-## This can be your internal website page / project page
+## Storytime with Spotify Data 
+
+**Data**: My dataset spans from April 2016 to August 2024, extracted via Exportify from my seasonal Spotify playlists. Each entry contains rich metadata including artist, track, addition date, and genre.
+
+**Motivation & Hypothesis**: This dataset captures a transformative period in my life. From relocating from Dubai to Indiana for college in , navigating the global pandemic (and graduate school in lockdown), experiencing personal losses, moving to San Francisco, starting my career, meeting my now husband and getting married, and transitioning between jobs. Throughout these experiences, Spotify remained a constant companion.
+
+I've observed that my playlists often serve as a form of musical journaling, reflecting my emotional state and circumstances. This project aims to analyze the evolution of my musical preferences over time and explore potential correlations between playlist characteristics (content, length, addition frequency) and my emotional well-being.
+
+Key focus areas for this project include:
+
+1. Temporal analysis of musical taste to confirm if the data reveals what I think know about my music taste or if it suprises me 
+2. Seasonal patterns in playlist composition, particularly in relation to weather changes in West Lafayette, IN and San Francisco
+3. Sentiment analysis of song lyrics, with a specific focus on the period of July 2023 to present (coinciding with my period of unemployment)
+
+By examining these data points, I hope to uncover insights into how my music choices have mirrored my life experiences and emotional states during this pivotal time. 
+
+###### **It is important to note that this data did not include how often I listened to specific songs, just when I added them to a given playlist.**
+---
+
+
 
 **Project description:** Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
