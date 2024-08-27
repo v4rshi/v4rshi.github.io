@@ -1,22 +1,22 @@
 ## Storytime with Spotify Data 
 
-**Project Description**: I was able to get playlist data for my Spotify playlists thanks to a website called Exportify. It made me wonder, can I use this data to understand my mood and well-being over the years based on the season of the year I listened to something and the sentiment of the songs (name and lyrics) themselves?
+**Project Description**: I was able to get playlist data for my Spotify playlists thanks to a website called [Exportify](https://exportify.net/). It made me wonder, can I use this data to understand my mood and well-being over the years based on the season of the year I listened to something and the sentiment of the songs (name and lyrics) themselves?
 
-**Data**: My dataset spans from April 2016 to August 2024, extracted via Exportify from my seasonal Spotify playlists. Each entry contains rich metadata including artist, track, addition date, and genre.
+**Data**: My dataset spans from April 2016 to August 2024. Each entry contains rich metadata including artist, track, addition date, and genre.
 
-**Motivation & Hypothesis**: This dataset captures a transformative period in my life. From relocating from Dubai to Indiana for college in , navigating the global pandemic (and graduate school in lockdown), experiencing personal losses, moving to San Francisco, starting my career, meeting my now husband and getting married, and transitioning between jobs. Throughout these experiences, Spotify remained a constant companion.
+**Motivation & Hypothesis**: This dataset captures a transformative period in my life. From relocating from Dubai to Indiana for college, navigating the global pandemic (and graduate school in lockdown), experiencing personal losses, moving to San Francisco, starting my career, meeting my now husband and getting married, and transitioning between jobs. Throughout these experiences, Spotify remained a constant companion.
 
 I've observed that my playlists often serve as a form of musical journaling, reflecting my emotional state and circumstances. This project aims to analyze the evolution of my musical preferences over time and explore potential correlations between playlist characteristics (content, length, addition frequency) and my emotional well-being.
 
 Key focus areas for this project include:
 
-1. Temporal analysis of musical taste to confirm if the data reveals what I think know about my music taste or if it suprises me 
-2. Seasonal patterns in playlist composition, particularly in relation to weather changes in West Lafayette, IN and San Francisco
-3. Sentiment analysis of song lyrics, with a specific focus on the period of July 2023 to present (coinciding with my period of unemployment)
+1. Temporal analysis of musical taste to confirm if the data reveals what I think know (or do not know) about my musical taste 
+2. Seasonal patterns in playlist composition, particularly relative to seasons and whatever weather changes they bring
+3. Sentiment analysis of song lyrics, with a specific focus on the period of July 2023 to now (coinciding with my period of unemployment)
 
 By examining these data points, I hope to uncover insights into how my music choices have mirrored my life experiences and emotional states during this pivotal time. 
 
-###### **It is important to note that this data did not include how often I listened to specific songs, just when I added them to a given playlist.**
+##### **It is important to note that this data did not include how often I listened to specific songs, just when I added them to a given playlist. This data would be great for a more in-depth analysis of my listening patterns.**
 ---
 
 ### 1. Suggest hypotheses about the causes of observed phenomena
