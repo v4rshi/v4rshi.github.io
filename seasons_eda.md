@@ -19,14 +19,28 @@ By examining these data points, I hope to uncover insights into how my music cho
 ##### **It is important to note that this data did not include how often I listened to specific songs, just when I added them to a given playlist. This data would be great for a more in-depth analysis of my listening patterns.**
 ---
 
-### 1. Suggest hypotheses about the causes of observed phenomena
-
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+### 1. The first thing I looked at was who my most listened to artists were.
+I was fully expecting my top artist to be Charli XCX but in a rather surprising turn of events, its Future??? I did not see this in my Future, that is for sure.
 
 ```javascript
-if (isAwesome){
-  return true
-}
+def count_artists(df):
+    # Ensure the 'Artist Name(s)' column is treated as a string
+    df['Artist Name(s)'] = df['Artist Name(s)'].astype(str)
+    
+    # Split artist names by comma and explode the lists into separate rows
+    df_exploded = df['Artist Name(s)'].str.split(',', expand=True).stack()
+    df_exploded = df_exploded.reset_index(drop=True).str.strip()  # Remove extra spaces
+
+    # Count occurrences of each artist
+    artist_counts = df_exploded.value_counts()
+
+    return artist_counts
+
+# Assuming df_subset is your DataFrame
+artist_counts = count_artists(df_subset[['Artist Name(s)']])
+
+# Sort artists by count (descending) and get top 20
+top_artists = artist_counts.nlargest(20)
 ```
 
 ### 2. Assess assumptions on which statistical inference will be based
