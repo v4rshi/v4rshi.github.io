@@ -1,4 +1,4 @@
-## Storytime with Spotify Data 
+## Storytime through the seasons with Spotify Data 
 
 **Project Description**: I was able to get playlist data for my Spotify playlists thanks to a website called [Exportify](https://exportify.net/). It made me wonder, can I use this data to understand my mood and well-being over the years based on the season of the year I listened to something and the sentiment of the songs (name and lyrics) themselves?
 
@@ -43,7 +43,7 @@ artist_counts = count_artists(df_subset[['Artist Name(s)']])
 top_artists = artist_counts.nlargest(20)
 ```
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/top_20_artists.png?raw=true"/>
 
 ### 2. Assess assumptions on which statistical inference will be based
 
