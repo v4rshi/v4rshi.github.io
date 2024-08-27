@@ -1,5 +1,7 @@
 ## Storytime with Spotify Data 
 
+**Project Description**: I was able to get playlist data for my Spotify playlists thanks to a website called Exportify. It made me wonder, can I use this data to understand my mood and well-being over the years based on the season of the year I listened to something and the sentiment of the songs (name and lyrics) themselves?
+
 **Data**: My dataset spans from April 2016 to August 2024, extracted via Exportify from my seasonal Spotify playlists. Each entry contains rich metadata including artist, track, addition date, and genre.
 
 **Motivation & Hypothesis**: This dataset captures a transformative period in my life. From relocating from Dubai to Indiana for college in , navigating the global pandemic (and graduate school in lockdown), experiencing personal losses, moving to San Francisco, starting my career, meeting my now husband and getting married, and transitioning between jobs. Throughout these experiences, Spotify remained a constant companion.
