@@ -120,35 +120,36 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 
 
-<img src="images/top_20_artists.png?raw=true" width="600"/>
+<img src="images/top_20_artists.png?raw=true" width="1000"/>
 
-<img src="images/top_10_seasonal.png?raw=true" width="600"/>
+<img src="images/top_10_seasonal.png?raw=true" width="1000"/>
 
-<img src="images/monthly_adds_by_season.png?raw=true" width="600"/>
+<img src="images/monthly_adds_by_season.png?raw=true" width="1000"/>
 
-<img src="images/monthly_song_adds_by_season_linechart.png?raw=true" width="600"/>
+<img src="images/monthly_song_adds_by_season_linechart.png?raw=true" width="1000"/>
 
-<img src="images/total_songs_per_season.png?raw=true" width="600"/>
+<img src="images/total_songs_per_season.png?raw=true" width="1000"/>
 
-<img src="images/other_trait_distribution.png?raw=true" width="600"/>
+<img src="images/other_trait_distribution.png?raw=true" width="1000"/>
 
-<img src="images/top_10_genres_by_season.png?raw=true" width="600"/>
+<img src="images/top_10_genres_by_season.png?raw=true" width="1000"/>
 
-<img src="images/top_genres_by_season_barplot.png?raw=true" width="600"/>
+<img src="images/top_genres_by_season_barplot.png?raw=true" width="1000"/>
 
-<img src="images/currentn_v_nostalgic_boxplot.png?raw=true" width="600"/>
+<img src="images/currentn_v_nostalgic_boxplot.png?raw=true" width="1000"/>
 
-<img src="images/pareto_zoom.png?raw=true" width="600"/>
+<img src="images/pareto_zoom.png?raw=true" width="1000"/>
 
-<img src="images/total_duration_season.png?raw=true" width="600"/>
+<img src="images/total_duration_season.png?raw=true" width="1000"/>
 
-<img src="images/duration_over_years.png?raw=true" width="600"/>
+<img src="images/duration_over_years.png?raw=true" width="1000"/>
 
-<img src="images/winter_wordcloud.png?raw=true" width="600"/>
+<img src="images/winter_wordcloud.png?raw=true" width="1000"/>
 
-<img src="images/spring_wordcloud.png?raw=true" width="600"/>
+<img src="images/spring_wordcloud.png?raw=true" width="1000"/>
 
-<img src="images/summer_wordcloud.png?raw=true" width="600"/>
+<img src="images/summer_wordcloud.png?raw=true" width="1000"/>
 
-<img src="images/autumn_wordcloud.png?raw=true" width="600"/>
+<img src="images/autumn_wordcloud.png?raw=true" width="1000"/>
+
 
