@@ -74,16 +74,16 @@ This visual made it clear that my taste seems fairly consistent across the seaso
 
 ### 7. I wanted to then look at the distributions by season and year it was added to a playlist (there are ~9 years worth of data!).
 
-I chose to pay the closest attention to 2020, 2023, and 2024 and see how they compared to one another. The rationale is as follows:
+I chose to pay the closest attention to 2019-2020, 2023-2024 and see how they compared to one another. The rationale is as follows:
 
-- 2020 was the year of the pandemic
+- 2020 was the year of the pandemic, and 2019 is a baseline to compare pre and post COVID-19 music preferences
+  <img src="images/attributes19.png?raw=true" width="1000" class="zoom"/>
   <img src="images/attributes20.png?raw=true" width="1000" class="zoom"/>
-- 2023 was the year I got married
+- 2023 was the year I got married but 2024 was the year I was stuck without a job in a bad market
   <img src="images/attributes23.png?raw=true" width="1000" class="zoom"/>
-- 2024 was the year I was stuck without a job in a bad market
   <img src="images/attributes24.png?raw=true" width="1000" class="zoom"/>
 
-To avoid crowding this page with more graphs because I did also break each year down into seasons to see any seasonal trends too, I will summarize the observations below:
+I did also break each year down into seasons to see any seasonal trends, but to not clutter this page with too many graphs I will summarize my observations below:
 
 #SUMMARY HERE
 ---
