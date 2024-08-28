@@ -76,11 +76,11 @@ This visual made it clear that my taste seems fairly consistent across the seaso
 
 I chose to pay the closest attention to 2020, 2023, and 2024 and see how they compared to one another. The rationale is as follows:
 
-a. 2020 was the year of the pandemic
+- 2020 was the year of the pandemic
   <img src="attributes20.png?raw=true" width="1000" class="zoom"/>
-b. 2023 was the year I got married
+- 2023 was the year I got married
   <img src="attributes23.png?raw=true" width="1000" class="zoom"/>
-c. 2024 was the year I was stuck without a job in a bad market
+- 2024 was the year I was stuck without a job in a bad market
   <img src="attributes24.png?raw=true" width="1000" class="zoom"/>
 
 To avoid crowding this page with more graphs because I did also break each year down into seasons to see any seasonal trends too, I will summarize the observations below:
