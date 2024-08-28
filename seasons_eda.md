@@ -23,7 +23,7 @@ By examining these data points, I hope to uncover insights into how my music cho
 
 <style>
   .zoom:hover {
-    transform: scale(1.5);
+    transform: scale(3);
     transition: transform 0.5s ease;
   }
 </style>
