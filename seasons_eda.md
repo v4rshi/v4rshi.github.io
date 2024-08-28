@@ -122,8 +122,20 @@ Again, unsurprisingly, I had a lot of free time in the winter and in 2020 during
 <img src="images/autumn_wordcloud.png?raw=true" width="1000" class="zoom"/>
 **Autumn**: The fall word cloud highlights words such as "love," "fall," "night," "one," "back," and "heart." Fall seems to reflect a balance of love and introspection, with songs often focusing on themes of romance, reflection, and transition. The season's contemplative nature is mirrored in the music.
 
+---
 
+### Applications of my analysis:
 
-With this, I conclude the first phase of my project and hope to delve into the more specific sentiment analysis next! Thanks for taking the time to go through it all, and let me know your thoughts or feedback!
+I can see this kind of work being useful in the mental health and wellness space. These were some ideas I had: 
+
+1. **Identify Mood Patterns:** Correlate sentiment in song lyrics with periods of emotional change to understand how music reflects and influences mood.
+2. **Enhance Therapy:** Inform music therapy by tailoring music to specific emotional needs, helping with anxiety, depression, or stress.
+3. **Increase Self-Awareness:** Reveal how music choices mirror mental states, aiding in personal reflection and therapeutic insights.
+4. **Explore Seasonal Affective Disorder (SAD):** Examine seasonal patterns in music preferences to understand the impact of seasonal changes on mental health.
+5. **Understand Coping Mechanisms:** Highlight how music serves as a coping tool during challenging times.
+
+---
+
+### With this, I conclude the first phase of my project and hope to delve into the more specific sentiment analysis next! Thanks for taking the time to go through it all, and let me know your thoughts or feedback!
 
 --- 
