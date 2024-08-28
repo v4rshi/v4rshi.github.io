@@ -3,17 +3,17 @@
 
 **Project Description**: I was able to get playlist data for my Spotify playlists thanks to a website called [Exportify](https://exportify.net/). It made me wonder, can I use this data to understand my mood and well-being over the years based on the season of the year I listened to something and the sentiment of the songs (name and lyrics) themselves?
 
-**Data**: My dataset spans from April 2016 to August 2024. Each entry contains rich metadata including artist, track, addition date, and genre.
+**Data**: My dataset spans from April 2016 to August 2024. Each entry contains rich metadata including artist, track, addition date, and genre. It also includes an attribute called 'Valence', which captures the sentiment of a song. Tracks with high valence sound more positive (happy, cheerful, euphoric), while tracks with low valence sound more negative (sad, depressed, angry). Read more about it [here](https://community.spotify.com/t5/Spotify-for-Developers/Valence-as-a-measure-of-happiness/td-p/4385221). 
 
 **Motivation & Hypothesis**: This dataset captures a transformative period in my life. From relocating from Dubai to Indiana for college, navigating the global pandemic (and graduate school in lockdown), experiencing personal losses, moving to San Francisco, starting my career, meeting my now husband and getting married, and transitioning between jobs. Throughout these experiences, Spotify remained a constant companion.
 
-I've observed that my playlists often serve as a form of musical journaling, reflecting my emotional state and circumstances. This project aims to analyze the evolution of my musical preferences over time and explore potential correlations between playlist characteristics (content, length, addition frequency) and my emotional state at the time.
+I've observed that my playlists often serve as a form of musical journaling, reflecting my emotional state and circumstances. This project aims to analyze the evolution of my musical preferences over time and explore potential correlations between playlist characteristics (content, length, addition frequency) and my emotional state at the time. Valence is a cool attribute, but I think I want more nuance than a number - I want a clearly defined set of emotions associated with my musical history. 
 
 Key focus areas for this project include: 
 
 1. Temporal analysis of musical taste to confirm if the data reveals what I think know (or do not know) about my musical taste 
 2. Seasonal patterns in playlist composition, particularly relative to seasons and whatever weather changes they bring
-3. Sentiment analysis of song lyrics, with a specific focus on the period of July 2023 to now (coinciding with my period of unemployment)
+3. Sentiment analysis of song lyrics using LLM's, with a specific focus on the period of July 2023 to now (coinciding with my period of unemployment)
 
 By examining these data points, I hope to uncover insights into how my music choices have mirrored my life experiences and emotional states during this pivotal time. 
 
@@ -36,18 +36,24 @@ I was fully expecting my top artist to be Charli XCX but in a rather surprising 
 
 <img src="images/top_20_artists.png?raw=true" width="1000" class="zoom"/>
 
+To dig into this deeper, I looked into when I added all the songs with Future on them... to find most of it was this year. 
+
+<img src="images/future_breakdown.png?raw=true" width="1000" class="zoom"/>
+
+That made Future being my top artist sense because this year was when "We Don't Trust You" and "We Still Don't Trust You" with Metro Boomin' and Future came out, and my husband and I had those albums on repeat most of this year. 
+
 ### 2. This summer is a BRAT summer for me - but historically was that always the case?
 Looks like spring is BRAT green! Each season is quite different, winter seemingly being all over the place since Disney, Britney Spears and BTS are all on there! 
 
 <img src="images/top_10_seasonal.png?raw=true" width="1000" class="zoom"/>
 
-### 3. I chose to look at add volume over the years (by month and season) to see when I most actively added music to playlists
+### 3. I chose to look at add number of songs over the years (by month and season) to see when I most actively added music to playlists
 
-I was not surprised to see how erratic my playlist making was until 2022, which was when I started my first full-time job, after which I was not curating my music as intentionally (makes sense as my work took up most of my time) and then in August 2024 there was a spike that can be explained by my coping with a stressful situation with music at the time.
+I was not surprised to see how erratic my playlist making was until 2022, which was when I started my first full-time job, after which I was not curating my music as intentionally (made sense as my work took up most of my time) and then in August 2024 there was a spike that can be explained by my coping with a stressful situation with music at the time.
 
 <img src="images/monthly_adds_by_season.png?raw=true" width="1000" class="zoom"/>
 
-### 4. I tried to visualize this differently with no. of songs added by season over the years.
+### 4. I tried to visualize this differently with number of songs added by season over the years.
 
 I hypothesized I would be most active in the winter and summer, but it is clear that the pandemic in 2020 and my time being unemployed in 2024 are when I am most active. This coincides with when I was going through a lot in my personal life, too. 
 
@@ -62,12 +68,27 @@ This made sense to me because overall I did feel I was most active in the winter
 
 ### 6. I tried visualizing seasonal distributions for various other music traits, like Danceability, Valence, Energy and Tempo, to get a general sense of what kind of music I liked in different seasons. 
 
-This visual made it clear that my taste seems fairly consistent across the seasons but that overall I like songs that you can dance to, have high energy and high tempo! Ya girl like music she can have a good time to!
+This visual made it clear that my taste seems fairly consistent across the seasons but that overall I like songs that you can dance to, have high energy and high tempo! Ya girl like music she can have a good time to! 
 
 <img src="images/other_trait_distribution.png?raw=true" width="1000" class="zoom"/>
 
+### 7. I wanted to then look at the distributions by season and year it was added to a playlist (there are ~9 years worth of data!).
 
-### 7. I thought it would be interesting to see what my top 10 genres were by season and if they varied at all.
+I chose to pay the closest attention to 2020, 2023, and 2024 and see how they compared to one another. The rationale is as follows:
+
+a. 2020 was the year of the pandemic
+  <img src="attributes20.png?raw=true" width="1000" class="zoom"/>
+b. 2023 was the year I got married
+  <img src="attributes23.png?raw=true" width="1000" class="zoom"/>
+c. 2024 was the year I was stuck without a job in a bad market
+  <img src="attributes24.png?raw=true" width="1000" class="zoom"/>
+
+To avoid crowding this page with more graphs because I did also break each year down into seasons to see any seasonal trends too, I will summarize the observations below:
+
+#SUMMARY HERE
+---
+
+### 8. I thought it would be interesting to see what my top 10 genres were by season and if they varied at all.
  In short, barely. I still am basic as hell and listen to a lot of pop, however the genres following that moved around but were only edm, hip hop, rap and/or some pop variation. What was surprising to me was the random appearance of 'Modern Rock' in the Wintertime. Wintertime House of Blues, I guess?
 
 <img src="images/top_10_genres_by_season.png?raw=true" width="1000" class="zoom"/>
@@ -76,7 +97,7 @@ I then tried to visualize this differently with a stacked bar chart and over the
 
 <img src="images/top_genres_by_season_barplot.png?raw=true" width="1000" class="zoom"/>
 
-### 8. I wondered, do I like current releases or nostalgic music more, and does this vary by season?
+### 9. I wondered, do I like current releases or nostalgic music more, and does this vary by season?
 The boxplot graph below shows how my music listening habits change throughout the year. It compares the age of songs I listen to (how long ago they were released compared to when it was added to a playlist) across different seasons. The insights were very interesting. 
 
 A primer on what a boxplot even is: it is a simple visual tool that shows the spread and symmetry of a dataset by dividing it into quartiles and highlighting key statistics like the median and potential outliers. It uses a box to represent the middle 50% of the data and lines extending from the box to show the range, making it easy to see how data is distributed. Feel free to also refer to [this guide](https://www.simplypsychology.org/boxplots.html) on how to interpret boxplots.
@@ -94,12 +115,12 @@ Key findings:
 
 This pattern suggests that my mood and the time of year influence my music choices, with summer bringing out my most nostalgic side and autumn inspiring me to explore newer tunes.
 
-### 9. I counted unique genres and did a [Pareto](https://www.cec.health.nsw.gov.au/CEC-Academy/quality-improvement-tools/pareto-charts#:~:text=The%20Pareto%20Chart%20is%20a,represented%20by%20the%20curved%20line.) analysis to see what genres of music make up most of my listening. 
+### 10. I counted unique genres and did a [Pareto](https://www.cec.health.nsw.gov.au/CEC-Academy/quality-improvement-tools/pareto-charts#:~:text=The%20Pareto%20Chart%20is%20a,represented%20by%20the%20curved%20line.) analysis to see what genres of music make up most of my listening. 
 I am unclear on what to glean from this for now, but it was interesting to see that nearly 50% of my music falls into just 30 genres when there are 1412 distinct ones present! The graph below just shows the top 100 genres so you cannot see the Pareto shape/tail very clearly. I realized that if I wanted to do any clustering later on, I would have to delve into this deeper.  
 
 <img src="images/pareto_zoom.png?raw=true" width="1000" class="zoom"/>
 
-### 10. I also wanted to look at total track duration across seasons to see when I listened to longer playlists / more music by season but also by year.
+### 11. I also wanted to look at total track duration across seasons to see when I listened to longer playlists / more music by season but also by year.
 
 Again, unsurprisingly, I had a lot of free time in the winter and in 2020 during the pandemic.
 
@@ -108,7 +129,9 @@ Again, unsurprisingly, I had a lot of free time in the winter and in 2020 during
 <img src="images/duration_over_years.png?raw=true" width="1000" class="zoom"/>
 
 
-### 11. Finally and what sets the stage up for the next phase of this project, which is sentiment analysis on song lyrics, I made basic word clouds track name for each season to see what the most frequently occurring words were in song titles. 
+### 12. Finally and what sets the stage up for the next phase of this project, which is sentiment analysis on song lyricsusing LLM's, I made basic word clouds track name for each season to see what the most frequently occurring words were in song titles.
+
+Another reason I wanted to do this was because Spotify already has some sort of sentiment tracking called "Valence"
 
 <img src="images/winter_wordcloud.png?raw=true" width="1000" class="zoom"/>
 **Winter**: The winter word cloud highlights significant words like "love," "one," "night," "home," and "Christmas." It reflects winter-specific themes and emotions, balancing positive and negative feelings. Overall, it suggests winter is a mix of both holiday-related songs and introspective tunes about love and life.
