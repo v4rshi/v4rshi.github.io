@@ -1,6 +1,8 @@
 
 ## **Soundtrack of Seasons**: Unraveling My Spotify Saga Over The Last 9 Years
 
+#### Click here to see the Jupyter Notebook for this EDA!
+
 **Project Description**: I was able to get playlist data for my Spotify playlists thanks to a website called [Exportify](https://exportify.net/). It made me wonder, can I use this data to understand my mood and well-being over the years based on the season of the year I listened to something and the sentiment of the songs (name and lyrics) themselves?
 
 **Data**: My dataset spans from April 2016 to August 2024. Each entry contains rich metadata including artist, track, addition date, and genre. It also includes an attribute called 'Valence', which captures the sentiment of a song. Tracks with high valence sound more positive (happy, cheerful, euphoric), while tracks with low valence sound more negative (sad, depressed, angry). Read more about it [here](https://community.spotify.com/t5/Spotify-for-Developers/Valence-as-a-measure-of-happiness/td-p/4385221). 
@@ -165,5 +167,4 @@ I can see this kind of work being useful in the mental health and wellness space
 
 ### With this, I conclude the first phase of my project and hope to delve into the more specific sentiment analysis next! Thanks for taking the time to go through it all, and let me know your thoughts or feedback! 
 
-#### Click here to see the Jupyter Notebook for this EDA!
 --- 
