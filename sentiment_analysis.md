@@ -1,4 +1,4 @@
-## COMING SOON: Using NLP and LLM's to do Sentiment Analysis on song lyrics! 
+## COMING SOON: Using LLM's to do Sentiment Analysis on song lyrics! 
 
 
 
