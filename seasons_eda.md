@@ -130,9 +130,7 @@ I can see this kind of work being useful in the mental health and wellness space
 
 1. **Identify Mood Patterns:** Correlate sentiment in song lyrics with periods of emotional change to understand how music reflects and influences mood.
 2. **Enhance Therapy:** Inform music therapy by tailoring music to specific emotional needs, helping with anxiety, depression, or stress.
-3. **Increase Self-Awareness:** Reveal how music choices mirror mental states, aiding in personal reflection and therapeutic insights.
-4. **Explore Seasonal Affective Disorder (SAD):** Examine seasonal patterns in music preferences to understand the impact of seasonal changes on mental health.
-5. **Understand Coping Mechanisms:** Highlight how music serves as a coping tool during challenging times.
+3. **Explore Seasonal Affective Disorder (SAD):** Examine seasonal patterns in music preferences to understand the impact of seasonal changes on mental health.
 
 ---
 
