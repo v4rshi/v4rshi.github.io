@@ -1,5 +1,6 @@
 
-## Soundtrack of Seasons: Unraveling My Spotify Saga over the last 9 years 
+## Soundtrack of Seasons 
+### Unraveling My Spotify Saga Over The Last 9 Years
 
 **Project Description**: I was able to get playlist data for my Spotify playlists thanks to a website called [Exportify](https://exportify.net/). It made me wonder, can I use this data to understand my mood and well-being over the years based on the season of the year I listened to something and the sentiment of the songs (name and lyrics) themselves?
 
