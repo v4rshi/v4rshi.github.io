@@ -9,7 +9,7 @@
 
 I've observed that my playlists often serve as a form of musical journaling, reflecting my emotional state and circumstances. This project aims to analyze the evolution of my musical preferences over time and explore potential correlations between playlist characteristics (content, length, addition frequency) and my emotional well-being.
 
-Key focus areas for this project include:
+Key focus areas for this project include: 
 
 1. Temporal analysis of musical taste to confirm if the data reveals what I think know (or do not know) about my musical taste 
 2. Seasonal patterns in playlist composition, particularly relative to seasons and whatever weather changes they bring
