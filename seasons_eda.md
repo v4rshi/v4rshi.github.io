@@ -62,7 +62,7 @@ This visual made it clear that my taste seems fairly consistent across the seaso
 
 I then tried to visualize this differently with a stacked bar chart and over the top 20 genres overall
 
-<img src="images/top_genres_genres_by_season_barplot.png?raw=true"/>
+<img src="images/top_genres_by_season_barplot.png?raw=true"/>
 
 ### 8. I wondered, do I like current releases or nostalgic music more, and does this vary by season?
 The graph below shows how my music listening habits change throughout the year. It compares the age of songs I listen to (how long ago they were released compared to when it was added to a playlist) across different seasons. The insights were very interesting. To understand the below graph please refer to [this guide](https://www.simplypsychology.org/boxplots.html) on how to interpret boxplots.
@@ -117,3 +117,38 @@ Look forward to: Sentiment analysis of song lyrics, clustering emotions by seaso
 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
+
+
+<img src="images/top_20_artists.png?raw=true" width="600"/>
+
+<img src="images/top_10_seasonal.png?raw=true" width="600"/>
+
+<img src="images/monthly_adds_by_season.png?raw=true" width="600"/>
+
+<img src="images/monthly_song_adds_by_season_linechart.png?raw=true" width="600"/>
+
+<img src="images/total_songs_per_season.png?raw=true" width="600"/>
+
+<img src="images/other_trait_distribution.png?raw=true" width="600"/>
+
+<img src="images/top_10_genres_by_season.png?raw=true" width="600"/>
+
+<img src="images/top_genres_by_season_barplot.png?raw=true" width="600"/>
+
+<img src="images/currentn_v_nostalgic_boxplot.png?raw=true" width="600"/>
+
+<img src="images/pareto_zoom.png?raw=true" width="600"/>
+
+<img src="images/total_duration_season.png?raw=true" width="600"/>
+
+<img src="images/duration_over_years.png?raw=true" width="600"/>
+
+<img src="images/winter_wordcloud.png?raw=true" width="600"/>
+
+<img src="images/spring_wordcloud.png?raw=true" width="600"/>
+
+<img src="images/summer_wordcloud.png?raw=true" width="600"/>
+
+<img src="images/autumn_wordcloud.png?raw=true" width="600"/>
+
