@@ -22,12 +22,12 @@ By examining these data points, I hope to uncover insights into how my music cho
 ### 1. The first thing I looked at was who my most listened to artists were.
 I was fully expecting my top artist to be Charli XCX but in a rather surprising turn of events, its Future??? I did not see this in my Future, that is for sure.
 
-<img src="images/top_20_artists.png?raw=true"/>
+<img src="images/top_20_artists.png?raw=true" width="1000"/>
 
 ### 2. This summer is a BRAT summer for me - but historically was that always the case?
 Looks like spring is BRAT green! Each season is quite different, winter seemingly being all over the place since Disney, Britney Spears and BTS are all on there! 
 
-<img src="images/top_10_seasonal.png?raw=true"/>
+<img src="images/top_10_seasonal.png?raw=true" width="1000"/>
 
 ### 3. I chose to look at add volume over the years (by month and season) to see when I most actively added music to playlists
 
@@ -117,39 +117,5 @@ Look forward to: Sentiment analysis of song lyrics, clustering emotions by seaso
 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-
-
-<img src="images/top_20_artists.png?raw=true" width="1000"/>
-
-<img src="images/top_10_seasonal.png?raw=true" width="1000"/>
-
-<img src="images/monthly_adds_by_season.png?raw=true" width="1000"/>
-
-<img src="images/monthly_song_adds_by_season_linechart.png?raw=true" width="1000"/>
-
-<img src="images/total_songs_per_season.png?raw=true" width="1000"/>
-
-<img src="images/other_trait_distribution.png?raw=true" width="1000"/>
-
-<img src="images/top_10_genres_by_season.png?raw=true" width="1000"/>
-
-<img src="images/top_genres_by_season_barplot.png?raw=true" width="1000"/>
-
-<img src="images/currentn_v_nostalgic_boxplot.png?raw=true" width="1000"/>
-
-<img src="images/pareto_zoom.png?raw=true" width="1000"/>
-
-<img src="images/total_duration_season.png?raw=true" width="1000"/>
-
-<img src="images/duration_over_years.png?raw=true" width="1000"/>
-
-<img src="images/winter_wordcloud.png?raw=true" width="1000"/>
-
-<img src="images/spring_wordcloud.png?raw=true" width="1000"/>
-
-<img src="images/summer_wordcloud.png?raw=true" width="1000"/>
-
-<img src="images/autumn_wordcloud.png?raw=true" width="1000"/>
 
 
