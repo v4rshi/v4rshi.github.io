@@ -165,5 +165,5 @@ I can see this kind of work being useful in the mental health and wellness space
 
 ### With this, I conclude the first phase of my project and hope to delve into the more specific sentiment analysis next! Thanks for taking the time to go through it all, and let me know your thoughts or feedback!
 
-Click here to see the notebook for this EDA!
+Click here to see the Jupyter Notebook for this EDA!
 --- 
