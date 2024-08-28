@@ -1,3 +1,4 @@
+
 ## Storytime through the seasons with Spotify Data 
 
 **Project Description**: I was able to get playlist data for my Spotify playlists thanks to a website called [Exportify](https://exportify.net/). It made me wonder, can I use this data to understand my mood and well-being over the years based on the season of the year I listened to something and the sentiment of the songs (name and lyrics) themselves?
@@ -17,57 +18,65 @@ Key focus areas for this project include:
 By examining these data points, I hope to uncover insights into how my music choices have mirrored my life experiences and emotional states during this pivotal time. 
 
 ##### **It is important to note that this data did not include how often I listened to specific songs, just when I added them to a given playlist. This data would be great for a more in-depth analysis of my listening patterns.**
+
 ---
+
+<style>
+  .zoom:hover {
+    transform: scale(1.5);
+    transition: transform 0.5s ease;
+  }
+</style>
 
 ### 1. The first thing I looked at was who my most listened to artists were.
 I was fully expecting my top artist to be Charli XCX but in a rather surprising turn of events, its Future??? I did not see this in my Future, that is for sure.
 
-<img src="images/top_20_artists.png?raw=true" width="1000"/>
+<img src="images/top_20_artists.png?raw=true" width="1000" class="zoom"/>
 
 ### 2. This summer is a BRAT summer for me - but historically was that always the case?
 Looks like spring is BRAT green! Each season is quite different, winter seemingly being all over the place since Disney, Britney Spears and BTS are all on there! 
 
-<img src="images/top_10_seasonal.png?raw=true" width="1000"/>
+<img src="images/top_10_seasonal.png?raw=true" width="1000" class="zoom"/>
 
 ### 3. I chose to look at add volume over the years (by month and season) to see when I most actively added music to playlists
 
 I was not surprised to see how erratic my playlist making was until 2022, which was when I started my first full-time job, after which I was not curating my music as intentionally (makes sense as my work took up most of my time) and then in August 2024 there was a spike that can be explained by my coping with a stressful situation with music at the time.
 
-<img src="images/monthly_adds_by_season.png?raw=true" width="1000"/>
+<img src="images/monthly_adds_by_season.png?raw=true" width="1000" class="zoom"/>
 
 ### 4. I tried to visualize this differently with no. of songs added by season over the years.
 
 I hypothesized I would be most active in the winter and summer, but it is clear that the pandemic in 2020 and my time being unemployed in 2024 are when I am most active. This coincides with when I was going through a lot in my personal life, too. 
 
-<img src="images/monthly_song_adds_by_season_linechart.png?raw=true" width="1000"/>
+<img src="images/monthly_song_adds_by_season_linechart.png?raw=true" width="1000" class="zoom"/>
 
 
 ### 5. I wanted to then look at song-adding volume over the seasons to see when I most actively added music to playlists
 
 This made sense to me because overall I did feel I was most active in the winter as I generally was on break when I was in college but also when the weather was extreme and I spent too much time indoors - meaning I leaned on music more to pass time.
 
-<img src="images/total_songs_per_season.png?raw=true" width="1000"/>
+<img src="images/total_songs_per_season.png?raw=true" width="1000" class="zoom"/>
 
 ### 6. I tried visualizing seasonal distributions for various other music traits, like Danceability, Valence, Energy and Tempo, to get a general sense of what kind of music I liked in different seasons. 
 
 This visual made it clear that my taste seems fairly consistent across the seasons but that overall I like songs that you can dance to, have high energy and high tempo! Ya girl like music she can have a good time to!
 
-<img src="images/other_trait_distribution.png?raw=true" width="1000"/>
+<img src="images/other_trait_distribution.png?raw=true" width="1000" class="zoom"/>
 
 
 ### 7. I thought it would be interesting to see what my top 10 genres were by season and if they varied at all.
  In short, barely. I still am basic as hell and listen to a lot of pop, however the genres following that moved around but were only edm, hip hop, rap and/or some pop variation. What was surprising to me was the random appearance of 'Modern Rock' in the Wintertime. Wintertime House of Blues, I guess?
 
-<img src="images/top_10_genres_by_season.png?raw=true" width="1000"/>
+<img src="images/top_10_genres_by_season.png?raw=true" width="1000" class="zoom"/>
 
 I then tried to visualize this differently with a stacked bar chart and over the top 20 genres overall
 
-<img src="images/top_genres_by_season_barplot.png?raw=true" width="1000"/>
+<img src="images/top_genres_by_season_barplot.png?raw=true" width="1000" class="zoom"/>
 
 ### 8. I wondered, do I like current releases or nostalgic music more, and does this vary by season?
 The graph below shows how my music listening habits change throughout the year. It compares the age of songs I listen to (how long ago they were released compared to when it was added to a playlist) across different seasons. The insights were very interesting. To understand the below graph please refer to [this guide](https://www.simplypsychology.org/boxplots.html) on how to interpret boxplots.
 
-<img src="images/currentn_v_nostalgic_boxplot.png?raw=true" width="1000"/>
+<img src="images/currentn_v_nostalgic_boxplot.png?raw=true" width="1000" class="zoom"/>
 
 Key findings:
 
@@ -83,39 +92,35 @@ This pattern suggests that my mood and the time of year influence my music choic
 ### 9. I counted unique genres and did a [Pareto](https://www.cec.health.nsw.gov.au/CEC-Academy/quality-improvement-tools/pareto-charts#:~:text=The%20Pareto%20Chart%20is%20a,represented%20by%20the%20curved%20line.) analysis to see what genres of music make up most of my listening. 
 I am unclear on what to glean from this for now, but it was interesting to see that nearly 50% of my music falls into just 30 genres when there are 1412 distinct ones present! The graph below just shows the top 100 genres so you cannot see the Pareto shape/tail very clearly. I realized that if I wanted to do any clustering later on, I would have to delve into this deeper.  
 
-<img src="images/pareto_zoom.png?raw=true" width="1000"/>
+<img src="images/pareto_zoom.png?raw=true" width="1000" class="zoom"/>
 
 ### 10. I also wanted to look at total track duration across seasons to see when I listened to longer playlists / more music by season but also by year.
 
 Again, unsurprisingly, I had a lot of free time in the winter and in 2020 during the pandemic.
 
-<img src="images/total_duration_season.png?raw=true" width="1000"/>
+<img src="images/total_duration_season.png?raw=true" width="1000" class="zoom"/>
 
-<img src="images/duration_over_years.png?raw=true" width="1000"/>
+<img src="images/duration_over_years.png?raw=true" width="1000" class="zoom"/>
 
 
 ### 11. Finally and what sets the stage up for the next phase of this project, which is sentiment analysis on song lyrics, I made basic word clouds track name for each season to see what the most frequently occurring words were in song titles. 
 
-<img src="images/winter_wordcloud.png?raw=true" width="1000"/>
-**Winter**: The winter word cloud highlights significant words like "love," "one," "night," "home," and "Christmas." It reflects winter-specific themes and emotions, balancing positive and negative feelings. Overall, it suggests winter is associated with connection, reflection, and seasonal imagery.
+<img src="images/winter_wordcloud.png?raw=true" width="1000" class="zoom"/>
+**Winter**: The winter word cloud highlights significant words like "love," "one," "night," "home," and "Christmas." It reflects winter-specific themes and emotions, balancing positive and negative feelings. Overall, it suggests winter is
 
-<img src="images/spring_wordcloud.png?raw=true" width="1000"/>
-**Spring**: In the spring word cloud, words like "sun," "new," and "friends" reflect themes of renewal, growth, and social connection. The emotional tone is mixed, with both positive and negative emotions present.
+ a mix of both holiday-related songs and introspective tunes about love and life.
 
-<img src="images/summer_wordcloud.png?raw=true" width="1000"/>
-**Summer**: The summer word cloud emphasizes words like "life," "good," "go," and "dance," suggesting a vibrant, active, and positive atmosphere. There is a focus on social activities and enjoyment, aligning with the lively nature of the summer season.
+<img src="images/spring_wordcloud.png?raw=true" width="1000" class="zoom"/>
+**Spring**: The spring word cloud emphasizes words such as "love," "good," "feel," "summer," "new," and "sun." It shows a shift towards positivity and renewal, capturing the upbeat and fresh vibe of the spring season. Songs likely center around themes of new beginnings, happiness, and optimism.
 
-<img src="images/autumn_wordcloud.png?raw=true"  width="1000"/>
-**Autumn**: The autumn word cloud features words like "christmas," "night," and "back," indicating themes related to the winter holidays and possibly a more reflective or melancholic tone, with words like "sad" and "lonely."
+<img src="images/summer_wordcloud.png?raw=true" width="1000" class="zoom"/>
+**Summer**: The summer word cloud features words like "summer," "party," "feel," "night," "girl," "life," and "dance." It underscores the season's lively, carefree spirit, with many songs focusing on fun, adventure, and enjoying life to the fullest. The energy and enthusiasm of summer clearly shine through.
 
+<img src="images/fall_wordcloud.png?raw=true" width="1000" class="zoom"/>
+**Fall**: The fall word cloud highlights words such as "love," "fall," "night," "one," "back," and "heart." Fall seems to reflect a balance of love and introspection, with songs often focusing on themes of romance, reflection, and transition. The season's contemplative nature is mirrored in the music.
 
-### Stay tuned for phase 2 of this project - a deeper dive into the music I listened to during my time between jobs! 
-Look forward to: Sentiment analysis of song lyrics, clustering emotions by seasons, and more! 
+---
 
+With this, I conclude the first phase of my project and hope to delve into the more specific sentiment analysis next! Thanks for taking the time to go through it all, and let me know your thoughts or feedback!
 
-### Thank you for exploring my Spotify listening data with me!
-
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-
+--- 
