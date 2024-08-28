@@ -90,7 +90,7 @@ The shift in my music preferences between **2019 and 2020** shows a surprising t
 
 Between **2023 and 2024**, my music preferences show a drop, on average, in all attributes except tempo. This shift aligns with the challenges I'm facing in 2024, particularly navigating a difficult job market. The decrease in most musical attributes likely reflects my current emotional state, while the increased tempo might indicate a need for motivation or energy during these stressful times. My playlist has essentially become a reflection of my professional struggles and associated emotions. 
 
-I have never been one to write in journals or keep a diary, but I should really make my playlists private if this is how telling they are...
+Note to self: Either make these playlists private or start a new career as the world's most reluctant psychic. "For just $9.99, I'll predict your future by analyzing your 'Most Played' list!" Hmm, maybe I'm onto something here...
 
 ---
 
