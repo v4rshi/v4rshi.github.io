@@ -106,9 +106,7 @@ Again, unsurprisingly, I had a lot of free time in the winter and in 2020 during
 ### 11. Finally and what sets the stage up for the next phase of this project, which is sentiment analysis on song lyrics, I made basic word clouds track name for each season to see what the most frequently occurring words were in song titles. 
 
 <img src="images/winter_wordcloud.png?raw=true" width="1000" class="zoom"/>
-**Winter**: The winter word cloud highlights significant words like "love," "one," "night," "home," and "Christmas." It reflects winter-specific themes and emotions, balancing positive and negative feelings. Overall, it suggests winter is
-
- a mix of both holiday-related songs and introspective tunes about love and life.
+**Winter**: The winter word cloud highlights significant words like "love," "one," "night," "home," and "Christmas." It reflects winter-specific themes and emotions, balancing positive and negative feelings. Overall, it suggests winter is a mix of both holiday-related songs and introspective tunes about love and life.
 
 <img src="images/spring_wordcloud.png?raw=true" width="1000" class="zoom"/>
 **Spring**: The spring word cloud emphasizes words such as "love," "good," "feel," "summer," "new," and "sun." It shows a shift towards positivity and renewal, capturing the upbeat and fresh vibe of the spring season. Songs likely center around themes of new beginnings, happiness, and optimism.
@@ -116,8 +114,8 @@ Again, unsurprisingly, I had a lot of free time in the winter and in 2020 during
 <img src="images/summer_wordcloud.png?raw=true" width="1000" class="zoom"/>
 **Summer**: The summer word cloud features words like "summer," "party," "feel," "night," "girl," "life," and "dance." It underscores the season's lively, carefree spirit, with many songs focusing on fun, adventure, and enjoying life to the fullest. The energy and enthusiasm of summer clearly shine through.
 
-<img src="images/fall_wordcloud.png?raw=true" width="1000" class="zoom"/>
-**Fall**: The fall word cloud highlights words such as "love," "fall," "night," "one," "back," and "heart." Fall seems to reflect a balance of love and introspection, with songs often focusing on themes of romance, reflection, and transition. The season's contemplative nature is mirrored in the music.
+<img src="images/autumn_wordcloud.png?raw=true" width="1000" class="zoom"/>
+**Autumn**: The fall word cloud highlights words such as "love," "fall," "night," "one," "back," and "heart." Fall seems to reflect a balance of love and introspection, with songs often focusing on themes of romance, reflection, and transition. The season's contemplative nature is mirrored in the music.
 
 ---
 
