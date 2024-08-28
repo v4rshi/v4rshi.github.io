@@ -40,7 +40,7 @@ To dig into this deeper, I looked into when I added all the songs with Future on
 
 <img src="images/future_breakdown.png?raw=true" width="1000" class="zoom"/>
 
-That made Future being my top artist sense because this year was when "We Don't Trust You" and "We Still Don't Trust You" with Metro Boomin' and Future came out, and my husband and I had those albums on repeat most of this year. 
+That made Future being my top artist sense because this year was when "We Don't Trust You" and "We Still Don't Trust You" with Metro Boomin' and Future came out, and my husband and I had those albums on repeat most of this year and I ended up adding a bunch of songs by or featuring Future to my playlists this year. 
 
 ### 2. This summer is a BRAT summer for me - but historically was that always the case?
 Looks like spring is BRAT green! Each season is quite different, winter seemingly being all over the place since Disney, Britney Spears and BTS are all on there! 
