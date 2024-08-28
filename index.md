@@ -1,17 +1,17 @@
-## Portfolio
+# Portfolio
 
 ---
 
-### Data Analytics Projects 
+## Data Analytics Projects 
 
-[Spotify Seasonality Analysis EDA](/seasons_eda.md)
+###[Spotify Seasonality Analysis EDA](/seasons_eda.md)
 
-<img src="images/seasons_eda.png?raw=true"/>
+<img src="images/seasons_eda.png?raw=true" width="300"/>
 
 ---
-[Spotify Sentiment Analysis](/sentiment_analysis.md)
+###[Spotify Sentiment Analysis](/sentiment_analysis.md)
 
-<img src="images/sentiment_analysis.png?raw=true"/>
+<img src="images/sentiment_analysis.png?raw=true" width="300"/>
 
 ---
 <p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>
