@@ -86,7 +86,9 @@ I chose to pay the closest attention to 2019-2020, 2023-2024 and see how they co
 
 I did also break each year down into seasons to see any seasonal trends, but to not clutter this page with too many graphs I will summarize my observations below:
 
-The shift in my music preferences from 2019 to 2020 shows a surprising trend towards more energetic and positive songs. While 2020 is often associated with the hardships of the COVID-19 pandemic, it was also the year I was unexpectedly admitted to graduate school. This personal triumph, especially significant given the closed borders and uncertainty, may explain my gravitation towards upbeat music. My experience highlights how individual circumstances can contrast with broader narratives during global events. 
+The shift in my music preferences between **2019 and 2020** shows a surprising trend towards more energetic and positive songs. While 2020 is often associated with the hardships of the COVID-19 pandemic, it was also the year I was unexpectedly admitted to graduate school. This personal triumph, especially significant given the closed borders and uncertainty, may explain my gravitation towards upbeat music. My experience highlights how individual circumstances can contrast with broader narratives during global events. 
+
+Between **2023 and 2024**, my music preferences show a drop in all attributes except tempo. This shift aligns with the challenges I'm facing in 2024, particularly navigating a difficult job market. The decrease in most musical attributes likely reflects my current emotional state, while the increased tempo might indicate a need for motivation or energy during these stressful times. My playlist has essentially become a reflection of my professional struggles and associated emotions.
 
 #SUMMARY HERE
 ---
