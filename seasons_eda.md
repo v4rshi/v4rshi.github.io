@@ -79,11 +79,14 @@ I chose to pay the closest attention to 2019-2020, 2023-2024 and see how they co
 - 2020 was the year of the pandemic, and 2019 is a baseline to compare pre and post COVID-19 music preferences
   <img src="images/attributes19.png?raw=true" width="1000" class="zoom"/>
   <img src="images/attributes20.png?raw=true" width="1000" class="zoom"/>
+  
 - 2023 was the year I got married but 2024 was the year I was stuck without a job in a bad market
   <img src="images/attributes23.png?raw=true" width="1000" class="zoom"/>
   <img src="images/attributes24.png?raw=true" width="1000" class="zoom"/>
 
 I did also break each year down into seasons to see any seasonal trends, but to not clutter this page with too many graphs I will summarize my observations below:
+
+The shift in my music preferences from 2019 to 2020 shows a surprising trend towards more energetic and positive songs. While 2020 is often associated with the hardships of the COVID-19 pandemic, it was also the year I was unexpectedly admitted to graduate school. This personal triumph, especially significant given the closed borders and uncertainty, may explain my gravitation towards upbeat music. My experience highlights how individual circumstances can contrast with broader narratives during global events. 
 
 #SUMMARY HERE
 ---
