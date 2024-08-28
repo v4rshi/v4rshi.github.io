@@ -105,7 +105,7 @@ Again, unsurprisingly, I had a lot of free time in the winter and in 2020 during
 <img src="images/summer_wordcloud.png?raw=true" width="1000"/>
 **Summer**: The summer word cloud emphasizes words like "life," "good," "go," and "dance," suggesting a vibrant, active, and positive atmosphere. There is a focus on social activities and enjoyment, aligning with the lively nature of the summer season.
 
-<img src="images/autumn_wordcloud.png?raw=true width="1000""/>
+<img src="images/autumn_wordcloud.png?raw=true"  width="1000"/>
 **Autumn**: The autumn word cloud features words like "christmas," "night," and "back," indicating themes related to the winter holidays and possibly a more reflective or melancholic tone, with words like "sad" and "lonely."
 
 
