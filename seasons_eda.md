@@ -95,8 +95,22 @@ Between **2023 and 2024**, my music preferences show a drop, on average, in all 
 Note to self: Either make these playlists private or start a new career as the world's most reluctant psychic. "For just $9.99, I'll predict your future by analyzing your 'Most Played' list!" Hmm, maybe I'm onto something here...
 
 ---
+### 8. I would be remiss to not look into Valence even though I want to do my own version of sentiment analysis in the next step of this project. 
 
-### 8. I thought it would be interesting to see what my top 10 genres were by season and if they varied at all.
+Initially, I plotted valence over time as well as a monthly moving average to find that this graph was messy and impossible to interpret. 
+<img src="images/valence_messy.png?raw=true" width="1000" class="zoom"/>
+
+So, I tried something else, and created a graph to analyze and visualize the average (by month) valence of my Spotify playlist data over time, with annotations for significant life events.
+<img src="images/valence_life_event.png?raw=true" width="1000" class="zoom"/>
+Observations:
+- Fluctuations in Valence: There are several sharp drops and spikes in valence, often coinciding with life events.
+- Notable Drops: Significant dips in valence appear around "A Terrible Birthday," "Huge Fight with Someone Close," and "Loved One Died," suggesting these were negative experiences.
+- Notable Spikes: Increases in valence are observed around events like "Reconciled with a Friend" and "Got Married," indicating these were positive experiences.
+- General Trend: The valence seems to be somewhat stable but with recurrent fluctuations corresponding to life events.
+
+It is clear to me that my music taste is indeed reflective of my emotional state at the time, and that doing a more detailed sentiment analysis could glean some very fascinating insights as to what specific emotions I was feeling at the time validating that I might find something interesting by doing a deeper dive with sentiment analysis on the lyrics of the songs!
+
+### 9. I thought it would be interesting to see what my top 10 genres were by season and if they varied at all.
  In short, barely. I still am basic as hell and listen to a lot of pop, however the genres following that moved around but were only edm, hip hop, rap and/or some pop variation. What was surprising to me was the random appearance of 'Modern Rock' in the Wintertime. Wintertime House of Blues, I guess?
 
 <img src="images/top_10_genres_by_season.png?raw=true" width="1000" class="zoom"/>
@@ -105,7 +119,7 @@ I then tried to visualize this differently with a stacked bar chart and over the
 
 <img src="images/top_genres_by_season_barplot.png?raw=true" width="1000" class="zoom"/>
 
-### 9. I wondered, do I like current releases or nostalgic music more, and does this vary by season?
+### 10. I wondered, do I like current releases or nostalgic music more, and does this vary by season?
 The boxplot graph below shows how my music listening habits change throughout the year. It compares the age of songs I listen to (how long ago they were released compared to when it was added to a playlist) across different seasons. The insights were very interesting. 
 
 A primer on what a boxplot even is: it is a simple visual tool that shows the spread and symmetry of a dataset by dividing it into quartiles and highlighting key statistics like the median and potential outliers. It uses a box to represent the middle 50% of the data and lines extending from the box to show the range, making it easy to see how data is distributed. Feel free to also refer to [this guide](https://www.simplypsychology.org/boxplots.html) on how to interpret boxplots.
@@ -123,12 +137,12 @@ Key findings:
 
 This pattern suggests that my mood and the time of year influence my music choices, with summer bringing out my most nostalgic side and autumn inspiring me to explore newer tunes.
 
-### 10. I counted unique genres and did a [Pareto](https://www.cec.health.nsw.gov.au/CEC-Academy/quality-improvement-tools/pareto-charts#:~:text=The%20Pareto%20Chart%20is%20a,represented%20by%20the%20curved%20line.) analysis to see what genres of music make up most of my listening. 
+### 11. I counted unique genres and did a [Pareto](https://www.cec.health.nsw.gov.au/CEC-Academy/quality-improvement-tools/pareto-charts#:~:text=The%20Pareto%20Chart%20is%20a,represented%20by%20the%20curved%20line.) analysis to see what genres of music make up most of my listening. 
 I am unclear on what to glean from this for now, but it was interesting to see that nearly 50% of my music falls into just 30 genres when there are 1412 distinct ones present! The graph below just shows the top 100 genres so you cannot see the Pareto shape/tail very clearly. I realized that if I wanted to do any clustering later on, I would have to delve into this deeper.  
 
 <img src="images/pareto_zoom.png?raw=true" width="1000" class="zoom"/>
 
-### 11. I also wanted to look at total track duration across seasons to see when I listened to longer playlists / more music by season but also by year.
+### 12. I also wanted to look at total track duration across seasons to see when I listened to longer playlists / more music by season but also by year.
 
 Again, unsurprisingly, I had a lot of free time in the winter and in 2020 during the pandemic.
 
@@ -137,7 +151,7 @@ Again, unsurprisingly, I had a lot of free time in the winter and in 2020 during
 <img src="images/duration_over_years.png?raw=true" width="1000" class="zoom"/>
 
 
-### 12. Finally and what sets the stage up for the next phase of this project, which is sentiment analysis on song lyricsusing LLM's, I made basic word clouds track name for each season to see what the most frequently occurring words were in song titles.
+### 13. Finally and what sets the stage up for the next phase of this project, which is sentiment analysis on song lyricsusing LLM's, I made basic word clouds track name for each season to see what the most frequently occurring words were in song titles.
 
 Another reason I wanted to do this was because Spotify already has some sort of sentiment tracking called "Valence"
 
