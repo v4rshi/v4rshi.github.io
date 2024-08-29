@@ -74,7 +74,7 @@ This visual made it clear that my taste seems fairly consistent across the seaso
 
 <img src="images/other_trait_distribution.png?raw=true" width="1000" class="zoom"/>
 
-### 7. I wanted to then look at the distributions by season and year it was added to a playlist (there are ~9 years worth of data!).
+### 7. I wanted to then look at the distributions by season and year it was added to a playlist.
 
 I chose to pay the closest attention to 2019-2020, 2023-2024 and see how they compared to one another. The rationale is as follows:
 
