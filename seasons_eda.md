@@ -118,6 +118,28 @@ It is clear to me that my music taste is indeed reflective of my emotional state
 I then tried to visualize this differently with a stacked bar chart and over the top 20 genres overall
 
 <img src="images/top_genres_by_season_barplot.png?raw=true" width="1000" class="zoom"/>
+This chart displays the popularity of various music genres across seasons:
+
+- Pop is the most popular genre overall, followed by EDM and pop dance.
+- Many genres, especially pop and EDM, are more popular in winter.
+- Some genres like rap and hip hop show stronger popularity in summer.
+- There's a wide range of genres represented, from mainstream to niche.
+- Electronic and dance-oriented genres dominate the top rankings.
+- All genres show some seasonal variation in popularity.
+- Even less popular genres maintain a presence across all seasons, like uk dance and r&b.
+
+I also did this by top 5 Genres over the years separated by season: 
+<img src="images/genres_years_stacked.png?raw=true" width="1000" class="zoom"/>
+Key points:
+
+- Wide variety of genres represented
+- Genre popularity fluctuates seasonally and yearly
+- Some genres (e.g., pop, rap) appear consistently
+- Summer 2017 shows highest genre diversity
+- Recent years (2022-2024) have more stable genre distribution
+- New genres emerge over time
+- Data shown as percentages for easy comparison
+- Covers 8 years, good for long-term trend analysis
 
 ### 10. I wondered, do I like current releases or nostalgic music more, and does this vary by season?
 The boxplot graph below shows how my music listening habits change throughout the year. It compares the age of songs I listen to (how long ago they were released compared to when it was added to a playlist) across different seasons. The insights were very interesting. 
@@ -136,6 +158,11 @@ Key findings:
 - Preference for older music: Across all seasons, I tend to listen to more older songs than newer ones, but this trend is strongest in summer and weakest in autumn.
 
 This pattern suggests that my mood and the time of year influence my music choices, with summer bringing out my most nostalgic side and autumn inspiring me to explore newer tunes.
+
+I also broke it down by year to try and see in greater detail if this trend of listening to nostalgic music held true: 
+<img src="images/boxplot_years.png?raw=true" width="1000" class="zoom"/>
+
+It is quite clear that the trend of listening to older music on average remains the same, with the exceptions of Spring 2023 and (part) of Winter 2024, where more songs were closer to the year of release than not, indicating a bias to newer releases.
 
 ### 11. I counted unique genres and did a [Pareto](https://www.cec.health.nsw.gov.au/CEC-Academy/quality-improvement-tools/pareto-charts#:~:text=The%20Pareto%20Chart%20is%20a,represented%20by%20the%20curved%20line.) analysis to see what genres of music make up most of my listening. 
 I am unclear on what to glean from this for now, but it was interesting to see that nearly 50% of my music falls into just 30 genres when there are 1412 distinct ones present! The graph below just shows the top 100 genres so you cannot see the Pareto shape/tail very clearly. I realized that if I wanted to do any clustering later on, I would have to delve into this deeper.  
