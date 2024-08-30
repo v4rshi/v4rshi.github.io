@@ -42,35 +42,35 @@ To dig into this deeper, I looked into when I added all the songs with Future on
 
 <img src="images/spotify_project/future_breakdown.png?raw=true" width="1000" class="zoom"/>
 
-That made Future being my top artist sense because this year was when "We Don't Trust You" and "We Still Don't Trust You" with Metro Boomin' and Future came out, and my husband and I had those albums on repeat most of this year and I ended up adding a bunch of songs by or featuring Future to my playlists this year. 
+Bingo! This year, Future became my top artist because 'We Don't Trust You' and 'We Still Don't Trust You,' collaborations with Metro Boomin and Future, were released. My husband and I had those albums on repeat, leading me to add many Future songs and collaborations to my playlists.
 
-### 2. This summer is a BRAT summer for me - but historically was that always the case?
+### 2. This summer is a BRAT summer for me - but historically was that always the case across my entire listening history?
 Looks like spring is BRAT green! Each season is quite different, winter seemingly being all over the place since Disney, Britney Spears and BTS are all on there! 
 
 <img src="images/spotify_project/top_10_seasonal.png?raw=true" width="1000" class="zoom"/>
 
 ### 3. I chose to look at add number of songs over the years (by month and season) to see when I most actively added music to playlists
 
-I was not surprised to see how erratic my playlist making was until 2022, which was when I started my first full-time job, after which I was not curating my music as intentionally (made sense as my work took up most of my time) and then in August 2024 there was a spike that can be explained by my coping with a stressful situation with music at the time.
+I wasn’t surprised to see the erratic nature of my playlist curation until 2022, when I started my first full-time job. With work consuming most of my time, I wasn't curating my music as intentionally. The spike in August 2024 can be attributed to using music as a coping mechanism during a particularly stressful period.
 
 <img src="images/spotify_project/monthly_adds_by_season.png?raw=true" width="1000" class="zoom"/>
 
 ### 4. I tried to visualize this differently with number of songs added by season over the years.
 
-I hypothesized I would be most active in the winter and summer, but it is clear that the pandemic in 2020 and my time being unemployed in 2024 are when I am most active. This coincides with when I was going through a lot in my personal life, too. 
+It is clear that the pandemic in 2020 and my time being unemployed in 2024 are when I am most active. This coincides with when I was going through a lot in my personal life, too. 
 
 <img src="images/spotify_project/monthly_song_adds_by_season_linechart.png?raw=true" width="1000" class="zoom"/>
 
 
 ### 5. I wanted to then look at song-adding volume over the seasons. I tried to visualize this differently where I normalized my data by dividing each season by no. days in a season and then dividing that by the number of years in my dataset, 9 (WOW that is a long time). 
 
-This made sense to me because overall I did feel I was most active in the winter as I generally was on break when I was in college but also when the weather was extreme and I spent too much time indoors - meaning I leaned on music more to pass time.
+This makes sense to me because I was generally most active in the winter. During college breaks and extreme weather, when I spent more time indoors, I relied on music more to pass the time.
 
 <img src="images/spotify_project/normalized_graph_2.png?raw=true" width="1000" class="zoom"/>
 
 ### 6. I tried visualizing seasonal distributions for various other music traits, like Danceability, Valence, Energy and Tempo, to get a general sense of what kind of music I liked in different seasons. 
 
-This visual made it clear that my taste seems fairly consistent across the seasons but that overall I like songs that you can dance to, have high energy and high tempo! Ya girl like music she can have a good time to! 
+This visual shows that my taste remains consistent across seasons, favoring songs that are energetic and danceable. Ya girl like music she can have a good time to! 
 
 <img src="images/spotify_project/other_trait_distribution.png?raw=true" width="1000" class="zoom"/>
 
@@ -173,7 +173,7 @@ For those unfamiliar with what a Pareto (also known as the 80/20 rule) suggests 
 
 ### 12. I also wanted to look at total track duration across seasons to see when I listened to longer playlists / more music by season but also by year.
 
-Again, unsurprisingly, I had a lot of free time in the winter and in 2020 during the pandemic.
+Again, unsurprisingly, I had a lot of free time in the winter across all my data and in the year 2020 during the pandemic because those playlists seem to be looooong. 
 
 <img src="images/spotify_project/total_duration_season.png?raw=true" width="1000" class="zoom"/>
 
