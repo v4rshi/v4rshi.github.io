@@ -205,6 +205,8 @@ I can see this kind of work being useful in the mental health and wellness space
 1. **Identify Mood Patterns:** Correlate sentiment in song lyrics with periods of emotional change to understand how music reflects and influences mood.
 2. **Enhance Therapy:** Inform music therapy by tailoring music to specific emotional needs, helping with anxiety, depression, or stress.
 3. **Explore Seasonal Affective Disorder (SAD):** Examine seasonal patterns in music preferences to understand the impact of seasonal changes on mental health.
+4. **Seasonally Tailored Playlists**: Spotify could utilize this project to recommend playlists that are tailored to users each season, based on their historical listening data and the preferences of similar users.
+5. **Emotion-Based Playlists**: By analyzing a user’s description of their current mood, Spotify could create highly personalized playlists that go beyond the existing "Daylist" feature, providing a more accurate reflection of the user's emotions in real time.
 
 ---
 
