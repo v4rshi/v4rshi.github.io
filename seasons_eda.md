@@ -146,7 +146,7 @@ The boxplot graph below shows how my music listening habits change throughout th
 
 A primer on what a boxplot even is: it is a simple visual tool that shows the spread and symmetry of a dataset by dividing it into quartiles and highlighting key statistics like the median and potential outliers. It uses a box to represent the middle 50% of the data and lines extending from the box to show the range, making it easy to see how data is distributed. Feel free to also refer to [this guide](https://www.simplypsychology.org/boxplots.html) on how to interpret boxplots.
 
-<img src="images/currentn_v_nostalgic_boxplot.png?raw=true" width="1000" class="zoom"/>
+<img src="images/spotify_project/currentn_v_nostalgic_boxplot.png?raw=true" width="1000" class="zoom"/>
 
 Key findings:
 
