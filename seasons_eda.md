@@ -165,7 +165,9 @@ I also broke it down by year to try and see in greater detail if this trend of l
 It is quite clear that the trend of listening to older music on average remains the same, with the exceptions of Spring 2023 and (part) of Winter 2024, where more songs were closer to the year of release than not, indicating a bias to newer releases.
 
 ### 11. I counted unique genres and did a [Pareto](https://www.cec.health.nsw.gov.au/CEC-Academy/quality-improvement-tools/pareto-charts#:~:text=The%20Pareto%20Chart%20is%20a,represented%20by%20the%20curved%20line.) analysis to see what genres of music make up most of my listening. 
-I am unclear on what to glean from this for now, but it was interesting to see that nearly 50% of my music falls into just 30 genres when there are 1412 distinct ones present! The graph below just shows the top 100 genres so you cannot see the Pareto shape/tail very clearly. I realized that if I wanted to do any clustering later on, I would have to delve into this deeper.  
+For those unfamiliar with what a Pareto (also known as the 80/20 rule) suggests 80% of effects come from 20% of causes, helping people prioritize efforts on the most impactful areas. Sometimes it may not even be 80/20, but that is the ratio most commonly used. 
+
+ I am unclear on what to glean from this for now, but it was interesting to see that nearly 50% of my music falls into just 30 genres when there are 1412 distinct ones present! The graph below just shows the top 100 genres so you cannot see the Pareto shape/tail very clearly. I realized that if I wanted to do any clustering later on, I would have to delve into this deeper.  
 
 <img src="images/spotify_project/pareto_zoom.png?raw=true" width="1000" class="zoom"/>
 
