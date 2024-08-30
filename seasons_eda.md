@@ -182,7 +182,7 @@ Again, unsurprisingly, I had a lot of free time in the winter and in 2020 during
 
 ### 13. Finally and what sets the stage up for the next phase of this project, which is sentiment analysis on song lyricsusing LLM's, I made basic word clouds track name for each season to see what the most frequently occurring words were in song titles.
 
-Another reason I wanted to do this was because Spotify already has some sort of sentiment tracking called "Valence"
+I know Spotify tracks the "Valence" of songs, but can I see what my overall mood was by looking at a word cloud of the track titles? After all, a picture is (quite literally) worth a thousand words! 
 
 <img src="images/spotify_project/winter_wordcloud.png?raw=true" width="1000" class="zoom"/>
 **Winter**: The winter word cloud highlights significant words like "love," "one," "night," "home," and "Christmas." It reflects winter-specific themes and emotions, balancing positive and negative feelings. Overall, it suggests winter is a mix of both holiday-related songs and introspective tunes about love and life.
