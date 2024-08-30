@@ -95,20 +95,20 @@ Between **2023 and 2024**, my music preferences show a drop, on average, in all 
 Note to self: Either make these playlists private or start a new career as the world's most reluctant psychic. "For just $9.99, I'll predict your future by analyzing your 'Most Played' list!" Hmm, maybe I'm onto something here...
 
 ---
-### 8. I would be remiss to not look into Valence even though I want to do my own version of sentiment analysis in the next step of this project. 
+### 8. I would be remiss to not look into Valence of songs, even though I want to do my own version of sentiment analysis in the next step of this project. 
 
 Initially, I plotted valence over time as well as a monthly moving average to find that this graph was messy and impossible to interpret. 
 <img src="images/spotify_project/valence_messy.png?raw=true" width="1000" class="zoom"/>
 
-So, I tried something else, and created a graph to analyze and visualize the average (by month) valence of my Spotify playlist data over time, with annotations for significant life events.
+Instead, I plotted a graph to analyze and visualize the average monthly valence of my Spotify playlist data over time, with annotations for significant life events.
 <img src="images/spotify_project/valence_life_event.png?raw=true" width="1000" class="zoom"/>
 Observations:
 - Fluctuations in Valence: There are several sharp drops and spikes in valence, often coinciding with life events.
 - Notable Drops: Significant dips in valence appear around "A Terrible Birthday," "Huge Fight with Someone Close," and "Loved One Died," suggesting these were negative experiences.
 - Notable Spikes: Increases in valence are observed around events like "Reconciled with a Friend" and "Got Married," indicating these were positive experiences.
 - General Trend: The valence seems to be somewhat stable but with recurrent fluctuations corresponding to life events.
-
-It is clear to me that my music taste is indeed reflective of my emotional state at the time, and that doing a more detailed sentiment analysis could glean some very fascinating insights as to what specific emotions I was feeling at the time validating that I might find something interesting by doing a deeper dive with sentiment analysis on the lyrics of the songs!
+- 
+My music preferences clearly mirror my emotional state, suggesting a detailed sentiment analysis of song lyrics could yield fascinating insights into my specific emotions during different periods. This validation encourages a deeper exploration using sentiment analysis techniques!
 
 ### 9. I thought it would be interesting to see what my top 10 genres were by season and if they varied at all.
  In short, barely. I still am basic as hell and listen to a lot of pop, however the genres following that moved around but were only edm, hip hop, rap and/or some pop variation. What was surprising to me was the random appearance of 'Modern Rock' in the Wintertime. Wintertime House of Blues, I guess?
@@ -208,6 +208,6 @@ I can see this kind of work being useful in the mental health and wellness space
 
 ---
 
-### With this, I conclude the first phase of my project and hope to delve into the more specific sentiment analysis next! Thanks for taking the time to go through it all, and let me know your thoughts or feedback! 
+### With this, I conclude the first phase of my project and hope to delve into the more specific sentiment analysis on song lyrics next! Thanks for taking the time to go through it all, and let me know your thoughts or feedback! 
 
 --- 
