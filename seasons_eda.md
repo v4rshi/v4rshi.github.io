@@ -180,7 +180,7 @@ Again, unsurprisingly, I had a lot of free time in the winter across all my data
 <img src="images/spotify_project/duration_over_years.png?raw=true" width="1000" class="zoom"/>
 
 
-### 13. Finally and what sets the stage up for the next phase of this project, which is sentiment analysis on song lyricsusing LLM's, I made basic word clouds track name for each season to see what the most frequently occurring words were in song titles.
+### 13. Finally and what sets the stage up for the next phase of this project, which is sentiment analysis on song lyrics using LLM's, I made basic word clouds track name for each season to see what the most frequently occurring words were in song titles.
 
 I know Spotify tracks the "Valence" of songs, but can I see what my overall mood was by looking at a word cloud of the track titles? After all, a picture is (quite literally) worth a thousand words! 
 
