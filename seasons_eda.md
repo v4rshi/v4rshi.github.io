@@ -1,5 +1,70 @@
 ## **Soundtrack of Seasons**: Unraveling My Spotify Saga Over The Last 9 Years
 
+<style>
+  .zoom-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .zoom-container::after {
+    content: "Click to Zoom";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .zoom-container:hover::after {
+    opacity: 1;
+  }
+
+  .zoom {
+    transition: transform 0.3s ease;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .zoom.zoomed {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2);
+    z-index: 1000;
+    max-width: 90vw;
+    max-height: 90vh;
+  }
+
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+  }
+</style>
+
+<div class="overlay" onclick="toggleZoom()"></div>
+
+<script>
+  document.querySelectorAll('.zoom-container').forEach(item => {
+    item.addEventListener('click', function () {
+      const img = item.querySelector('.zoom');
+      img.classList.toggle('zoomed');
+      document.querySelector('.overlay').style.display = img.classList.contains('zoomed') ? 'block' : 'none';
+    });
+  });
+</script>
+
 #### Click here to see the Jupyter Notebook for [this EDA](https://github.com/v4rshi/v4rshi.github.io/blob/master/spotify_project_notebooks/seasons_eda.ipynb)!
 --- 
 **Project Description**: I was able to get playlist data for my Spotify playlists thanks to a website called [Exportify](https://exportify.net/). It made me wonder, can I use this data to understand my mood and well-being over the years based on the season of the year I listened to something and the sentiment of the songs (name and lyrics) themselves?
@@ -22,12 +87,15 @@ By examining these data points, I hope to uncover insights into how my music cho
 
 ---
 
+
+<!-- 
 <style>
   .zoom:hover {
     transform: scale(3);
     transition: transform 0.5s ease;
   }
 </style>
+-->
 
 ## Findings and Visualizations: 
 ### NOTE: Hover over all graphs to see a bigger version of them! 
@@ -35,7 +103,10 @@ By examining these data points, I hope to uncover insights into how my music cho
 ### 1. The first thing I looked at was who my most listened to artists were.
 I was fully expecting my top artist to be Charli XCX but in a rather surprising turn of events, its Future??? I did not see this in my Future, that is for sure.
 
-<img src="images/spotify_project/top_20_artists.png?raw=true" width="1000" class="zoom"/>
+
+<div class="zoom-container">
+  <img src="images/spotify_project/top_20_artists.png?raw=true" width="1000" class="zoom"/>
+</div>
 
 To dig into this deeper, I looked into when I added all the songs with Future on them... to find most of it was this year. 
 
@@ -259,3 +330,4 @@ These applications have significant potential benefits, but they also come with 
 Thanks for taking the time to go through it all, and let me know your thoughts or feedback! 
 
 --- 
+
