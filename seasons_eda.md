@@ -24,11 +24,48 @@ By examining these data points, I hope to uncover insights into how my music cho
 ---
 
 <style>
-  .zoom:hover {
+  .zoom-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .zoom-container::after {
+    content: "Click to Zoom";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .zoom-container:hover::after {
+    opacity: 1;
+  }
+
+  .zoom {
+    transition: transform 0.3s ease;
+  }
+
+  .zoom.zoomed {
     transform: scale(3);
-    transition: transform 0.5s ease;
   }
 </style>
+<script>
+document.querySelectorAll('.zoom-container').forEach(container => {
+  const img = container.querySelector('.zoom');
+  let zoomed = false;
+
+  container.addEventListener('click', () => {
+    zoomed = !zoomed;
+    img.classList.toggle('zoomed', zoomed);
+  });
+});
+</script>
 
 ## Findings and Visualizations: 
 ### NOTE: Hover over all graphs to see a bigger version of them! 
