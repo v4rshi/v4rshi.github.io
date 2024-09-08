@@ -61,10 +61,7 @@ By examining these data points, I hope to uncover insights into how my music cho
 ### 1. The first thing I looked at was who my most listened to artists were.
 I was fully expecting my top artist to be Charli XCX but in a rather surprising turn of events, its Future??? I did not see this in my Future, that is for sure.
 
-
-<div class="zoom-container">
-  <img src="images/spotify_project/top_20_artists.png?raw=true" width="1000" class="zoom"/>
-</div>
+<img src="images/spotify_project/top_20_artists.png?raw=true" width="1000" class="zoom"/>
 
 To dig into this deeper, I looked into when I added all the songs with Future on them... to find most of it was this year. 
 
