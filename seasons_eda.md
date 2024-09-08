@@ -18,7 +18,7 @@ Key focus areas for this project include:
 
 By doing this analysis, I hope to reveal how my music choices reflect my life experiences and emotions. 
 
-##### **Note: Data shows song additions, not play frequency. Play data would enable more in depth analysis of listening patterns.**
+##### **Note: Data shows song additions, not play frequency. Play data would enable more in-depth analysis of listening patterns.**
 
 
 ---
