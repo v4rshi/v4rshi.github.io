@@ -13,7 +13,7 @@ My playlists are like musical journals, reflecting my emotions and life events. 
 Key focus areas for this project include: 
 
 1. Analyze musical taste evolution over time
-2. Examine seasonal patterns in playlist composition
+2. Examine seasonal patterns in playlists (and see if I am as predictable as I think I am)
 3. Perform sentiment analysis using LLM's on song lyrics, focusing on my unemployment period (July 2023-present)
 
 By doing this analysis, I hope to reveal how my music choices reflect my life experiences and emotions. 
@@ -48,7 +48,7 @@ To dig into this deeper, I looked into when I added all the songs with Future on
 
 Bingo! This year, Future became my top artist because 'We Don't Trust You' and 'We Still Don't Trust You,' collaborations with Metro Boomin and Future, were released. My husband and I had those albums on repeat, leading me to add many Future songs and collaborations to my playlists.
 
-### 2. This summer is a BRAT summer for me - but historically was that always the case across my entire listening history?
+### 2. This summer is a [BRAT](https://www.cnn.com/2024/07/23/style/brat-summer-green-explained/index.html) summer for me - but historically was that always the case across my entire listening history? 
 Looks like spring is BRAT green! Each season is quite different, winter seemingly being all over the place since Disney, Britney Spears and BTS are all on there! 
 
 <img src="images/spotify_project/top_10_seasonal.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
