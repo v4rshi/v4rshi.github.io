@@ -23,13 +23,24 @@ By examining these data points, I hope to uncover insights into how my music cho
 ---
 
 
-<!-- -->
+<!-- 
 <style>
   .zoom:hover {
     transform: scale(2.5);
     transition: transform 0.5s ease;
   }
 </style>
+-->
+
+<style>
+.zoom {
+  transition: transform 0.5s ease;
+}
+.zoom.zoomed {
+  transform: scale(2.5);
+}
+</style>
+
 
 
 ## Findings and Visualizations: 
@@ -38,55 +49,55 @@ By examining these data points, I hope to uncover insights into how my music cho
 ### 1. The first thing I looked at was who my most listened to artists were.
 I was fully expecting my top artist to be Charli XCX but in a rather surprising turn of events, its Future??? I did not see this in my Future, that is for sure.
 
-<img src="images/spotify_project/top_20_artists.png?raw=true" width="1000" class="zoom"/>
+<img src="images/spotify_project/top_20_artists.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
 To dig into this deeper, I looked into when I added all the songs with Future on them... to find most of it was this year. 
 
-<img src="images/spotify_project/future_breakdown.png?raw=true" width="1000" class="zoom"/>
+<img src="images/spotify_project/future_breakdown.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
 Bingo! This year, Future became my top artist because 'We Don't Trust You' and 'We Still Don't Trust You,' collaborations with Metro Boomin and Future, were released. My husband and I had those albums on repeat, leading me to add many Future songs and collaborations to my playlists.
 
 ### 2. This summer is a BRAT summer for me - but historically was that always the case across my entire listening history?
 Looks like spring is BRAT green! Each season is quite different, winter seemingly being all over the place since Disney, Britney Spears and BTS are all on there! 
 
-<img src="images/spotify_project/top_10_seasonal.png?raw=true" width="1000" class="zoom"/>
+<img src="images/spotify_project/top_10_seasonal.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
 ### 3. I chose to look at add number of songs over the years (by month and season) to see when I most actively added music to playlists
 
 I wasn’t surprised to see the erratic nature of my playlist curation until 2022, when I started my first full-time job. With work consuming most of my time, I wasn't curating my music as intentionally. The spike in August 2024 can be attributed to using music as a coping mechanism during a particularly stressful period.
 
-<img src="images/spotify_project/monthly_adds_by_season.png?raw=true" width="1000" class="zoom"/>
+<img src="images/spotify_project/monthly_adds_by_season.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
 ### 4. I tried to visualize this differently with number of songs added by season over the years.
 
 It is clear that the pandemic in 2020 and my time being unemployed in 2024 are when I am most active. This coincides with when I was going through a lot in my personal life, too. 
 
-<img src="images/spotify_project/monthly_song_adds_by_season_linechart.png?raw=true" width="1000" class="zoom"/>
+<img src="images/spotify_project/monthly_song_adds_by_season_linechart.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
 
 ### 5. I wanted to then look at song-adding volume over the seasons. I tried to visualize this differently where I normalized my data by dividing each season by no. days in a season and then dividing that by the number of years in my dataset (9 Years! Almost a third of my life!). 
 
 This makes sense to me because I was generally most active in the winter. During college breaks and extreme weather, when I spent more time indoors, I relied on music more to pass the time.
 
-<img src="images/spotify_project/normalized_graph_2.png?raw=true" width="1000" class="zoom"/>
+<img src="images/spotify_project/normalized_graph_2.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
 ### 6. I tried visualizing seasonal distributions for various other music traits, like Danceability, Valence, Energy and Tempo, to get a general sense of what kind of music I liked in different seasons. 
 
 This visual shows that my taste remains consistent across seasons, favoring songs that are energetic and danceable. Ya girl like music she can have a good time to! 
 
-<img src="images/spotify_project/other_trait_distribution.png?raw=true" width="1000" class="zoom"/>
+<img src="images/spotify_project/other_trait_distribution.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
 ### 7. I wanted to then look at the distributions by season and year it was added to a playlist.
 
 I chose to pay the closest attention to 2019-2020, 2023-2024 and see how they compared to one another. The rationale is as follows:
 
 - 2020 was the year of the pandemic, and 2019 is a baseline to compare pre and post COVID-19 music preferences
-  <img src="images/spotify_project/attributes19.png?raw=true" width="1000" class="zoom"/>
-  <img src="images/spotify_project/attributes20.png?raw=true" width="1000" class="zoom"/>
+  <img src="images/spotify_project/attributes19.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
+  <img src="images/spotify_project/attributes20.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
   
 - 2023 was the year I got married but 2024 was the year I was stuck without a job in a bad market
-  <img src="images/spotify_project/attributes23.png?raw=true" width="1000" class="zoom"/>
-  <img src="images/spotify_project/attributes24.png?raw=true" width="1000" class="zoom"/>
+  <img src="images/spotify_project/attributes23.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
+  <img src="images/spotify_project/attributes24.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
 I did also break each year down into seasons to see any seasonal trends, but to not clutter this page with too many graphs I will summarize my observations below:
 
@@ -100,10 +111,10 @@ Note to self: Either make these playlists private or start a new career as the w
 ### 8. I would be remiss to not look into Valence of songs, even though I want to do my own version of sentiment analysis in the next step of this project. 
 
 Initially, I plotted valence over time as well as a monthly moving average to find that this graph was messy and impossible to interpret. 
-<img src="images/spotify_project/valence_messy.png?raw=true" width="1000" class="zoom"/>
+<img src="images/spotify_project/valence_messy.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
 Instead, I plotted a graph to analyze and visualize the average monthly valence of my Spotify playlist data over time, with annotations for significant life events.
-<img src="images/spotify_project/valence_life_event.png?raw=true" width="1000" class="zoom"/>
+<img src="images/spotify_project/valence_life_event.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 Observations:
 - Fluctuations in Valence: There are several sharp drops and spikes in valence, often coinciding with life events.
 - Notable Drops: Significant dips in valence appear around "A Terrible Birthday," "Huge Fight with Someone Close," and "Loved One Died," suggesting these were negative experiences.
@@ -115,11 +126,11 @@ My music preferences clearly mirror my emotional state, suggesting a detailed se
 ### 9. I thought it would be interesting to see what my top 10 genres were by season and if they varied at all.
  In short, barely. I still am basic as hell and listen to a lot of pop, however the genres following that moved around but were only edm, hip hop, rap and/or some pop variation. What was surprising to me was the random appearance of 'Modern Rock' in the Wintertime. Wintertime House of Blues, I guess?
 
-<img src="images/spotify_project/top_10_genres_by_season.png?raw=true" width="1000" class="zoom"/>
+<img src="images/spotify_project/top_10_genres_by_season.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
 I then tried to visualize this differently with a stacked bar chart and over the top 20 genres overall
 
-<img src="images/spotify_project/top_genres_by_season_barplot.png?raw=true" width="1000" class="zoom"/>
+<img src="images/spotify_project/top_genres_by_season_barplot.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 This chart displays the popularity of various music genres across seasons:
 
 - Pop is the most popular genre overall, followed by EDM and pop dance.
@@ -131,7 +142,7 @@ This chart displays the popularity of various music genres across seasons:
 - Even less popular genres maintain a presence across all seasons, like uk dance and r&b.
 
 I also did this by top 5 Genres over the years separated by season: 
-<img src="images/spotify_project/genres_years_stacked.png?raw=true" width="1000" class="zoom"/>
+<img src="images/spotify_project/genres_years_stacked.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 Key points:
 
 - Wide variety of genres represented
@@ -148,7 +159,7 @@ The boxplot graph below shows how my music listening habits change throughout th
 
 A primer on what a boxplot even is: it is a simple visual tool that shows the spread and symmetry of a dataset by dividing it into quartiles and highlighting key statistics like the median and potential outliers. It uses a box to represent the middle 50% of the data and lines extending from the box to show the range, making it easy to see how data is distributed. Feel free to also refer to [this guide](https://www.simplypsychology.org/boxplots.html) on how to interpret boxplots.
 
-<img src="images/spotify_project/currentn_v_nostalgic_boxplot.png?raw=true" width="1000" class="zoom"/>
+<img src="images/spotify_project/currentn_v_nostalgic_boxplot.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
 Key findings:
 
@@ -162,7 +173,7 @@ Key findings:
 This pattern suggests that my mood and the time of year influence my music choices, with summer bringing out my most nostalgic side and autumn inspiring me to explore newer tunes.
 
 I also broke it down by year to try and see in greater detail if this trend of listening to nostalgic music held true: 
-<img src="images/spotify_project/boxplot_years.png?raw=true" width="1000" class="zoom"/>
+<img src="images/spotify_project/boxplot_years.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
 It is quite clear that the trend of listening to older music on average remains the same, with the exceptions of Spring 2023 and (part) of Winter 2024, where more songs were closer to the year of release than not, indicating a bias to newer releases.
 
@@ -171,31 +182,31 @@ For those unfamiliar with what a Pareto (also known as the 80/20 rule) suggests 
 
  I am unclear on what to glean from this for now, but it was interesting to see that nearly 50% of my music falls into just 30 genres when there are 1412 distinct ones present! The graph below just shows the top 100 genres so you cannot see the Pareto shape/tail very clearly. I realized that if I wanted to do any clustering later on, I would have to delve into this deeper.  
 
-<img src="images/spotify_project/pareto_zoom.png?raw=true" width="1000" class="zoom"/>
+<img src="images/spotify_project/pareto_zoom.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
 ### 12. I also wanted to look at total track duration across seasons to see when I listened to longer playlists / more music by season but also by year.
 
 Again, unsurprisingly, I had a lot of free time in the winter across all my data and in the year 2020 during the pandemic because those playlists seem to be looooong. 
 
-<img src="images/spotify_project/total_duration_season.png?raw=true" width="1000" class="zoom"/>
+<img src="images/spotify_project/total_duration_season.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
-<img src="images/spotify_project/duration_over_years.png?raw=true" width="1000" class="zoom"/>
+<img src="images/spotify_project/duration_over_years.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
 
 ### 13. Finally and what sets the stage up for the next phase of this project, which is sentiment analysis on song lyrics using LLM's, I made basic word clouds track name for each season to see what the most frequently occurring words were in song titles.
 
 I know Spotify tracks the "Valence" of songs, but can I see what my overall mood was by looking at a word cloud of the track titles? After all, a picture is (quite literally) worth a thousand words! 
 
-<img src="images/spotify_project/winter_wordcloud.png?raw=true" width="1000" class="zoom"/>
+<img src="images/spotify_project/winter_wordcloud.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 **Winter**: The winter word cloud highlights significant words like "love," "one," "night," "home," and "Christmas." It reflects winter-specific themes and emotions, balancing positive and negative feelings. Overall, it suggests winter is a mix of both holiday-related songs and introspective tunes about love and life.
 
-<img src="images/spotify_project/spring_wordcloud.png?raw=true" width="1000" class="zoom"/>
+<img src="images/spotify_project/spring_wordcloud.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 **Spring**: The spring word cloud emphasizes words such as "love," "good," "feel," "summer," "new," and "sun." It shows a shift towards positivity and renewal, capturing the upbeat and fresh vibe of the spring season. Songs likely center around themes of new beginnings, happiness, and optimism.
 
-<img src="images/spotify_project/summer_wordcloud.png?raw=true" width="1000" class="zoom"/>
+<img src="images/spotify_project/summer_wordcloud.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 **Summer**: The summer word cloud features words like "summer," "party," "feel," "night," "girl," "life," and "dance." It underscores the season's lively, carefree spirit, with many songs focusing on fun, adventure, and enjoying life to the fullest. The energy and enthusiasm of summer clearly shine through.
 
-<img src="images/spotify_project/autumn_wordcloud.png?raw=true" width="1000" class="zoom"/>
+<img src="images/spotify_project/autumn_wordcloud.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 **Autumn**: The fall word cloud highlights words such as "love," "fall," "night," "one," "back," and "heart." Fall seems to reflect a balance of love and introspection, with songs often focusing on themes of romance, reflection, and transition. The season's contemplative nature is mirrored in the music.
 
 ---
@@ -262,3 +273,12 @@ These applications have significant potential benefits, but they also come with 
 Thanks for taking the time to go through it all, and let me know your thoughts or feedback! 
 
 --- 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.zoom').forEach(function(element) {
+    element.addEventListener('click', function() {
+      this.classList.toggle('zoomed');
+    });
+  });
+});
+</script>
