@@ -23,10 +23,56 @@ By examining these data points, I hope to uncover insights into how my music cho
 ---
 
 <style>
-  .zoom:hover {
-    transform: scale(3);
-    transition: transform 0.5s ease;
-  }
+.zoom-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.zoom-container::after {
+  content: "Click to Zoom";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.zoom-container:hover::after {
+  opacity: 1;
+}
+
+.zoom {
+  transition: transform 0.3s ease;
+  max-width: 100%;
+  height: auto;
+}
+
+.zoom.zoomed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  z-index: 1000;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+}
 </style>
 
 ## Findings and Visualizations: 
@@ -35,18 +81,24 @@ By examining these data points, I hope to uncover insights into how my music cho
 ### 1. The first thing I looked at was who my most listened to artists were.
 I was fully expecting my top artist to be Charli XCX but in a rather surprising turn of events, its Future??? I did not see this in my Future, that is for sure.
 
-<img src="images/spotify_project/top_20_artists.png?raw=true" width="1000" class="zoom"/>
+<div class="overlay">
+  <img src="images/spotify_project/top_20_artists.png?raw=true" width="1000" class="zoom"/>
+</div>
 
 To dig into this deeper, I looked into when I added all the songs with Future on them... to find most of it was this year. 
 
-<img src="images/spotify_project/future_breakdown.png?raw=true" width="1000" class="zoom"/>
+<div class="overlay">
+  <img src="images/spotify_project/future_breakdown.png?raw=true" width="1000" class="zoom"/>
+</div>
 
 Bingo! This year, Future became my top artist because 'We Don't Trust You' and 'We Still Don't Trust You,' collaborations with Metro Boomin and Future, were released. My husband and I had those albums on repeat, leading me to add many Future songs and collaborations to my playlists.
 
 ### 2. This summer is a BRAT summer for me - but historically was that always the case across my entire listening history?
 Looks like spring is BRAT green! Each season is quite different, winter seemingly being all over the place since Disney, Britney Spears and BTS are all on there! 
 
-<img src="images/spotify_project/top_10_seasonal.png?raw=true" width="1000" class="zoom"/>
+<div class="overlay">
+  <img src="images/spotify_project/top_10_seasonal.png?raw=true" width="1000" class="zoom"/>
+</div>
 
 ### 3. I chose to look at add number of songs over the years (by month and season) to see when I most actively added music to playlists
 
