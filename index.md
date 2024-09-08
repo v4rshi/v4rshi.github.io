@@ -4,7 +4,7 @@
 
 ## Data Analytics Projects 
 
-[Spotify Seasonality Analysis EDA](/seasons_eda_copy.md)
+[Spotify Seasonality Analysis EDA](/seasons_eda.md)
 
 <img src="images/spotify_project/spotify_eda_thumbnail.png?raw=true" width="600"/>
 
