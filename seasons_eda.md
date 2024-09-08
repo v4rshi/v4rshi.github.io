@@ -1,94 +1,3 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .container {
-            position: relative;
-            display: inline-block;
-        }
-
-        .zoom {
-            cursor: pointer;
-            display: block;
-            transition: transform 0.5s ease;
-        }
-
-        .zoom-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            display: none;
-            z-index: 10;
-        }
-
-        .zoom-overlay img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            cursor: default;
-            max-width: none;
-        }
-
-        .zoom:hover::after {
-            content: "Click to Zoom";
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 14px;
-            pointer-events: none;
-        }
-
-        .zoom.zoomed {
-            transform: scale(2.5);
-            transition: transform 0.5s ease;
-        }
-
-        .zoomed-overlay {
-            display: block;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="zoom-overlay" id="overlay">
-            <img id="zoomedImg" src="your-image-url.jpg" alt="Zoomed Image">
-        </div>
-        <img src="your-image-url.jpg" alt="Thumbnail Image" class="zoom" id="thumbnail">
-    </div>
-
-    <script>
-        const thumbnail = document.getElementById('thumbnail');
-        const overlay = document.getElementById('overlay');
-        const zoomedImg = document.getElementById('zoomedImg');
-
-        thumbnail.addEventListener('click', () => {
-            overlay.style.display = 'block';
-            zoomedImg.src = thumbnail.src; // Set zoomed image src
-            thumbnail.classList.add('zoomed');
-            document.body.style.overflow = 'hidden'; // Prevent scrolling
-        });
-
-        overlay.addEventListener('click', () => {
-            overlay.style.display = 'none';
-            thumbnail.classList.remove('zoomed');
-            document.body.style.overflow = ''; // Allow scrolling
-        });
-    </script>
-</body>
-</html>
-
 ## **Soundtrack of Seasons**: Unraveling My Spotify Saga Over The Last 9 Years
 
 #### Click here to see the Jupyter Notebook for [this EDA](https://github.com/v4rshi/v4rshi.github.io/blob/master/spotify_project_notebooks/seasons_eda.ipynb)!
@@ -114,14 +23,14 @@ By examining these data points, I hope to uncover insights into how my music cho
 ---
 
 
-<!-- 
+<!-- -->
 <style>
   .zoom:hover {
-    transform: scale(3);
+    transform: scale(2.5);
     transition: transform 0.5s ease;
   }
 </style>
--->
+
 
 ## Findings and Visualizations: 
 ### NOTE: Hover over all graphs to see a bigger version of them! 
