@@ -1,69 +1,27 @@
 ## **Soundtrack of Seasons**: Unraveling My Spotify Saga Over The Last 9 Years
 
 <style>
-  .zoom-container {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-  }
+/* CSS styles for image zoom effect */
+.zoom {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
 
-  .zoom-container::after {
-    content: "Click to Zoom";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
+.zoom.zoomed {
+  transform: scale(1.5);
+}
 
-  .zoom-container:hover::after {
-    opacity: 1;
-  }
-
-  .zoom {
-    transition: transform 0.3s ease;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .zoom.zoomed {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(2);
-    z-index: 1000;
-    max-width: 90vw;
-    max-height: 90vh;
-  }
-
-  .overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 999;
-  }
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
 </style>
-
-<div class="overlay" onclick="toggleZoom()"></div>
-
-<script>
-  document.querySelectorAll('.zoom-container').forEach(item => {
-    item.addEventListener('click', function () {
-      const img = item.querySelector('.zoom');
-      img.classList.toggle('zoomed');
-      document.querySelector('.overlay').style.display = img.classList.contains('zoomed') ? 'block' : 'none';
-    });
-  });
-</script>
 
 #### Click here to see the Jupyter Notebook for [this EDA](https://github.com/v4rshi/v4rshi.github.io/blob/master/spotify_project_notebooks/seasons_eda.ipynb)!
 --- 
@@ -330,4 +288,29 @@ These applications have significant potential benefits, but they also come with 
 Thanks for taking the time to go through it all, and let me know your thoughts or feedback! 
 
 --- 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const images = document.querySelectorAll('.zoom');
+  const overlay = document.createElement('div');
+  overlay.className = 'overlay';
+  document.body.appendChild(overlay);
 
+  images.forEach(image => {
+    image.addEventListener('click', function() {
+      if (this.classList.contains('zoomed')) {
+        this.classList.remove('zoomed');
+        overlay.style.display = 'none';
+      } else {
+        this.classList.add('zoomed');
+        overlay.style.display = 'block';
+      }
+    });
+  });
+
+  overlay.addEventListener('click', function() {
+    const zoomedImages = document.querySelectorAll('.zoom.zoomed');
+    zoomedImages.forEach(image => image.classList.remove('zoomed'));
+    this.style.display = 'none';
+  });
+});
+</script>
