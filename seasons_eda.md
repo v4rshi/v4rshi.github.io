@@ -6,19 +6,20 @@
 
 **Data**: My dataset spans from April 2016 to August 2024. Each entry contains rich metadata including artist, track, addition date, and genre. It also includes an attribute called 'Valence', which captures the sentiment of a song. Tracks with high valence sound more positive (happy, cheerful, euphoric), while tracks with low valence sound more negative (sad, depressed, angry). Read more about it [here](https://community.spotify.com/t5/Spotify-for-Developers/Valence-as-a-measure-of-happiness/td-p/4385221). 
 
-**Motivation & Hypothesis**: This dataset captures a transformative period in my life. From relocating from Dubai to Indiana for college, navigating the global pandemic (and graduate school in lockdown), experiencing personal losses, moving to San Francisco, starting my career, meeting my now husband and getting married, and transitioning between jobs. Throughout these experiences, Spotify remained a constant companion. (Also fun fact, my husband and I bonded over Spotify when we first started talking too!)
+**Motivation & Hypothesis**: This dataset spans a transformative decade of my life, from college in Indiana to married life in San Francisco (and a deadly pandemic in the middle), with Spotify as my constant companion through it all. (Fun Fact: my husband and I even bonded over a Spotify '30 Songs for 30 Days' playlist challenge when we first met!)
 
-I've observed that my playlists often serve as a form of musical journaling, reflecting my emotional state and circumstances. This project aims to analyze the evolution of my musical preferences over time and explore potential correlations between playlist characteristics (content, length, addition frequency) and my emotional state at the time. Valence is a cool attribute, but I think I want more nuance than a number - I want a clearly defined set of emotions associated with my musical history. 
+My playlists are like musical journals, reflecting my emotions and life events. This project explores how my taste evolved and how playlist traits might correlate with my emotional state. While Spotify's "valence" is cool, I'm aiming for a more nuanced emotional map of my musical journey.
 
 Key focus areas for this project include: 
 
-1. Temporal analysis of musical taste to confirm if the data reveals what I think know (or do not know) about my musical taste 
-2. Seasonal patterns in playlist composition, particularly relative to seasons and whatever weather changes they bring
-3. Sentiment analysis of song lyrics using LLM's, with a specific focus on the period of July 2023 to now (coinciding with my period of unemployment)
+1. Analyze musical taste evolution over time
+2. Examine seasonal patterns in playlist composition
+3. Perform sentiment analysis using LLM's on song lyrics, focusing on my unemployment period (July 2023-present)
 
-By examining these data points, I hope to uncover insights into how my music choices have mirrored my life experiences and emotional states during this pivotal time. 
+By doing this analysis, I hope to reveal how my music choices reflect my life experiences and emotions. 
 
-##### **It is important to note that this data did not include how often I listened to specific songs, just when I added them to a given playlist. This data would be great for a more in-depth analysis of my listening patterns.**
+##### **Note: Data shows song additions, not play frequency. Play data would enable more in depth analysis of listening patterns.**
+
 
 ---
 
@@ -34,9 +35,9 @@ By examining these data points, I hope to uncover insights into how my music cho
 
 
 ## Findings and Visualizations: 
-### NOTE: Click On any graph to see a bigger version of them! 
+### NOTE: Click on any graph to zoom in! 
 
-### 1. The first thing I looked at was who my most listened to artists were.
+### 1. The first thing I looked at was who my most listened-to artists were.
 I was fully expecting my top artist to be Charli XCX but in a rather surprising turn of events, its Future??? I did not see this in my Future, that is for sure.
 
 <img src="images/spotify_project/top_20_artists.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
@@ -260,7 +261,7 @@ These applications have significant potential benefits, but they also come with 
 
 ### With this, I conclude the first phase of my project and hope to delve into the more specific sentiment analysis on song lyrics next! 
 
-Thanks for taking the time to go through it all, and let me know your thoughts or feedback! 
+Thanks for taking the time to go through it all, and let me know your thoughts or feedback by emailing me at v4rshi.srini@gmail.com! 
 
 --- 
 <script>
