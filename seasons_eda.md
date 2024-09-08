@@ -1,27 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .zoom {
+            cursor: pointer;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .zoom-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            z-index: 10;
+        }
+
+        .zoom-overlay img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: default;
+            max-width: none;
+        }
+
+        .zoom:hover::after {
+            content: "Click to Zoom";
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            pointer-events: none;
+        }
+
+        .zoom.zoomed {
+            transform: scale(2.5);
+            transition: transform 0.5s ease;
+        }
+
+        .zoomed-overlay {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="zoom-overlay" id="overlay">
+            <img id="zoomedImg" src="your-image-url.jpg" alt="Zoomed Image">
+        </div>
+        <img src="your-image-url.jpg" alt="Thumbnail Image" class="zoom" id="thumbnail">
+    </div>
+
+    <script>
+        const thumbnail = document.getElementById('thumbnail');
+        const overlay = document.getElementById('overlay');
+        const zoomedImg = document.getElementById('zoomedImg');
+
+        thumbnail.addEventListener('click', () => {
+            overlay.style.display = 'block';
+            zoomedImg.src = thumbnail.src; // Set zoomed image src
+            thumbnail.classList.add('zoomed');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        });
+
+        overlay.addEventListener('click', () => {
+            overlay.style.display = 'none';
+            thumbnail.classList.remove('zoomed');
+            document.body.style.overflow = ''; // Allow scrolling
+        });
+    </script>
+</body>
+</html>
+
 ## **Soundtrack of Seasons**: Unraveling My Spotify Saga Over The Last 9 Years
-
-<style>
-/* CSS styles for image zoom effect */
-.zoom {
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.zoom.zoomed {
-  transform: scale(2);
-}
-
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 1000;
-}
-</style>
 
 #### Click here to see the Jupyter Notebook for [this EDA](https://github.com/v4rshi/v4rshi.github.io/blob/master/spotify_project_notebooks/seasons_eda.ipynb)!
 --- 
@@ -285,29 +353,3 @@ These applications have significant potential benefits, but they also come with 
 Thanks for taking the time to go through it all, and let me know your thoughts or feedback! 
 
 --- 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const images = document.querySelectorAll('.zoom');
-  const overlay = document.createElement('div');
-  overlay.className = 'overlay';
-  document.body.appendChild(overlay);
-
-  images.forEach(image => {
-    image.addEventListener('click', function() {
-      if (this.classList.contains('zoomed')) {
-        this.classList.remove('zoomed');
-        overlay.style.display = 'none';
-      } else {
-        this.classList.add('zoomed');
-        overlay.style.display = 'block';
-      }
-    });
-  });
-
-  overlay.addEventListener('click', function() {
-    const zoomedImages = document.querySelectorAll('.zoom.zoomed');
-    zoomedImages.forEach(image => image.classList.remove('zoomed'));
-    this.style.display = 'none';
-  });
-});
-</script>
