@@ -22,16 +22,6 @@ By examining these data points, I hope to uncover insights into how my music cho
 
 ---
 
-
-<!-- 
-<style>
-  .zoom:hover {
-    transform: scale(2.5);
-    transition: transform 0.5s ease;
-  }
-</style>
--->
-
 <style>
 .zoom {
   transition: transform 0.5s ease;
@@ -44,7 +34,7 @@ By examining these data points, I hope to uncover insights into how my music cho
 
 
 ## Findings and Visualizations: 
-### NOTE: Hover over all graphs to see a bigger version of them! 
+### NOTE: Click On any graph to see a bigger version of them! 
 
 ### 1. The first thing I looked at was who my most listened to artists were.
 I was fully expecting my top artist to be Charli XCX but in a rather surprising turn of events, its Future??? I did not see this in my Future, that is for sure.
