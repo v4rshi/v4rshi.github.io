@@ -137,7 +137,7 @@ This chart displays the popularity of various music genres across seasons:
 - All genres exhibit seasonal popularity shifts, including less popular ones like UK dance and R&B.
 
 I also did this by top 5 Genres over the years separated by season: 
-<iframe src="images/spotify_project/top5genre_chart.html" width="500" height="300"></iframe>
+<iframe src="images/spotify_project/top5genre_chart.html" width="800" height="500"></iframe>
 Key points:
 
 - Genres vary widely and shift seasonally and yearly.
