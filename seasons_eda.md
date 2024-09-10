@@ -92,9 +92,9 @@ I focused on comparing 2019-2020 and 2023-2024 to see how they differed. My rati
 
 I broke down each year into seasons to identify any trends, but to avoid cluttering this page with too many graphs, I'll summarize my findings below:
 
-Between 2019 and 2020, my music preferences shifted towards more energetic and positive songs. Despite 2020’s pandemic hardships, it was also the year I was unexpectedly admitted to graduate school. This personal triumph might explain my shift towards upbeat music, highlighting how individual experiences can contrast with broader global events.
+Between **2019 and 2020**, my music preferences shifted towards more energetic and positive songs. Despite 2020’s pandemic hardships, it was also the year I was unexpectedly admitted to graduate school. This personal triumph might explain my shift towards upbeat music, highlighting how individual experiences can contrast with broader global events.
 
-From 2023 to 2024, my music preferences dropped in all attributes except tempo. This aligns with the challenges of 2024, especially navigating a tough job market. The decline in most attributes likely mirrors my emotional state, while the higher tempo suggests a need for motivation during stressful times. My playlists reflect my professional struggles and emotions.
+From **2023 to 2024**, my music preferences dropped in all attributes except tempo. This aligns with the challenges of 2024, especially navigating a tough job market. The decline in most attributes likely mirrors my emotional state, while the higher tempo suggests a need for motivation during stressful times. My playlists reflect my professional struggles and emotions.
 
 ---
 ### 8. I couldn’t overlook analyzing the Valence of songs, even though I plan to conduct my own sentiment analysis in the next step of this project.
@@ -106,10 +106,10 @@ Initially, I plotted Valence over time and included a monthly moving average, bu
 Instead, I plotted a graph to analyze and visualize the average monthly valence of my Spotify playlist data over time, with annotations for significant life events.
 <img src="images/spotify_project/valence_life_event.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 Observations:
-- Fluctuations in Valence: Sharp drops and spikes in Valence often align with significant life events.
-- Notable Drops: Dips in Valence are seen around events like "A Terrible Birthday," "Huge Fight with Someone Close," and "Loved One Died," indicating negative experiences.
-- Notable Spikes: Increases in Valence occur around events like "Reconciled with a Friend" and "Got Married," suggesting positive experiences.
-- General Trend: Valence remains generally stable but fluctuates with life events.
+- **Fluctuations in Valence**: Sharp drops and spikes in Valence often align with significant life events.
+- **Notable Drop**s: Dips in Valence are seen around events like "A Terrible Birthday," "Huge Fight with Someone Close," and "Loved One Died," indicating negative experiences.
+- **Notable Spikes**: Increases in Valence occur around events like "Reconciled with a Friend" and "Got Married," suggesting positive experiences.
+- **General Trend**: Valence remains generally stable but fluctuates with life events.
   
 These patterns suggest that my music preferences reflect my emotional state. This insight encourages a deeper exploration using sentiment analysis to understand my emotions during different periods.
 
@@ -123,54 +123,48 @@ I then tried to visualize this differently with a stacked bar chart and over the
 <img src="images/spotify_project/top_genres_by_season_barplot.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 This chart displays the popularity of various music genres across seasons:
 
-- Pop is the most popular genre overall, followed by EDM and pop dance.
-- Many genres, especially pop and EDM, are more popular in winter.
-- Some genres like rap and hip hop show stronger popularity in summer.
-- There's a wide range of genres represented, from mainstream to niche.
-- Electronic and dance-oriented genres dominate the top rankings.
-- All genres show some seasonal variation in popularity.
-- Even less popular genres maintain a presence across all seasons, like uk dance and r&b.
+- Pop leads in overall popularity, followed by EDM and pop dance.
+- Pop and EDM are particularly popular in winter.
+- Rap and hip hop gain traction in summer.
+- Genres range from mainstream to niche, with electronic and dance genres topping the list.
+- All genres exhibit seasonal popularity shifts, including less popular ones like UK dance and R&B.
 
 I also did this by top 5 Genres over the years separated by season: 
 <img src="images/spotify_project/genres_years_stacked.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 Key points:
 
-- Wide variety of genres represented
-- Genre popularity fluctuates seasonally and yearly
-- Some genres (e.g., pop, rap) appear consistently
-- Summer 2017 shows highest genre diversity
-- Recent years (2022-2024) have more stable genre distribution
-- New genres emerge over time
-- Data shown as percentages for easy comparison
-- Covers 8 years, good for long-term trend analysis
+- Genres vary widely and shift seasonally and yearly.
+- Pop and rap appear consistently.
+- Summer 2017 had the most diverse genre representation.
+- Recent years (2022-2024) show more stable genre distribution.
+- New genres emerge over time.
 
-### 10. I wondered, do I like current releases or nostalgic music more, and does this vary by season?
-The boxplot graph below shows how my music listening habits change throughout the year. It compares the age of songs I listen to (how long ago they were released compared to when it was added to a playlist) across different seasons. The insights were very interesting. 
+### 10. I explored whether I prefer current or nostalgic music and if this changes by season. The boxplot below shows how the age of songs I listen to varies across seasons, revealing some interesting patterns.
 
-A primer on what a boxplot even is: it is a simple visual tool that shows the spread and symmetry of a dataset by dividing it into quartiles and highlighting key statistics like the median and potential outliers. It uses a box to represent the middle 50% of the data and lines extending from the box to show the range, making it easy to see how data is distributed. Feel free to also refer to [this guide](https://www.simplypsychology.org/boxplots.html) on how to interpret boxplots.
+A boxplot visually represents data spread and symmetry by dividing it into quartiles, showing the median and potential outliers. For more on interpreting boxplots, see [this guide](https://www.simplypsychology.org/boxplots.html).
 
 <img src="images/spotify_project/currentn_v_nostalgic_boxplot.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
-Key findings:
+**Key findings:**
 
-- Overall trend: I typically listen to songs that are up to 10 years old, regardless of the season.
-- Summer nostalgia: During summer, I tend to listen to the oldest songs compared to other seasons. This might be because summer free time makes me nostalgic for past experiences.
-- Autumn freshness: In autumn, I listen to the newest music or songs I've most recently added to my playlists.
-- Winter and spring: These seasons fall in between summer and autumn in terms of how old the music I listen to is.
-- Occasional oldies: In all seasons, I sometimes listen to much older songs, going back 60-70 years.
-- Preference for older music: Across all seasons, I tend to listen to more older songs than newer ones, but this trend is strongest in summer and weakest in autumn.
+- **Overall:** I usually listen to songs up to 10 years old, no matter the season.
+- **Summer:** I dive into the oldest tracks, probably because summer nostalgia kicks in.
+- **Autumn:** I prefer the freshest tunes or the ones I've recently added to my playlists.
+- **Winter and Spring:** My music choices are a mix of summer's oldies and autumn's new hits.
+- **Occasional Oldies:** I throw in some tracks from 60-70 years ago every now and then.
+- **Older Music Preference:** I lean towards older songs year-round, especially in summer and least in autumn.
 
-This pattern suggests that my mood and the time of year influence my music choices, with summer bringing out my most nostalgic side and autumn inspiring me to explore newer tunes.
+In summary, my mood and the season shape my music preferences, with summer making me nostalgic and autumn getting me excited about new tunes.
 
-I also broke it down by year to try and see in greater detail if this trend of listening to nostalgic music held true: 
+I also looked at yearly trends to see if this nostalgic streak holds up over time:
 <img src="images/spotify_project/boxplot_years.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
-It is quite clear that the trend of listening to older music on average remains the same, with the exceptions of Spring 2023 and (part) of Winter 2024, where more songs were closer to the year of release than not, indicating a bias to newer releases.
+The trend of favoring older music remains consistent, except for Spring 2023 and part of Winter 2024, when I leaned towards newer releases.
 
 ### 11. I counted unique genres and did a [Pareto](https://www.cec.health.nsw.gov.au/CEC-Academy/quality-improvement-tools/pareto-charts#:~:text=The%20Pareto%20Chart%20is%20a,represented%20by%20the%20curved%20line.) analysis to see what genres of music make up most of my listening. 
 For those unfamiliar with what a Pareto (also known as the 80/20 rule) suggests 80% of effects come from 20% of causes, helping people prioritize efforts on the most impactful areas. Sometimes it may not even be 80/20, but that is the ratio most commonly used. 
 
- I am unclear on what to glean from this for now, but it was interesting to see that nearly 50% of my music falls into just 30 genres when there are 1412 distinct ones present! The graph below just shows the top 100 genres so you cannot see the Pareto shape/tail very clearly. I realized that if I wanted to do any clustering later on, I would have to delve into this deeper.  
+The fact that nearly 50% of my music falls into just 30 genres out of 1412 suggests a concentration of preference. Although the graph below shows only the top 100 genres, making the Pareto distribution less visible, this finding suggests a need for deeper exploration of the genres present in the dataset. I will hold off on this for now, but I can see this being interesting if I wanted to build a recommendation engine.  
 
 <img src="images/spotify_project/pareto_zoom.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
@@ -201,60 +195,60 @@ I know Spotify tracks the "Valence" of songs, but can I see what my overall mood
 
 ---
 
-### Applications of my analysis:
+### Applications of My Analysis:
 
-I can see this kind of work being useful in the mental health and wellness space. These were some ideas I had: 
+This work could greatly impact mental health and wellness through:
 
-1. **Identify Mood Patterns:** Correlate sentiment in song lyrics with periods of emotional change to understand how music reflects and influences mood.
-2. **Enhance Therapy:** Inform music therapy by tailoring music to specific emotional needs, helping with anxiety, depression, or stress.
-3. **Explore Seasonal Affective Disorder (SAD):** Examine seasonal patterns in music preferences to understand the impact of seasonal changes on mental health.
-4. **Seasonally Tailored Playlists**: Spotify could utilize this project to recommend playlists that are tailored to users each season, based on their historical listening data and the preferences of similar users.
-5. **Emotion-Based Playlists**: By analyzing a user’s description of their current mood, Spotify could create highly personalized playlists that go beyond the existing "Daylist" feature, providing a more accurate reflection of the user's emotions in real time.
+1. **Mood Patterns:** Correlate song lyrics with emotional changes to understand how music influences mood.
+2. **Enhanced Therapy:** Tailor music therapy to address anxiety, depression, or stress.
+3. **Seasonal Affective Disorder (SAD):** Investigate seasonal music preferences to explore their effect on mental health.
+4. **Seasonal Playlists:** Spotify could create playlists based on users’ seasonal listening patterns.
+5. **Emotion-Based Playlists:** Develop real-time playlists reflecting users’ current moods.
 
 ---
 
-Let's examine the ethical data implications for each of these ideas:
+**Ethical Considerations:**
 
-1. **Identify Mood Patterns:**
-   - Privacy concerns: Tracking users' emotional states over time could be considered invasive.
-   - Data security: Emotional data is sensitive and requires robust protection.
-   - Consent: Users should be fully informed about how their listening habits are being interpreted.
-   - Accuracy: There's a risk of misinterpreting correlations as causation.
+1. **Mood Patterns:**
+   - **Privacy:** Tracking emotional states can be intrusive.
+   - **Data Security:** Emotional data needs strong protection.
+   - **Consent:** Users must know how their data is used.
+   - **Accuracy:** Avoid misinterpreting correlations.
 
-2. **Enhance Therapy:**
-   - Medical ethics: Using AI-driven recommendations in therapy requires careful consideration and possibly regulation.
-   - Liability: Who is responsible if AI-recommended music negatively affects a patient?
-   - Confidentiality: Maintaining patient-therapist confidentiality while using third-party services.
-   - Informed consent: Patients must understand and agree to the use of AI in their treatment.
+2. **Enhanced Therapy:**
+   - **Medical Ethics:** Use of AI in therapy should be regulated.
+   - **Liability:** Address potential negative impacts of AI recommendations.
+   - **Confidentiality:** Maintain privacy between patient and therapist.
+   - **Consent:** Patients should agree to AI’s role in their treatment.
 
-3. **Explore Seasonal Affective Disorder (SAD):**
-   - Potential for misdiagnosis: Music preferences alone are not sufficient to diagnose mental health conditions.
-   - Data bias: Ensuring the dataset represents diverse populations and geographic locations.
-   - Cultural sensitivity: Accounting for cultural differences in music preferences and SAD prevalence.
+3. **SAD:**
+   - **Misdiagnosis:** Music preferences alone can’t diagnose mental health issues.
+   - **Data Bias:** Ensure data represents diverse populations.
+   - **Cultural Sensitivity:** Consider cultural differences in music preferences.
 
-4. **Seasonally Tailored Playlists:**
-   - User autonomy: Balancing personalization with user choice and discovery.
-   - Transparency: Clearly communicating how and why certain music is recommended.
-   - Data retention: Determining how long historical data should be kept and used.
-   - Opt-out options: Allowing users to decline this feature without losing core service functionality.
+4. **Seasonal Playlists:**
+   - **User Autonomy:** Balance personalization with user choice.
+   - **Transparency:** Clearly communicate recommendation methods.
+   - **Data Retention:** Decide how long to keep user data.
+   - **Opt-Out:** Allow users to decline without losing essential features.
 
 5. **Emotion-Based Playlists:**
-   - Emotional manipulation: Potential for influencing users' moods, which raises ethical questions.
-   - Data collection: Gathering real-time emotional data requires clear user consent and robust data protection.
-   - Accuracy and reliability: Ensuring the system can accurately interpret emotional states from user input.
-   - Potential for misuse: Safeguarding against exploitation of users' emotional vulnerabilities.
+   - **Emotional Manipulation:** Be cautious about influencing users’ moods.
+   - **Data Collection:** Securely gather real-time emotional data with consent.
+   - **Accuracy:** Ensure the system correctly interprets moods.
+   - **Misuse:** Prevent exploitation of users’ emotional states.
 
-General ethical considerations across all applications:
+**General Ethical Principles:**
 
-1. Data minimization: Collecting only necessary data to provide the service.
-2. Transparency: Clearly communicating to users how their data is being used.
-3. User control: Providing options for users to manage their data and preferences.
-4. Algorithmic bias: Ensuring the AI doesn't perpetuate or exacerbate existing biases.
-5. Accessibility: Making sure these features are available and beneficial to diverse user groups.
-6. Continuous ethical review: Regularly assessing the impact and implications of these applications.
-7. Collaboration with experts: Involving mental health professionals in the development and implementation of these features.
+1. **Data Minimization:** Collect only necessary information.
+2. **Transparency:** Clearly explain data use.
+3. **User Control:** Let users manage their data and preferences.
+4. **Algorithmic Bias:** Avoid reinforcing biases.
+5. **Accessibility:** Ensure features are inclusive.
+6. **Continuous Review:** Regularly evaluate ethical impacts.
+7. **Expert Collaboration:** Work with mental health professionals to guide development.
 
-These applications have significant potential benefits, but they also come with substantial ethical responsibilities. Careful consideration, ongoing evaluation, and robust safeguards are necessary to ensure that the technology is used in a way that truly benefits users' mental health and well-being while respecting their privacy and autonomy.
+These applications hold promise but require careful ethical consideration to balance benefits with privacy and well-being.
 
 ---
 
