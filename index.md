@@ -4,7 +4,7 @@
 
 ## Data Analytics Projects 
 
-### [Analyzing 9 years of Spotify Data](/seasons_eda.md)
+### [Analyzing 9 years of Spotify Data Through the Seasons](/seasons_eda.md)
 
 <a href="/seasons_eda.md">
   <img src="images/spotify_project/spotify_eda_thumbnail.png?raw=true" width="300" alt="Spotify Seasonality Analysis EDA"/>
