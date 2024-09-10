@@ -38,7 +38,7 @@ By doing this analysis, I hope to reveal how my music choices reflect my life ex
 ### NOTE: Click on any graph to zoom in! 
 
 ### 1. The first thing I looked at was who my most listened-to artists were.
-I was fully expecting my top artist to be Charli XCX but in a rather surprising turn of events, its Future??? I did not see this in my Future, that is for sure.
+I was fully expecting my top artist to be Charli XCX but it is actually... Future??? I did not see this in my Future.
 
 <img src="images/spotify_project/top_20_artists.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
@@ -46,41 +46,41 @@ To dig into this deeper, I looked into when I added all the songs with Future on
 
 <img src="images/spotify_project/future_breakdown.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
-Bingo! This year, Future became my top artist because 'We Don't Trust You' and 'We Still Don't Trust You,' collaborations with Metro Boomin and Future, were released. My husband and I had those albums on repeat, leading me to add many Future songs and collaborations to my playlists.
+Bingo! This year, Future became my top artist because 'We Don't Trust You' and 'We Still Don't Trust You,' collaborations with Metro Boomin and Future, were released. I had those albums on repeat, leading me to add many Future songs and collaborations to my playlists.
 
-### 2. This summer is a [BRAT](https://www.cnn.com/2024/07/23/style/brat-summer-green-explained/index.html) summer for me - but historically was that always the case across my entire listening history? 
-Looks like spring is BRAT green! Each season is quite different, winter seemingly being all over the place since Disney, Britney Spears and BTS are all on there! 
+### 2. This summer was a [BRAT](https://www.cnn.com/2024/07/23/style/brat-summer-green-explained/index.html) summer for me—but who were my most listened-to artists across all seasons in my listening history? *(P.S. Click "BRAT" if you're unfamiliar with the term.)*
+It turns out spring is "BRAT green" for Charli XCX! Each season has its own vibe: winter is a bit all over the place, featuring Disney, Britney Spears, and BTS.
 
 <img src="images/spotify_project/top_10_seasonal.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
-### 3. I chose to look at add number of songs over the years (by month and season) to see when I most actively added music to playlists
+### 3.I analyzed the number of songs I added to playlists over the years, broken down by month and season, to identify when I was most actively curating my music
 
-I wasn’t surprised to see the erratic nature of my playlist curation until 2022, when I started my first full-time job. With work consuming most of my time, I wasn't curating my music as intentionally. The spike in August 2024 can be attributed to using music as a coping mechanism during a particularly stressful period.
+I wasn’t surprised to see the erratic nature of my playlist curation until 2022, when I began my first full-time job. With work taking up most of my time, my music curation became less intentional. The spike in August 2024 reflects a period when I relied on music as a coping mechanism during a particularly stressful time.
 
 <img src="images/spotify_project/monthly_adds_by_season.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
 ### 4. I tried to visualize this differently with number of songs added by season over the years.
 
-It is clear that the pandemic in 2020 and my time being unemployed in 2024 are when I am most active. This coincides with when I was going through a lot in my personal life, too. 
+It's clear I was most active during the pandemic in 2020 and while unemployed in 2024—both times when I was dealing with a lot in my personal life.
 
 <img src="images/spotify_project/monthly_song_adds_by_season_linechart.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
 
-### 5. I wanted to then look at song-adding volume over the seasons. I tried to visualize this differently where I normalized my data by dividing each season by no. days in a season and then dividing that by the number of years in my dataset (9 Years! Almost a third of my life!). 
+### 5. I then explored the volume of songs added across seasons. To visualize this, I normalized the data by dividing the number of songs added each season by the number of days in that season and then by the 9 years in my dataset (almost a third of my life!).
 
-This makes sense to me because I was generally most active in the winter. During college breaks and extreme weather, when I spent more time indoors, I relied on music more to pass the time.
+This approach makes sense to me since I was most active in the winter. During college breaks and extreme weather, I spent more time indoors and relied on music to pass the time.
 
 <img src="images/spotify_project/normalized_graph_2.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
-### 6. I tried visualizing seasonal distributions for various other music traits, like Danceability, Valence, Energy and Tempo, to get a general sense of what kind of music I liked in different seasons. 
+### 6. I visualized the seasonal distributions of various music traits, such as Danceability, Valence, Energy, and Tempo, to understand how my music preferences shift throughout the year.
 
-This visual shows that my taste remains consistent across seasons, favoring songs that are energetic and danceable. Ya girl like music she can have a good time to! 
+The visual reveals that my taste remains consistent across seasons, with a preference for energetic and danceable songs. Clearly, I love music that sets the mood for a good time!
 
 <img src="images/spotify_project/other_trait_distribution.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
-### 7. I wanted to then look at the distributions by season and year it was added to a playlist.
+### 7. Next, I analyzed the distributions of songs by season and the year they were added to playlists.
 
-I chose to pay the closest attention to 2019-2020, 2023-2024 and see how they compared to one another. The rationale is as follows:
+I focused on comparing 2019-2020 and 2023-2024 to see how they differed. My rationale for this comparison is as follows::
 
 - 2020 was the year of the pandemic, and 2019 is a baseline to compare pre and post COVID-19 music preferences
   <img src="images/spotify_project/attributes19.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
@@ -90,32 +90,31 @@ I chose to pay the closest attention to 2019-2020, 2023-2024 and see how they co
   <img src="images/spotify_project/attributes23.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
   <img src="images/spotify_project/attributes24.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
-I did also break each year down into seasons to see any seasonal trends, but to not clutter this page with too many graphs I will summarize my observations below:
+I broke down each year into seasons to identify any trends, but to avoid cluttering this page with too many graphs, I'll summarize my findings below:
 
-The shift in my music preferences between **2019 and 2020** shows a surprising trend towards, on average, more energetic and positive songs. While 2020 is often associated with the hardships of the COVID-19 pandemic, it was also the year I was unexpectedly admitted to graduate school. This personal triumph, especially significant given the closed borders and uncertainty, may explain my gravitation towards upbeat music. My experience highlights how individual circumstances can contrast with broader narratives during global events. 
+Between 2019 and 2020, my music preferences shifted towards more energetic and positive songs. Despite 2020’s pandemic hardships, it was also the year I was unexpectedly admitted to graduate school. This personal triumph might explain my shift towards upbeat music, highlighting how individual experiences can contrast with broader global events.
 
-Between **2023 and 2024**, my music preferences show a drop, on average, in all attributes except tempo. This shift aligns with the challenges I'm facing in 2024, particularly navigating a difficult job market. The decrease in most musical attributes likely reflects my current emotional state, while the increased tempo might indicate a need for motivation or energy during these stressful times. My playlist has essentially become a reflection of my professional struggles and associated emotions. 
-
-Note to self: Either make these playlists private or start a new career as the world's most reluctant psychic. "For just $9.99, I'll predict your future by analyzing your 'Most Played' list!" Hmm, maybe I'm onto something here...
+From 2023 to 2024, my music preferences dropped in all attributes except tempo. This aligns with the challenges of 2024, especially navigating a tough job market. The decline in most attributes likely mirrors my emotional state, while the higher tempo suggests a need for motivation during stressful times. My playlists reflect my professional struggles and emotions.
 
 ---
-### 8. I would be remiss to not look into Valence of songs, even though I want to do my own version of sentiment analysis in the next step of this project. 
+### 8. I couldn’t overlook analyzing the Valence of songs, even though I plan to conduct my own sentiment analysis in the next step of this project.
 
-Initially, I plotted valence over time as well as a monthly moving average to find that this graph was messy and impossible to interpret. 
+Initially, I plotted Valence over time and included a monthly moving average, but the resulting graph was too messy and hard to interpret.
+##### Note, the gap in the graph is around the time I briefly used Apple Music - a time we will not speak of again... hehe. 
 <img src="images/spotify_project/valence_messy.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
 Instead, I plotted a graph to analyze and visualize the average monthly valence of my Spotify playlist data over time, with annotations for significant life events.
 <img src="images/spotify_project/valence_life_event.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 Observations:
-- Fluctuations in Valence: There are several sharp drops and spikes in valence, often coinciding with life events.
-- Notable Drops: Significant dips in valence appear around "A Terrible Birthday," "Huge Fight with Someone Close," and "Loved One Died," suggesting these were negative experiences.
-- Notable Spikes: Increases in valence are observed around events like "Reconciled with a Friend" and "Got Married," indicating these were positive experiences.
-- General Trend: The valence seems to be somewhat stable but with recurrent fluctuations corresponding to life events.
-- 
-My music preferences clearly mirror my emotional state, suggesting a detailed sentiment analysis of song lyrics could yield fascinating insights into my specific emotions during different periods. This validation encourages a deeper exploration using sentiment analysis techniques!
+- Fluctuations in Valence: Sharp drops and spikes in Valence often align with significant life events.
+- Notable Drops: Dips in Valence are seen around events like "A Terrible Birthday," "Huge Fight with Someone Close," and "Loved One Died," indicating negative experiences.
+- Notable Spikes: Increases in Valence occur around events like "Reconciled with a Friend" and "Got Married," suggesting positive experiences.
+- General Trend: Valence remains generally stable but fluctuates with life events.
+  
+These patterns suggest that my music preferences reflect my emotional state. This insight encourages a deeper exploration using sentiment analysis to understand my emotions during different periods.
 
-### 9. I thought it would be interesting to see what my top 10 genres were by season and if they varied at all.
- In short, barely. I still am basic as hell and listen to a lot of pop, however the genres following that moved around but were only edm, hip hop, rap and/or some pop variation. What was surprising to me was the random appearance of 'Modern Rock' in the Wintertime. Wintertime House of Blues, I guess?
+### 9. I thought it would be interesting to see how my top 10 genres varied by season. In short, not much changed. 
+I was surprised to find 'Modern Rock' appearing in my winter playlists. It turns out that this genre's presence in winter was largely due to additions from 2016, which seems like an anomaly in my usual listening patterns.
 
 <img src="images/spotify_project/top_10_genres_by_season.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
