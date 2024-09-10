@@ -117,12 +117,17 @@ These patterns suggest that my music preferences reflect my emotional state. Thi
 I was surprised to find 'Modern Rock' appearing in my winter playlists. It turns out that this genre's presence in winter was largely due to additions from 2016, which seems like an anomaly in my usual listening patterns.
 
 <!---img src="images/spotify_project/top_10_genres_by_season.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/-->
-<iframe src="images/spotify_project/top_10_genres_by_season.html" width="600" height="400"></iframe>
+<iframe src="images/spotify_project/top_10_genres_by_season.html" width="500" height="300"></iframe>
 
+I was then curious to see which years' wintertime this rock music phase happened in
+
+<iframe src="images/spotify_project/rock_winter.html" width="500" height="300"></iframe>
+
+It is pretty apparent that as time passed, this genre no longer appeared in my playlists, appearing as little as 1 time in 2023 (talk about ROCK bottom :P)
 
 I then tried to visualize this differently with a stacked bar chart and over the top 20 genres overall
 
-<img src="images/spotify_project/top_genres_by_season_barplot.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
+<!img src="images/spotify_project/top_genres_by_season_barplot.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 This chart displays the popularity of various music genres across seasons:
 
 - Pop leads in overall popularity, followed by EDM and pop dance.
@@ -132,7 +137,7 @@ This chart displays the popularity of various music genres across seasons:
 - All genres exhibit seasonal popularity shifts, including less popular ones like UK dance and R&B.
 
 I also did this by top 5 Genres over the years separated by season: 
-<img src="images/spotify_project/genres_years_stacked.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
+<iframe src="images/spotify_project/top5genre_chart.html" width="500" height="300"></iframe>
 Key points:
 
 - Genres vary widely and shift seasonally and yearly.
@@ -166,11 +171,72 @@ The trend of favoring older music remains consistent, except for Spring 2023 and
 ### 11. I counted unique genres and did a [Pareto](https://www.cec.health.nsw.gov.au/CEC-Academy/quality-improvement-tools/pareto-charts#:~:text=The%20Pareto%20Chart%20is%20a,represented%20by%20the%20curved%20line.) analysis to see what genres of music make up most of my listening. 
 For those unfamiliar with what a Pareto (also known as the 80/20 rule) suggests 80% of effects come from 20% of causes, helping people prioritize efforts on the most impactful areas. Sometimes it may not even be 80/20, but that is the ratio most commonly used. 
 
-The fact that nearly 50% of my music falls into just 30 genres out of 1412 suggests a concentration of preference. Although the graph below shows only the top 100 genres, making the Pareto distribution less visible, this finding suggests a need for deeper exploration of the genres present in the dataset. I will hold off on this for now, but I can see this being interesting if I wanted to build a recommendation engine.  
+The fact that nearly 50% of my music falls into just 30 genres out of 1412 suggests a concentration of preference. Although the graph below shows only the top 100 genres, making the Pareto distribution less visible, this finding suggests a need for deeper exploration of the genres present in the dataset. I will hold off on this for now, but I can see this being interesting if I wanted to eventually build a recommendation engine.  
 
 <img src="images/spotify_project/pareto_zoom.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
-### 12. I also wanted to look at total track duration across seasons to see when I listened to longer playlists / more music by season but also by year.
+### 12. I created t-SNE Visualization and Analysis of Music Clustering Based on Audio Features
+For those unfamiliar, t-SNE is a technique that simplifies complex, high-dimensional data into a 2D map to reveal patterns, while KMeans groups similar items into clusters (and click here to learn more about both). In this analysis, t-SNE helps us visualize the data, and KMeans identifies clusters of songs based on their audio features. Essentially, I’m using these methods to group songs that share similar characteristics from the dataset. It’s an intriguing way to uncover patterns in music! I used the elbow method (click here to know more about that) to figure out how many clusters was best (turns out to be 4) and this was the outcome:
+
+<iframe src="images/spotify_project/tsne_clustering.html" width="500" height="300"></iframe>
+
+This graph shows a t-SNE (t-Distributed Stochastic Neighbor Embedding) visualization of song clustering based on audio features. The t-SNE algorithm has reduced the high-dimensional audio feature space to a 2D representation, allowing us to visualize patterns and clusters in the data. Key takeaways are:
+
+This graph shows a t-SNE (t-Distributed Stochastic Neighbor Embedding) visualization of song clustering based on audio features. The t-SNE algorithm has reduced the high-dimensional audio feature space to a 2D representation, allowing us to visualize patterns and clusters in the data. Let's analyze this in conjunction with the centroids provided:
+
+1. Number of Clusters:
+   The graph and centroid table both indicate 4 distinct clusters (0, 1, 2, 3), represented by different colors in the plot.
+
+2. Cluster Distribution:
+   - The clusters appear to have some overlap, which is common in music data due to similarities across genres.
+   - There are some clear areas of concentration for each cluster, suggesting that the algorithm has identified meaningful groupings.
+
+3. Cluster Characteristics (based on centroids):
+   - Cluster 0 (Purple): Mid-range energy, high danceability, high speechiness. 
+   - Cluster 1 (Orange): Highest energy and valence, low speechiness. Likely upbeat, danceable pop.
+   - Cluster 2 (Blue): Lowest energy, highest acousticness and instrumentalness. 
+   - Cluster 3 (Pink): Second-highest energy, longest duration, lowest popularity. 
+
+4. Spatial Distribution:
+   - The clusters are not perfectly separated, indicating some songs share characteristics across clusters.
+   - There's a notable spread in each cluster, showing variability within genres or styles.
+
+5. Feature Importance:
+   - Energy seems to be a key differentiator, with clear separation between high-energy (Cluster 1) and low-energy (Cluster 2) songs.
+   - Acousticness and instrumentalness appear to strongly influence Cluster 2's separation.
+
+6. Popularity:
+   - Interestingly, the most popular cluster on average (Cluster 1) is not the most prominent in the visualization, suggesting popularity isn't the primary factor in this clustering.
+
+7. Tempo and Duration:
+   - While not directly visible in the t-SNE plot, the centroids show variations in tempo and duration across clusters, contributing to the overall differentiation.
+
+8. Outliers:
+   - There are some points scattered away from the main cluster concentrations, possibly representing unique or genre-blending tracks.
+
+In conclusion, this t-SNE visualization effectively represents the complex audio feature space in a 2D format, revealing meaningful clusters that likely correspond to different musical styles or genres. The overlap between clusters reflects the nuanced nature of music categorization, where songs can share characteristics across traditional genre boundaries.
+
+I also looked at the seasonal distribution of clusters for a kick
+
+<iframe src="images/spotify_project/clustering_distribution_by_season.html" width="500" height="300"></iframe>
+
+These are my key takeaways: 
+1. Seasonal Patterns:
+   - Cluster 1 (red) dominates across all seasons, with the highest number of tracks.
+   - Cluster 3 (purple) is the second most prevalent, especially in Winter and Autumn.
+   - Clusters 0 (blue) and 2 (green) have lower, relatively consistent numbers across seasons.
+2. Seasonal Variations:
+   - Winter has the highest overall number of tracks across all clusters.
+   - Spring shows the lowest overall number of tracks.
+   - Summer and Autumn have similar total track counts, falling between Winter and Spring.
+3. Cluster Trends:
+   - Cluster 1 peaks in Winter, with its lowest point in Spring.
+   - Cluster 3 is most prominent in Winter and Autumn, less so in Spring and Summer.
+   - Clusters 0 and 2 show less dramatic seasonal fluctuations.
+
+This seasonal analysis complements the t-SNE clustering by showing how music preferences or releases vary throughout the year. It could be valuable for playlist curation, release scheduling, and understanding seasonal music consumption patterns. Music streaming services could use this data to tailor recommendations based on the time of year, while artists and labels might consider optimal release times for different types of music.
+
+### 13. I also wanted to look at total track duration across seasons to see when I listened to longer playlists / more music by season but also by year.
 
 Again, unsurprisingly, I had a lot of free time in the winter across all my data and in the year 2020 during the pandemic because those playlists seem to be looooong. 
 
@@ -179,7 +245,7 @@ Again, unsurprisingly, I had a lot of free time in the winter across all my data
 <img src="images/spotify_project/duration_over_years.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
 
-### 13. Finally and what sets the stage up for the next phase of this project, which is sentiment analysis on song lyrics using LLM's, I made basic word clouds track name for each season to see what the most frequently occurring words were in song titles.
+### 14. Finally and what sets the stage up for the next phase of this project, which is sentiment analysis on song lyrics using LLM's, I made basic word clouds track name for each season to see what the most frequently occurring words were in song titles.
 
 I know Spotify tracks the "Valence" of songs, but can I see what my overall mood was by looking at a word cloud of the track titles? After all, a picture is (quite literally) worth a thousand words! 
 
