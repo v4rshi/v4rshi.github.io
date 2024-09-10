@@ -176,13 +176,11 @@ The fact that nearly 50% of my music falls into just 30 genres out of 1412 sugge
 <img src="images/spotify_project/pareto_zoom.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
 ### 12. I created t-SNE Visualization and Analysis of Music Clustering Based on Audio Features
-For those unfamiliar, t-SNE is a technique that simplifies complex, high-dimensional data into a 2D map to reveal patterns, while KMeans groups similar items into clusters (and click here to learn more about both). In this analysis, t-SNE helps us visualize the data, and KMeans identifies clusters of songs based on their audio features. Essentially, I’m using these methods to group songs that share similar characteristics from the dataset. It’s an intriguing way to uncover patterns in music! I used the elbow method (click here to know more about that) to figure out how many clusters was best (turns out to be 4) and this was the outcome:
+For those unfamiliar, t-SNE is a technique that simplifies complex, high-dimensional data into a 2D map to reveal patterns, while KMeans groups similar items into clusters (and click here to learn about [t-SNE](https://towardsdatascience.com/t-sne-clearly-explained-d84c537f53a) and [K-means clustering](https://medium.com/@amit25173/k-means-clustering-for-dummies-a-beginners-guide-399fb8c427fd)). In this analysis, t-SNE helps us visualize the data, and KMeans identifies clusters of songs based on their audio features. Essentially, I’m using these methods to group songs that share similar characteristics from the dataset. It’s an intriguing way to uncover patterns in music! I used the elbow method ([click here to know more about that](https://www.analyticsvidhya.com/blog/2021/01/in-depth-intuition-of-k-means-clustering-algorithm-in-machine-learning/)) to figure out how many clusters was best (turns out to be 4) and this was the outcome:
 
 <iframe src="images/spotify_project/tsne_clustering.html" width="800" height="600"></iframe>
 
-This graph shows a t-SNE (t-Distributed Stochastic Neighbor Embedding) visualization of song clustering based on audio features. The t-SNE algorithm has reduced the high-dimensional audio feature space to a 2D representation, allowing us to visualize patterns and clusters in the data. Key takeaways are:
-
-This graph shows a t-SNE (t-Distributed Stochastic Neighbor Embedding) visualization of song clustering based on audio features. The t-SNE algorithm has reduced the high-dimensional audio feature space to a 2D representation, allowing us to visualize patterns and clusters in the data. Let's analyze this in conjunction with the centroids provided:
+This graph shows a t-SNE (t-Distributed Stochastic Neighbor Embedding) visualization of song clustering based on audio features. Key takeaways are:
 
 1. Number of Clusters:
    The graph and centroid table both indicate 4 distinct clusters (0, 1, 2, 3), represented by different colors in the plot.
@@ -216,7 +214,7 @@ This graph shows a t-SNE (t-Distributed Stochastic Neighbor Embedding) visualiza
 
 In conclusion, this t-SNE visualization effectively represents the complex audio feature space in a 2D format, revealing meaningful clusters that likely correspond to different musical styles or genres. The overlap between clusters reflects the nuanced nature of music categorization, where songs can share characteristics across traditional genre boundaries.
 
-I also looked at the seasonal distribution of clusters for a kick
+**I also looked at the seasonal distribution of clusters for a kick**
 
 <iframe src="images/spotify_project/cluster_distribution_by_season.html" width="500" height="300"></iframe>
 
