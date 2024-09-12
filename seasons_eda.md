@@ -320,7 +320,7 @@ These applications hold promise but require careful ethical consideration to bal
 
 ### With this, I conclude the first phase of my project and hope to delve into the more specific sentiment analysis on song lyrics next! 
 
-Thanks for taking the time to go through it all, and let me know your thoughts or feedback by emailing me at v4rshi.srini@gmail.com! 
+Thanks for taking the time to go through it all, and let me know your thoughts or feedback by emailing me ta battler_haft_0h@icloud.com! 
 
 --- 
 <script>
