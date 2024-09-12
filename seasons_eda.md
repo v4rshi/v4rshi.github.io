@@ -322,6 +322,8 @@ These applications hold promise but require careful ethical consideration to bal
 
 Thanks for taking the time to go through it all, and let me know your thoughts or feedback by emailing me ta battler_haft_0h@icloud.com! 
 
+<p style="font-size:9px"> © Copyright of Varshini Srinivas </p>
+
 --- 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
