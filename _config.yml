@@ -1,18 +1,45 @@
-title: Varshi Srinivas # your name (or website title) here
-logo: "/images/headshot2.png?raw=true" # your photo (or logo) here
-description: > # your text below (remove <br> elements if you don't need line breaks)
-  <br>
-  Hi, my name is Varshi! <br><br>
-  I'm a data scientist with a background in consulting, industrial engineering, and operations research. I specialize in storytelling with data, leveraging tools like Python, Tableau, and SQL. <br> 
-  In my spare time, I love to <a href="https://www.instagram.com/chubbymonkii/?hl=en">cook</a>, read, make <a href="https://www.etsy.com/shop/StudioVarshi">linocut prints</a>, and (sometimes) watch Purdue basketball!  
-  <br><br>
-  Email: battler_haft_0h@icloud.com <br>
-  <a href="https://www.linkedin.com/in/sriniv37/">View My LinkedIn Profile</a>  <br>
-  <a href="https://drive.google.com/file/d/13j1rDjqDtEbl6GNtLmQfVSdhPL02XMKd/view?usp=sharing" target="_blank">Download My Resume</a> <br>
-  <a href="https://github.com/v4rshi">View My GitHub Profile</a></p> 
-  <p style="font-size:9px"> © Copyright of Varshini Srinivas </p>
-  <br>
+# title: Varshi Srinivas # your name (or website title) here
+# logo: "/images/headshot2.png?raw=true" # your photo (or logo) here
+# description: > # your text below (remove <br> elements if you don't need line breaks)
+#   <br>
+#   Hi, my name is Varshi! <br><br>
+#   I'm a data scientist with a background in consulting, industrial engineering, and operations research. I specialize in storytelling with data, leveraging tools like Python, Tableau, and SQL. <br> 
+#   In my spare time, I love to <a href="https://www.instagram.com/chubbymonkii/?hl=en">cook</a>, read, make <a href="https://www.etsy.com/shop/StudioVarshi">linocut prints</a>, and (sometimes) watch Purdue basketball!  
+#   <br><br>
+#   Email: battler_haft_0h@icloud.com <br>
+#   <a href="https://www.linkedin.com/in/sriniv37/">View My LinkedIn Profile</a>  <br>
+#   <a href="https://drive.google.com/file/d/13j1rDjqDtEbl6GNtLmQfVSdhPL02XMKd/view?usp=sharing" target="_blank">Download My Resume</a> <br>
+#   <a href="https://github.com/v4rshi">View My GitHub Profile</a></p> 
+#   <p style="font-size:9px"> © Copyright of Varshini Srinivas </p>
+#   <br>
+# remote_theme: pages-themes/minimal@v0.2.0
+# plugins:
+#   - jekyll-remote-theme
+# google_analytics: UA-000000-0 # your Google Analytics tracking ID here />
+
+title: "Varshi Srinivas"
+logo: "/images/headshot2.png?raw=true"
+description: |
+  # Hello, I'm Varshi!
+
+  I'm a data scientist with a background in consulting, industrial engineering, and operations research. 
+  My expertise lies in storytelling with data, leveraging tools like Python, Tableau, and SQL.
+
+  ## Interests
+  - Cooking: Check out my [Instagram](https://www.instagram.com/chubbymonkii/?hl=en)
+  - Reading
+  - Creating [linocut prints](https://www.etsy.com/shop/StudioVarshi)
+  - Watching Purdue basketball (occasionally!)
+
+  ## Connect with me
+  - Email: battler_haft_0h@icloud.com
+  - [LinkedIn Profile](https://www.linkedin.com/in/sriniv37/)
+  - [Resume (PDF)](https://drive.google.com/file/d/13j1rDjqDtEbl6GNtLmQfVSdhPL02XMKd/view?usp=sharing)
+  - [GitHub Profile](https://github.com/v4rshi)
+
+  <p style="font-size: 12px; text-align: center;">© 2024 Varshini Srinivas. All rights reserved.</p>
+
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
   - jekyll-remote-theme
-google_analytics: UA-000000-0 # your Google Analytics tracking ID here
+google_analytics: UA-000000-0
