@@ -84,7 +84,6 @@
             height: 80px;
             margin-top: 10px;
             border: none;
-            background-color: transparent;
         }
     </style>
 </head>
@@ -100,8 +99,6 @@
 
     <script>
         const recommendations = {};
-        let currentPlayer = null;
-
         fetch('recommendations.json')
             .then(response => response.json())
             .then(data => {
@@ -136,19 +133,6 @@
                     </div>
                 `;
                 recommendationsDiv.appendChild(recDiv);
-            });
-
-            // Add click event to control player
-            recommendationsDiv.querySelectorAll('iframe').forEach(iframe => {
-                iframe.addEventListener('load', () => {
-                    iframe.contentWindow.postMessage('{"event":"command","func":"pause","args":""}', '*');
-                });
-                iframe.addEventListener('click', () => {
-                    if (currentPlayer && currentPlayer !== iframe) {
-                        currentPlayer.contentWindow.postMessage('{"event":"command","func":"pause","args":""}', '*');
-                    }
-                    currentPlayer = iframe;
-                });
             });
         });
     </script>
