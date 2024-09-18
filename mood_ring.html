@@ -72,6 +72,7 @@
         .song-details {
             display: flex;
             align-items: center;
+            flex-direction: column;
         }
         .header-image {
             max-width: 9%;
@@ -132,7 +133,7 @@
                         <div>
                             <strong>${rec['Song Name']}</strong> by ${rec['Artist']}<br>
                             <a href="${rec['Spotify URL']}" target="_blank">Listen on Spotify</a><br>
-                            <iframe class="spotify-player" src="https://open.spotify.com/embed/track/${rec['Track ID']}" allowtransparency="true" allow="encrypted-media"></iframe>
+                            <div>Listen to a song preview:</div>
                             <audio controls>
                                 <source src="${rec['Preview URL'] || 'default-preview.mp3'}" type="audio/mpeg">
                                 Your browser does not support the audio element.
@@ -141,7 +142,6 @@
                     </div>
                 `;
 
-                // Handle audio playback
                 recDiv.querySelector('audio').addEventListener('play', function() {
                     if (currentlyPlayingAudio && currentlyPlayingAudio !== this) {
                         currentlyPlayingAudio.pause();
