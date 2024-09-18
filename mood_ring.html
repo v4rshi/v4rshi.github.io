@@ -83,6 +83,10 @@
             margin-top: 10px;
             border: none;
         }
+        audio {
+            width: 100%;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -127,6 +131,10 @@
                             <strong>${rec['Song Name']}</strong> by ${rec['Artist']}<br>
                             <a href="${rec['Spotify URL']}" target="_blank">Listen on Spotify</a><br>
                             <iframe class="spotify-player" src="https://open.spotify.com/embed/track/${rec['Track ID']}" allowtransparency="true" allow="encrypted-media"></iframe>
+                            <audio controls>
+                                <source src="${rec['Preview URL'] || 'default-preview.mp3'}" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
                         </div>
                     </div>
                 `;
