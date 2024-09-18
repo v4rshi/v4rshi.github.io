@@ -6,6 +6,7 @@
     <title>V's Music Mood Ring</title>
     <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Kirang+Haerang' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Arial', sans-serif; 
@@ -17,8 +18,8 @@
         }
         h1 {
             font-family: 'Kirang Haerang';
-            color: #04d4ae;
-            margin-bottom: 10px;
+            color: #ff7396;
+            margin-bottom: 5px; /* Reduced margin */
             font-size: 38px;
         }
         h2 {
@@ -81,7 +82,7 @@
         .header-image {
             max-width: 25%;
             height: auto;
-            margin-bottom: 0;
+            margin-top: 0; /* Removed top margin */
         }
         .spotify-player {
             width: 100%;
@@ -104,10 +105,8 @@
             padding: 0;
             cursor: pointer;
             z-index: 1000; /* Ensure it's on top of other content */
-        }
-        .home-button img {
-            width: 30px; /* Adjust size as needed */
-            height: auto;
+            color: #ff7396; /* Pink color */
+            font-size: 30px; /* Adjust size as needed */
         }
 
         /* Media queries for smaller screens */
@@ -139,7 +138,7 @@
 </head>
 <body>
     <a href="https://v4rshi.github.io/" class="home-button" title="Return to Home">
-        <img src="https://cdn-icons-png.flaticon.com/512/60/60553.png" alt="Home Icon">
+        <i class="fas fa-home"></i>
     </a>
     <img src="spotify_recommender.png" alt="Musical Mood Ring Logo" class="header-image">
     <h1>what are you in the <br> mood to listen to?</h1>
