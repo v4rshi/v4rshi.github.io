@@ -2,7 +2,7 @@
 
 <nav>
     <ul>
-        <li><a href="mood_ring.html">V's Music Mood Ring</a></li>
+        <a href="mood_ring.html">V's Music Mood Ring</a>
         <!-- Other links -->
     </ul>
 </nav>
