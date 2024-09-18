@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>V's Music Mood Ring</title>
     <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Kirang Haerang' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Kirang+Haerang' rel='stylesheet'>
     <style>
         body {
             font-family: 'Arial', sans-serif; 
@@ -94,6 +94,21 @@
             max-width: 300px; /* Set a maximum width */
             margin-top: 10px;
         }
+        .home-button {
+            position: fixed;
+            top: 20px; /* Adjust as needed */
+            left: 20px; /* Adjust as needed */
+            display: inline-block;
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            z-index: 1000; /* Ensure it's on top of other content */
+        }
+        .home-button img {
+            width: 30px; /* Adjust size as needed */
+            height: auto;
+        }
 
         /* Media queries for smaller screens */
         @media (max-width: 600px) {
@@ -123,6 +138,9 @@
     </style>
 </head>
 <body>
+    <a href="https://v4rshi.github.io/" class="home-button" title="Return to Home">
+        <img src="https://cdn-icons-png.flaticon.com/512/60/60553.png" alt="Home Icon">
+    </a>
     <img src="spotify_recommender.png" alt="Musical Mood Ring Logo" class="header-image">
     <h1>what are you in the <br> mood to listen to?</h1>
     <h2>Select a sentiment and get 5 songs to match your vibe!</h2>
