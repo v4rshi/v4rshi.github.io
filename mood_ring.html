@@ -101,6 +101,8 @@
 
     <script>
         const recommendations = {};
+        let currentlyPlayingAudio = null;
+
         fetch('recommendations.json')
             .then(response => response.json())
             .then(data => {
@@ -138,6 +140,15 @@
                         </div>
                     </div>
                 `;
+
+                // Handle audio playback
+                recDiv.querySelector('audio').addEventListener('play', function() {
+                    if (currentlyPlayingAudio && currentlyPlayingAudio !== this) {
+                        currentlyPlayingAudio.pause();
+                    }
+                    currentlyPlayingAudio = this;
+                });
+
                 recommendationsDiv.appendChild(recDiv);
             });
         });
