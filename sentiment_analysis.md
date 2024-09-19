@@ -9,4 +9,46 @@
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 
+<style>
+  .floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .floating-button:hover {
+    background-color: rgba(255, 20, 147, 0.1); /* Light hover effect */
+  }
+
+  .tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 30px;
+    right: 50%;
+    margin-right: -60px;
+  }
+
+  .floating-button:hover .tooltip {
+    visibility: visible;
+  }
+</style>
+
+<button class="floating-button" onclick="window.location.href='https://v4rshi.github.io/'">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="hotpink">
+        <path d="M12 3l10 9h-3v8h-4v-5h-6v5H5v-8H2l10-9z"/>
+    </svg>
+    <span class="tooltip">Return To Homepage</span>
+</button>
+
 <p style="font-size:9px"> © Copyright of Varshini Srinivas </p>
