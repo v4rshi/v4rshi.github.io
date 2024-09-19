@@ -6,11 +6,26 @@ description: > # your text below (remove <br> elements if you don't need line br
   I'm a data scientist with a background in consulting, industrial engineering, and operations research. I specialize in storytelling with data, leveraging tools like Python, Tableau, and SQL. <br> 
   In my spare time, I love to <a href="https://www.instagram.com/chubbymonkii/?hl=en">cook</a>, make <a href="https://www.etsy.com/shop/StudioVarshi">linocut prints</a>, and volunteer at Muttville SF!  
   <br><br>
-  Email: battler_haft_0h@icloud.com <br>
-  <a href="https://www.linkedin.com/in/sriniv37/">View My LinkedIn Profile</a>  <br>
-  <a href="https://drive.google.com/file/d/13j1rDjqDtEbl6GNtLmQfVSdhPL02XMKd/view?usp=sharing" target="_blank">Download My Resume</a> <br>
-  <a href="https://github.com/v4rshi">View My GitHub Profile</a>
-  
+  <a href="mailto:battler_haft_0h@icloud.com" title="Email me">
+  <i class="fas fa-envelope"></i>
+  </a>
+  <span>Email: battler_haft_0h@icloud.com</span>
+  <br>
+  <a href="https://www.linkedin.com/in/sriniv37/" target="_blank" title="View My LinkedIn Profile">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <span>View My LinkedIn Profile</span>
+  <br>
+  <a href="https://drive.google.com/file/d/13j1rDjqDtEbl6GNtLmQfVSdhPL02XMKd/view?usp=sharing" target="_blank" title="Download My Resume">
+    <i class="fas fa-file-download"></i>
+  </a>
+  <span>Download My Resume</span>
+  <br>
+  <a href="https://github.com/v4rshi" target="_blank" title="View My GitHub Profile">
+    <i class="fab fa-github"></i>
+  </a>
+  <span>View My GitHub Profile</span>
+
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
   - jekyll-remote-theme
