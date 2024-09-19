@@ -1,6 +1,7 @@
 ## COMING SOON: Using LLM's to do Sentiment Analysis on song lyrics! 
 
 <link href='https://fonts.googleapis.com/css?family=Bagel Fat One' rel='stylesheet'>
+I am still working out the kinks, but in the mean-time, I developed a mood-based recommendation system prototype - check it out! 
 
 Click on the link below to explore my Musical Mood Ring! Select a 'Sentiment' to discover 5 songs with similar vibes.
 <nav style="text-align: center;">
