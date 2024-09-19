@@ -1,41 +1,70 @@
-<link href='https://fonts.googleapis.com/css?family=Bungee+Shade|Black+Han+Sans' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Days+One' rel='stylesheet'>
-
-<h1 style="font-family: 'Bungee Shade', sans-serif; color: #9760ce; font-size: 30px;">Portfolio</h1>
-
-<h2 style="font-family: 'Bungee Shade', sans-serif; color: #04c3d1; font-size: 24px;">Data Analytics Projects</h2>
-
-<div style="margin-left: 20px; position: relative; display: inline-block;">
-  <a href="https://v4rshi.github.io/seasons_eda.html" style="text-decoration: none; color: inherit;">
-    <img src="images/spotify_project/seasons_eda.gif?raw=true" width="1000" style="border-radius: 30px; overflow: hidden; border: 5px solid white; display: block;" />
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.7); opacity: 0; transition: opacity 0.3s;"></div>
-    <h3 style="font-family: 'Days One', sans-serif; text-align: center; color: #5fc400; font-size: 18px; margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.3s;">
-      Analyzing 9 years of Spotify Data
-    </h3>
-  </a>
-</div>
-
-<hr />
-
-<div style="margin-left: 20px; position: relative; display: inline-block;">
-  <a href="https://v4rshi.github.io/sentiment_analysis.html" style="text-decoration: none; color: inherit;">
-    <img src="images/spotify_project/sentiment_analysis.gif?raw=true" width="1000" style="border-radius: 30px; overflow: hidden; border: 5px solid white; display: block;" />
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.7); opacity: 0; transition: opacity 0.3s;"></div>
-    <h3 style="font-family: 'Days One', sans-serif; text-align: center; color: #5fc400; font-size: 18px; margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.3s;">
-      Sentiment Analysis on Spotify Data
-    </h3>
-  </a>
-</div>
-
-<hr />
-
-<p style="font-size:9px"> © Copyright of Varshini Srinivas </p>
+---
+layout: default
+---
 
 <style>
-  div:hover > div {
-    opacity: 1;
+  .project-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 20px;
   }
-  div:hover h3 {
+  .project-image {
+    border-radius: 30px;
+    overflow: hidden;
+    border: 5px solid white;
+    display: block;
+    width: 1000px;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 30px;
+  }
+  .project-title {
+    font-family: 'Days One', sans-serif;
+    text-align: center;
+    color: #5fc400;
+    font-size: 18px;
+    margin: 0;
+    padding: 10px;
+  }
+  .project-container:hover .overlay {
     opacity: 1;
   }
 </style>
+
+<link href='https://fonts.googleapis.com/css?family=Bungee+Shade|Black+Han+Sans|Days+One' rel='stylesheet'>
+
+# <span style="font-family: 'Bungee Shade', sans-serif; color: #9760ce; font-size: 30px;">Portfolio</span>
+
+## <span style="font-family: 'Bungee Shade', sans-serif; color: #04c3d1; font-size: 24px;">Data Analytics Projects</span>
+
+<div class="project-container">
+  <a href="https://v4rshi.github.io/seasons_eda.html">
+    <img src="images/spotify_project/seasons_eda.gif?raw=true" alt="Seasons EDA" class="project-image">
+    <div class="overlay">
+      <h3 class="project-title">Analyzing 9 years of Spotify Data</h3>
+    </div>
+  </a>
+</div>
+
+<div class="project-container">
+  <a href="https://v4rshi.github.io/sentiment_analysis.html">
+    <img src="images/spotify_project/sentiment_analysis.gif?raw=true" alt="Sentiment Analysis" class="project-image">
+    <div class="overlay">
+      <h3 class="project-title">Sentiment Analysis on Spotify Data</h3>
+    </div>
+  </a>
+</div>
+
+<p style="font-size:9px">© Copyright of Varshini Srinivas</p>
