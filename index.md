@@ -33,11 +33,13 @@ layout: default
   .project-title {
     font-family: 'Bebas Neue', sans-serif;
     text-align: center;
-    color: #ffd9f6;
+    color: #ff00b3;
     font-size: 28px;
     margin: 0;
     padding: 20px;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                 0 0 20px rgba(255, 255, 255, 0.8),
+                 0 0 30px rgba(255, 255, 255, 0.8);
     letter-spacing: 1px;
   }
   .project-container:hover .overlay {
