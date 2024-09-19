@@ -126,7 +126,7 @@ It is pretty apparent that as time passed, this genre no longer appeared in my p
 
 I then tried to visualize this differently with a stacked bar chart and over the top 20 genres overall
 
-<!img src="images/spotify_project/top_genres_by_season_barplot.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
+<img src="images/spotify_project/top_genres_by_season_barplot.png" width="1000" class="zoom" alt="Zoomable Image"/>
 
 This chart displays the popularity of various music genres across seasons:
 
