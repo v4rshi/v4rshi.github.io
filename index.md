@@ -22,7 +22,7 @@ layout: default
     left: -5px;
     right: -5px;
     bottom: -5px;
-    background-color: rgb(255, 77, 169);
+    background-color: rgba(255, 115, 180, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
