@@ -8,11 +8,12 @@ I am still working out the kinks, but in the mean-time, I developed a mood-based
 Click on the link below to explore my Musical Mood Ring! Select a 'Sentiment' to discover 5 songs with similar vibes.
 <nav style="text-align: center;">
   <div>
-    <a href="mood_ring.html" style="font-family: 'Bagel Fat One', sans-serif; color: #1DB954; font-size: 24px; transition: color 0.3s;">
+    <a href="mood_ring.html" style="font-family: 'Bagel Fat One', sans-serif; font-size: 24px; background: linear-gradient(90deg, #ff9999, #ffcc99, #ffff99, #ccff99, #99ffff, #9999ff, #d6a3ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
       V's Musical Mood Ring
     </a>
   </div>
 </nav>
+
 
 <style>
   nav a:hover {
