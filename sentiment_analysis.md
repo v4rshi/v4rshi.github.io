@@ -6,13 +6,15 @@ I am still working out the kinks, but in the mean-time, I developed a mood-based
 <link href='https://fonts.googleapis.com/css?family=Bagel Fat One' rel='stylesheet'>
 
 Click on the link below to explore my Musical Mood Ring! Select a 'Sentiment' to discover 5 songs with similar vibes.
+
 <nav style="text-align: center;">
-  <div>
-    <a href="mood_ring.html" style="font-family: 'Bagel Fat One', sans-serif; font-size: 24px; background: linear-gradient(90deg, #ff9999, #ffcc99, #ffff99, #ccff99, #99ffff, #9999ff, #d6a3ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+  <div style="display: inline-block; background-color: #f0f0f0; border-radius: 25px; padding: 10px 20px;">
+    <a href="mood_ring.html" style="font-family: 'Bagel Fat One', sans-serif; font-size: 24px; background: linear-gradient(90deg, #ff9999, #ffcc99, #ffff99, #ccff99, #99ffff, #9999ff, #d6a3ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none;">
       V's Musical Mood Ring
     </a>
   </div>
 </nav>
+
 
 
 <style>
