@@ -6,7 +6,7 @@
 
 <div style="text-align: center; color: #52368f;">
   <a href="/seasons_eda.md" style="color: #52368f; text-decoration: none;">
-    <h3>Analyzing 9 years of Spotify Data Through the Seasons</h3>
+    <h3 style="margin-bottom: 5px;">Analyzing 9 years of Spotify Data Through the Seasons</h3>
   </a>
   <a href="/seasons_eda.md">
     <div style="border-radius: 30px; overflow: hidden; border: 5px solid white; display: inline-block;">
@@ -18,7 +18,7 @@
 ---
 <div style="text-align: center; color: #52368f;">
   <a href="/sentiment_analysis.md" style="color: #52368f; text-decoration: none;">
-    <h3>Sentiment Analysis on Spotify Data</h3>
+    <h3 style="margin-bottom: 5px;">Sentiment Analysis on Spotify Data</h3>
   </a>
   <a href="/sentiment_analysis.md">
     <div style="border-radius: 30px; overflow: hidden; border: 5px solid white; display: inline-block;">
