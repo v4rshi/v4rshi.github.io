@@ -1,4 +1,4 @@
-<link href='https://fonts.googleapis.com/css?family=Black+Han+Sans' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
 <h2 style="font-family: 'Bungee', sans-serif; color: #b171f1; font-size: 24px;">Soundtrack of My Life: Unraveling My Spotify Saga Over The Last 9 Years</h2>
 
 
