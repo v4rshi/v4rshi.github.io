@@ -1,5 +1,5 @@
-<link href='https://fonts.googleapis.com/css?family=Bungee Outline' rel='stylesheet'>
-<h2 style="font-family: 'Bungee Outline', sans-serif; color: #b171f1; font-size: 24px;">COMING SOON: Using LLM's to do Sentiment Analysis on song lyrics!</h2>
+<link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
+<h2 style="font-family: 'Bungee', sans-serif; color: #00d0e3; font-size: 24px;">COMING SOON: Using LLM's to do Sentiment Analysis on song lyrics!</h2>
 
 I am still working out the kinks, but in the mean-time, I developed a mood-based recommendation system prototype - check it out! 
 
