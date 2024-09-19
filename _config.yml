@@ -12,6 +12,9 @@ description: >
       cursor: pointer;
       margin: 0 10px; /* Spacing around icons */
     }
+    .icon a {
+      color: #EC3B83 !important; /* Enforce icon color */
+    }
     .icon-container {
       display: flex;
       justify-content: center; /* Center the icons */
