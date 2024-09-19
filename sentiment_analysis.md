@@ -1,13 +1,11 @@
 ## COMING SOON: Using LLM's to do Sentiment Analysis on song lyrics! 
 
 <nav>
-<a href="mood_ring.html">V's Music Mood Ring</a>
+  <a href="mood_ring.html" style="font-family: 'Fat Bagel Fofle', sans-serif;">V's Musical Mood Ring</a>
 </nav>
 
+
 <br>
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
 
 <style>
   .floating-button {
