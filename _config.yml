@@ -8,20 +8,15 @@ description: >
 <style>
   .icon {
     color: #EC3B83; /* Icon color */
-    font-size: 30px; /* Smaller size */
+    font-size: 25px; /* Smaller size */
     cursor: pointer;
-  }
-  .separator {
-    font-size: 30px; /* Match icon size */
-    color: #EC3B83; /* Same color as icons */
-    margin: 0 10px; /* Adjust spacing as needed */
+    margin: 0 10px; /* Spacing around icons */
   }
   .icon-container {
     display: flex;
     justify-content: center; /* Center the icons */
     align-items: center; /* Center vertically */
     width: 100%; /* Full width of the header */
-    flex-wrap: nowrap; /* Prevent wrapping */
   }
 </style>
 
@@ -31,19 +26,16 @@ description: >
       <i class="fas fa-envelope"></i>
     </a>
   </span>
-  <span class="separator">|</span>
   <span title="View My LinkedIn Profile" class="icon">
     <a href="https://www.linkedin.com/in/sriniv37/" target="_blank">
       <i class="fab fa-linkedin"></i>
     </a>
   </span>
-  <span class="separator">|</span>
   <span title="Download My Resume" class="icon">
     <a href="https://drive.google.com/file/d/13j1rDjqDtEbl6GNtLmQfVSdhPL02XMKd/view?usp=sharing" target="_blank">
       <i class="fas fa-file-download"></i>
     </a>
   </span>
-  <span class="separator">|</span>
   <span title="View My GitHub Profile" class="icon">
     <a href="https://github.com/v4rshi" target="_blank">
       <i class="fab fa-github"></i>
