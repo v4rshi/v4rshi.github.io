@@ -18,32 +18,34 @@ layout: default
   }
   .overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.7);
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background-color: rgba(255, 255, 255, 0.85);
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
     transition: opacity 0.3s ease;
-    border-radius: 30px;
+    border-radius: 35px;
   }
   .project-title {
-    font-family: 'Days One', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     text-align: center;
-    color: #5fc400;
-    font-size: 18px;
+    color: #ffd9f6;
+    font-size: 28px;
     margin: 0;
-    padding: 10px;
+    padding: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    letter-spacing: 1px;
   }
   .project-container:hover .overlay {
     opacity: 1;
   }
 </style>
 
-<link href='https://fonts.googleapis.com/css?family=Bungee+Shade|Black+Han+Sans|Days+One' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Bungee+Shade|Black+Han+Sans|Bebas+Neue' rel='stylesheet'>
 
 # <span style="font-family: 'Bungee Shade', sans-serif; color: #9760ce; font-size: 30px;">Portfolio</span>
 
