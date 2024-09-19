@@ -14,7 +14,7 @@
 ### [Sentiment Analysis on Spotify Data](/sentiment_analysis.md)
 
 <a href="/sentiment_analysis.md">
-  <img src="images/spotify_project/sentiment_analysis.gif?raw=true" width="300"/>
+  <img src="images/spotify_project/sentiment_analysis.gif?raw=true" width="800"/>
 </a>
 
 ---
