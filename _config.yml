@@ -7,9 +7,7 @@ description: > # your text below (remove <br> elements if you don't need line br
   In my spare time, I love to <a href="https://www.instagram.com/chubbymonkii/?hl=en">cook</a>, make <a href="https://www.etsy.com/shop/StudioVarshi">linocut prints</a>, and volunteer at Muttville SF!  
   <br><br>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
+  <style>
       .icon {
         color: #EC3B83;
         font-size: 40px; /* Adjust size as needed */
@@ -27,7 +25,7 @@ description: > # your text below (remove <br> elements if you don't need line br
         width: 100%; /* Full width of the header */
         flex-wrap: nowrap; /* Prevent wrapping */
       }
-    </style>
+   </style>
     
     <div class="icon-container">
       <span title="Copy email: battler_haft_0h@icloud.com" class="icon">
