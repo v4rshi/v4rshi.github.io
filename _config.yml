@@ -1,61 +1,59 @@
-title: Varshini Srinivas # your name (or website title) here 
+title: Varshini Srinivas # your name (or website title) here
 logo: "/images/polaroid_headshot_fancy4.png?raw=true" # your photo (or logo) here
-description: > # your text below (remove <br> elements if you don't need line breaks)
-  <br>
-  Hi, my name is Varshi! <br><br>
-  I'm a data scientist with a background in consulting, industrial engineering, and operations research. I specialize in storytelling with data, leveraging tools like Python, Tableau, and SQL. <br> 
+description: >
+  Hi, my name is Varshi!  
+  I'm a data scientist with a background in consulting, industrial engineering, and operations research. I specialize in storytelling with data, leveraging tools like Python, Tableau, and SQL. 
   In my spare time, I love to <a href="https://www.instagram.com/chubbymonkii/?hl=en">cook</a>, make <a href="https://www.etsy.com/shop/StudioVarshi">linocut prints</a>, and volunteer at Muttville SF!  
-  <br><br>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <style>
-      .icon {
-        color: #EC3B83;
-        font-size: 40px; /* Adjust size as needed */
-        cursor: pointer;
-      }
-      .separator {
-        font-size: 40px; /* Match icon size */
-        color: #EC3B83; /* Same color as icons */
-        margin: 0 15px; /* Adjust spacing as needed */
-      }
-      .icon-container {
-        display: flex;
-        justify-content: center; /* Center the icons */
-        align-items: center; /* Center vertically */
-        width: 100%; /* Full width of the header */
-        flex-wrap: nowrap; /* Prevent wrapping */
-      }
-   </style>
-    
-    <div class="icon-container">
-      <span title="Copy email: battler_haft_0h@icloud.com" class="icon">
-        <a href="mailto:battler_haft_0h@icloud.com">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </span>
-      <span class="separator">|</span>
-      <span title="View My LinkedIn Profile" class="icon">
-        <a href="https://www.linkedin.com/in/sriniv37/" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </span>
-      <span class="separator">|</span>
-      <span title="Download My Resume" class="icon">
-        <a href="https://drive.google.com/file/d/13j1rDjqDtEbl6GNtLmQfVSdhPL02XMKd/view?usp=sharing" target="_blank">
-          <i class="fas fa-file-download"></i>
-        </a>
-      </span>
-      <span class="separator">|</span>
-      <span title="View My GitHub Profile" class="icon">
-        <a href="https://github.com/v4rshi" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-      </span>
-    </div>
+
+# CSS and HTML for icons (ensure it's placed correctly in your layout file)
+# Link to Font Awesome for icons
+<style>
+  .icon {
+    color: #EC3B83;
+    font-size: 40px; /* Adjust size as needed */
+    cursor: pointer;
+  }
+  .separator {
+    font-size: 40px; /* Match icon size */
+    color: #EC3B83; /* Same color as icons */
+    margin: 0 15px; /* Adjust spacing as needed */
+  }
+  .icon-container {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    align-items: center; /* Center vertically */
+    width: 100%; /* Full width of the header */
+    flex-wrap: nowrap; /* Prevent wrapping */
+  }
+</style>
+
+<div class="icon-container">
+  <span title="Copy email: battler_haft_0h@icloud.com" class="icon">
+    <a href="mailto:battler_haft_0h@icloud.com">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </span>
+  <span class="separator">|</span>
+  <span title="View My LinkedIn Profile" class="icon">
+    <a href="https://www.linkedin.com/in/sriniv37/" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </span>
+  <span class="separator">|</span>
+  <span title="Download My Resume" class="icon">
+    <a href="https://drive.google.com/file/d/13j1rDjqDtEbl6GNtLmQfVSdhPL02XMKd/view?usp=sharing" target="_blank">
+      <i class="fas fa-file-download"></i>
+    </a>
+  </span>
+  <span class="separator">|</span>
+  <span title="View My GitHub Profile" class="icon">
+    <a href="https://github.com/v4rshi" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+  </span>
+</div>
 
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
   - jekyll-remote-theme
-google_analytics: UA-000000-0 # your Google Analytics tracking ID here />
-
-
+google_analytics: UA-000000-0 # your Google Analytics tracking ID here
