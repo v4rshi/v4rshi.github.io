@@ -1,5 +1,5 @@
-<link href='https://fonts.googleapis.com/css?family=Days One' rel='stylesheet'>
-<h2 style="font-family: 'Days One', sans-serif; color: #b171f1; font-size: 24px;">COMING SOON: Using LLM's to do Sentiment Analysis on song lyrics!</h2>
+<link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
+<h2 style="font-family: 'Bungee Shade', sans-serif; color: #b171f1; font-size: 24px;">COMING SOON: Using LLM's to do Sentiment Analysis on song lyrics!</h2>
 
 <link href='https://fonts.googleapis.com/css?family=Bagel Fat One' rel='stylesheet'>
 I am still working out the kinks, but in the mean-time, I developed a mood-based recommendation system prototype - check it out! 
