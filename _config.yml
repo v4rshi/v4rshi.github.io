@@ -13,7 +13,7 @@ description: >
       margin: 0 10px; /* Spacing around icons */
     }
     .icon a {
-      color: #00aed1 !important; /* Enforce icon color */
+      color: #00aed1 !important; /* Enforce icon color, alt pink #EC3B83 */
     }
     .icon-container {
       display: flex;
