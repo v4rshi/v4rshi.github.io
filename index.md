@@ -2,7 +2,7 @@
 <h1 style="font-family: 'Bungee Shade', sans-serif; color: #9760ce; font-size: 30px;">Portfolio</h1>
 ---
 
-## Data Analytics Projects 
+<h2 style="font-family: 'Bungee Shade', sans-serif; color: #04c3d1; font-size: 24px;">Data Analytics Projects</h2>
 
 ### [Analyzing 9 years of Spotify Data Through the Seasons](/seasons_eda.md)
 
