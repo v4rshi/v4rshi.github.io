@@ -33,7 +33,7 @@ layout: default
   .project-title {
     font-family: 'Bebas Neue', sans-serif;
     text-align: center;
-    color: #ffcfec;
+    color: #FFFFFF;
     font-size: 28px;
     margin: 0;
     padding: 20px;
