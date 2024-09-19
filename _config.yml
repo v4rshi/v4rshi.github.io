@@ -7,29 +7,26 @@ description: > # your text below (remove <br> elements if you don't need line br
   In my spare time, I love to <a href="https://www.instagram.com/chubbymonkii/?hl=en">cook</a>, make <a href="https://www.etsy.com/shop/StudioVarshi">linocut prints</a>, and volunteer at Muttville SF!  
   <br><br>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
- 
-  <style>
-    .icon {
-      color: #EC3B83;
-      font-size: 40px; /* Adjust size as needed */
-      text-align: center;
-      width: auto; /* Let the icon width adjust automatically */
-      cursor: pointer;
-    }
-    .separator {
-      font-size: 40px; /* Match icon size */
-      color: #EC3B83; /* Same color as icons */
-      margin: 0 15px; /* Adjust spacing as needed */
-    }
-    .icon-container {
-      display: flex;
-      justify-content: center; /* Center the icons */
-      align-items: center; /* Center vertically */
-      width: 100%; /* Full width of the header */
-    }
+    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+      .icon {
+        color: #EC3B83;
+        font-size: 40px; /* Adjust size as needed */
+        cursor: pointer;
+      }
+      .separator {
+        font-size: 40px; /* Match icon size */
+        color: #EC3B83; /* Same color as icons */
+        margin: 0 15px; /* Adjust spacing as needed */
+      }
+      .icon-container {
+        display: flex;
+        justify-content: center; /* Center the icons */
+        align-items: center; /* Center vertically */
+        width: 100%; /* Full width of the header */
+        flex-wrap: nowrap; /* Prevent wrapping */
+      }
     </style>
     
     <div class="icon-container">
@@ -57,7 +54,6 @@ description: > # your text below (remove <br> elements if you don't need line br
         </a>
       </span>
     </div>
-
 
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
