@@ -33,7 +33,7 @@ layout: default
   .project-title {
     font-family: 'Bungee Shade', sans-serif;
     text-align: center;
-    color: #EC3B83;
+    color: #ffcfec;
     font-size: 28px;
     margin: 0;
     padding: 20px;
