@@ -339,19 +339,14 @@ document.addEventListener('DOMContentLoaded', function() {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: pink;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
     transition: background-color 0.3s;
   }
-  
+
   .floating-button:hover {
-    background-color: darkpink;
+    background-color: rgba(255, 20, 147, 0.1); /* Light hover effect */
   }
 
   .tooltip {
@@ -374,8 +369,9 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 </style>
 
-<a href="https://v4rshi.github.io/" class="floating-button">
-    Home
+<button class="floating-button" onclick="window.location.href='https://v4rshi.github.io/'">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="hotpink">
+        <path d="M12 3l10 9h-3v8h-4v-5h-6v5H5v-8H2l10-9z"/>
+    </svg>
     <span class="tooltip">Return To Homepage</span>
-</a>
-
+</button>
