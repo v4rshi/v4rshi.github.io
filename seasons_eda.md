@@ -136,7 +136,7 @@ This chart displays the popularity of various music genres across seasons:
 - All genres exhibit seasonal popularity shifts, including less popular ones like UK dance and R&B.
 
 I also did this by top 5 Genres over the years separated by season: 
-<iframe src="images/spotify_project/top5genre_chart.html" width="800" height="500"></iframe>
+<iframe src="images/spotify_project/top5genre_chart.html" width="500" height="300"></iframe>
 Key points:
 
 - Genres vary widely and shift seasonally and yearly.
@@ -177,7 +177,7 @@ The fact that nearly 50% of my music falls into just 30 genres out of 1412 sugge
 ### 12. I created t-SNE Visualization and Analysis of Music Clustering Based on Audio Features
 For those unfamiliar, t-SNE is a technique that simplifies complex, high-dimensional data into a 2D map to reveal patterns, while KMeans groups similar items into clusters (and click here to learn about [t-SNE](https://towardsdatascience.com/t-sne-clearly-explained-d84c537f53a) and [K-means clustering](https://medium.com/@amit25173/k-means-clustering-for-dummies-a-beginners-guide-399fb8c427fd)). In this analysis, t-SNE helps us visualize the data, and KMeans identifies clusters of songs based on their audio features. Essentially, I’m using these methods to group songs that share similar characteristics from the dataset. It’s an intriguing way to uncover patterns in music! I used the elbow method ([click here to know more about that](https://www.analyticsvidhya.com/blog/2021/01/in-depth-intuition-of-k-means-clustering-algorithm-in-machine-learning/)) to figure out how many clusters was best (turns out to be 4) and this was the outcome:
 
-<iframe src="images/spotify_project/tsne_clustering.html" width="800" height="600"></iframe>
+<iframe src="images/spotify_project/tsne_clustering.html" width="500" height="300"></iframe>
 
 This graph shows a t-SNE (t-Distributed Stochastic Neighbor Embedding) visualization of song clustering based on audio features. Key takeaways are:
 
