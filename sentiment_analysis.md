@@ -1,5 +1,4 @@
-
-<link href='https://fonts.googleapis.com/css?family=Black+Han+Sans' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
 <h2 style="font-family: 'Bungee', sans-serif; color: #b171f1; font-size: 24px;">COMING SOON: Using LLM's to do Sentiment Analysis on song lyrics!</h2>
 
 <link href='https://fonts.googleapis.com/css?family=Bagel Fat One' rel='stylesheet'>
