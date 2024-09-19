@@ -22,6 +22,13 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
    <![endif]-->
    <style>
+      header {
+         position: sticky;  /* Make header sticky */
+         top: 0;            /* Stick to the top */
+         z-index: 100;      /* Ensure it's above other elements */
+         background-color: white; /* Ensures header background visibility when sticky */
+      }
+      
       header h1 {
          font-family: 'Bungee Shade', sans-serif;
          font-size: 38px; /* Larger font size */
