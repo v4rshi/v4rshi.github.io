@@ -9,34 +9,55 @@ description: > # your text below (remove <br> elements if you don't need line br
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ 
   <style>
     .icon {
       color: #EC3B83;
-      margin: 0 10px; /* Adjust spacing as needed */
+      font-size: 40px; /* Adjust size as needed */
+      text-align: center;
+      width: auto; /* Let the icon width adjust automatically */
       cursor: pointer;
     }
-  </style>
-  
-  <span title="Copy email: battler_haft_0h@icloud.com">
-    <a href="mailto:battler_haft_0h@icloud.com" class="icon">
-      <i class="fas fa-envelope"></i>
-    </a>
-  </span>
-  <span title="View My LinkedIn Profile">
-    <a href="https://www.linkedin.com/in/sriniv37/" target="_blank" class="icon">
-      <i class="fab fa-linkedin"></i>
-    </a>
-  </span>
-  <span title="Download My Resume">
-    <a href="https://drive.google.com/file/d/13j1rDjqDtEbl6GNtLmQfVSdhPL02XMKd/view?usp=sharing" target="_blank" class="icon">
-      <i class="fas fa-file-download"></i>
-    </a>
-  </span>
-  <span title="View My GitHub Profile">
-    <a href="https://github.com/v4rshi" target="_blank" class="icon">
-      <i class="fab fa-github"></i>
-    </a>
-  </span>
+    .separator {
+      font-size: 40px; /* Match icon size */
+      color: #EC3B83; /* Same color as icons */
+      margin: 0 15px; /* Adjust spacing as needed */
+    }
+    .icon-container {
+      display: flex;
+      justify-content: center; /* Center the icons */
+      align-items: center; /* Center vertically */
+      width: 100%; /* Full width of the header */
+    }
+    </style>
+    
+    <div class="icon-container">
+      <span title="Copy email: battler_haft_0h@icloud.com" class="icon">
+        <a href="mailto:battler_haft_0h@icloud.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </span>
+      <span class="separator">|</span>
+      <span title="View My LinkedIn Profile" class="icon">
+        <a href="https://www.linkedin.com/in/sriniv37/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </span>
+      <span class="separator">|</span>
+      <span title="Download My Resume" class="icon">
+        <a href="https://drive.google.com/file/d/13j1rDjqDtEbl6GNtLmQfVSdhPL02XMKd/view?usp=sharing" target="_blank">
+          <i class="fas fa-file-download"></i>
+        </a>
+      </span>
+      <span class="separator">|</span>
+      <span title="View My GitHub Profile" class="icon">
+        <a href="https://github.com/v4rshi" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </span>
+    </div>
+
 
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
