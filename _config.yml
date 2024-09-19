@@ -5,18 +5,16 @@ description: >
   I'm a data scientist with a background in consulting, industrial engineering, and operations research. I specialize in storytelling with data, leveraging tools like Python, Tableau, and SQL. 
   In my spare time, I love to <a href="https://www.instagram.com/chubbymonkii/?hl=en">cook</a>, make <a href="https://www.etsy.com/shop/StudioVarshi">linocut prints</a>, and volunteer at Muttville SF!  
 
-# CSS and HTML for icons (ensure it's placed correctly in your layout file)
-# Link to Font Awesome for icons
 <style>
   .icon {
-    color: #EC3B83;
-    font-size: 40px; /* Adjust size as needed */
+    color: #EC3B83; /* Icon color */
+    font-size: 30px; /* Smaller size */
     cursor: pointer;
   }
   .separator {
-    font-size: 40px; /* Match icon size */
+    font-size: 30px; /* Match icon size */
     color: #EC3B83; /* Same color as icons */
-    margin: 0 15px; /* Adjust spacing as needed */
+    margin: 0 10px; /* Adjust spacing as needed */
   }
   .icon-container {
     display: flex;
