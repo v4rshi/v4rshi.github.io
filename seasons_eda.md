@@ -333,3 +333,49 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
+
+<style>
+  .floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: pink;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+  }
+  
+  .floating-button:hover {
+    background-color: darkpink;
+  }
+
+  .tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 30px;
+    right: 50%;
+    margin-right: -60px;
+  }
+
+  .floating-button:hover .tooltip {
+    visibility: visible;
+  }
+</style>
+
+<a href="https://v4rshi.github.io/" class="floating-button">
+    Home
+    <span class="tooltip">Return To Homepage</span>
+</a>
+
