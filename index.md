@@ -31,9 +31,9 @@ layout: default
     border-radius: 35px;
   }
   .project-title {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bungee Shade', sans-serif;
     text-align: center;
-    color: #ff00b3;
+    color: #EC3B83;
     font-size: 28px;
     margin: 0;
     padding: 20px;
