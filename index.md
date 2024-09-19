@@ -22,12 +22,12 @@ layout: default
     left: -5px;
     right: -5px;
     bottom: -5px;
-    background-color: rgb(133, 0, 69);
+    background-color: rgb(255, 77, 169);
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: opacity 0.2s ease;
+    transition: opacity 0.15s ease;
     border-radius: 35px;
   }
   .project-title {
