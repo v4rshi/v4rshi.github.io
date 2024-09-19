@@ -22,7 +22,7 @@ layout: default
     left: -5px;
     right: -5px;
     bottom: -5px;
-    background-color: rgba(255, 115, 180, 0.9);
+    background-color: rgba(255, 255, 255, 0.75);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,7 +33,7 @@ layout: default
   .project-title {
     font-family: 'Bebas Neue', sans-serif;
     text-align: center;
-    color: #FFFFFF;
+    color: #ff73b4;
     font-size: 28px;
     margin: 0;
     padding: 20px;
