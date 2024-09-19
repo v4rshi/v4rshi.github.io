@@ -4,27 +4,23 @@
 
 <h2 style="font-family: 'Bungee Shade', sans-serif; color: #04c3d1; font-size: 24px;">Data Analytics Projects</h2>
 
-<div style="text-align: center; color: #52368f;">
+<div style="text-align: left; color: #52368f;">
   <a href="/seasons_eda.md" style="color: #52368f; text-decoration: none;">
-    <h3 style="margin-bottom: 5px;">Analyzing 9 years of Spotify Data Through the Seasons</h3>
+    <h3 style="margin-bottom: 5px; color: #52368f;">Analyzing 9 years of Spotify Data Through the Seasons</h3>
   </a>
-  <a href="/seasons_eda.md">
-    <div style="border-radius: 30px; overflow: hidden; border: 5px solid white; display: inline-block;">
-      <img src="images/spotify_project/seasons_eda.gif?raw=true" width="1000" style="display: block;" />
-    </div>
-  </a>
+  <div style="border-radius: 30px; overflow: hidden; border: 5px solid white; display: inline-block;">
+    <img src="images/spotify_project/seasons_eda.gif?raw=true" width="1000" style="display: block;" />
+  </div>
 </div>
 
 ---
-<div style="text-align: center; color: #52368f;">
+<div style="text-align: left; color: #52368f;">
   <a href="/sentiment_analysis.md" style="color: #52368f; text-decoration: none;">
-    <h3 style="margin-bottom: 5px;">Sentiment Analysis on Spotify Data</h3>
+    <h3 style="margin-bottom: 5px; color: #52368f;">Sentiment Analysis on Spotify Data</h3>
   </a>
-  <a href="/sentiment_analysis.md">
-    <div style="border-radius: 30px; overflow: hidden; border: 5px solid white; display: inline-block;">
-      <img src="images/spotify_project/sentiment_analysis.gif?raw=true" width="1000" style="display: block;" />
-    </div>
-  </a>
+  <div style="border-radius: 30px; overflow: hidden; border: 5px solid white; display: inline-block;">
+    <img src="images/spotify_project/sentiment_analysis.gif?raw=true" width="1000" style="display: block;" />
+  </div>
 </div>
 
 ---
