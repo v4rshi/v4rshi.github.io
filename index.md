@@ -1,4 +1,5 @@
 <link href='https://fonts.googleapis.com/css?family=Bungee+Shade|Black+Han+Sans' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
 <h1 style="font-family: 'Bungee Shade', sans-serif; color: #9760ce; font-size: 30px;">Portfolio</h1>
 
 <h2 style="font-family: 'Bungee Shade', sans-serif; color: #04c3d1; font-size: 24px;">Data Analytics Projects</h2>
