@@ -1,11 +1,11 @@
 <link href='https://fonts.googleapis.com/css?family=Bungee+Shade|Black+Han+Sans' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Bungee Hairline' rel='stylesheet'>
 <h1 style="font-family: 'Bungee Shade', sans-serif; color: #9760ce; font-size: 30px;">Portfolio</h1>
 
 <h2 style="font-family: 'Bungee Shade', sans-serif; color: #04c3d1; font-size: 24px;">Data Analytics Projects</h2>
 
 <div style="margin-left: 20px;">
-  <h3 style="font-family: 'Bungee', sans-serif; color: #5fc400; font-size: 15px;margin-bottom: 10px;">
+  <h3 style="font-family: 'Bungee Hairline', sans-serif; color: #5fc400; font-size: 15px;margin-bottom: 10px;">
     <a href="https://v4rshi.github.io/seasons_eda.html" style="text-decoration: none; color: inherit;">
       Analyzing 9 years of Spotify Data Through the Seasons
     </a>
@@ -19,7 +19,7 @@
 <hr />
 
 <div style="margin-left: 20px;">
-  <h3 style="font-family: 'Bungee', sans-serif; color: #5fc400; font-size: 15px; margin-bottom: 10px;">
+  <h3 style="font-family: 'Bungee Hairline', sans-serif; color: #5fc400; font-size: 15px; margin-bottom: 10px;">
     <a href="https://v4rshi.github.io/sentiment_analysis.html" style="text-decoration: none; color: inherit;">
       Sentiment Analysis on Spotify Data
     </a>
