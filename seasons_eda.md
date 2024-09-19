@@ -120,7 +120,7 @@ I was surprised to find 'Modern Rock' appearing in my winter playlists. It turns
 
 I was then curious to see which years' wintertime this rock music phase happened in
 
-<iframe src="images/spotify_project/rock_winter.html" width="300" height="150"></iframe>
+<iframe src="images/spotify_project/rock_winter.html" style="width: 100%; height: calc(100vw * 9 / 16);" frameborder="0"></iframe>
 
 It is pretty apparent that as time passed, this genre no longer appeared in my playlists, appearing as little as 1 time in 2023 (talk about ROCK bottom :P)
 
