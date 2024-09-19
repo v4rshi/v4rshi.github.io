@@ -27,11 +27,11 @@ layout: default
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.2s ease;
     border-radius: 35px;
   }
   .project-title {
-    font-family: 'Bungee Shade', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     text-align: center;
     color: #ffcfec;
     font-size: 28px;
