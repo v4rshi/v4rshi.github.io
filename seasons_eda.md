@@ -116,11 +116,11 @@ These patterns suggest that my music preferences reflect my emotional state. Thi
 ### 9. I thought it would be interesting to see how my top 10 genres varied by season. In short, not much changed. 
 I was surprised to find 'Modern Rock' appearing in my winter playlists. It turns out that this genre's presence in winter was largely due to additions from 2016, which seems like an anomaly in my usual listening patterns.
 
-<iframe src="images/spotify_project/top_10_genres_by_season.html" width="300" height="150"></iframe>
+<iframe src="images/spotify_project/top_10_genres_by_season.html"  style="width: 100%; height: calc(100vw * 3 / 4);"></iframe>
 
 I was then curious to see which years' wintertime this rock music phase happened in
 
-<iframe src="images/spotify_project/rock_winter.html" style="width: 100%; height: calc(100vw * 9 / 16);" frameborder="0"></iframe>
+<iframe src="images/spotify_project/rock_winter.html" style="width: 100%; height: calc(100vw * 3 / 4);"></iframe>
 
 It is pretty apparent that as time passed, this genre no longer appeared in my playlists, appearing as little as 1 time in 2023 (talk about ROCK bottom :P)
 
