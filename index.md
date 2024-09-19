@@ -7,7 +7,9 @@
 ### [Analyzing 9 years of Spotify Data Through the Seasons](/seasons_eda.md)
 
 <a href="/seasons_eda.md">
-  <img src="images/spotify_project/spotify_eda_thumbnail.png?raw=true" width="300" alt="Spotify Seasonality Analysis EDA"/>
+  <div style="border-radius: 30px; overflow: hidden; border: 5px solid white; display: inline-block;">
+    <img src="images/spotify_project/seasons_eda.gif?raw=true" width="1000" style="display: block;" />
+  </div>
 </a>
 
 ---
