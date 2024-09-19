@@ -13,7 +13,7 @@ description: >
       margin: 0 10px; /* Spacing around icons */
     }
     .icon a {
-      color: #EC3B83 !important; /* Enforce icon color */
+      color: #00aed1 !important; /* Enforce icon color */
     }
     .icon-container {
       display: flex;
