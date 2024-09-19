@@ -1,34 +1,52 @@
-<link href='https://fonts.googleapis.com/css?family=Bungee+Shade|Black+Han+Sans' rel='stylesheet'>
-<h1 style="font-family: 'Bungee Shade', sans-serif; color: #9760ce; font-size: 30px;">Portfolio</h1>
+title: Varshini Srinivas # your name (or website title) here
+logo: "images/polaroid_headshot_fancy2.gif?raw=true" # your photo (or logo) here
+description: >
+  Hi, my name is Varshi!  
+  I'm a data scientist with a background in consulting, industrial engineering, and operations research. I specialize in storytelling with data, leveraging tools like Python, Tableau, and SQL. 
+  In my spare time, I love to <a href="https://www.instagram.com/chubbymonkii/?hl=en">cook</a>, make <a href="https://www.etsy.com/shop/StudioVarshi">linocut prints</a>, and volunteer at Muttville SF!  
+  
+  <style>
+    .icon {
+      color: #00aed1; /* alt pink color #EC3B83 */
+      font-size: 39px; /* Smaller size */
+      cursor: pointer;
+      margin: 0 10px; /* Spacing around icons */
+    }
+    .icon a {
+      color: #00aed1 !important; /* Enforce icon color, alt pink #EC3B83 */
+    }
+    .icon-container {
+      display: flex;
+      justify-content: center; /* Center the icons */
+      align-items: center; /* Center vertically */
+      width: 100%; /* Full width of the header */
+    }
+  </style>
+  
+  <div class="icon-container">
+    <span title="Copy email: battler_haft_0h@icloud.com" class="icon">
+      <a href="mailto:battler_haft_0h@icloud.com">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </span>
+    <span title="View My LinkedIn Profile" class="icon">
+      <a href="https://www.linkedin.com/in/sriniv37/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </span>
+    <span title="Download My Resume" class="icon">
+      <a href="https://drive.google.com/file/d/13j1rDjqDtEbl6GNtLmQfVSdhPL02XMKd/view?usp=sharing" target="_blank">
+        <i class="fas fa-file-download"></i>
+      </a>
+    </span>
+    <span title="View My GitHub Profile" class="icon">
+      <a href="https://github.com/v4rshi" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </span>
+  </div>
 
-<h2 style="font-family: 'Bungee Shade', sans-serif; color: #04c3d1; font-size: 24px;">Data Analytics Projects</h2>
-
-<div style="margin-left: 20px;">
-  <h3 style="font-family: 'Black Han Sans', sans-serif; color: #5fc400; margin-bottom: 10px;">
-    <a href="https://v4rshi.github.io/seasons_eda.html" style="text-decoration: none; color: inherit;">
-      Analyzing 9 years of Spotify Data Through the Seasons
-    </a>
-  </h3>
-
-  <a href="https://v4rshi.github.io/seasons_eda.html">
-    <img src="images/spotify_project/seasons_eda.gif?raw=true" width="1000" style="border-radius: 30px; overflow: hidden; border: 5px solid white; display: block;" />
-  </a>
-</div>
-
-<hr />
-
-<div style="margin-left: 20px;">
-  <h3 style="font-family: 'Black Han Sans', sans-serif; color: #5fc400; margin-bottom: 10px;">
-    <a href="https://v4rshi.github.io/sentiment_analysis.html" style="text-decoration: none; color: inherit;">
-      Sentiment Analysis on Spotify Data
-    </a>
-  </h3>
-
-  <a href="https://v4rshi.github.io/sentiment_analysis.html">
-    <img src="images/spotify_project/sentiment_analysis.gif?raw=true" width="1000" style="border-radius: 30px; overflow: hidden; border: 5px solid white; display: block;" />
-  </a>
-</div>
-
-<hr />
-
-<p style="font-size:9px"> © Copyright of Varshini Srinivas </p>
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+  - jekyll-remote-theme
+google_analytics: UA-000000-0 # your Google Analytics tracking ID here
