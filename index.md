@@ -17,6 +17,7 @@
   <div style="border-radius: 30px; overflow: hidden; border: 5px solid white; display: inline-block;">
     <img src="images/spotify_project/sentiment_analysis.gif?raw=true" width="1000" style="display: block;" />
   </div>
+
   
 ---
 <p style="font-size:9px"> © Copyright of Varshini Srinivas </p>
