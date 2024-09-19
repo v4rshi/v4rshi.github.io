@@ -4,44 +4,44 @@ description: >
   Hi, my name is Varshi!  
   I'm a data scientist with a background in consulting, industrial engineering, and operations research. I specialize in storytelling with data, leveraging tools like Python, Tableau, and SQL. 
   In my spare time, I love to <a href="https://www.instagram.com/chubbymonkii/?hl=en">cook</a>, make <a href="https://www.etsy.com/shop/StudioVarshi">linocut prints</a>, and volunteer at Muttville SF!  
-
-<style>
-  .icon {
-    color: #EC3B83; /* Default icon color */
-    font-size: 25px; /* Smaller size */
-    cursor: pointer;
-    margin: 0 10px; /* Spacing around icons */
-  }
-  .icon-container {
-    display: flex;
-    justify-content: center; /* Center the icons */
-    align-items: center; /* Center vertically */
-    width: 100%; /* Full width of the header */
-  }
-</style>
-
-<div class="icon-container">
-  <span title="Copy email: battler_haft_0h@icloud.com" class="icon">
-    <a href="mailto:battler_haft_0h@icloud.com">
-      <i class="fas fa-envelope"></i>
-    </a>
-  </span>
-  <span title="View My LinkedIn Profile" class="icon">
-    <a href="https://www.linkedin.com/in/sriniv37/" target="_blank">
-      <i class="fab fa-linkedin"></i>
-    </a>
-  </span>
-  <span title="Download My Resume" class="icon">
-    <a href="https://drive.google.com/file/d/13j1rDjqDtEbl6GNtLmQfVSdhPL02XMKd/view?usp=sharing" target="_blank">
-      <i class="fas fa-file-download"></i>
-    </a>
-  </span>
-  <span title="View My GitHub Profile" class="icon">
-    <a href="https://github.com/v4rshi" target="_blank">
-      <i class="fab fa-github"></i>
-    </a>
-  </span>
-</div>
+  
+  <style>
+    .icon {
+      color: #EC3B83; /* Default icon color */
+      font-size: 25px; /* Smaller size */
+      cursor: pointer;
+      margin: 0 10px; /* Spacing around icons */
+    }
+    .icon-container {
+      display: flex;
+      justify-content: center; /* Center the icons */
+      align-items: center; /* Center vertically */
+      width: 100%; /* Full width of the header */
+    }
+  </style>
+  
+  <div class="icon-container">
+    <span title="Copy email: battler_haft_0h@icloud.com" class="icon">
+      <a href="mailto:battler_haft_0h@icloud.com">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </span>
+    <span title="View My LinkedIn Profile" class="icon">
+      <a href="https://www.linkedin.com/in/sriniv37/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </span>
+    <span title="Download My Resume" class="icon">
+      <a href="https://drive.google.com/file/d/13j1rDjqDtEbl6GNtLmQfVSdhPL02XMKd/view?usp=sharing" target="_blank">
+        <i class="fas fa-file-download"></i>
+      </a>
+    </span>
+    <span title="View My GitHub Profile" class="icon">
+      <a href="https://github.com/v4rshi" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </span>
+  </div>
 
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
