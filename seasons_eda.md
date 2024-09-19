@@ -1,5 +1,5 @@
-<link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
-<h2 style="font-family: 'Bungee Shade', sans-serif; color: #b171f1; font-size: 24px;">Soundtrack of My Life: Unraveling My Spotify Saga Over The Last 9 Years</h2>
+<link href='https://fonts.googleapis.com/css?family=Bungee Outline' rel='stylesheet'>
+<h2 style="font-family: 'Bungee Outline', sans-serif; color: #b171f1; font-size: 24px;">Soundtrack of My Life: Unraveling My Spotify Saga Over The Last 9 Years</h2>
 
 
 
