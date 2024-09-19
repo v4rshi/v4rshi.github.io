@@ -3,14 +3,22 @@
 
 I am still working out the kinks, but in the mean-time, I developed a mood-based recommendation system prototype - check it out! 
 
+<link href='https://fonts.googleapis.com/css?family=Bagel Fat One' rel='stylesheet'>
+
 Click on the link below to explore my Musical Mood Ring! Select a 'Sentiment' to discover 5 songs with similar vibes.
 <nav style="text-align: center;">
   <div>
-    <a href="mood_ring.html" style="font-family: 'Bagel Fat One', sans-serif; color: #1DB954; font-size: 24px;">
+    <a href="mood_ring.html" style="font-family: 'Bagel Fat One', sans-serif; color: #1DB954; font-size: 24px; transition: color 0.3s;">
       V's Musical Mood Ring
     </a>
   </div>
 </nav>
+
+<style>
+  nav a:hover {
+    color: #00ff00; /* Brighter green */
+  }
+</style>
 
 <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
 
