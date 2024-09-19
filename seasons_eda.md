@@ -1,4 +1,5 @@
-<h2 style="font-family: 'Bayon', sans-serif; color: #6200EA; font-size: 24px;">Soundtrack of My Life: Unraveling My Spotify Saga Over The Last 9 Years</h2>
+<link href='https://fonts.googleapis.com/css?family=Black Han Sans' rel='stylesheet'>
+<h2 style="font-family: 'Black Han Sans', sans-serif; color: #6200EA; font-size: 24px;">Soundtrack of My Life: Unraveling My Spotify Saga Over The Last 9 Years</h2>
 
 
 #### Click here to see the Jupyter Notebook for [this EDA](https://github.com/v4rshi/v4rshi.github.io/blob/master/notebooks/seasons_eda.ipynb)!
