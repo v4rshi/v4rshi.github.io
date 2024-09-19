@@ -3,10 +3,12 @@
 <link href='https://fonts.googleapis.com/css?family=Bagel Fat One' rel='stylesheet'>
 
 Click on the link below to explore my Musical Mood Ring! Select a 'Sentiment' to discover 5 songs with similar vibes.
-<nav>
-  <a href="mood_ring.html" style="font-family: 'Bagel Fat One', sans-serif; color: #191414; font-size: 24px;">
-    V's Musical Mood Ring
-  </a>
+<nav style="text-align: center;">
+  <div>
+    <a href="mood_ring.html" style="font-family: 'Bagel Fat One', sans-serif; color: #191414; font-size: 24px;">
+      V's Musical Mood Ring
+    </a>
+  </div>
 </nav>
 
 <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
