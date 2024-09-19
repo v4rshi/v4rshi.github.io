@@ -8,7 +8,7 @@ description: >
   <style>
     .icon {
       color: #EC3B83; /* Default icon color */
-      font-size: 30px; /* Smaller size */
+      font-size: 45px; /* Smaller size */
       cursor: pointer;
       margin: 0 10px; /* Spacing around icons */
     }
