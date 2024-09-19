@@ -1,5 +1,8 @@
 ## **Soundtrack of Seasons**: Unraveling My Spotify Saga Over The Last 9 Years
 
+<h2 style="font-family: 'Bungee Shade', sans-serif; color: #04c3d1; font-size: 24px;">Soundtrack of Seasons**: Unraveling My Spotify Saga Over The Last 9 Years</h2>
+
+
 #### Click here to see the Jupyter Notebook for [this EDA](https://github.com/v4rshi/v4rshi.github.io/blob/master/notebooks/seasons_eda.ipynb)!
 --- 
 **Project Description**: I was able to get playlist data for my Spotify playlists thanks to a website called [Exportify](https://exportify.net/). It made me wonder, can I use this data to understand my mood and well-being over the years based on the season of the year I listened to something and the sentiment of the songs (name and lyrics) themselves?
