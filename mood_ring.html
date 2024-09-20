@@ -163,9 +163,10 @@
             width: 10px;
             height: 10px;
             border-radius: 50%;
-            background-color: #ff6289;
+            background-color: #ccc;
             margin: 0 5px;
             cursor: pointer;
+            transition: background-color 0.3s ease;
         }
         .dot.active {
             background-color: #ff6289;
@@ -282,7 +283,6 @@
 
             currentIndex = 0;
             updateCarousel();
-            updateDots();
 
             document.getElementById('prevBtn').style.visibility = 'visible';
             document.getElementById('nextBtn').style.visibility = 'visible';
@@ -292,27 +292,25 @@
             stopCurrentAudio();
             currentIndex = (currentIndex - 1 + totalRecommendations) % totalRecommendations;
             updateCarousel();
-            updateDots();
         });
 
         document.getElementById('nextBtn').addEventListener('click', function() {
             stopCurrentAudio();
             currentIndex = (currentIndex + 1) % totalRecommendations;
             updateCarousel();
-            updateDots();
         });
 
         function updateCarousel() {
             const carouselDiv = document.getElementById('carousel');
             const recommendationWidth = carouselDiv.querySelector('.recommendation').clientWidth;
             carouselDiv.style.transform = `translateX(-${currentIndex * recommendationWidth}px)`;
+            updateDots();
         }
 
         function goToSlide(index) {
             stopCurrentAudio();
             currentIndex = index;
             updateCarousel();
-            updateDots();
         }
 
         function updateDots() {
