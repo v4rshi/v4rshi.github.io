@@ -50,12 +50,12 @@
          width: 0px;
          height: 0px;
          border-right: 50px solid transparent;
-         border-bottom: 35px solid rgba(255, 255, 224, 0.8); /* Pale yellow */
+         border-bottom: 35px solid #FF69B4; /* Bright pink */
          border-left: 50px solid transparent;
       }
 
       .star-five:before {
-         border-bottom: 40px solid rgba(255, 255, 224, 0.8);
+         border-bottom: 40px solid #FF69B4;
          border-left: 15px solid transparent;
          border-right: 15px solid transparent;
          background-color: transparent;
@@ -79,7 +79,7 @@
          width: 0px;
          height: 0px;
          border-right: 50px solid transparent;
-         border-bottom: 35px solid rgba(255, 255, 224, 0.8);
+         border-bottom: 35px solid #FF69B4;
          border-left: 50px solid transparent;
          transform: rotate(-70deg);
          content: '';
@@ -116,8 +116,7 @@
    </div>
    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
    <script>
-      const logo = document.getElementById('logo');
-      logo.addEventListener('mouseover', function(e) {
+      document.addEventListener('mousemove', function(e) {
          const trail = [.7, .9, .8, .5, .25, .6, .4, .3, .2];
          trail.forEach(function(i) {
             const j = (1 - i) * 50;
