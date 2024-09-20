@@ -82,6 +82,7 @@
             margin-bottom: 5px;
             text-align: center;
             max-width: 100%;
+            padding: 0 10px;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -92,19 +93,31 @@
             margin-bottom: 10px;
             text-align: center;
             max-width: 100%;
+            padding: 0 10px;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
         }
         .recommendation a {
             text-decoration: none;
-            color: #1db954;
+            background-color: #1db954;
+            color: white;
             font-weight: bold;
             margin: 10px 0;
             font-size: 14px;
+            padding: 10px 15px;
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center;
+            transition: background-color 0.3s ease;
         }
         .recommendation a:hover {
-            text-decoration: underline;
+            background-color: #1aa34a;
+        }
+        .recommendation a::before {
+            content: "\f1bc";
+            font-family: "Font Awesome 5 Brands";
+            margin-right: 5px;
         }
         .header-image {
             max-width: 25%;
@@ -124,7 +137,7 @@
             font-size: 30px;
         }
         .nav-button {
-            background: #04d4ae;
+            background: #ff6289;
             border: none;
             color: white;
             font-size: 24px;
@@ -139,7 +152,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            visibility: hidden; /* Initially hidden */
+            visibility: hidden;
         }
         #prevBtn {
             left: 10px;
@@ -156,12 +169,12 @@
             width: 10px;
             height: 10px;
             border-radius: 50%;
-            background-color: #ddd;
+            background-color: #ff6289;
             margin: 0 5px;
             cursor: pointer;
         }
         .dot.active {
-            background-color: #04d4ae;
+            background-color: #ff6289;
         }
         audio {
             width: 100%;
@@ -203,7 +216,7 @@
         const recommendations = {};
         let currentIndex = 0;
         let currentlyPlayingAudio = null;
-        let totalRecommendations = 0; // Track the number of recommendations
+        let totalRecommendations = 0;
 
         fetch('recommendations.json')
             .then(response => response.json())
@@ -222,7 +235,7 @@
         document.getElementById('sentiment').addEventListener('change', function() {
             const sentiment = this.value;
             const recs = recommendations[sentiment];
-            totalRecommendations = recs.length; // Set the total number of recommendations
+            totalRecommendations = recs.length;
             const carouselDiv = document.getElementById('carousel');
             const dotsContainer = document.querySelector('.carousel-dots');
             carouselDiv.innerHTML = '';
@@ -253,17 +266,19 @@
             updateCarousel();
             updateDots();
 
-            document.getElementById('prevBtn').style.visibility = 'visible'; // Show arrows
-            document.getElementById('nextBtn').style.visibility = 'visible'; // Show arrows
+            document.getElementById('prevBtn').style.visibility = 'visible';
+            document.getElementById('nextBtn').style.visibility = 'visible';
         });
 
         document.getElementById('prevBtn').addEventListener('click', function() {
+            stopCurrentAudio();
             currentIndex = (currentIndex - 1 + totalRecommendations) % totalRecommendations;
             updateCarousel();
             updateDots();
         });
 
         document.getElementById('nextBtn').addEventListener('click', function() {
+            stopCurrentAudio();
             currentIndex = (currentIndex + 1) % totalRecommendations;
             updateCarousel();
             updateDots();
@@ -276,6 +291,7 @@
         }
 
         function goToSlide(index) {
+            stopCurrentAudio();
             currentIndex = index;
             updateCarousel();
             updateDots();
@@ -289,6 +305,14 @@
                 } else {
                     dot.classList.remove('active');
                 }
+            });
+        }
+
+        function stopCurrentAudio() {
+            const audioElements = document.querySelectorAll('audio');
+            audioElements.forEach(audio => {
+                audio.pause();
+                audio.currentTime = 0;
             });
         }
     </script>
