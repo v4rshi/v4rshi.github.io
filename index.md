@@ -22,7 +22,7 @@
     left: -5px;
     right: -5px;
     bottom: -5px;
-    background-color: rgba(255, 255, 255, 0.80);
+    background-color: rgba(255, 255, 255, 0.83);
     display: flex;
     align-items: center;
     justify-content: center;
