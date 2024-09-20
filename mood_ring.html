@@ -43,37 +43,40 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 500px;
+            height: 400px;
             margin-top: 40px;
+            position: relative;
         }
         #recommendations {
-            perspective: 1000px;
-            transform-style: preserve-3d;
-            width: 300px;
-            height: 400px;
+            width: 200px;
+            height: 300px;
             position: relative;
+            transition: transform 0.5s;
         }
         .recommendation {
             position: absolute;
-            width: 250px;
-            height: 350px;
+            width: 180px;
+            height: 280px;
             background: #fff;
             border: 1px solid #ddd;
             border-radius: 15px;
-            padding: 20px;
+            padding: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             display: flex;
             flex-direction: column;
             align-items: center;
-            transition: transform 0.5s;
-            backface-visibility: hidden;
+            transition: transform 0.5s, opacity 0.5s;
+            opacity: 0;
+        }
+        .recommendation.active {
+            opacity: 1;
         }
         .recommendation img {
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
             object-fit: cover;
             border-radius: 10px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .recommendation a {
@@ -81,6 +84,7 @@
             color: #1db954;
             font-weight: bold;
             margin: 5px 0;
+            font-size: 12px;
         }
         .recommendation a:hover {
             text-decoration: underline;
@@ -102,27 +106,26 @@
             color: #ff7396;
             font-size: 30px;
         }
-        .navigation {
-            margin-top: 20px;
-        }
         .nav-button {
-            background: #04d4ae;
-            color: white;
+            background: none;
             border: none;
-            padding: 10px 20px;
-            margin: 0 10px;
+            color: #04d4ae;
+            font-size: 24px;
             cursor: pointer;
-            border-radius: 5px;
-            font-size: 16px;
-            transition: background-color 0.3s;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
         }
-        .nav-button:hover {
-            background-color: #03a086;
+        #prevBtn {
+            left: -40px;
+        }
+        #nextBtn {
+            right: -40px;
         }
         audio {
             width: 100%;
-            max-width: 200px;
-            margin-top: 10px;
+            max-width: 150px;
+            margin-top: 5px;
         }
 
         @media (max-width: 600px) {
@@ -131,9 +134,9 @@
             label { font-size: 14px; }
             select { font-size: 12px; }
             .header-image { max-width: 50%; }
-            #recommendations-container { height: 400px; }
-            .recommendation { width: 200px; height: 300px; }
-            .recommendation img { width: 150px; height: 150px; }
+            #recommendations-container { height: 300px; }
+            .recommendation { width: 160px; height: 240px; }
+            .recommendation img { width: 130px; height: 130px; }
         }
     </style>
 </head>
@@ -141,7 +144,7 @@
     <a href="https://v4rshi.github.io/sentiment_analysis.html" class="home-button" title="Return to Article">
         <i class="fas fa-home"></i>
     </a>
-    <img src="/api/placeholder/300/100" alt="Musical Mood Ring Logo" class="header-image">
+    <img src="spotify_recommender.png" alt="Musical Mood Ring Logo" class="header-image">
     <h1>what are you in the <br> mood to listen to?</h1>
     <h2>Select a sentiment and get 5 songs to match your vibe!</h2>
     <label for="sentiment">Choose a sentiment:</label>
@@ -150,16 +153,13 @@
     </select>
     <div id="recommendations-container">
         <div id="recommendations"></div>
-    </div>
-    <div class="navigation">
-        <button id="prevBtn" class="nav-button">Previous</button>
-        <button id="nextBtn" class="nav-button">Next</button>
+        <button id="prevBtn" class="nav-button"><i class="fas fa-chevron-left"></i></button>
+        <button id="nextBtn" class="nav-button"><i class="fas fa-chevron-right"></i></button>
     </div>
 
     <script>
         const recommendations = {};
-        let currentRotation = 0;
-        const totalCards = 5;
+        let currentIndex = 0;
         let currentlyPlayingAudio = null;
 
         fetch('recommendations.json')
@@ -184,9 +184,9 @@
 
             recs.forEach((rec, index) => {
                 const recDiv = document.createElement('div');
-                recDiv.className = 'recommendation';
+                recDiv.className = `recommendation ${index === 0 ? 'active' : ''}`;
                 recDiv.innerHTML = `
-                    <img src="${rec['Album Art URL'] || '/api/placeholder/200/200'}" alt="Album Art">
+                    <img src="${rec['Album Art URL'] || '/api/placeholder/150/150'}" alt="Album Art">
                     <strong>${rec['Song Name']}</strong>
                     <div>${rec['Artist']}</div>
                     <a href="${rec['Spotify URL']}" target="_blank">Listen on Spotify</a>
@@ -195,7 +195,6 @@
                         Your browser does not support the audio element.
                     </audio>
                 `;
-                recDiv.style.transform = `rotateY(${index * (360 / totalCards)}deg) translateZ(400px)`;
                 recommendationsDiv.appendChild(recDiv);
 
                 const audio = recDiv.querySelector('audio');
@@ -207,23 +206,33 @@
                 });
             });
 
-            currentRotation = 0;
-            updateRotation();
+            currentIndex = 0;
+            updateActiveRecommendation();
         });
 
         document.getElementById('prevBtn').addEventListener('click', () => {
-            currentRotation += 360 / totalCards;
-            updateRotation();
+            currentIndex = (currentIndex - 1 + 5) % 5;
+            updateActiveRecommendation();
         });
 
         document.getElementById('nextBtn').addEventListener('click', () => {
-            currentRotation -= 360 / totalCards;
-            updateRotation();
+            currentIndex = (currentIndex + 1) % 5;
+            updateActiveRecommendation();
         });
 
-        function updateRotation() {
-            const recommendationsDiv = document.getElementById('recommendations');
-            recommendationsDiv.style.transform = `rotateY(${currentRotation}deg)`;
+        function updateActiveRecommendation() {
+            const recommendations = document.querySelectorAll('.recommendation');
+            recommendations.forEach((rec, index) => {
+                if (index === currentIndex) {
+                    rec.classList.add('active');
+                    rec.style.opacity = 1;
+                    rec.style.transform = 'scale(1)';
+                } else {
+                    rec.classList.remove('active');
+                    rec.style.opacity = 0;
+                    rec.style.transform = 'scale(0.8)';
+                }
+            });
         }
     </script>
 </body>
