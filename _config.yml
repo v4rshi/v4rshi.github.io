@@ -14,7 +14,8 @@ description: >
       transition: color 0.3s; /* Smooth transition */
     }
     .icon a {
-      color: #00aed1 !important; /* Enforce icon color */
+      color: inherit; /* Use the parent color */
+      text-decoration: none; /* Remove underline */
     }
     .icon:hover {
       color: #45cdff; /* Lighter blue on hover */
