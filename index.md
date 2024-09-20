@@ -1,20 +1,20 @@
----
-layout: default
----
-
 <style>
   .project-container {
     position: relative;
-    display: inline-block;
-    margin-left: 20px;
+    display: flex;
+    justify-content: center; /* Center the container */
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
+    width: 100%; /* Set the container width to be responsive */
   }
   .project-image {
     border-radius: 30px;
     overflow: hidden;
     border: 5px solid white;
     display: block;
-    width: 1000px;
+    max-width: 100%; /* Ensure the image scales responsively */
+    height: auto;
   }
   .overlay {
     position: absolute;
@@ -32,7 +32,7 @@ layout: default
   }
   .project-title {
     font-family: 'Bebas Neue', sans-serif;
-    text-align: center;
+    text-align: left; /* Left-align the h3 text */
     color: #ff73b4;
     font-size: 28px;
     margin: 0;
@@ -52,7 +52,7 @@ layout: default
 # <span style="font-family: 'Bungee Shade', sans-serif; color: #9760ce; font-size: 30px;">Portfolio</span>
 
 ## <span style="font-family: 'Bungee Shade', sans-serif; color: #04c3d1; font-size: 24px;">Data Analytics Projects</span>
----
+
 <div class="project-container">
   <a href="https://v4rshi.github.io/seasons_eda.html">
     <img src="images/spotify_project/seasons_eda.gif?raw=true" alt="Seasons EDA" class="project-image">
@@ -61,7 +61,7 @@ layout: default
     </div>
   </a>
 </div>
----
+
 <div class="project-container">
   <a href="https://v4rshi.github.io/sentiment_analysis.html">
     <img src="images/spotify_project/sentiment_analysis.gif?raw=true" alt="Sentiment Analysis" class="project-image">
@@ -70,5 +70,5 @@ layout: default
     </div>
   </a>
 </div>
----
+
 <p style="font-size:9px">© Copyright of Varshini Srinivas</p>
