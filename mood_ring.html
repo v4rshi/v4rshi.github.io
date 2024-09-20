@@ -139,6 +139,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            visibility: hidden; /* Initially hidden */
         }
         #prevBtn {
             left: 10px;
@@ -256,33 +257,44 @@
 
             currentIndex = 0;
             updateCarousel();
+            updateDots();
+
+            document.getElementById('prevBtn').style.visibility = 'visible'; // Show arrows
+            document.getElementById('nextBtn').style.visibility = 'visible'; // Show arrows
         });
 
-        document.getElementById('prevBtn').addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + 5) % 5;
+        document.getElementById('prevBtn').addEventListener('click', function() {
+            currentIndex = (currentIndex - 1 + recommendations.length) % recommendations.length;
             updateCarousel();
+            updateDots();
         });
 
-        document.getElementById('nextBtn').addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % 5;
+        document.getElementById('nextBtn').addEventListener('click', function() {
+            currentIndex = (currentIndex + 1) % recommendations.length;
             updateCarousel();
+            updateDots();
         });
 
         function updateCarousel() {
-            const carousel = document.getElementById('carousel');
-            carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-            updateDots();
+            const carouselDiv = document.getElementById('carousel');
+            const recommendationWidth = carouselDiv.querySelector('.recommendation').clientWidth;
+            carouselDiv.style.transform = `translateX(-${currentIndex * recommendationWidth}px)`;
         }
 
         function goToSlide(index) {
             currentIndex = index;
             updateCarousel();
+            updateDots();
         }
 
         function updateDots() {
             const dots = document.querySelectorAll('.dot');
             dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === currentIndex);
+                if (index === currentIndex) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
             });
         }
     </script>
