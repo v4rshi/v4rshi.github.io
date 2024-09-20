@@ -264,7 +264,7 @@
                 const recDiv = document.createElement('div');
                 recDiv.className = 'recommendation';
                 recDiv.innerHTML = `
-                    <img src="${rec['Album Art']}" alt="Album Art">
+                    <img src="${rec['Album Art']}" alt="Album Art" onerror="this.src='placeholder.jpg';">
                     <strong>${rec['Song Name']}</strong>
                     <div>${rec['Artist']}</div>
                     <a href="${rec['Spotify URL']}" class="spotify-btn" target="_blank">
