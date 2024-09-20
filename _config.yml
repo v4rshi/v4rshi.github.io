@@ -1,5 +1,5 @@
-title: Varshini Srinivas # Your name (or website title) here
-logo: "images/polaroid_headshot_fancy2.gif?raw=true" # Your photo (or logo) here
+title: Varshini Srinivas # your name (or website title) here
+logo: "images/polaroid_headshot_fancy2.gif?raw=true" # your photo (or logo) here
 description: >
   <div style="text-align: center; font-size: 12px; margin-top: -10px;">  <!-- Reduced space between logo and description -->
     <strong>Hi, I’m Varshi! 👋</strong>
@@ -8,30 +8,29 @@ description: >
     In my spare time, I love to 🍳 <a href="https://www.instagram.com/chubbymonkii/?hl=en">cook</a>, make 🎨 <a href="https://www.etsy.com/shop/StudioVarshi">linocut prints</a>, and volunteer with 🐾 <a href="https://muttville.org/about_us?hl=en">Muttville SF</a>!
   </div>
 
-style: |
-  .icon {
-    color: #009dff; /* Updated color */
-    font-size: 30px; /* Smaller size */
-    cursor: pointer;
-    margin: 0 20px; /* Maintain spacing between icons */
-    transition: color 0.3s;
-  }
-  .icon a {
-    color: inherit;
-    text-decoration: none;
-  }
-  .icon:hover {
-    color: #45cdff; /* Lighter blue on hover */
-  }
-  .icon-container {
-    display: flex;
-    justify-content: space-around; /* Spread icons across full width */
-    align-items: center;
-    width: 100%;
-    margin-top: 20px; /* Slightly increased space between description and icons */
-  }
-
-icon_container: |
+  <style>
+    .icon {
+      color: #00badf; /* Original color */
+      font-size: 39px; /* Smaller size */
+      cursor: pointer;
+      margin: 0 10px; /* Spacing around icons */
+      transition: color 0.3s; /* Smooth transition */
+    }
+    .icon a {
+      color: inherit; /* Use the parent color */
+      text-decoration: none; /* Remove underline */
+    }
+    .icon:hover {
+      color: #72d9ff; /* Lighter blue on hover */
+    }
+    .icon-container {
+      display: flex;
+      justify-content: center; /* Center the icons */
+      align-items: center; /* Center vertically */
+      width: 100%; /* Full width of the header */
+    }
+  </style>
+  
   <div class="icon-container">
     <span title="Copy email: battler_haft_0h@icloud.com" class="icon">
       <a href="mailto:battler_haft_0h@icloud.com">
@@ -58,4 +57,4 @@ icon_container: |
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
   - jekyll-remote-theme
-google_analytics: UA-000000-0 # Your Google Analytics tracking ID here
+google_analytics: UA-000000-0 # your Google Analytics tracking ID here
