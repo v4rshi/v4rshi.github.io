@@ -11,7 +11,7 @@ description: >
 
 <style>
   .icon {
-    color: #0084ff; /* Updated color */
+    color: #009dff; /* Updated color */
     font-size: 30px; /* Smaller size */
     cursor: pointer;
     margin: 0 20px; /* Maintain spacing between icons */
@@ -22,7 +22,7 @@ description: >
     text-decoration: none;
   }
   .icon:hover {
-    color: #45cdff; /* Lighter blue on hover */
+    color: #66ccff; /* Lighter blue on hover */
   }
   .icon-container {
     display: flex;
