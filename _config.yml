@@ -1,59 +1,60 @@
+link: <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
 title: Varshini Srinivas # Your name (or website title) here
 logo: "images/polaroid_headshot_fancy2.gif?raw=true" # Your photo (or logo) here
 description: >
-  <div style="text-align: center; font-size: 12px; margin-top: -10px;">  <!-- Reduced space between logo and description -->
+  <div style="text-align: center; font-size: 12px; margin-top: -10px; font-family: 'Jost', sans-serif;">  <!-- Reduced space between logo and description -->
     <strong>Hi, I’m Varshi! 👋</strong>
     <br> <br> <!-- Line space between intro and body -->
     I’m a data scientist with a background in consulting, industrial engineering, and operations research. I specialize in turning data into stories using 🐍 Python, 📊 Tableau, and 💾 SQL.  
     In my spare time, I love to 🍳 <a href="https://www.instagram.com/chubbymonkii/?hl=en">cook</a>, make 🎨 <a href="https://www.etsy.com/shop/StudioVarshi">linocut prints</a>, and volunteer with 🐾 <a href="https://muttville.org/about_us?hl=en">Muttville SF</a>!
   </div>
 
-  <style>
-    .icon {
-      color: #0084ff; /* Updated color */
-      font-size: 30px; /* Smaller size */
-      cursor: pointer;
-      margin: 0 20px; /* Maintain spacing between icons */
-      transition: color 0.3s;
-    }
-    .icon a {
-      color: inherit;
-      text-decoration: none;
-    }
-    .icon:hover {
-      color: #45cdff; /* Lighter blue on hover */
-    }
-    .icon-container {
-      display: flex;
-      justify-content: space-around; /* Spread icons across full width */
-      align-items: center;
-      width: 100%;
-      margin-top: 20px; /* Slightly increased space between description and icons */
-    }
-  </style>
+<style>
+  .icon {
+    color: #0084ff; /* Updated color */
+    font-size: 30px; /* Smaller size */
+    cursor: pointer;
+    margin: 0 20px; /* Maintain spacing between icons */
+    transition: color 0.3s;
+  }
+  .icon a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .icon:hover {
+    color: #45cdff; /* Lighter blue on hover */
+  }
+  .icon-container {
+    display: flex;
+    justify-content: space-around; /* Spread icons across full width */
+    align-items: center;
+    width: 100%;
+    margin-top: 20px; /* Slightly increased space between description and icons */
+  }
+</style>
 
-  <div class="icon-container">
-    <span title="Copy email: battler_haft_0h@icloud.com" class="icon">
-      <a href="mailto:battler_haft_0h@icloud.com">
-        <i class="fas fa-envelope"></i>
-      </a>
-    </span>
-    <span title="View My LinkedIn Profile" class="icon">
-      <a href="https://www.linkedin.com/in/sriniv37/" target="_blank">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </span>
-    <span title="Download My Resume" class="icon">
-      <a href="https://drive.google.com/file/d/13j1rDjqDtEbl6GNtLmQfVSdhPL02XMKd/view?usp=sharing" target="_blank">
-        <i class="fas fa-file-download"></i>
-      </a>
-    </span>
-    <span title="View My GitHub Profile" class="icon">
-      <a href="https://github.com/v4rshi" target="_blank">
-        <i class="fab fa-github"></i>
-      </a>
-    </span>
-  </div>
+<div class="icon-container">
+  <span title="Copy email: battler_haft_0h@icloud.com" class="icon">
+    <a href="mailto:battler_haft_0h@icloud.com">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </span>
+  <span title="View My LinkedIn Profile" class="icon">
+    <a href="https://www.linkedin.com/in/sriniv37/" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </span>
+  <span title="Download My Resume" class="icon">
+    <a href="https://drive.google.com/file/d/13j1rDjqDtEbl6GNtLmQfVSdhPL02XMKd/view?usp=sharing" target="_blank">
+      <i class="fas fa-file-download"></i>
+    </a>
+  </span>
+  <span title="View My GitHub Profile" class="icon">
+    <a href="https://github.com/v4rshi" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+  </span>
+</div>
 
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
