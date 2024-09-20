@@ -9,11 +9,12 @@ Click on the link below to explore my Musical Mood Ring! Select a 'Sentiment' to
 
 <nav style="text-align: center;">
   <div style="display: inline-block; background-color: #f0f0f0; border-radius: 25px; padding: 10px 20px;">
-    <a href="mood_ring.html" style="font-family: 'Bagel Fat One', sans-serif; font-size: 24px; background: linear-gradient(90deg, #ff9999, #ffcc99, #ffff99, #ccff99, #99ffff, #9999ff, #d6a3ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">
+    <a href="mood_ring.html" style="font-family: 'Bagel Fat One', sans-serif; font-size: 24px; background: linear-gradient(90deg, #ff9999, #ffcc99, #ffff99, #ccff99, #99ffff, #9999ff, #d6a3ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);">
       V's Musical Mood Ring
     </a>
   </div>
 </nav>
+
 
 
 <style>
