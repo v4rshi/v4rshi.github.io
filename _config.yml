@@ -6,7 +6,7 @@ description: >
     <br><br> <!-- Line space between intro and body -->
     I’m a data scientist with a background in consulting, industrial engineering, and operations research. I love storytelling with data using 🐍 Python, 📊 Tableau, and 💾 SQL.  
     In my spare time, I love to 🍳 <a href="https://www.instagram.com/chubbymonkii/?hl=en">cook</a>, make 🎨 <a href="https://www.etsy.com/shop/StudioVarshi">linocut prints</a>, and volunteer at 🐾 <a href="https://muttville.org/about_us?hl=en">Muttville SF</a>!
-    <br>
+    <br><br> <!-- Additional space between description and icons -->
   </div>
 
   <style>
