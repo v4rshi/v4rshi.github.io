@@ -203,6 +203,7 @@
         const recommendations = {};
         let currentIndex = 0;
         let currentlyPlayingAudio = null;
+        let totalRecommendations = 0; // Track the number of recommendations
 
         fetch('recommendations.json')
             .then(response => response.json())
@@ -221,6 +222,7 @@
         document.getElementById('sentiment').addEventListener('change', function() {
             const sentiment = this.value;
             const recs = recommendations[sentiment];
+            totalRecommendations = recs.length; // Set the total number of recommendations
             const carouselDiv = document.getElementById('carousel');
             const dotsContainer = document.querySelector('.carousel-dots');
             carouselDiv.innerHTML = '';
@@ -245,14 +247,6 @@
                 dot.className = 'dot';
                 dot.addEventListener('click', () => goToSlide(index));
                 dotsContainer.appendChild(dot);
-
-                const audio = recDiv.querySelector('audio');
-                audio.addEventListener('play', function() {
-                    if (currentlyPlayingAudio && currentlyPlayingAudio !== this) {
-                        currentlyPlayingAudio.pause();
-                    }
-                    currentlyPlayingAudio = this;
-                });
             });
 
             currentIndex = 0;
@@ -264,13 +258,13 @@
         });
 
         document.getElementById('prevBtn').addEventListener('click', function() {
-            currentIndex = (currentIndex - 1 + recommendations.length) % recommendations.length;
+            currentIndex = (currentIndex - 1 + totalRecommendations) % totalRecommendations;
             updateCarousel();
             updateDots();
         });
 
         document.getElementById('nextBtn').addEventListener('click', function() {
-            currentIndex = (currentIndex + 1) % recommendations.length;
+            currentIndex = (currentIndex + 1) % totalRecommendations;
             updateCarousel();
             updateDots();
         });
