@@ -31,7 +31,7 @@
     border-radius: 35px;
   }
   .project-title {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Jost', sans-serif;
     text-align: left; /* Left-align the h3 text */
     color: #EC3B83;
     font-size: 28px;
@@ -47,7 +47,7 @@
   }
 </style>
 
-<link href='https://fonts.googleapis.com/css?family=Bungee+Shade|Black+Han+Sans|Bebas+Neue' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Bungee+Shade|Black+Han+Sans|Bebas+Neue|Jost' rel='stylesheet'>
 
 # <span style="font-family: 'Bungee Shade', sans-serif; color: #9760ce; font-size: 30px;">Portfolio</span>
 
