@@ -22,7 +22,7 @@
     left: -5px;
     right: -5px;
     bottom: -5px;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.80);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,9 +31,9 @@
     border-radius: 35px;
   }
   .project-title {
-    font-family: 'Jost', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     text-align: left; /* Left-align the h3 text */
-    color: #EC3B83;
+    color: #f76aa4;
     font-size: 28px;
     margin: 0;
     padding: 20px;
