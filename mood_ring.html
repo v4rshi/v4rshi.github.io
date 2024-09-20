@@ -8,8 +8,75 @@
     <link href='https://fonts.googleapis.com/css?family=Kirang+Haerang' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* ... (previous styles remain the same) ... */
-
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #fde2e2, #fef9d1, #d2e7f8);
+            background-attachment: fixed;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            min-height: 100vh;
+        }
+        h1 {
+            font-family: 'Kirang Haerang';
+            color: #04d4ae;
+            margin-bottom: 5px;
+            font-size: 38px;
+        }
+        h2 {
+            color: #555;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-weight: normal;
+            font-size: 16px;
+        }
+        label {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        select {
+            padding: 8px 12px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        #carousel-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            height: 400px;
+            margin: 40px auto;
+            overflow: hidden;
+        }
+        #carousel {
+            display: flex;
+            transition: transform 0.5s ease;
+            height: 100%;
+        }
+        .recommendation {
+            flex: 0 0 100%;
+            background: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 360px;
+            width: 280px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        .recommendation img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
         .recommendation strong {
             font-size: 16px;
             margin-bottom: 5px;
@@ -18,27 +85,44 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-            position: relative;
         }
-
-        /* Updated animation for long track names */
-        @keyframes marquee {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
-        }
-
-        .recommendation strong.animate {
-            white-space: nowrap;
+        .recommendation div {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+            text-align: center;
+            max-width: 100%;
             overflow: hidden;
-            display: inline-block;
-            animation: marquee 10s linear infinite;
-            animation-play-state: paused;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
-
-        .recommendation strong.animate:hover {
-            animation-play-state: running;
+        .recommendation a {
+            text-decoration: none;
+            color: #1db954;
+            font-weight: bold;
+            margin: 10px 0;
+            font-size: 14px;
         }
-
+        .recommendation a:hover {
+            text-decoration: underline;
+        }
+        .header-image {
+            max-width: 25%;
+            height: auto;
+            margin-top: 0;
+        }
+        .home-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            z-index: 1000;
+            color: #ff7396;
+            font-size: 30px;
+        }
         .nav-button {
             background: #04d4ae;
             border: none;
@@ -55,161 +139,158 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            visibility: hidden;
-            opacity: 0;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
+            visibility: hidden; /* Initially hidden */
         }
-
         #prevBtn {
             left: 10px;
         }
-
         #nextBtn {
             right: 10px;
         }
-
-        .nav-button.visible {
-            visibility: visible;
-            opacity: 1;
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .dot.active {
+            background-color: #04d4ae;
+        }
+        audio {
+            width: 100%;
+            max-width: 220px;
+            margin-top: 10px;
         }
 
-        /* ... (rest of the styles remain the same) ... */
+        @media (max-width: 600px) {
+            h1 { font-size: 28px; }
+            h2 { font-size: 14px; }
+            label { font-size: 14px; }
+            select { font-size: 12px; }
+            .header-image { max-width: 50%; }
+            #carousel-container { height: 340px; }
+            .recommendation { height: 300px; padding: 15px; width: 240px; }
+            .recommendation img { width: 150px; height: 150px; }
+        }
     </style>
 </head>
 <body>
-    <!-- ... (previous body content remains the same) ... -->
+    <a href="https://v4rshi.github.io/sentiment_analysis.html" class="home-button" title="Return to Article">
+        <i class="fas fa-home"></i>
+    </a>
+    <img src="spotify_recommender.gif" alt="Musical Mood Ring Logo" class="header-image">
+    <h1>what are you in the <br> mood to listen to?</h1>
+    <h2>Select a sentiment and get 5 songs to match your vibe!</h2>
+    <label for="sentiment">Choose a sentiment:</label>
+    <select id="sentiment">
+        <option value="" disabled selected>Select a sentiment</option>
+    </select>
+    <div id="carousel-container">
+        <div id="carousel"></div>
+        <button id="prevBtn" class="nav-button"><i class="fas fa-chevron-left"></i></button>
+        <button id="nextBtn" class="nav-button"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="carousel-dots"></div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const recommendations = {};
-            let currentIndex = 0;
-            let currentlyPlayingAudio = null;
-            let totalRecommendations = 0;
+        const recommendations = {};
+        let currentIndex = 0;
+        let currentlyPlayingAudio = null;
+        let totalRecommendations = 0; // Track the number of recommendations
 
-            const sentimentSelect = document.getElementById('sentiment');
+        fetch('recommendations.json')
+            .then(response => response.json())
+            .then(data => {
+                Object.assign(recommendations, data);
+                const sentimentSelect = document.getElementById('sentiment');
+                const sentimentOptions = Object.keys(recommendations);
+                sentimentOptions.forEach(sentiment => {
+                    const option = document.createElement('option');
+                    option.value = sentiment;
+                    option.text = sentiment;
+                    sentimentSelect.add(option);
+                });
+            });
+
+        document.getElementById('sentiment').addEventListener('change', function() {
+            const sentiment = this.value;
+            const recs = recommendations[sentiment];
+            totalRecommendations = recs.length; // Set the total number of recommendations
             const carouselDiv = document.getElementById('carousel');
-            const prevBtn = document.getElementById('prevBtn');
-            const nextBtn = document.getElementById('nextBtn');
             const dotsContainer = document.querySelector('.carousel-dots');
+            carouselDiv.innerHTML = '';
+            dotsContainer.innerHTML = '';
 
-            fetch('recommendations.json')
-                .then(response => response.json())
-                .then(data => {
-                    Object.assign(recommendations, data);
-                    const sentimentOptions = Object.keys(recommendations);
-                    sentimentOptions.forEach(sentiment => {
-                        const option = document.createElement('option');
-                        option.value = sentiment;
-                        option.text = sentiment;
-                        sentimentSelect.add(option);
-                    });
-                });
+            recs.forEach((rec, index) => {
+                const recDiv = document.createElement('div');
+                recDiv.className = 'recommendation';
+                recDiv.innerHTML = `
+                    <img src="${rec['Album Art URL'] || '/api/placeholder/180/180'}" alt="Album Art">
+                    <strong>${rec['Song Name']}</strong>
+                    <div>${rec['Artist']}</div>
+                    <a href="${rec['Spotify URL']}" target="_blank">Listen on Spotify</a>
+                    <audio controls>
+                        <source src="${rec['Preview URL'] || '#'}" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                `;
+                carouselDiv.appendChild(recDiv);
 
-            sentimentSelect.addEventListener('change', function() {
-                const sentiment = this.value;
-                const recs = recommendations[sentiment];
-                totalRecommendations = recs.length;
-                carouselDiv.innerHTML = '';
-                dotsContainer.innerHTML = '';
-
-                recs.forEach((rec, index) => {
-                    const recDiv = document.createElement('div');
-                    recDiv.className = 'recommendation';
-                    recDiv.innerHTML = `
-                        <img src="${rec['Album Art URL'] || '/api/placeholder/180/180'}" alt="Album Art" onerror="this.src='/api/placeholder/180/180';">
-                        <strong class="track-name">${rec['Song Name']}</strong>
-                        <div>${rec['Artist']}</div>
-                        <a href="${rec['Spotify URL']}" target="_blank">Listen on Spotify</a>
-                        <audio>
-                            <source src="${rec['Preview URL'] || '#'}" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
-                        <button class="play-pause-btn">Play</button>
-                    `;
-                    carouselDiv.appendChild(recDiv);
-
-                    const dot = document.createElement('div');
-                    dot.className = 'dot';
-                    dot.addEventListener('click', () => goToSlide(index));
-                    dotsContainer.appendChild(dot);
-
-                    // Add marquee effect for long track names
-                    const trackName = recDiv.querySelector('.track-name');
-                    if (trackName.scrollWidth > trackName.clientWidth) {
-                        trackName.classList.add('animate');
-                    }
-                });
-
-                currentIndex = 0;
-                updateCarousel();
-                updateDots();
-
-                prevBtn.classList.add('visible');
-                nextBtn.classList.add('visible');
+                const dot = document.createElement('div');
+                dot.className = 'dot';
+                dot.addEventListener('click', () => goToSlide(index));
+                dotsContainer.appendChild(dot);
             });
 
-            prevBtn.addEventListener('click', function() {
-                stopCurrentAudio();
-                currentIndex = (currentIndex - 1 + totalRecommendations) % totalRecommendations;
-                updateCarousel();
-                updateDots();
-            });
+            currentIndex = 0;
+            updateCarousel();
+            updateDots();
 
-            nextBtn.addEventListener('click', function() {
-                stopCurrentAudio();
-                currentIndex = (currentIndex + 1) % totalRecommendations;
-                updateCarousel();
-                updateDots();
-            });
-
-            carouselDiv.addEventListener('click', function(e) {
-                if (e.target.classList.contains('play-pause-btn')) {
-                    const audio = e.target.previousElementSibling;
-                    if (audio.paused) {
-                        stopCurrentAudio();
-                        audio.play();
-                        e.target.textContent = 'Pause';
-                        currentlyPlayingAudio = audio;
-                    } else {
-                        audio.pause();
-                        e.target.textContent = 'Play';
-                        currentlyPlayingAudio = null;
-                    }
-                }
-            });
-
-            function updateCarousel() {
-                const recommendationWidth = carouselDiv.querySelector('.recommendation').clientWidth;
-                carouselDiv.style.transform = `translateX(-${currentIndex * recommendationWidth}px)`;
-            }
-
-            function goToSlide(index) {
-                stopCurrentAudio();
-                currentIndex = index;
-                updateCarousel();
-                updateDots();
-            }
-
-            function updateDots() {
-                const dots = document.querySelectorAll('.dot');
-                dots.forEach((dot, index) => {
-                    if (index === currentIndex) {
-                        dot.classList.add('active');
-                    } else {
-                        dot.classList.remove('active');
-                    }
-                });
-            }
-
-            function stopCurrentAudio() {
-                if (currentlyPlayingAudio) {
-                    currentlyPlayingAudio.pause();
-                    currentlyPlayingAudio.currentTime = 0;
-                    currentlyPlayingAudio.nextElementSibling.textContent = 'Play';
-                    currentlyPlayingAudio = null;
-                }
-            }
+            document.getElementById('prevBtn').style.visibility = 'visible'; // Show arrows
+            document.getElementById('nextBtn').style.visibility = 'visible'; // Show arrows
         });
+
+        document.getElementById('prevBtn').addEventListener('click', function() {
+            currentIndex = (currentIndex - 1 + totalRecommendations) % totalRecommendations;
+            updateCarousel();
+            updateDots();
+        });
+
+        document.getElementById('nextBtn').addEventListener('click', function() {
+            currentIndex = (currentIndex + 1) % totalRecommendations;
+            updateCarousel();
+            updateDots();
+        });
+
+        function updateCarousel() {
+            const carouselDiv = document.getElementById('carousel');
+            const recommendationWidth = carouselDiv.querySelector('.recommendation').clientWidth;
+            carouselDiv.style.transform = `translateX(-${currentIndex * recommendationWidth}px)`;
+        }
+
+        function goToSlide(index) {
+            currentIndex = index;
+            updateCarousel();
+            updateDots();
+        }
+
+        function updateDots() {
+            const dots = document.querySelectorAll('.dot');
+            dots.forEach((dot, index) => {
+                if (index === currentIndex) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
     </script>
 </body>
 </html>
