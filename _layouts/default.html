@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: 'en-US' }}">
 <head>
    <title>Varshi's Portfolio</title>
    {% if site.google_analytics %}
@@ -16,7 +16,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta property="og:image" content="https://github.com/v4rshi/v4rshi.github.io/blob/master/images/logo.png">
    {% seo %}
-   <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
    <link rel="icon" type="image/png" href="https://github.com/v4rshi/v4rshi.github.io/raw/master/images/logo.png">
    <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
    <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
@@ -40,15 +40,58 @@
       header h1 a:hover {
          color: #6F0023; /* Darker pink shade on hover */
       }
-   }
+
+      .star-five {
+         background: transparent;
+         margin: 50px 0;
+         position: absolute;
+         display: block;
+         color: #ffffff;
+         width: 0px;
+         height: 0px;
+         border-right: 50px solid transparent;
+         border-bottom: 35px solid rgba(255, 255, 224, 0.8); /* Pale yellow */
+         border-left: 50px solid transparent;
+      }
+
+      .star-five:before {
+         border-bottom: 40px solid rgba(255, 255, 224, 0.8);
+         border-left: 15px solid transparent;
+         border-right: 15px solid transparent;
+         background-color: transparent;
+         position: absolute;
+         height: 0;
+         width: 0;
+         top: -30px;
+         left: -45px;
+         display: block;
+         content: '';
+         transform: rotate(-35deg);
+      }
+
+      .star-five:after {
+         background-color: transparent;
+         position: absolute;
+         display: block;
+         color: #ffffff;
+         top: 2px;
+         left: -60px;
+         width: 0px;
+         height: 0px;
+         border-right: 50px solid transparent;
+         border-bottom: 35px solid rgba(255, 255, 224, 0.8);
+         border-left: 50px solid transparent;
+         transform: rotate(-70deg);
+         content: '';
+      }
    </style>
 </head>
 <body>
    <div class="wrapper">
       <header>
-         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+         <h1><a href="{{ '/' | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
          {% if site.logo %}
-         <img src="{{site.logo | relative_url}}" alt="Logo" />
+         <img id="logo" src="{{site.logo | relative_url}}" alt="Logo" style="cursor: pointer;" />
          {% endif %}
          <p>{{ site.description | default: site.github.project_tagline }}</p>
          {% if site.github.is_project_page %}
@@ -71,6 +114,33 @@
          {% endif %}
       </footer>
    </div>
-   <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+   <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+   <script>
+      const logo = document.getElementById('logo');
+      logo.addEventListener('mouseover', function(e) {
+         const trail = [.7, .9, .8, .5, .25, .6, .4, .3, .2];
+         trail.forEach(function(i) {
+            const j = (1 - i) * 50;
+            const elem = document.createElement('div');
+            const precision = 50; 
+            const randomnum = Math.floor(Math.random() * (10 * precision - 1 * precision) + 1 * precision) / (1 * precision);   
+            const rOpacity = randomnum / 10;
+            const rSize = randomnum / 120;
+
+            elem.classList.add('star-five');
+            elem.style.position = 'fixed';
+            elem.style.zIndex = 6;
+            elem.style.transform = `rotate(35deg) scale(${rSize})`;
+            elem.style.top = e.pageY - window.scrollY + Math.round(Math.random() * j - j / 2) - 100 + 'px';
+            elem.style.left = e.pageX + Math.round(Math.random() * j - j / 2) - 100 + 'px';
+            elem.style.opacity = rOpacity;
+            elem.style.pointerEvents = 'none';
+            document.body.appendChild(elem);
+            window.setTimeout(function () {
+               document.body.removeChild(elem);
+            }, Math.round(Math.random() * i * 1000));
+         });
+      });
+   </script>
 </body>
 </html>
