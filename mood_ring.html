@@ -109,16 +109,31 @@
             to { transform: translateX(-100%); }
         }
 
-        .recommendation a {
+        .recommendation a.spotify-btn {
             text-decoration: none;
-            color: #1db954;
+            background-color: #1DB954;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
             font-weight: bold;
-            margin: 10px 0;
             font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 180px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
-        .recommendation a:hover {
-            text-decoration: underline;
+
+        .recommendation a.spotify-btn:hover {
+            background-color: #1aa34a;
         }
+
+        .recommendation a.spotify-btn i {
+            font-size: 18px;
+        }
+
         .header-image {
             max-width: 25%;
             height: auto;
@@ -245,10 +260,12 @@
                 const recDiv = document.createElement('div');
                 recDiv.className = 'recommendation';
                 recDiv.innerHTML = `
-                    <img src="${rec['Album Art URL'] || '/api/placeholder/180/180'}" alt="Album Art">
+                    <img src="${rec['Album Art']}" alt="Album Art">
                     <strong>${rec['Song Name']}</strong>
                     <div>${rec['Artist']}</div>
-                    <a href="${rec['Spotify URL']}" target="_blank">Listen on Spotify</a>
+                    <a href="${rec['Spotify URL']}" class="spotify-btn" target="_blank">
+                        <i class="fab fa-spotify"></i> Listen on Spotify
+                    </a>
                     <audio controls>
                         <source src="${rec['Preview URL'] || '#'}" type="audio/mpeg">
                         Your browser does not support the audio element.
