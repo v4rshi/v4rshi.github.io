@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Varshi's Music Mood Ring</title>
+    <title>V's Music Mood Ring</title>
     <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Kirang+Haerang' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -19,7 +19,7 @@
         h1 {
             font-family: 'Kirang Haerang';
             color: #04d4ae;
-            margin-bottom: 5px;
+            margin-bottom: 5px; /* Reduced margin */
             font-size: 38px;
         }
         h2 {
@@ -39,64 +39,100 @@
             border: 1px solid #ddd;
             border-radius: 4px;
         }
-        .carousel {
-            position: relative;
-            width: 80%;
-            height: 300px;
-            margin: 20px auto;
-            perspective: 1000px;
+        #recommendations {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        .carousel__track-container {
-            position: relative;
-            width: 100%;
-            height: 100%;
+        .recommendation {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
             overflow: hidden;
         }
-        .carousel__track {
-            display: flex;
-            height: 100%;
-            transition: transform 0.8s ease;
-            transform-style: preserve-3d;
-        }
-        .carousel__slide {
-            flex: 1 0 100%;
-            max-width: 200px;
-            backface-visibility: hidden;
-            transition: transform 0.5s;
-            text-align: center;
-        }
-        .carousel__slide img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-        .carousel__slide .song-details {
-            margin-top: 10px;
+        .recommendation a {
+            text-decoration: none;
             color: #1db954;
             font-weight: bold;
         }
-        .carousel__button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: none;
+        .recommendation a:hover {
+            text-decoration: underline;
+        }
+        .recommendation img {
+            border-radius: 4px;
+            margin-right: 10px;
+            vertical-align: middle;
+            max-width: 80px;
+            max-height: 80px;
+        }
+        .song-details {
+            display: flex;
+            flex-direction: column;
+        }
+        .header-image {
+            max-width: 25%;
+            height: auto;
+            margin-top: 0; /* Removed top margin */
+        }
+        .spotify-player {
+            width: 100%;
+            height: 80px;
+            margin-top: 10px;
             border: none;
-            cursor: pointer;
-            font-size: 24px;
-            z-index: 1;
         }
-        .carousel__button--left {
-            left: 10px;
-        }
-        .carousel__button--right {
-            right: 10px;
+        audio {
+            width: 100%; /* Make audio player fit the container */
+            max-width: 300px; /* Set a maximum width */
+            margin-top: 10px;
         }
         .home-button {
             position: fixed;
-            top: 20px;
-            left: 20px;
-            font-size: 30px;
-            color: #ff7396;
+            top: 20px; /* Adjust as needed */
+            left: 20px; /* Adjust as needed */
+            display: inline-block;
+            background: none;
+            border: none;
+            padding: 0;
             cursor: pointer;
+            z-index: 1000; /* Ensure it's on top of other content */
+            color: #ff7396; /* Pink color */
+            font-size: 30px; /* Adjust size as needed */
+        }
+
+        /* Media queries for smaller screens */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 20px;
+            }
+            h2 {
+                font-size: 14px;
+            }
+            label {
+                font-size: 14px;
+            }
+            select {
+                font-size: 12px;
+            }
+            .recommendation {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .recommendation img {
+                margin-bottom: 10px;
+            }
+            .header-image {
+                max-width: 80%;
+            }
         }
     </style>
 </head>
@@ -111,20 +147,11 @@
     <select id="sentiment">
         <option value="" disabled selected>Select a sentiment</option>
     </select>
-    
-    <div class="carousel" id="carousel">
-        <div class="carousel__track-container">
-            <div class="carousel__track" id="carouselTrack"></div>
-        </div>
-        <button class="carousel__button carousel__button--left" id="prevButton">&#9664;</button>
-        <button class="carousel__button carousel__button--right" id="nextButton">&#9654;</button>
-    </div>
+    <div id="recommendations"></div>
 
     <script>
         const recommendations = {};
         let currentlyPlayingAudio = null;
-        let currentIndex = 0;
-        const carouselTrack = document.getElementById('carouselTrack');
 
         fetch('recommendations.json')
             .then(response => response.json())
@@ -143,43 +170,34 @@
         document.getElementById('sentiment').addEventListener('change', function() {
             const sentiment = this.value;
             const recs = recommendations[sentiment];
-            carouselTrack.innerHTML = ''; // Clear previous carousel items
+            const recommendationsDiv = document.getElementById('recommendations');
+            recommendationsDiv.innerHTML = '';
+
             recs.forEach(rec => {
-                const slide = document.createElement('div');
-                slide.classList.add('carousel__slide');
-                slide.innerHTML = `
+                const recDiv = document.createElement('div');
+                recDiv.className = 'recommendation';
+                recDiv.innerHTML = `
                     <img src="${rec['Album Art URL'] || 'default-album-art.jpg'}" alt="Album Art">
-                    <div class="song-details">${rec['Song Name']} by ${rec['Artist']}</div>
-                    <audio controls>
-                        <source src="${rec['Preview URL'] || 'default-preview.mp3'}" type="audio/mpeg">
-                    </audio>
+                    <div class="song-details">
+                        <strong>${rec['Song Name']}</strong> by ${rec['Artist']}<br>
+                        <a href="${rec['Spotify URL']}" target="_blank">Listen on Spotify</a><br>
+                        <div>Listen to a song preview:</div>
+                        <audio controls>
+                            <source src="${rec['Preview URL'] || 'default-preview.mp3'}" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
                 `;
-                slide.querySelector('audio').addEventListener('play', function() {
+
+                recDiv.querySelector('audio').addEventListener('play', function() {
                     if (currentlyPlayingAudio && currentlyPlayingAudio !== this) {
                         currentlyPlayingAudio.pause();
                     }
                     currentlyPlayingAudio = this;
                 });
-                carouselTrack.appendChild(slide);
+
+                recommendationsDiv.appendChild(recDiv);
             });
-            currentIndex = 0;
-            updateCarousel();
-        });
-
-        function updateCarousel() {
-            const totalSlides = document.querySelectorAll('.carousel__slide').length;
-            const angle = 360 / totalSlides;
-            carouselTrack.style.transform = `rotateY(-${currentIndex * angle}deg)`;
-        }
-
-        document.getElementById('prevButton').addEventListener('click', function() {
-            currentIndex = (currentIndex - 1 + carouselTrack.children.length) % carouselTrack.children.length;
-            updateCarousel();
-        });
-
-        document.getElementById('nextButton').addEventListener('click', function() {
-            currentIndex = (currentIndex + 1) % carouselTrack.children.length;
-            updateCarousel();
         });
     </script>
 </body>
