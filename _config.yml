@@ -13,7 +13,7 @@ description: >
       color: #00badf; /* Original color */
       font-size: 30px; /* Smaller size */
       cursor: pointer;
-      margin: 0 15px; /* Spacing around icons */
+      margin: 0 20px; /* Spacing around icons */
       transition: color 0.3s; /* Smooth transition */
     }
     .icon a {
