@@ -3,9 +3,18 @@ logo: "images/polaroid_headshot_fancy2.gif?raw=true" # your photo (or logo) here
 description: >
   Hi, my name is Varshi!  
   I'm a data scientist with a background in consulting, industrial engineering, and operations research. I specialize in storytelling with data, leveraging tools like Python, Tableau, and SQL. 
-  In my spare time, I love to <a href="https://www.instagram.com/chubbymonkii/?hl=en">cook</a>, make <a href="https://www.etsy.com/shop/StudioVarshi">linocut prints</a>, and volunteer at Muttville SF!  
+  In my spare time, I love to <a href="https://www.instagram.com/chubbymonkii/?hl=en">cook</a>, make <a href="https://www.etsy.com/shop/StudioVarshi">linocut prints</a>, and volunteer at <a href="https://muttville.org/about_us?hl=en">Mutville SF</a>!  
+  
+  <div style="text-align: center;">
+    <img src="images/polaroid_headshot_fancy2.gif?raw=true" alt="Varshi's headshot" style="max-width: 100%; height: auto; display: inline-block;" />
+  </div>
   
   <style>
+    h3 {
+      text-align: left;
+      color: #5fc400; /* Or the color you prefer */
+    }
+  
     .icon {
       color: #00aed1; /* Original color */
       font-size: 39px; /* Smaller size */
@@ -13,13 +22,16 @@ description: >
       margin: 0 10px; /* Spacing around icons */
       transition: color 0.3s; /* Smooth transition */
     }
+  
     .icon a {
       color: inherit; /* Use the parent color */
       text-decoration: none; /* Remove underline */
     }
+  
     .icon:hover {
       color: #45cdff; /* Lighter blue on hover */
     }
+  
     .icon-container {
       display: flex;
       justify-content: center; /* Center the icons */
