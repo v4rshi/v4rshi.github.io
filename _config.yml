@@ -4,16 +4,16 @@ description: >
   <div style="text-align: center; font-size: 12px; margin-top: -10px;">  <!-- Reduced space between logo and description -->
     <strong>Hi, I’m Varshi! 👋</strong>
     <br><br> <!-- Line space between intro and body -->
-    I’m a data scientist with a background in consulting, industrial engineering, and operations research. I specialize in turning data into stories using 🐍 Python, 📊 Tableau, and 💾 SQL.  
-    In my spare time, I love to 🍳 <a href="https://www.instagram.com/chubbymonkii/?hl=en">cook</a>, make 🎨 <a href="https://www.etsy.com/shop/StudioVarshi">linocut prints</a>, and volunteer with 🐾 <a href="https://muttville.org/about_us?hl=en">Muttville SF</a>!
+    I’m a data scientist with a background in consulting, industrial engineering, and operations research. I love storytelling with data using 🐍 Python, 📊 Tableau, and 💾 SQL.  
+    In my spare time, I love to 🍳 <a href="https://www.instagram.com/chubbymonkii/?hl=en">cook</a>, make 🎨 <a href="https://www.etsy.com/shop/StudioVarshi">linocut prints</a>, and volunteer at 🐾 <a href="https://muttville.org/about_us?hl=en">Muttville SF</a>!
   </div>
 
   <style>
     .icon {
       color: #00badf; /* Original color */
-      font-size: 39px; /* Smaller size */
+      font-size: 30px; /* Smaller size */
       cursor: pointer;
-      margin: 0 10px; /* Spacing around icons */
+      margin: 0 15px; /* Spacing around icons */
       transition: color 0.3s; /* Smooth transition */
     }
     .icon a {
