@@ -33,7 +33,7 @@
   .project-title {
     font-family: 'Bebas Neue', sans-serif;
     text-align: left; /* Left-align the h3 text */
-    color: #ff73b4;
+    color: #EC3B83;
     font-size: 28px;
     margin: 0;
     padding: 20px;
