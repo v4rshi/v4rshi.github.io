@@ -39,18 +39,19 @@
             border: 1px solid #ddd;
             border-radius: 4px;
         }
-        #recommendations-container {
+        #carousel-container {
+            perspective: 1000px;
+            margin-top: 40px;
+            height: 400px;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 400px;
-            margin-top: 40px;
-            position: relative;
         }
-        #recommendations {
-            width: 200px;
-            height: 300px;
+        #carousel {
+            width: 100%;
+            height: 100%;
             position: relative;
+            transform-style: preserve-3d;
             transition: transform 0.5s;
         }
         .recommendation {
@@ -65,11 +66,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            backface-visibility: hidden;
             transition: transform 0.5s, opacity 0.5s;
-            opacity: 0;
-        }
-        .recommendation.active {
-            opacity: 1;
         }
         .recommendation img {
             width: 150px;
@@ -115,12 +113,13 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
+            z-index: 1000;
         }
         #prevBtn {
-            left: -40px;
+            left: 20px;
         }
         #nextBtn {
-            right: -40px;
+            right: 20px;
         }
         audio {
             width: 100%;
@@ -134,7 +133,7 @@
             label { font-size: 14px; }
             select { font-size: 12px; }
             .header-image { max-width: 50%; }
-            #recommendations-container { height: 300px; }
+            #carousel-container { height: 300px; }
             .recommendation { width: 160px; height: 240px; }
             .recommendation img { width: 130px; height: 130px; }
         }
@@ -151,15 +150,15 @@
     <select id="sentiment">
         <option value="" disabled selected>Select a sentiment</option>
     </select>
-    <div id="recommendations-container">
-        <div id="recommendations"></div>
+    <div id="carousel-container">
+        <div id="carousel"></div>
         <button id="prevBtn" class="nav-button"><i class="fas fa-chevron-left"></i></button>
         <button id="nextBtn" class="nav-button"><i class="fas fa-chevron-right"></i></button>
     </div>
 
     <script>
         const recommendations = {};
-        let currentIndex = 0;
+        let currentRotation = 0;
         let currentlyPlayingAudio = null;
 
         fetch('recommendations.json')
@@ -179,12 +178,12 @@
         document.getElementById('sentiment').addEventListener('change', function() {
             const sentiment = this.value;
             const recs = recommendations[sentiment];
-            const recommendationsDiv = document.getElementById('recommendations');
-            recommendationsDiv.innerHTML = '';
+            const carouselDiv = document.getElementById('carousel');
+            carouselDiv.innerHTML = '';
 
             recs.forEach((rec, index) => {
                 const recDiv = document.createElement('div');
-                recDiv.className = `recommendation ${index === 0 ? 'active' : ''}`;
+                recDiv.className = 'recommendation';
                 recDiv.innerHTML = `
                     <img src="${rec['Album Art URL'] || '/api/placeholder/150/150'}" alt="Album Art">
                     <strong>${rec['Song Name']}</strong>
@@ -195,7 +194,9 @@
                         Your browser does not support the audio element.
                     </audio>
                 `;
-                recommendationsDiv.appendChild(recDiv);
+                const angle = (index / 5) * 360;
+                recDiv.style.transform = `rotateY(${angle}deg) translateZ(250px)`;
+                carouselDiv.appendChild(recDiv);
 
                 const audio = recDiv.querySelector('audio');
                 audio.addEventListener('play', function() {
@@ -206,33 +207,23 @@
                 });
             });
 
-            currentIndex = 0;
-            updateActiveRecommendation();
+            currentRotation = 0;
+            updateCarousel();
         });
 
         document.getElementById('prevBtn').addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + 5) % 5;
-            updateActiveRecommendation();
+            currentRotation += 72; // 360 / 5
+            updateCarousel();
         });
 
         document.getElementById('nextBtn').addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % 5;
-            updateActiveRecommendation();
+            currentRotation -= 72; // 360 / 5
+            updateCarousel();
         });
 
-        function updateActiveRecommendation() {
-            const recommendations = document.querySelectorAll('.recommendation');
-            recommendations.forEach((rec, index) => {
-                if (index === currentIndex) {
-                    rec.classList.add('active');
-                    rec.style.opacity = 1;
-                    rec.style.transform = 'scale(1)';
-                } else {
-                    rec.classList.remove('active');
-                    rec.style.opacity = 0;
-                    rec.style.transform = 'scale(0.8)';
-                }
-            });
+        function updateCarousel() {
+            const carousel = document.getElementById('carousel');
+            carousel.style.transform = `rotateY(${currentRotation}deg)`;
         }
     </script>
 </body>
