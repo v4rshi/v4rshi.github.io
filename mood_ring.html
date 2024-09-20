@@ -58,14 +58,14 @@
             flex: 0 0 100%;
             background: #fff;
             border-radius: 15px;
-            padding: 20px 20px 30px; /* Increased bottom padding */
+            padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center; /*used to be flex_start*/
-            height: 400px; /* used to be auto */
-            width: 200px; /* Slightly decreased width */
+            justify-content: flex-start;
+            height: 400px;
+            width: 200px;
             margin: 0 auto;
             box-sizing: border-box;
         }
@@ -82,7 +82,7 @@
             margin-bottom: 5px;
             text-align: center;
             width: 100%;
-            padding: 0 10px; /* Increased padding */
+            padding: 0 5px;
             box-sizing: border-box;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -182,9 +182,33 @@
             label { font-size: 14px; }
             select { font-size: 12px; }
             .header-image { max-width: 50%; }
-            #carousel-container { height: 340px; }
-            .recommendation { height: 300px; padding: 15px; width: 200px; }
-            .recommendation img { width: 150px; height: 150px; }
+            #carousel-container { height: 380px; }
+            .recommendation { 
+                height: 340px; 
+                padding: 15px; 
+                width: 180px; 
+            }
+            .recommendation img { 
+                width: 140px; 
+                height: 140px; 
+            }
+            .recommendation strong, .recommendation div {
+                font-size: 14px;
+                white-space: normal;
+                max-height: 40px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+            .recommendation a {
+                font-size: 12px;
+                padding: 8px 12px;
+            }
+            audio {
+                max-width: 160px;
+            }
         }
     </style>
 </head>
