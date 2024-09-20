@@ -39,15 +39,36 @@
             animation-play-state: running;
         }
 
-        /* ... (rest of the styles remain the same) ... */
-
-        #prevBtn, #nextBtn {
+        .nav-button {
+            background: #04d4ae;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             visibility: hidden;
             opacity: 0;
-            transition: opacity 0.3s ease;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
         }
 
-        #prevBtn.visible, #nextBtn.visible {
+        #prevBtn {
+            left: 10px;
+        }
+
+        #nextBtn {
+            right: 10px;
+        }
+
+        .nav-button.visible {
             visibility: visible;
             opacity: 1;
         }
@@ -59,130 +80,132 @@
     <!-- ... (previous body content remains the same) ... -->
 
     <script>
-        const recommendations = {};
-        let currentIndex = 0;
-        let currentlyPlayingAudio = null;
-        let totalRecommendations = 0;
+        document.addEventListener('DOMContentLoaded', function() {
+            const recommendations = {};
+            let currentIndex = 0;
+            let currentlyPlayingAudio = null;
+            let totalRecommendations = 0;
 
-        fetch('recommendations.json')
-            .then(response => response.json())
-            .then(data => {
-                Object.assign(recommendations, data);
-                const sentimentSelect = document.getElementById('sentiment');
-                const sentimentOptions = Object.keys(recommendations);
-                sentimentOptions.forEach(sentiment => {
-                    const option = document.createElement('option');
-                    option.value = sentiment;
-                    option.text = sentiment;
-                    sentimentSelect.add(option);
-                });
-            });
-
-        document.getElementById('sentiment').addEventListener('change', function() {
-            const sentiment = this.value;
-            const recs = recommendations[sentiment];
+            const sentimentSelect = document.getElementById('sentiment');
             const carouselDiv = document.getElementById('carousel');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
             const dotsContainer = document.querySelector('.carousel-dots');
-            carouselDiv.innerHTML = '';
-            dotsContainer.innerHTML = '';
-            totalRecommendations = recs.length;
 
-            recs.forEach((rec, index) => {
-                const recDiv = document.createElement('div');
-                recDiv.className = 'recommendation';
-                recDiv.innerHTML = `
-                    <img src="${rec['Album Art']}" alt="Album Art" onerror="this.src='placeholder.jpg';">
-                    <strong class="track-name">${rec['Song Name']}</strong>
-                    <div>${rec['Artist']}</div>
-                    <a href="${rec['Spotify URL']}" class="spotify-btn" target="_blank">
-                        <i class="fab fa-spotify"></i> Listen on Spotify
-                    </a>
-                    <audio>
-                        <source src="${rec['Preview URL'] || '#'}" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                    <button class="play-pause-btn">Play</button>
-                `;
-                carouselDiv.appendChild(recDiv);
+            fetch('recommendations.json')
+                .then(response => response.json())
+                .then(data => {
+                    Object.assign(recommendations, data);
+                    const sentimentOptions = Object.keys(recommendations);
+                    sentimentOptions.forEach(sentiment => {
+                        const option = document.createElement('option');
+                        option.value = sentiment;
+                        option.text = sentiment;
+                        sentimentSelect.add(option);
+                    });
+                });
 
-                const dot = document.createElement('div');
-                dot.className = 'dot';
-                dot.addEventListener('click', () => goToSlide(index));
-                dotsContainer.appendChild(dot);
+            sentimentSelect.addEventListener('change', function() {
+                const sentiment = this.value;
+                const recs = recommendations[sentiment];
+                totalRecommendations = recs.length;
+                carouselDiv.innerHTML = '';
+                dotsContainer.innerHTML = '';
 
-                // Add marquee effect for long track names
-                const trackName = recDiv.querySelector('.track-name');
-                if (trackName.scrollWidth > trackName.clientWidth) {
-                    trackName.classList.add('animate');
+                recs.forEach((rec, index) => {
+                    const recDiv = document.createElement('div');
+                    recDiv.className = 'recommendation';
+                    recDiv.innerHTML = `
+                        <img src="${rec['Album Art URL'] || '/api/placeholder/180/180'}" alt="Album Art" onerror="this.src='/api/placeholder/180/180';">
+                        <strong class="track-name">${rec['Song Name']}</strong>
+                        <div>${rec['Artist']}</div>
+                        <a href="${rec['Spotify URL']}" target="_blank">Listen on Spotify</a>
+                        <audio>
+                            <source src="${rec['Preview URL'] || '#'}" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <button class="play-pause-btn">Play</button>
+                    `;
+                    carouselDiv.appendChild(recDiv);
+
+                    const dot = document.createElement('div');
+                    dot.className = 'dot';
+                    dot.addEventListener('click', () => goToSlide(index));
+                    dotsContainer.appendChild(dot);
+
+                    // Add marquee effect for long track names
+                    const trackName = recDiv.querySelector('.track-name');
+                    if (trackName.scrollWidth > trackName.clientWidth) {
+                        trackName.classList.add('animate');
+                    }
+                });
+
+                currentIndex = 0;
+                updateCarousel();
+                updateDots();
+
+                prevBtn.classList.add('visible');
+                nextBtn.classList.add('visible');
+            });
+
+            prevBtn.addEventListener('click', function() {
+                stopCurrentAudio();
+                currentIndex = (currentIndex - 1 + totalRecommendations) % totalRecommendations;
+                updateCarousel();
+                updateDots();
+            });
+
+            nextBtn.addEventListener('click', function() {
+                stopCurrentAudio();
+                currentIndex = (currentIndex + 1) % totalRecommendations;
+                updateCarousel();
+                updateDots();
+            });
+
+            carouselDiv.addEventListener('click', function(e) {
+                if (e.target.classList.contains('play-pause-btn')) {
+                    const audio = e.target.previousElementSibling;
+                    if (audio.paused) {
+                        stopCurrentAudio();
+                        audio.play();
+                        e.target.textContent = 'Pause';
+                        currentlyPlayingAudio = audio;
+                    } else {
+                        audio.pause();
+                        e.target.textContent = 'Play';
+                        currentlyPlayingAudio = null;
+                    }
                 }
             });
 
-            currentIndex = 0;
-            updateCarousel();
-            updateDots();
-
-            document.getElementById('prevBtn').classList.add('visible');
-            document.getElementById('nextBtn').classList.add('visible');
-        });
-
-        document.getElementById('prevBtn').addEventListener('click', function() {
-            stopCurrentAudio();
-            currentIndex = (currentIndex - 1 + totalRecommendations) % totalRecommendations;
-            updateCarousel();
-            updateDots();
-        });
-
-        document.getElementById('nextBtn').addEventListener('click', function() {
-            stopCurrentAudio();
-            currentIndex = (currentIndex + 1) % totalRecommendations;
-            updateCarousel();
-            updateDots();
-        });
-
-        function updateCarousel() {
-            const carouselDiv = document.getElementById('carousel');
-            const recommendationWidth = carouselDiv.querySelector('.recommendation').clientWidth;
-            carouselDiv.style.transform = `translateX(-${currentIndex * recommendationWidth}px)`;
-        }
-
-        function goToSlide(index) {
-            stopCurrentAudio();
-            currentIndex = index;
-            updateCarousel();
-            updateDots();
-        }
-
-        function updateDots() {
-            const dots = document.querySelectorAll('.dot');
-            dots.forEach((dot, index) => {
-                if (index === currentIndex) {
-                    dot.classList.add('active');
-                } else {
-                    dot.classList.remove('active');
-                }
-            });
-        }
-
-        function stopCurrentAudio() {
-            if (currentlyPlayingAudio) {
-                currentlyPlayingAudio.pause();
-                currentlyPlayingAudio.currentTime = 0;
-                currentlyPlayingAudio.nextElementSibling.textContent = 'Play';
+            function updateCarousel() {
+                const recommendationWidth = carouselDiv.querySelector('.recommendation').clientWidth;
+                carouselDiv.style.transform = `translateX(-${currentIndex * recommendationWidth}px)`;
             }
-        }
 
-        // Event delegation for play/pause buttons
-        document.getElementById('carousel').addEventListener('click', function(e) {
-            if (e.target.classList.contains('play-pause-btn')) {
-                const audio = e.target.previousElementSibling;
-                if (audio.paused) {
-                    stopCurrentAudio();
-                    audio.play();
-                    e.target.textContent = 'Pause';
-                    currentlyPlayingAudio = audio;
-                } else {
-                    audio.pause();
-                    e.target.textContent = 'Play';
+            function goToSlide(index) {
+                stopCurrentAudio();
+                currentIndex = index;
+                updateCarousel();
+                updateDots();
+            }
+
+            function updateDots() {
+                const dots = document.querySelectorAll('.dot');
+                dots.forEach((dot, index) => {
+                    if (index === currentIndex) {
+                        dot.classList.add('active');
+                    } else {
+                        dot.classList.remove('active');
+                    }
+                });
+            }
+
+            function stopCurrentAudio() {
+                if (currentlyPlayingAudio) {
+                    currentlyPlayingAudio.pause();
+                    currentlyPlayingAudio.currentTime = 0;
+                    currentlyPlayingAudio.nextElementSibling.textContent = 'Play';
                     currentlyPlayingAudio = null;
                 }
             }
