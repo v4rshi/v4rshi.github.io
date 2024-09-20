@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: 'Arial', sans-serif; 
+            font-family: 'Arial', sans-serif;
             background-color: #f5f5f5;
             color: #333;
             margin: 0;
@@ -40,38 +40,32 @@
             border-radius: 4px;
         }
         #carousel-container {
-            perspective: 1000px;
-            margin-top: 40px;
+            position: relative;
+            width: 100%;
+            max-width: 800px;
             height: 400px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            margin: 40px auto;
+            overflow: hidden;
         }
         #carousel {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            transform-style: preserve-3d;
-            transition: transform 0.5s;
+            display: flex;
+            transition: transform 0.5s ease;
         }
         .recommendation {
-            position: absolute;
-            width: 180px;
-            height: 280px;
+            flex: 0 0 100%;
             background: #fff;
-            border: 1px solid #ddd;
             border-radius: 15px;
-            padding: 10px;
+            padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             display: flex;
             flex-direction: column;
             align-items: center;
-            backface-visibility: hidden;
-            transition: transform 0.5s, opacity 0.5s;
+            justify-content: space-between;
+            height: 360px;
         }
         .recommendation img {
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
             object-fit: cover;
             border-radius: 10px;
             margin-bottom: 10px;
@@ -82,7 +76,7 @@
             color: #1db954;
             font-weight: bold;
             margin: 5px 0;
-            font-size: 12px;
+            font-size: 14px;
         }
         .recommendation a:hover {
             text-decoration: underline;
@@ -105,7 +99,7 @@
             font-size: 30px;
         }
         .nav-button {
-            background: none;
+            background: rgba(255, 255, 255, 0.7);
             border: none;
             color: #04d4ae;
             font-size: 24px;
@@ -114,17 +108,39 @@
             top: 50%;
             transform: translateY(-50%);
             z-index: 1000;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         #prevBtn {
-            left: 20px;
+            left: 10px;
         }
         #nextBtn {
-            right: 20px;
+            right: 10px;
+        }
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .dot.active {
+            background-color: #04d4ae;
         }
         audio {
             width: 100%;
-            max-width: 150px;
-            margin-top: 5px;
+            max-width: 250px;
+            margin-top: 10px;
         }
 
         @media (max-width: 600px) {
@@ -134,8 +150,8 @@
             select { font-size: 12px; }
             .header-image { max-width: 50%; }
             #carousel-container { height: 300px; }
-            .recommendation { width: 160px; height: 240px; }
-            .recommendation img { width: 130px; height: 130px; }
+            .recommendation { height: 260px; padding: 10px; }
+            .recommendation img { width: 150px; height: 150px; }
         }
     </style>
 </head>
@@ -155,10 +171,11 @@
         <button id="prevBtn" class="nav-button"><i class="fas fa-chevron-left"></i></button>
         <button id="nextBtn" class="nav-button"><i class="fas fa-chevron-right"></i></button>
     </div>
+    <div class="carousel-dots"></div>
 
     <script>
         const recommendations = {};
-        let currentRotation = 0;
+        let currentIndex = 0;
         let currentlyPlayingAudio = null;
 
         fetch('recommendations.json')
@@ -179,13 +196,15 @@
             const sentiment = this.value;
             const recs = recommendations[sentiment];
             const carouselDiv = document.getElementById('carousel');
+            const dotsContainer = document.querySelector('.carousel-dots');
             carouselDiv.innerHTML = '';
+            dotsContainer.innerHTML = '';
 
             recs.forEach((rec, index) => {
                 const recDiv = document.createElement('div');
                 recDiv.className = 'recommendation';
                 recDiv.innerHTML = `
-                    <img src="${rec['Album Art URL'] || '/api/placeholder/150/150'}" alt="Album Art">
+                    <img src="${rec['Album Art URL'] || '/api/placeholder/200/200'}" alt="Album Art">
                     <strong>${rec['Song Name']}</strong>
                     <div>${rec['Artist']}</div>
                     <a href="${rec['Spotify URL']}" target="_blank">Listen on Spotify</a>
@@ -194,9 +213,12 @@
                         Your browser does not support the audio element.
                     </audio>
                 `;
-                const angle = (index / 5) * 360;
-                recDiv.style.transform = `rotateY(${angle}deg) translateZ(250px)`;
                 carouselDiv.appendChild(recDiv);
+
+                const dot = document.createElement('div');
+                dot.className = 'dot';
+                dot.addEventListener('click', () => goToSlide(index));
+                dotsContainer.appendChild(dot);
 
                 const audio = recDiv.querySelector('audio');
                 audio.addEventListener('play', function() {
@@ -207,23 +229,36 @@
                 });
             });
 
-            currentRotation = 0;
+            currentIndex = 0;
             updateCarousel();
         });
 
         document.getElementById('prevBtn').addEventListener('click', () => {
-            currentRotation += 72; // 360 / 5
+            currentIndex = (currentIndex - 1 + 5) % 5;
             updateCarousel();
         });
 
         document.getElementById('nextBtn').addEventListener('click', () => {
-            currentRotation -= 72; // 360 / 5
+            currentIndex = (currentIndex + 1) % 5;
             updateCarousel();
         });
 
         function updateCarousel() {
             const carousel = document.getElementById('carousel');
-            carousel.style.transform = `rotateY(${currentRotation}deg)`;
+            carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+            updateDots();
+        }
+
+        function goToSlide(index) {
+            currentIndex = index;
+            updateCarousel();
+        }
+
+        function updateDots() {
+            const dots = document.querySelectorAll('.dot');
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
         }
     </script>
 </body>
