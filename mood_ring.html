@@ -171,9 +171,11 @@
         }
         #prevBtn {
             left: -60px; /* Move outside the card */
+            visibility: hidden;
         }
         #nextBtn {
             right: -60px; /* Move outside the card */
+            visibility: hidden;
         }
         .carousel-dots {
             display: flex;
@@ -206,6 +208,8 @@
             #carousel-container { height: 340px; }
             .recommendation { height: 300px; padding: 15px; width: 200px; }
             .recommendation img { width: 150px; height: 150px; }
+            #prevBtn { left: -40px; }
+            #nextBtn { right: -40px; }
         }
     </style>
 </head>
@@ -250,11 +254,11 @@
         document.getElementById('sentiment').addEventListener('change', function() {
             const sentiment = this.value;
             const recs = recommendations[sentiment];
-            totalRecommendations = recs.length; // Set the total number of recommendations
             const carouselDiv = document.getElementById('carousel');
             const dotsContainer = document.querySelector('.carousel-dots');
             carouselDiv.innerHTML = '';
             dotsContainer.innerHTML = '';
+            totalRecommendations = recs.length; // Set the total number of recommendations
 
             recs.forEach((rec, index) => {
                 const recDiv = document.createElement('div');
