@@ -1,31 +1,62 @@
-## This can be your internal website page / project page
+<link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
+<h2 style="font-family: 'Bungee', sans-serif; color: #00d0e3; font-size: 24px;">COMING SOON: My food blog!</h2>
 
-**Project description:** Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Stay tuned - I love to cook and will post my recipes and other food content here! In the meantime, follow me on Instagram @chubbymonkii :)
 
-### 1. Suggest hypotheses about the causes of observed phenomena
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
 
-```javascript
-if (isAwesome){
-  return true
-}
-```
 
-### 2. Assess assumptions on which statistical inference will be based
+<style>
+  nav a:hover {
+    color: #00ff00; /* Brighter green */
+  }
+</style>
 
-```javascript
-if (isAwesome){
-  return true
-}
-```
+<link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
 
-### 3. Support the selection of appropriate statistical tools and techniques
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<br>
 
-### 4. Provide a basis for further data collection through surveys or experiments
+<style>
+  .floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+  .floating-button:hover {
+    background-color: rgba(255, 20, 147, 0.1); /* Light hover effect */
+  }
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+  .tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 30px;
+    right: 50%;
+    margin-right: -60px;
+  }
+
+  .floating-button:hover .tooltip {
+    visibility: visible;
+  }
+</style>
+
+<button class="floating-button" onclick="window.location.href='https://v4rshi.github.io/'">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="hotpink">
+        <path d="M12 3l10 9h-3v8h-4v-5h-6v5H5v-8H2l10-9z"/>
+    </svg>
+    <span class="tooltip">Return To Homepage</span>
+</button>
+
+<p style="font-size:9px"> © Copyright of Varshini Srinivas </p>
