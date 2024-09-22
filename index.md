@@ -70,7 +70,7 @@
     </div>
   </a>
 </div>
----
+
 ## <span style="font-family: 'Bungee Shade', sans-serif; color: #04c3d1; font-size: 24px;">Other Things I Am Upto</span>
 
 <div class="project-container">
