@@ -71,7 +71,7 @@
   </a>
 </div>
 ---
-## <span style="font-family: 'Bungee Shade', sans-serif; color: #04c3d1; font-size: 24px;">Other Things I Am upto</span>
+## <span style="font-family: 'Bungee Shade', sans-serif; color: #04c3d1; font-size: 24px;">Other Things I Am Upto</span>
 
 <div class="project-container">
   <a href="https://v4rshi.github.io/sentiment_analysis.html">
