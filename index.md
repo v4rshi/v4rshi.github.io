@@ -70,5 +70,15 @@
     </div>
   </a>
 </div>
+---
+## <span style="font-family: 'Bungee Shade', sans-serif; color: #04c3d1; font-size: 24px;">Other Things I Am upto</span>
 
+<div class="project-container">
+  <a href="https://v4rshi.github.io/sentiment_analysis.html">
+    <img src="images/chubby_page.gif?raw=true" alt="Food Blog" class="project-image">
+    <div class="overlay">
+      <h3 class="project-title">Food Blog + Recipes</h3>
+    </div>
+  </a>
+</div>
 <p style="font-size:9px">© Copyright of Varshini Srinivas</p>
