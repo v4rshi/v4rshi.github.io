@@ -1,10 +1,10 @@
 <link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
 <h2 style="font-family: 'Bungee', sans-serif; color: #00d0e3; font-size: 24px;">COMING SOON: My food blog!</h2>
 
-Stay tuned - I love to cook and will post my recipes and other food content here! In the meantime, follow me on Instagram @chubbymonkii :)
+Stay tuned - I love to cook and will post my recipes and other food content here! In the meantime, follow me on Instagram @chubbymonkii by clicking below: 
 
-
-
+<!-- Instagram Embed -->
+<iframe src="https://www.instagram.com/chubbymonkii/?hl=en" width="320" height="400" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
 
 <style>
   nav a:hover {
