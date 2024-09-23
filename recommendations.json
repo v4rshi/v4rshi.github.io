@@ -1,0 +1,1103 @@
+{
+    "neutral": [
+        {
+            "Song Name": "Tum Tak",
+            "Artist": "A.R. Rahman,Javed Ali,KIRTI SAGATHIA,Pooja AV",
+            "Spotify URL": "https://open.spotify.com/track/Tum Tak",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Tum Tak",
+            "Album Art URL": "https://i.scdn.co/image/Tum Tak",
+            "Sentiment": "neutral",
+            "Weighted Popularity": 0.016210984756835228
+        },
+        {
+            "Song Name": "Raanjhanaa",
+            "Artist": "A.R. Rahman,Jaswinder Singh,Shiraz Uppal",
+            "Spotify URL": "https://open.spotify.com/track/Raanjhanaa",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Raanjhanaa",
+            "Album Art URL": "https://i.scdn.co/image/Raanjhanaa",
+            "Sentiment": "neutral",
+            "Weighted Popularity": 0.016210984756835228
+        },
+        {
+            "Song Name": "Gal Mitthi Mitthi",
+            "Artist": "Amit Trivedi,Tochi Raina",
+            "Spotify URL": "https://open.spotify.com/track/Gal Mitthi Mitthi",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Gal Mitthi Mitthi",
+            "Album Art URL": "https://i.scdn.co/image/Gal Mitthi Mitthi",
+            "Sentiment": "neutral",
+            "Weighted Popularity": 0.011359260685406238
+        },
+        {
+            "Song Name": "Nagada Sang Dhol",
+            "Artist": "Shreya Ghoshal,Osman Mir",
+            "Spotify URL": "https://open.spotify.com/track/Nagada Sang Dhol",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Nagada Sang Dhol",
+            "Album Art URL": "https://i.scdn.co/image/Nagada Sang Dhol",
+            "Sentiment": "neutral",
+            "Weighted Popularity": 0.0
+        },
+        {
+            "Song Name": "Chammak Challo",
+            "Artist": "Akon",
+            "Spotify URL": "https://open.spotify.com/track/Chammak Challo",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Chammak Challo",
+            "Album Art URL": "https://i.scdn.co/image/Chammak Challo",
+            "Sentiment": "neutral",
+            "Weighted Popularity": 0.0
+        }
+    ],
+    "love": [
+        {
+            "Song Name": "I Won't Give Up",
+            "Artist": "Jason Mraz",
+            "Spotify URL": "https://open.spotify.com/track/I Won't Give Up",
+            "Preview URL": "https://p.scdn.co/mp3-preview/I Won't Give Up",
+            "Album Art URL": "https://i.scdn.co/image/I Won't Give Up",
+            "Sentiment": "love",
+            "Weighted Popularity": 0.014738231412230534
+        },
+        {
+            "Song Name": "Applause",
+            "Artist": "Lady Gaga",
+            "Spotify URL": "https://open.spotify.com/track/Applause",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Applause",
+            "Album Art URL": "https://i.scdn.co/image/Applause",
+            "Sentiment": "love",
+            "Weighted Popularity": 0.012607985057202896
+        },
+        {
+            "Song Name": "Missing You",
+            "Artist": "Betty Who",
+            "Spotify URL": "https://open.spotify.com/track/Missing You",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Missing You",
+            "Album Art URL": "https://i.scdn.co/image/Missing You",
+            "Sentiment": "love",
+            "Weighted Popularity": 0.006868131868131868
+        },
+        {
+            "Song Name": "Sheila Ki Jawani",
+            "Artist": "Sunidhi Chauhan,Vishal Dadlani",
+            "Spotify URL": "https://open.spotify.com/track/Sheila Ki Jawani",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Sheila Ki Jawani",
+            "Album Art URL": "https://i.scdn.co/image/Sheila Ki Jawani",
+            "Sentiment": "love",
+            "Weighted Popularity": 0.0
+        },
+        {
+            "Song Name": "The Love Club",
+            "Artist": "Lorde",
+            "Spotify URL": "https://open.spotify.com/track/The Love Club",
+            "Preview URL": "https://p.scdn.co/mp3-preview/The Love Club",
+            "Album Art URL": "https://i.scdn.co/image/The Love Club",
+            "Sentiment": "love",
+            "Weighted Popularity": 0.0
+        }
+    ],
+    "amusement": [
+        {
+            "Song Name": "Hurricane - Arty Remix",
+            "Artist": "Halsey,ARTY",
+            "Spotify URL": "https://open.spotify.com/track/Hurricane - Arty Remix",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Hurricane - Arty Remix",
+            "Album Art URL": "https://i.scdn.co/image/Hurricane - Arty Remix",
+            "Sentiment": "amusement",
+            "Weighted Popularity": 0.014891179839633449
+        },
+        {
+            "Song Name": "The Disco Song",
+            "Artist": "Vishal-Shekhar,Benny Dayal,Sunidhi Chauhan,Nazia Hassan",
+            "Spotify URL": "https://open.spotify.com/track/The Disco Song",
+            "Preview URL": "https://p.scdn.co/mp3-preview/The Disco Song",
+            "Album Art URL": "https://i.scdn.co/image/The Disco Song",
+            "Sentiment": "amusement",
+            "Weighted Popularity": 0.013163867453472538
+        },
+        {
+            "Song Name": "I'm So Paid",
+            "Artist": "Akon,Lil Wayne,Jeezy",
+            "Spotify URL": "https://open.spotify.com/track/I'm So Paid",
+            "Preview URL": "https://p.scdn.co/mp3-preview/I'm So Paid",
+            "Album Art URL": "https://i.scdn.co/image/I'm So Paid",
+            "Sentiment": "amusement",
+            "Weighted Popularity": 0.00016366612111292964
+        },
+        {
+            "Song Name": "O Gujariya",
+            "Artist": "Shefali Alvares,Nikhil D'Souza",
+            "Spotify URL": "https://open.spotify.com/track/O Gujariya",
+            "Preview URL": "https://p.scdn.co/mp3-preview/O Gujariya",
+            "Album Art URL": "https://i.scdn.co/image/O Gujariya",
+            "Sentiment": "amusement",
+            "Weighted Popularity": 0.0
+        },
+        {
+            "Song Name": "Ishqyaun Dhishyaun",
+            "Artist": "Aditya Narayan",
+            "Spotify URL": "https://open.spotify.com/track/Ishqyaun Dhishyaun",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Ishqyaun Dhishyaun",
+            "Album Art URL": "https://i.scdn.co/image/Ishqyaun Dhishyaun",
+            "Sentiment": "amusement",
+            "Weighted Popularity": 0.0
+        }
+    ],
+    "admiration": [
+        {
+            "Song Name": "Kar Gayi Chull",
+            "Artist": "Badshah,Amaal Mallik,Fazilpuria,Sukriti Kakar,Neha Kakkar",
+            "Spotify URL": "https://open.spotify.com/track/Kar Gayi Chull",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Kar Gayi Chull",
+            "Album Art URL": "https://i.scdn.co/image/Kar Gayi Chull",
+            "Sentiment": "admiration",
+            "Weighted Popularity": 0.01984
+        },
+        {
+            "Song Name": "Just the Way You Are",
+            "Artist": "Bruno Mars",
+            "Spotify URL": "https://open.spotify.com/track/Just the Way You Are",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Just the Way You Are",
+            "Album Art URL": "https://i.scdn.co/image/Just the Way You Are",
+            "Sentiment": "admiration",
+            "Weighted Popularity": 0.016003048199657078
+        },
+        {
+            "Song Name": "Naive",
+            "Artist": "The Kooks",
+            "Spotify URL": "https://open.spotify.com/track/Naive",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Naive",
+            "Album Art URL": "https://i.scdn.co/image/Naive",
+            "Sentiment": "admiration",
+            "Weighted Popularity": 0.009502923976608187
+        },
+        {
+            "Song Name": "Hello Kitty",
+            "Artist": "Avril Lavigne",
+            "Spotify URL": "https://open.spotify.com/track/Hello Kitty",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Hello Kitty",
+            "Album Art URL": "https://i.scdn.co/image/Hello Kitty",
+            "Sentiment": "admiration",
+            "Weighted Popularity": 0.0
+        },
+        {
+            "Song Name": "Can\u2019t Keep Checking My Phone",
+            "Artist": "Unknown Mortal Orchestra",
+            "Spotify URL": "https://open.spotify.com/track/Can\u2019t Keep Checking My Phone",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Can\u2019t Keep Checking My Phone",
+            "Album Art URL": "https://i.scdn.co/image/Can\u2019t Keep Checking My Phone",
+            "Sentiment": "admiration",
+            "Weighted Popularity": 0.0
+        }
+    ],
+    "sadness": [
+        {
+            "Song Name": "Somewhere Only We Know",
+            "Artist": "Lily Allen",
+            "Spotify URL": "https://open.spotify.com/track/Somewhere Only We Know",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Somewhere Only We Know",
+            "Album Art URL": "https://i.scdn.co/image/Somewhere Only We Know",
+            "Sentiment": "sadness",
+            "Weighted Popularity": 0.013442277279915657
+        },
+        {
+            "Song Name": "Ghosts",
+            "Artist": "Laura Marling",
+            "Spotify URL": "https://open.spotify.com/track/Ghosts",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Ghosts",
+            "Album Art URL": "https://i.scdn.co/image/Ghosts",
+            "Sentiment": "sadness",
+            "Weighted Popularity": 0.008019639934533552
+        },
+        {
+            "Song Name": "Almost Lover",
+            "Artist": "A Fine Frenzy",
+            "Spotify URL": "https://open.spotify.com/track/Almost Lover",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Almost Lover",
+            "Album Art URL": "https://i.scdn.co/image/Almost Lover",
+            "Sentiment": "sadness",
+            "Weighted Popularity": 0.00694980694980695
+        },
+        {
+            "Song Name": "Walk On By",
+            "Artist": "Noosa",
+            "Spotify URL": "https://open.spotify.com/track/Walk On By",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Walk On By",
+            "Album Art URL": "https://i.scdn.co/image/Walk On By",
+            "Sentiment": "sadness",
+            "Weighted Popularity": 0.006241640659830584
+        },
+        {
+            "Song Name": "Caged",
+            "Artist": "Charlene Soraia",
+            "Spotify URL": "https://open.spotify.com/track/Caged",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Caged",
+            "Album Art URL": "https://i.scdn.co/image/Caged",
+            "Sentiment": "sadness",
+            "Weighted Popularity": 0.0
+        }
+    ],
+    "desire": [
+        {
+            "Song Name": "Creep",
+            "Artist": "Scott Bradlee's Postmodern Jukebox,Haley Reinhart",
+            "Spotify URL": "https://open.spotify.com/track/Creep",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Creep",
+            "Album Art URL": "https://i.scdn.co/image/Creep",
+            "Sentiment": "desire",
+            "Weighted Popularity": 0.01685556524266202
+        },
+        {
+            "Song Name": "Alive",
+            "Artist": "Krewella",
+            "Spotify URL": "https://open.spotify.com/track/Alive",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Alive",
+            "Album Art URL": "https://i.scdn.co/image/Alive",
+            "Sentiment": "desire",
+            "Weighted Popularity": 0.012434717731907486
+        },
+        {
+            "Song Name": "Wings",
+            "Artist": "Birdy",
+            "Spotify URL": "https://open.spotify.com/track/Wings",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Wings",
+            "Album Art URL": "https://i.scdn.co/image/Wings",
+            "Sentiment": "desire",
+            "Weighted Popularity": 0.011045655375552282
+        },
+        {
+            "Song Name": "Spaceship",
+            "Artist": "Comet Blue",
+            "Spotify URL": "https://open.spotify.com/track/Spaceship",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Spaceship",
+            "Album Art URL": "https://i.scdn.co/image/Spaceship",
+            "Sentiment": "desire",
+            "Weighted Popularity": 0.010059729644765796
+        },
+        {
+            "Song Name": "Nicest Thing",
+            "Artist": "Kate Nash",
+            "Spotify URL": "https://open.spotify.com/track/Nicest Thing",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Nicest Thing",
+            "Album Art URL": "https://i.scdn.co/image/Nicest Thing",
+            "Sentiment": "desire",
+            "Weighted Popularity": 0.005405405405405406
+        }
+    ],
+    "joy": [
+        {
+            "Song Name": "Don't You Worry Child - Radio Edit",
+            "Artist": "Swedish House Mafia,John Martin",
+            "Spotify URL": "https://open.spotify.com/track/Don't You Worry Child - Radio Edit",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Don't You Worry Child - Radio Edit",
+            "Album Art URL": "https://i.scdn.co/image/Don't You Worry Child - Radio Edit",
+            "Sentiment": "joy",
+            "Weighted Popularity": 0.018442622950819672
+        },
+        {
+            "Song Name": "Enjoy the Ride",
+            "Artist": "Krewella",
+            "Spotify URL": "https://open.spotify.com/track/Enjoy the Ride",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Enjoy the Ride",
+            "Album Art URL": "https://i.scdn.co/image/Enjoy the Ride",
+            "Sentiment": "joy",
+            "Weighted Popularity": 0.011439940313354888
+        },
+        {
+            "Song Name": "Hello",
+            "Artist": "Martin Solveig,Dragonette",
+            "Spotify URL": "https://open.spotify.com/track/Hello",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Hello",
+            "Album Art URL": "https://i.scdn.co/image/Hello",
+            "Sentiment": "joy",
+            "Weighted Popularity": 0.009573195053849222
+        },
+        {
+            "Song Name": "Gallan Goodiyaan",
+            "Artist": "Manish Kumar Tipu,Farhan Akhtar,Yashita Sharma,Shankar Mahadevan,Sukhwinder Singh",
+            "Spotify URL": "https://open.spotify.com/track/Gallan Goodiyaan",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Gallan Goodiyaan",
+            "Album Art URL": "https://i.scdn.co/image/Gallan Goodiyaan",
+            "Sentiment": "joy",
+            "Weighted Popularity": 0.0
+        },
+        {
+            "Song Name": "Bulletproof",
+            "Artist": "La Roux",
+            "Spotify URL": "https://open.spotify.com/track/Bulletproof",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Bulletproof",
+            "Album Art URL": "https://i.scdn.co/image/Bulletproof",
+            "Sentiment": "joy",
+            "Weighted Popularity": 0.0
+        }
+    ],
+    "realization": [
+        {
+            "Song Name": "Not Over You",
+            "Artist": "Gavin DeGraw",
+            "Spotify URL": "https://open.spotify.com/track/Not Over You",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Not Over You",
+            "Album Art URL": "https://i.scdn.co/image/Not Over You",
+            "Sentiment": "realization",
+            "Weighted Popularity": 0.013036164844407064
+        },
+        {
+            "Song Name": "Turn It Off",
+            "Artist": "Paramore",
+            "Spotify URL": "https://open.spotify.com/track/Turn It Off",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Turn It Off",
+            "Album Art URL": "https://i.scdn.co/image/Turn It Off",
+            "Sentiment": "realization",
+            "Weighted Popularity": 0.009316770186335404
+        },
+        {
+            "Song Name": "Alive",
+            "Artist": "Gabrielle Aplin",
+            "Spotify URL": "https://open.spotify.com/track/Alive",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Alive",
+            "Album Art URL": "https://i.scdn.co/image/Alive",
+            "Sentiment": "realization",
+            "Weighted Popularity": 0.006986268369067694
+        },
+        {
+            "Song Name": "I Could Say",
+            "Artist": "Lily Allen",
+            "Spotify URL": "https://open.spotify.com/track/I Could Say",
+            "Preview URL": "https://p.scdn.co/mp3-preview/I Could Say",
+            "Album Art URL": "https://i.scdn.co/image/I Could Say",
+            "Sentiment": "realization",
+            "Weighted Popularity": 0.004196537856268578
+        },
+        {
+            "Song Name": "Beat Of My Drum",
+            "Artist": "POWERS",
+            "Spotify URL": "https://open.spotify.com/track/Beat Of My Drum",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Beat Of My Drum",
+            "Album Art URL": "https://i.scdn.co/image/Beat Of My Drum",
+            "Sentiment": "realization",
+            "Weighted Popularity": 0.0
+        }
+    ],
+    "curiosity": [
+        {
+            "Song Name": "Mrs. Potato Head",
+            "Artist": "Melanie Martinez",
+            "Spotify URL": "https://open.spotify.com/track/Mrs. Potato Head",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Mrs. Potato Head",
+            "Album Art URL": "https://i.scdn.co/image/Mrs. Potato Head",
+            "Sentiment": "curiosity",
+            "Weighted Popularity": 0.021935096153846156
+        },
+        {
+            "Song Name": "All You Never Say",
+            "Artist": "Birdy",
+            "Spotify URL": "https://open.spotify.com/track/All You Never Say",
+            "Preview URL": "https://p.scdn.co/mp3-preview/All You Never Say",
+            "Album Art URL": "https://i.scdn.co/image/All You Never Say",
+            "Sentiment": "curiosity",
+            "Weighted Popularity": 0.007204968944099379
+        },
+        {
+            "Song Name": "Him",
+            "Artist": "Lily Allen",
+            "Spotify URL": "https://open.spotify.com/track/Him",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Him",
+            "Album Art URL": "https://i.scdn.co/image/Him",
+            "Sentiment": "curiosity",
+            "Weighted Popularity": 0.004196537856268578
+        },
+        {
+            "Song Name": "Who Do You Love?",
+            "Artist": "Lily Allen",
+            "Spotify URL": "https://open.spotify.com/track/Who Do You Love?",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Who Do You Love?",
+            "Album Art URL": "https://i.scdn.co/image/Who Do You Love?",
+            "Sentiment": "curiosity",
+            "Weighted Popularity": 0.002635740643120717
+        },
+        {
+            "Song Name": "In For The Kill",
+            "Artist": "La Roux",
+            "Spotify URL": "https://open.spotify.com/track/In For The Kill",
+            "Preview URL": "https://p.scdn.co/mp3-preview/In For The Kill",
+            "Album Art URL": "https://i.scdn.co/image/In For The Kill",
+            "Sentiment": "curiosity",
+            "Weighted Popularity": 0.0
+        }
+    ],
+    "optimism": [
+        {
+            "Song Name": "Wherever You Will Go",
+            "Artist": "Charlene Soraia",
+            "Spotify URL": "https://open.spotify.com/track/Wherever You Will Go",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Wherever You Will Go",
+            "Album Art URL": "https://i.scdn.co/image/Wherever You Will Go",
+            "Sentiment": "optimism",
+            "Weighted Popularity": 0.011394809031441232
+        },
+        {
+            "Song Name": "L.E.S. Artistes",
+            "Artist": "Santigold",
+            "Spotify URL": "https://open.spotify.com/track/L.E.S. Artistes",
+            "Preview URL": "https://p.scdn.co/mp3-preview/L.E.S. Artistes",
+            "Album Art URL": "https://i.scdn.co/image/L.E.S. Artistes",
+            "Sentiment": "optimism",
+            "Weighted Popularity": 0.009347354364880654
+        },
+        {
+            "Song Name": "Jump into the Fog",
+            "Artist": "The Wombats",
+            "Spotify URL": "https://open.spotify.com/track/Jump into the Fog",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Jump into the Fog",
+            "Album Art URL": "https://i.scdn.co/image/Jump into the Fog",
+            "Sentiment": "optimism",
+            "Weighted Popularity": 0.006530612244897959
+        },
+        {
+            "Song Name": "Find You There",
+            "Artist": "We The Kings",
+            "Spotify URL": "https://open.spotify.com/track/Find You There",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Find You There",
+            "Album Art URL": "https://i.scdn.co/image/Find You There",
+            "Sentiment": "optimism",
+            "Weighted Popularity": 0.0
+        },
+        {
+            "Song Name": "Such Great Heights",
+            "Artist": "The Postal Service",
+            "Spotify URL": "https://open.spotify.com/track/Such Great Heights",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Such Great Heights",
+            "Album Art URL": "https://i.scdn.co/image/Such Great Heights",
+            "Sentiment": "optimism",
+            "Weighted Popularity": 0.0
+        }
+    ],
+    "fear": [
+        {
+            "Song Name": "Whole Heart",
+            "Artist": "Gryffin,Bipolar Sunshine",
+            "Spotify URL": "https://open.spotify.com/track/Whole Heart",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Whole Heart",
+            "Album Art URL": "https://i.scdn.co/image/Whole Heart",
+            "Sentiment": "fear",
+            "Weighted Popularity": 0.017627118644067796
+        },
+        {
+            "Song Name": "Afraid",
+            "Artist": "The Neighbourhood",
+            "Spotify URL": "https://open.spotify.com/track/Afraid",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Afraid",
+            "Album Art URL": "https://i.scdn.co/image/Afraid",
+            "Sentiment": "fear",
+            "Weighted Popularity": 0.01748502994011976
+        },
+        {
+            "Song Name": "Holding on to Nothing",
+            "Artist": "Lily Allen",
+            "Spotify URL": "https://open.spotify.com/track/Holding on to Nothing",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Holding on to Nothing",
+            "Album Art URL": "https://i.scdn.co/image/Holding on to Nothing",
+            "Sentiment": "fear",
+            "Weighted Popularity": 0.0031628887717448607
+        },
+        {
+            "Song Name": "Stupid Girls",
+            "Artist": "P!nk",
+            "Spotify URL": "https://open.spotify.com/track/Stupid Girls",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Stupid Girls",
+            "Album Art URL": "https://i.scdn.co/image/Stupid Girls",
+            "Sentiment": "fear",
+            "Weighted Popularity": 0.0
+        },
+        {
+            "Song Name": "Clear (feat. Mothica)",
+            "Artist": "Pusher,MOTHICA",
+            "Spotify URL": "https://open.spotify.com/track/Clear (feat. Mothica)",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Clear (feat. Mothica)",
+            "Album Art URL": "https://i.scdn.co/image/Clear (feat. Mothica)",
+            "Sentiment": "fear",
+            "Weighted Popularity": 0.0
+        }
+    ],
+    "approval": [
+        {
+            "Song Name": "101",
+            "Artist": "WALLA",
+            "Spotify URL": "https://open.spotify.com/track/101",
+            "Preview URL": "https://p.scdn.co/mp3-preview/101",
+            "Album Art URL": "https://i.scdn.co/image/101",
+            "Sentiment": "approval",
+            "Weighted Popularity": 0.010749646393210749
+        },
+        {
+            "Song Name": "Hard To Explain",
+            "Artist": "The Strokes",
+            "Spotify URL": "https://open.spotify.com/track/Hard To Explain",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Hard To Explain",
+            "Album Art URL": "https://i.scdn.co/image/Hard To Explain",
+            "Sentiment": "approval",
+            "Weighted Popularity": 0.006859035004730369
+        },
+        {
+            "Song Name": "Hero",
+            "Artist": "Regina Spektor",
+            "Spotify URL": "https://open.spotify.com/track/Hero",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Hero",
+            "Album Art URL": "https://i.scdn.co/image/Hero",
+            "Sentiment": "approval",
+            "Weighted Popularity": 0.006661865322290242
+        },
+        {
+            "Song Name": "Life for Me",
+            "Artist": "Lily Allen",
+            "Spotify URL": "https://open.spotify.com/track/Life for Me",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Life for Me",
+            "Album Art URL": "https://i.scdn.co/image/Life for Me",
+            "Sentiment": "approval",
+            "Weighted Popularity": 0.002635740643120717
+        },
+        {
+            "Song Name": "heart",
+            "Artist": "flor",
+            "Spotify URL": "https://open.spotify.com/track/heart",
+            "Preview URL": "https://p.scdn.co/mp3-preview/heart",
+            "Album Art URL": "https://i.scdn.co/image/heart",
+            "Sentiment": "approval",
+            "Weighted Popularity": 0.0
+        }
+    ],
+    "disapproval": [
+        {
+            "Song Name": "You\u2019re Not The One",
+            "Artist": "Sky Ferreira",
+            "Spotify URL": "https://open.spotify.com/track/You\u2019re Not The One",
+            "Preview URL": "https://p.scdn.co/mp3-preview/You\u2019re Not The One",
+            "Album Art URL": "https://i.scdn.co/image/You\u2019re Not The One",
+            "Sentiment": "disapproval",
+            "Weighted Popularity": 0.01097361662386178
+        },
+        {
+            "Song Name": "Everyone's at It",
+            "Artist": "Lily Allen",
+            "Spotify URL": "https://open.spotify.com/track/Everyone's at It",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Everyone's at It",
+            "Album Art URL": "https://i.scdn.co/image/Everyone's at It",
+            "Sentiment": "disapproval",
+            "Weighted Popularity": 0.004895960832313341
+        },
+        {
+            "Song Name": "I'm Not Your Toy",
+            "Artist": "La Roux",
+            "Spotify URL": "https://open.spotify.com/track/I'm Not Your Toy",
+            "Preview URL": "https://p.scdn.co/mp3-preview/I'm Not Your Toy",
+            "Album Art URL": "https://i.scdn.co/image/I'm Not Your Toy",
+            "Sentiment": "disapproval",
+            "Weighted Popularity": 0.0
+        },
+        {
+            "Song Name": "Heartbeats",
+            "Artist": "The Knife",
+            "Spotify URL": "https://open.spotify.com/track/Heartbeats",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Heartbeats",
+            "Album Art URL": "https://i.scdn.co/image/Heartbeats",
+            "Sentiment": "disapproval",
+            "Weighted Popularity": 0.0
+        },
+        {
+            "Song Name": "Untrust Us",
+            "Artist": "Crystal Castles",
+            "Spotify URL": "https://open.spotify.com/track/Untrust Us",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Untrust Us",
+            "Album Art URL": "https://i.scdn.co/image/Untrust Us",
+            "Sentiment": "disapproval",
+            "Weighted Popularity": 0.0
+        }
+    ],
+    "excitement": [
+        {
+            "Song Name": "Adventure of a Lifetime - Matoma Remix",
+            "Artist": "Coldplay,Matoma",
+            "Spotify URL": "https://open.spotify.com/track/Adventure of a Lifetime - Matoma Remix",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Adventure of a Lifetime - Matoma Remix",
+            "Album Art URL": "https://i.scdn.co/image/Adventure of a Lifetime - Matoma Remix",
+            "Sentiment": "excitement",
+            "Weighted Popularity": 0.013366490519117188
+        },
+        {
+            "Song Name": "Silver Lining",
+            "Artist": "Rilo Kiley",
+            "Spotify URL": "https://open.spotify.com/track/Silver Lining",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Silver Lining",
+            "Album Art URL": "https://i.scdn.co/image/Silver Lining",
+            "Sentiment": "excitement",
+            "Weighted Popularity": 0.008007687379884689
+        },
+        {
+            "Song Name": "Skinny Genes",
+            "Artist": "Eliza Doolittle",
+            "Spotify URL": "https://open.spotify.com/track/Skinny Genes",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Skinny Genes",
+            "Album Art URL": "https://i.scdn.co/image/Skinny Genes",
+            "Sentiment": "excitement",
+            "Weighted Popularity": 0.0042758877114705334
+        },
+        {
+            "Song Name": "I Gotta Feeling",
+            "Artist": "Black Eyed Peas",
+            "Spotify URL": "https://open.spotify.com/track/I Gotta Feeling",
+            "Preview URL": "https://p.scdn.co/mp3-preview/I Gotta Feeling",
+            "Album Art URL": "https://i.scdn.co/image/I Gotta Feeling",
+            "Sentiment": "excitement",
+            "Weighted Popularity": 0.0006963788300835655
+        },
+        {
+            "Song Name": "Snake Women",
+            "Artist": "Cirque du Soleil",
+            "Spotify URL": "https://open.spotify.com/track/Snake Women",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Snake Women",
+            "Album Art URL": "https://i.scdn.co/image/Snake Women",
+            "Sentiment": "excitement",
+            "Weighted Popularity": 0.0006396588486140724
+        }
+    ],
+    "confusion": [
+        {
+            "Song Name": "New Person, Same Old Mistakes",
+            "Artist": "Tame Impala",
+            "Spotify URL": "https://open.spotify.com/track/New Person, Same Old Mistakes",
+            "Preview URL": "https://p.scdn.co/mp3-preview/New Person, Same Old Mistakes",
+            "Album Art URL": "https://i.scdn.co/image/New Person, Same Old Mistakes",
+            "Sentiment": "confusion",
+            "Weighted Popularity": 0.022943980929678188
+        },
+        {
+            "Song Name": "Lost In My Bedroom",
+            "Artist": "Sky Ferreira",
+            "Spotify URL": "https://open.spotify.com/track/Lost In My Bedroom",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Lost In My Bedroom",
+            "Album Art URL": "https://i.scdn.co/image/Lost In My Bedroom",
+            "Sentiment": "confusion",
+            "Weighted Popularity": 0.009464400946440096
+        },
+        {
+            "Song Name": "The Fear",
+            "Artist": "Lily Allen",
+            "Spotify URL": "https://open.spotify.com/track/The Fear",
+            "Preview URL": "https://p.scdn.co/mp3-preview/The Fear",
+            "Album Art URL": "https://i.scdn.co/image/The Fear",
+            "Sentiment": "confusion",
+            "Weighted Popularity": 0.008043364224514776
+        },
+        {
+            "Song Name": "I'm Like A Bird",
+            "Artist": "Nelly Furtado",
+            "Spotify URL": "https://open.spotify.com/track/I'm Like A Bird",
+            "Preview URL": "https://p.scdn.co/mp3-preview/I'm Like A Bird",
+            "Album Art URL": "https://i.scdn.co/image/I'm Like A Bird",
+            "Sentiment": "confusion",
+            "Weighted Popularity": 0.0
+        },
+        {
+            "Song Name": "Salt",
+            "Artist": "Bad Suns",
+            "Spotify URL": "https://open.spotify.com/track/Salt",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Salt",
+            "Album Art URL": "https://i.scdn.co/image/Salt",
+            "Sentiment": "confusion",
+            "Weighted Popularity": 0.0
+        }
+    ],
+    "embarrassment": [
+        {
+            "Song Name": "Last Name",
+            "Artist": "Carrie Underwood",
+            "Spotify URL": "https://open.spotify.com/track/Last Name",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Last Name",
+            "Album Art URL": "https://i.scdn.co/image/Last Name",
+            "Sentiment": "embarrassment",
+            "Weighted Popularity": 0.00889967637540453
+        },
+        {
+            "Song Name": "Heartbeat",
+            "Artist": "Annie",
+            "Spotify URL": "https://open.spotify.com/track/Heartbeat",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Heartbeat",
+            "Album Art URL": "https://i.scdn.co/image/Heartbeat",
+            "Sentiment": "embarrassment",
+            "Weighted Popularity": 0.004794520547945205
+        }
+    ],
+    "annoyance": [
+        {
+            "Song Name": "Ivy",
+            "Artist": "Frank Ocean",
+            "Spotify URL": "https://open.spotify.com/track/Ivy",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Ivy",
+            "Album Art URL": "https://i.scdn.co/image/Ivy",
+            "Sentiment": "annoyance",
+            "Weighted Popularity": 0.028078484438430314
+        },
+        {
+            "Song Name": "Needed Me - R3hab Remix",
+            "Artist": "Rihanna",
+            "Spotify URL": "https://open.spotify.com/track/Needed Me - R3hab Remix",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Needed Me - R3hab Remix",
+            "Album Art URL": "https://i.scdn.co/image/Needed Me - R3hab Remix",
+            "Sentiment": "annoyance",
+            "Weighted Popularity": 0.012187088274044796
+        },
+        {
+            "Song Name": "Hard out Here",
+            "Artist": "Lily Allen",
+            "Spotify URL": "https://open.spotify.com/track/Hard out Here",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Hard out Here",
+            "Album Art URL": "https://i.scdn.co/image/Hard out Here",
+            "Sentiment": "annoyance",
+            "Weighted Popularity": 0.00922509225092251
+        },
+        {
+            "Song Name": "Insincerely Yours",
+            "Artist": "Lily Allen",
+            "Spotify URL": "https://open.spotify.com/track/Insincerely Yours",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Insincerely Yours",
+            "Album Art URL": "https://i.scdn.co/image/Insincerely Yours",
+            "Sentiment": "annoyance",
+            "Weighted Popularity": 0.003690036900369004
+        },
+        {
+            "Song Name": "Oxford Comma",
+            "Artist": "Vampire Weekend",
+            "Spotify URL": "https://open.spotify.com/track/Oxford Comma",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Oxford Comma",
+            "Album Art URL": "https://i.scdn.co/image/Oxford Comma",
+            "Sentiment": "annoyance",
+            "Weighted Popularity": 0.0
+        }
+    ],
+    "disappointment": [
+        {
+            "Song Name": "Alice",
+            "Artist": "Pogo",
+            "Spotify URL": "https://open.spotify.com/track/Alice",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Alice",
+            "Album Art URL": "https://i.scdn.co/image/Alice",
+            "Sentiment": "disappointment",
+            "Weighted Popularity": 0.011393939393939394
+        },
+        {
+            "Song Name": "Numb",
+            "Artist": "Linkin Park",
+            "Spotify URL": "https://open.spotify.com/track/Numb",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Numb",
+            "Album Art URL": "https://i.scdn.co/image/Numb",
+            "Sentiment": "disappointment",
+            "Weighted Popularity": 0.01094034904923157
+        },
+        {
+            "Song Name": "Take My Place",
+            "Artist": "Lily Allen",
+            "Spotify URL": "https://open.spotify.com/track/Take My Place",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Take My Place",
+            "Album Art URL": "https://i.scdn.co/image/Take My Place",
+            "Sentiment": "disappointment",
+            "Weighted Popularity": 0.0028993147074327886
+        },
+        {
+            "Song Name": "Wake Me Up",
+            "Artist": "Avicii",
+            "Spotify URL": "https://open.spotify.com/track/Wake Me Up",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Wake Me Up",
+            "Album Art URL": "https://i.scdn.co/image/Wake Me Up",
+            "Sentiment": "disappointment",
+            "Weighted Popularity": 0.0024826216484607746
+        },
+        {
+            "Song Name": "1940 - AmpLive Remix",
+            "Artist": "The Submarines,Amp Live",
+            "Spotify URL": "https://open.spotify.com/track/1940 - AmpLive Remix",
+            "Preview URL": "https://p.scdn.co/mp3-preview/1940 - AmpLive Remix",
+            "Album Art URL": "https://i.scdn.co/image/1940 - AmpLive Remix",
+            "Sentiment": "disappointment",
+            "Weighted Popularity": 0.0
+        }
+    ],
+    "anger": [
+        {
+            "Song Name": "Work Bitch",
+            "Artist": "Britney Spears",
+            "Spotify URL": "https://open.spotify.com/track/Work Bitch",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Work Bitch",
+            "Album Art URL": "https://i.scdn.co/image/Work Bitch",
+            "Sentiment": "anger",
+            "Weighted Popularity": 0.016962025316455697
+        },
+        {
+            "Song Name": "Yeah Yeah Yeah",
+            "Artist": "New Politics",
+            "Spotify URL": "https://open.spotify.com/track/Yeah Yeah Yeah",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Yeah Yeah Yeah",
+            "Album Art URL": "https://i.scdn.co/image/Yeah Yeah Yeah",
+            "Sentiment": "anger",
+            "Weighted Popularity": 0.007518796992481203
+        },
+        {
+            "Song Name": "Flesh without Blood",
+            "Artist": "Grimes",
+            "Spotify URL": "https://open.spotify.com/track/Flesh without Blood",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Flesh without Blood",
+            "Album Art URL": "https://i.scdn.co/image/Flesh without Blood",
+            "Sentiment": "anger",
+            "Weighted Popularity": 0.0
+        },
+        {
+            "Song Name": "Kyoto",
+            "Artist": "Yung Lean",
+            "Spotify URL": "https://open.spotify.com/track/Kyoto",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Kyoto",
+            "Album Art URL": "https://i.scdn.co/image/Kyoto",
+            "Sentiment": "anger",
+            "Weighted Popularity": 0.0
+        },
+        {
+            "Song Name": "I Hate This Part",
+            "Artist": "The Pussycat Dolls",
+            "Spotify URL": "https://open.spotify.com/track/I Hate This Part",
+            "Preview URL": "https://p.scdn.co/mp3-preview/I Hate This Part",
+            "Album Art URL": "https://i.scdn.co/image/I Hate This Part",
+            "Sentiment": "anger",
+            "Weighted Popularity": 0.0
+        }
+    ],
+    "caring": [
+        {
+            "Song Name": "Keeping Your Head Up",
+            "Artist": "Birdy",
+            "Spotify URL": "https://open.spotify.com/track/Keeping Your Head Up",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Keeping Your Head Up",
+            "Album Art URL": "https://i.scdn.co/image/Keeping Your Head Up",
+            "Sentiment": "caring",
+            "Weighted Popularity": 0.01675257731958763
+        },
+        {
+            "Song Name": "Fix You",
+            "Artist": "Coldplay",
+            "Spotify URL": "https://open.spotify.com/track/Fix You",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Fix You",
+            "Album Art URL": "https://i.scdn.co/image/Fix You",
+            "Sentiment": "caring",
+            "Weighted Popularity": 0.01191827468785471
+        },
+        {
+            "Song Name": "Say a Prayer For Me",
+            "Artist": "R\u00dcF\u00dcS DU SOL",
+            "Spotify URL": "https://open.spotify.com/track/Say a Prayer For Me",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Say a Prayer For Me",
+            "Album Art URL": "https://i.scdn.co/image/Say a Prayer For Me",
+            "Sentiment": "caring",
+            "Weighted Popularity": 0.008209662140827282
+        },
+        {
+            "Song Name": "Seventeen",
+            "Artist": "Sjowgren",
+            "Spotify URL": "https://open.spotify.com/track/Seventeen",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Seventeen",
+            "Album Art URL": "https://i.scdn.co/image/Seventeen",
+            "Sentiment": "caring",
+            "Weighted Popularity": 0.0
+        },
+        {
+            "Song Name": "Happy Pills",
+            "Artist": "Norah Jones",
+            "Spotify URL": "https://open.spotify.com/track/Happy Pills",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Happy Pills",
+            "Album Art URL": "https://i.scdn.co/image/Happy Pills",
+            "Sentiment": "caring",
+            "Weighted Popularity": 0.0
+        }
+    ],
+    "remorse": [
+        {
+            "Song Name": "Supernova",
+            "Artist": "Ansel Elgort",
+            "Spotify URL": "https://open.spotify.com/track/Supernova",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Supernova",
+            "Album Art URL": "https://i.scdn.co/image/Supernova",
+            "Sentiment": "remorse",
+            "Weighted Popularity": 0.022485690923957483
+        },
+        {
+            "Song Name": "Thinkin' Bout Myself",
+            "Artist": "CMC$,CADE",
+            "Spotify URL": "https://open.spotify.com/track/Thinkin' Bout Myself",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Thinkin' Bout Myself",
+            "Album Art URL": "https://i.scdn.co/image/Thinkin' Bout Myself",
+            "Sentiment": "remorse",
+            "Weighted Popularity": 0.009619238476953907
+        },
+        {
+            "Song Name": "15 Dreams",
+            "Artist": "New Politics",
+            "Spotify URL": "https://open.spotify.com/track/15 Dreams",
+            "Preview URL": "https://p.scdn.co/mp3-preview/15 Dreams",
+            "Album Art URL": "https://i.scdn.co/image/15 Dreams",
+            "Sentiment": "remorse",
+            "Weighted Popularity": 0.002094554159186116
+        },
+        {
+            "Song Name": "Hearts",
+            "Artist": "Arthur Wimble",
+            "Spotify URL": "https://open.spotify.com/track/Hearts",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Hearts",
+            "Album Art URL": "https://i.scdn.co/image/Hearts",
+            "Sentiment": "remorse",
+            "Weighted Popularity": 0.0
+        },
+        {
+            "Song Name": "Do Right",
+            "Artist": "Glades",
+            "Spotify URL": "https://open.spotify.com/track/Do Right",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Do Right",
+            "Album Art URL": "https://i.scdn.co/image/Do Right",
+            "Sentiment": "remorse",
+            "Weighted Popularity": 0.0
+        }
+    ],
+    "gratitude": [
+        {
+            "Song Name": "Thank You (feat. RAYE)",
+            "Artist": "PVRIS,RAYE",
+            "Spotify URL": "https://open.spotify.com/track/Thank You (feat. RAYE)",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Thank You (feat. RAYE)",
+            "Album Art URL": "https://i.scdn.co/image/Thank You (feat. RAYE)",
+            "Sentiment": "gratitude",
+            "Weighted Popularity": 0.030726256983240226
+        },
+        {
+            "Song Name": "Thank God for Girls",
+            "Artist": "Weezer",
+            "Spotify URL": "https://open.spotify.com/track/Thank God for Girls",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Thank God for Girls",
+            "Album Art URL": "https://i.scdn.co/image/Thank God for Girls",
+            "Sentiment": "gratitude",
+            "Weighted Popularity": 0.014207297384565708
+        },
+        {
+            "Song Name": "Looking For Love",
+            "Artist": "MC4D,GLNNA",
+            "Spotify URL": "https://open.spotify.com/track/Looking For Love",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Looking For Love",
+            "Album Art URL": "https://i.scdn.co/image/Looking For Love",
+            "Sentiment": "gratitude",
+            "Weighted Popularity": 0.011325782811459028
+        },
+        {
+            "Song Name": "Since U Been Gone",
+            "Artist": "Kelly Clarkson",
+            "Spotify URL": "https://open.spotify.com/track/Since U Been Gone",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Since U Been Gone",
+            "Album Art URL": "https://i.scdn.co/image/Since U Been Gone",
+            "Sentiment": "gratitude",
+            "Weighted Popularity": 0.010402219140083217
+        },
+        {
+            "Song Name": "Somewhere up There",
+            "Artist": "Passion Pit",
+            "Spotify URL": "https://open.spotify.com/track/Somewhere up There",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Somewhere up There",
+            "Album Art URL": "https://i.scdn.co/image/Somewhere up There",
+            "Sentiment": "gratitude",
+            "Weighted Popularity": 0.007651109410864575
+        }
+    ],
+    "nervousness": [
+        {
+            "Song Name": "Wiped Out!",
+            "Artist": "The Neighbourhood",
+            "Spotify URL": "https://open.spotify.com/track/Wiped Out!",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Wiped Out!",
+            "Album Art URL": "https://i.scdn.co/image/Wiped Out!",
+            "Sentiment": "nervousness",
+            "Weighted Popularity": 0.016917871424177177
+        },
+        {
+            "Song Name": "Disconnect",
+            "Artist": "Clean Bandit,MARINA",
+            "Spotify URL": "https://open.spotify.com/track/Disconnect",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Disconnect",
+            "Album Art URL": "https://i.scdn.co/image/Disconnect",
+            "Sentiment": "nervousness",
+            "Weighted Popularity": 0.015855039637599093
+        },
+        {
+            "Song Name": "Party In The U.S.A.",
+            "Artist": "Miley Cyrus",
+            "Spotify URL": "https://open.spotify.com/track/Party In The U.S.A.",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Party In The U.S.A.",
+            "Album Art URL": "https://i.scdn.co/image/Party In The U.S.A.",
+            "Sentiment": "nervousness",
+            "Weighted Popularity": 0.013579387186629526
+        },
+        {
+            "Song Name": "Simplify",
+            "Artist": "Young the Giant",
+            "Spotify URL": "https://open.spotify.com/track/Simplify",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Simplify",
+            "Album Art URL": "https://i.scdn.co/image/Simplify",
+            "Sentiment": "nervousness",
+            "Weighted Popularity": 0.0
+        },
+        {
+            "Song Name": "You're Somebody Else",
+            "Artist": "flora cash",
+            "Spotify URL": "https://open.spotify.com/track/You're Somebody Else",
+            "Preview URL": "https://p.scdn.co/mp3-preview/You're Somebody Else",
+            "Album Art URL": "https://i.scdn.co/image/You're Somebody Else",
+            "Sentiment": "nervousness",
+            "Weighted Popularity": 0.0
+        }
+    ],
+    "surprise": [
+        {
+            "Song Name": "I Fall Apart",
+            "Artist": "Post Malone",
+            "Spotify URL": "https://open.spotify.com/track/I Fall Apart",
+            "Preview URL": "https://p.scdn.co/mp3-preview/I Fall Apart",
+            "Album Art URL": "https://i.scdn.co/image/I Fall Apart",
+            "Sentiment": "surprise",
+            "Weighted Popularity": 0.02671353251318102
+        },
+        {
+            "Song Name": "All Night",
+            "Artist": "Steve Aoki,Lauren Jauregui",
+            "Spotify URL": "https://open.spotify.com/track/All Night",
+            "Preview URL": "https://p.scdn.co/mp3-preview/All Night",
+            "Album Art URL": "https://i.scdn.co/image/All Night",
+            "Sentiment": "surprise",
+            "Weighted Popularity": 0.015187849720223821
+        },
+        {
+            "Song Name": "I Fall Apart (Remix)",
+            "Artist": "Scott C,King Zimm",
+            "Spotify URL": "https://open.spotify.com/track/I Fall Apart (Remix)",
+            "Preview URL": "https://p.scdn.co/mp3-preview/I Fall Apart (Remix)",
+            "Album Art URL": "https://i.scdn.co/image/I Fall Apart (Remix)",
+            "Sentiment": "surprise",
+            "Weighted Popularity": 0.007864238410596027
+        },
+        {
+            "Song Name": "Wrong",
+            "Artist": "John K",
+            "Spotify URL": "https://open.spotify.com/track/Wrong",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Wrong",
+            "Album Art URL": "https://i.scdn.co/image/Wrong",
+            "Sentiment": "surprise",
+            "Weighted Popularity": 0.0
+        },
+        {
+            "Song Name": "Everything Goes (Wow)",
+            "Artist": "BROODS",
+            "Spotify URL": "https://open.spotify.com/track/Everything Goes (Wow)",
+            "Preview URL": "https://p.scdn.co/mp3-preview/Everything Goes (Wow)",
+            "Album Art URL": "https://i.scdn.co/image/Everything Goes (Wow)",
+            "Sentiment": "surprise",
+            "Weighted Popularity": 0.0
+        }
+    ]
+}
