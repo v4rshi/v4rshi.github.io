@@ -3,10 +3,12 @@
 
 Stay tuned - I love to cook and will post my recipes and other food content here! In the meantime, follow me on Instagram @chubbymonkii by clicking below: 
 
-<!-- Instagram Link -->
-<a href="https://www.instagram.com/chubbymonkii/?hl=en" target="_blank">
+<!-- Instagram Link Centered -->
+<div style="text-align: center; margin-top: 20px;">
+  <a href="https://www.instagram.com/chubbymonkii/?hl=en" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="50" height="50" />
-</a>
+  </a>
+</div>
 
 <style>
   nav a:hover {
