@@ -3,16 +3,23 @@
 
 Stay tuned - I love to cook and will post my recipes and other food content here! In the meantime, follow me on Instagram @chubbymonkii by clicking below: 
 
-<!-- Instagram Link Centered -->
+Copy code
+<!-- Instagram Link Centered with Hover Effect -->
 <div style="text-align: center; margin-top: 20px;">
   <a href="https://www.instagram.com/chubbymonkii/?hl=en" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="50" height="50" />
+    <img id="instagram-icon" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="50" height="50" />
   </a>
 </div>
 
 <style>
-  nav a:hover {
-    color: #00ff00; /* Brighter green */
+  #instagram-icon {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+  }
+  
+  #instagram-icon:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    opacity: 0.8; /* Slight opacity change on hover */
   }
 </style>
 
