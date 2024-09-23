@@ -3,7 +3,6 @@
 
 Stay tuned - I love to cook and will post my recipes and other food content here! In the meantime, follow me on Instagram @chubbymonkii by clicking below: 
 
-Copy code
 <!-- Instagram Link Centered with Hover Effect -->
 <div style="text-align: center; margin-top: 20px;">
   <a href="https://www.instagram.com/chubbymonkii/?hl=en" target="_blank">
