@@ -234,7 +234,7 @@ To set the stage for the next phase of my project—sentiment analysis of song l
 
 While Spotify tracks song "Valence," can I gauge overall mood through word clouds of track titles? After all, a picture is worth a thousand words!
 
-<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 5px;">
     <img src="images/spotify_project/winter_wordcloud.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
     <img src="images/spotify_project/spring_wordcloud.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
     <img src="images/spotify_project/summer_wordcloud.png?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
