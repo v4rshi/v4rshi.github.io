@@ -52,6 +52,21 @@ I am still working out the kinks, but in the mean-time, I developed a mood-based
 <link href='https://fonts.googleapis.com/css?family=Bagel Fat One' rel='stylesheet'>
 
 Click on the link below to explore my Musical Mood Ring! Select a 'Sentiment' to discover 5 songs with similar vibes.
+-
+## Next Steps
+- Discuss potential future improvements and extensions to the project, such as enhancing the recommendation algorithm or refining the user interface.
+
+### Applications of the Analysis
+- Explore how sentiment analysis can enhance user experience on music platforms through personalized recommendations.
+
+### Ethical Considerations
+- Highlight any ethical concerns related to data privacy and the implications of using sentiment analysis in recommendations.
+
+### Feedback
+- We welcome your thoughts and feedback! Feel free to reach out with questions or comments.
+
+### References
+*coming soon*
 
 <nav style="text-align: center;">
   <div style="display: inline-block; background-color: #ffe6f5; border-radius: 25px; padding: 10px 20px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">
