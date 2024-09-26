@@ -1,7 +1,7 @@
 <link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
 <h2 style="font-family: 'Bungee', sans-serif; color: #00d0e3; font-size: 24px;">Soundtrack of My Life: Unraveling My Spotify Saga Over The Last 9 Years</h2>
 
-
+#### Author: Varshi S, 9 minute read. 
 
 #### Click here to see the Jupyter Notebook for [this EDA](https://github.com/v4rshi/v4rshi.github.io/blob/master/notebooks/seasons_eda.ipynb)!
 --- 
