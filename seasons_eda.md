@@ -246,17 +246,16 @@ While Spotify tracks song "Valence," can I gauge overall mood through word cloud
 - **Summer**: Energetic terms like “party,” “girl,” and “life” highlight the carefree, lively spirit of the season.
 - **Fall**: Includes words like “heart,” “back,” and “fall,” capturing themes of romance and reflection.
 
-## C'est Fin! Now for Next Steps:
-I’m diving into sentiment analysis on song lyrics using LLMs to uncover emotional patterns in titles and lyrics. Stay tuned!
-
----
-
 ### Applications of My Analysis:
 This analysis could lead to mood tracking through music, enhance therapy with tailored playlists, and help understand how seasonal music preferences affect mental health.
 
 ### Ethical Considerations:
 Privacy and data security are critical, especially when using emotional data. AI's role in therapy must be carefully regulated.
 
+---
+
+## C'est Fin! Now for Next Steps:
+I’m diving into sentiment analysis on song lyrics using LLMs to uncover emotional patterns in titles and lyrics. Stay tuned!
 
 ---
 
