@@ -14,9 +14,9 @@ I am still working on populating this page and ironing out some kinks, but in th
     </a>
   </div>
 </nav>
-<br> <b4\r>
+<br> <br>
 
-#THE BELOW IS A WORK IN PROGRESS!!
+# THE BELOW IS A WORK IN PROGRESS!!
 
 
 ### The Data
