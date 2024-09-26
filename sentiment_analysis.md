@@ -4,7 +4,9 @@
 ### Project Overview
 This project aims to perform sentiment analysis on Spotify data to build a dynamic recommendation system. By analyzing the emotional qualities of music, the project seeks to enhance personalized listening experiences and provide insights into user preferences.
 
-I am still working on populating this page and ironing out some kinks, but in the mean time click on the link below to explore my prototype Musical Mood Ring! Select a 'Sentiment' to discover songs with similar vibes!
+I am still working on populating this page and ironing out some kinks, but in the meantime click on the link below to explore my prototype Musical Mood Ring! Select a 'Sentiment' to discover songs with similar vibes!
+
+
 <nav style="text-align: center;">
   <div style="display: inline-block; background-color: #ffe6f5; border-radius: 25px; padding: 10px 20px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">
     <a href="mood_ring.html" style="font-family: 'Bagel Fat One', sans-serif; font-size: 24px; background: linear-gradient(90deg, #ff6666, #ffb366, #66ff66, #33ccff, #6699ff, #cc99ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none;">
@@ -12,7 +14,9 @@ I am still working on populating this page and ironing out some kinks, but in th
     </a>
   </div>
 </nav>
+<br> <b4\r>
 
+#THE BELOW IS A WORK IN PROGRESS!!
 
 
 ### The Data
