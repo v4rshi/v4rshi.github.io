@@ -39,18 +39,19 @@ Understanding the emotional impact of music is essential in today’s music land
   - **Method**: Deduplication was handled using pandas' `drop_duplicates()` method.
 
 ### Lyrics Fetching
-- **Approach**: Fetched song lyrics via the Genius API by matching track names and artist information.
+- **Approach**: Fetched song lyrics via the Genius API by matching track names and artist information. 
 - **Challenges**:
   - Faced API rate limits, which required batching requests.
   - Some API responses were slow or incomplete, leading to missing lyrics.
 
 ### Data Cleaning
-- **Method**: Used regular expressions (regex) to clean up the fetched lyrics, removing unwanted characters and formatting anomalies (e.g., brackets, newlines, special symbols).
+- **Method**: Used regular expressions (regex) to clean up the fetched lyrics, removing unwanted characters and formatting anomalies (e.g., brackets, newlines, special symbols). The code cleans song lyrics by removing metadata and non-ASCII characters, fetches them from the Genius API while caching results to prevent redundant calls, and processes a DataFrame to ensure only valid, clean lyrics are retained, eliminating any unwanted special characters. Additionally, it includes a delay to respect API rate limits
 - **Example**:
   - **Raw**: "[Verse 1] I’m walking on sunshine! (Yeah, yeah)"
   - **Cleaned**: "I'm walking on sunshine"
 - This cleaning process was essential to prepare the lyrics for sentiment analysis.
 
+### Code Snippet of Data Preparation: 
 ```javascript
 def clean_lyrics(lyrics):
     # Remove anything within square brackets (like [Chorus], [Verse])
@@ -77,7 +78,66 @@ def clean_lyrics(lyrics):
 - **Importance**: Organized, structured data allowed for seamless integration with machine learning models and simplified future analysis.
 
 ### Sentiment Analysis
-- **Implementation**: Utilized a pre-trained transformer model from Hugging Face (like `distilbert-base-uncased`) with PyTorch for sentiment analysis.
+- **Implementation**: Utilized a pre-trained transformer model from Hugging Face (like `distilbert-base-uncased`) with PyTorch for sentiment analysis. In this post, we’ll explore how to analyze the emotions expressed in song lyrics using a machine-learning model. We’re working with a model called [roberta-base-go_emotions](https://huggingface.co/SamLowe/roberta-base-go_emotions?text=My+job+search+is+horrible+and+leading+nowhere) (click the link to see more detailed documentation on HuggingFace), which can identify different emotions based on the lyrics provided. However, this model has a limitation: it can only process up to 512 tokens (words or parts of words) at a time.
+
+To get around this limitation, we use a technique called the sliding window approach using PyTorch. This method involves breaking the lyrics into overlapping sections, allowing us to analyze the entire song, even if it exceeds 512 tokens. The result is a clear understanding of the emotions in the lyrics, which can be useful for artists, producers, and fans alike.
+
+
+### Code Snippet of Sentiment Analysis Window Function: 
+```javascript
+import torch
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
+import pandas as pd
+from torch.nn.functional import softmax
+
+# Load the tokenizer and model for emotion classification
+tokenizer = AutoTokenizer.from_pretrained('SamLowe/roberta-base-go_emotions')
+model = AutoModelForSequenceClassification.from_pretrained('SamLowe/roberta-base-go_emotions')
+model.to('cuda' if torch.cuda.is_available() else 'cpu')
+
+def sliding_window_sentiment_analysis(text, window_size=512, stride=256):
+    # Tokenize and prepare input tensors
+    inputs = tokenizer(text, return_tensors='pt', truncation=False)
+    input_ids = inputs['input_ids'].squeeze()
+
+    # Calculate number of sliding windows
+    num_windows = max(1, (input_ids.size(0) - window_size) // stride + 1)
+    all_logits = []
+
+    # Process each sliding window
+    for i in range(num_windows):
+        window_input_ids = input_ids[i*stride:i*stride + window_size].unsqueeze(0)
+        attention_mask = torch.ones_like(window_input_ids).to(model.device)
+
+        with torch.no_grad():
+            outputs = model(window_input_ids, attention_mask=attention_mask)
+        all_logits.append(outputs.logits)
+
+    # Average the logits and compute probabilities
+    aggregated_logits = torch.mean(torch.stack(all_logits), dim=0)
+    probs = softmax(aggregated_logits, dim=1)
+
+    # Get predicted class and confidence score
+    predicted_class = torch.argmax(probs).item()
+    confidence = probs[0][predicted_class].item()
+
+    return model.config.id2label[predicted_class], confidence
+
+# Example usage
+lyrics_list = df['Lyrics_Clean'].astype(str).tolist()
+results = [{'label': sliding_window_sentiment_analysis(lyrics)[0], 
+            'score': sliding_window_sentiment_analysis(lyrics)[1]} for lyrics in lyrics_list]
+
+# Convert results to a DataFrame
+lyrics_sentiment = pd.DataFrame(results)
+print(lyrics_sentiment)
+
+# Add sentiment results to the original DataFrame
+df['Sentiment_Label'] = lyrics_sentiment['label']
+df['Sentiment_Score'] = lyrics_sentiment['score']
+
+```
+
 - **Results**: Classified song lyrics into sentiment categories (positive, negative, neutral), forming the basis for the mood-based recommendation system.
 
 ### Recommendation System
