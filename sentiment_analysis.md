@@ -4,6 +4,10 @@
 ### Project Overview
 This project aims to perform sentiment analysis on Spotify data to build a personalized recommendation system. By analyzing the emotional qualities of music, the project seeks to enhance personalized listening experiences and provide insights into user preferences.
 
+#### Data Pipeline Flowchart
+
+To give you a clear picture of how my Spotify sentiment analysis and recommendation system works, we've created a visual representation of my data pipeline. This flowchart illustrates the main steps of our process, from initial data collection to the final user interface. Let's take a look at the overall structure before we dive into the details of each component:
+
 ```mermaid
 graph TD
     A[Data Collection] --> B[Data Processing]
@@ -48,6 +52,20 @@ graph TD
     class D,D1,D2 purple;
     class E,E1,E2 red;
 ```
+This flowchart outlines the five main stages of our pipeline:
+
+1. Data Collection (Blue): We start by gathering data from two primary sources - the Spotify API for user listening history and the Genius API for song lyrics.
+
+2. Data Processing (Green): In this stage, we clean and prepare our data. This involves removing duplicates from the Spotify data and cleaning the lyrics obtained from Genius.
+
+3. Sentiment Analysis (Orange): Here, we use a RoBERTa model to analyze the cleaned lyrics and classify the emotions expressed in each song.
+
+4. Recommendation Engine (Purple): This is where the magic happens. We combine mood-based filtering with popularity scoring to generate personalized song recommendations.
+
+5. User Interface (Red): Finally, we present our results to the user. They can select their current mood, and our system will display tailored song recommendations.
+
+As we progress through this post, we'll delve deeper into each of these stages, exploring the challenges we faced and the solutions we implemented. This flowchart will serve as our roadmap, helping you understand how each piece fits into the larger puzzle of our sentiment-based music recommendation system.
+
 ### The Data
 **Timeframe**: April 2016 - August 2024 
 
