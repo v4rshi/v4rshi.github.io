@@ -58,7 +58,7 @@ To give you a clear picture of how my Spotify sentiment analysis and recommendat
         class C,C1,C2 orange;
         class D,D1,D2 purple;
         class E,E1,E2 red;
-</div>
+</div> 
 
 
 This flowchart outlines the five main stages of the pipeline:
