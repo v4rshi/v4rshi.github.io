@@ -141,8 +141,41 @@ df['Sentiment_Score'] = lyrics_sentiment['score']
 - **Results**: Classified song lyrics into one of 28 distinct sentiment categories (Love, Fear, Disappointment, Sadness, Nervousness, Annoyance, Disapproval, Disgust, Neutral, ... Relief, Gratitude, Pride), forming the basis for the mood-based recommendation system. The model assigned a sentiment based on the sentiment with the highest probability of being present among the 28 emotions the model was trained on. 
 
 ### Recommendation System
-- **Concept**: Built a bespoke, mood-based recommendation engine where users pick a mood, and the system recommends songs based on historical sentiment analysis of lyrics.
-- **Algorithm**: Employed a combination of collaborative filtering and sentiment-based recommendations, factoring in user preferences and the emotional tone of songs.
+- **Concept**: Built a bespoke, popularity, release date and mood-based recommendation engine where users pick a mood, and the system recommends songs based on historical sentiment analysis of lyrics.
+- **Algorithm**: 
+In this part of the project, we focus on recommending songs based on the user’s chosen mood or sentiment. The system uses the Spotify API to fetch song details and applies a custom popularity score based on how recently the song was released. This recommendation system is inspired by this [post](https://medium.com/@obielinda/building-a-spotify-recommendation-system-d4b67018eac2) Here’s a breakdown of the key features:
+
+1. **Weighted Popularity Calculation**: The function `calculate_weighted_popularity()` assigns a score to each song based on its release date. Recent songs get higher scores, making the system favor newer music while still considering older tracks.
+
+2. **Normalizing Features**: The audio features of the songs, such as danceability and energy, are adjusted using a process called Min-Max Scaling. This ensures that different song features are on the same scale, making the recommendation process more accurate.
+
+3. **Spotify API Integration**: The Spotify API is used to gather details about each song, including the song’s name, artist, link, album art, and a preview URL. This provides richer information for the recommendations.
+
+4. **Content-Based Recommendations**: The function `content_based_recommendations_by_sentiment()` suggests songs that match the mood (sentiment) selected by the user, making the recommendations mood-specific.
+
+5. **Hybrid Recommendations**: In addition to mood matching, `hybrid_recommendations_by_sentiment()` factors in song popularity. It combines the sentiment-based filtering with the weighted popularity score to suggest a balanced list of songs.
+
+6. **Mood Selection Menu**: A dropdown menu lets users pick a mood. Based on this choice, the system instantly shows song recommendations that match that mood.
+
+---
+
+### Key Code Snippet
+
+```python
+# Calculate weighted popularity based on release date
+def calculate_weighted_popularity(release_date):
+    release_date = datetime.strptime(release_date, '%Y-%m-%d')
+    time_span = datetime.now() - release_date
+    weight = 1 / (time_span.days + 1)  # Newer songs get a higher score
+    return weight
+```
+
+**What It Does**:
+1. **Parse Release Date**: Converts the song's release date from a string to a date format.
+2. **Calculate Time Span**: Determines how many days have passed since the song was released.
+3. **Assign Weight**: Recent songs get a higher score using the formula `1 / (time_span.days + 1)`. Older songs get lower scores, but are still included in the recommendations.
+
+This calculation helps balance between recommending popular songs and suggesting newer tracks that fit the user’s mood and filtering based on sentiment. 
 
 ### Interactive HTML Page
 - **Design**: 
