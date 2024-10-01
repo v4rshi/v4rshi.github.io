@@ -6,7 +6,7 @@ This project aims to perform sentiment analysis on Spotify data to build a perso
 
 #### Data Pipeline Flowchart
 
-To give you a clear picture of how my Spotify sentiment analysis and recommendation system works, we've created a visual representation of my data pipeline. This flowchart illustrates the main steps of our process, from initial data collection to the final user interface. Let's take a look at the overall structure before we dive into the details of each component:
+To give you a clear picture of how my Spotify sentiment analysis and recommendation system works, we've created a visual representation of my data pipeline. This flowchart illustrates the main steps of my process, from initial data collection to the final user interface. Let's take a look at the overall structure before we dive into the details of each component:
 
 ```mermaid
 graph TD
@@ -52,7 +52,7 @@ graph TD
     class D,D1,D2 purple;
     class E,E1,E2 red;
 ```
-This flowchart outlines the five main stages of our pipeline:
+This flowchart outlines the five main stages of the pipeline:
 
 1. Data Collection (Blue): We start by gathering data from two primary sources - the Spotify API for user listening history and the Genius API for song lyrics.
 
@@ -64,7 +64,7 @@ This flowchart outlines the five main stages of our pipeline:
 
 5. User Interface (Red): Finally, we present our results to the user. They can select their current mood, and our system will display tailored song recommendations.
 
-As we progress through this post, we'll delve deeper into each of these stages, exploring the challenges we faced and the solutions we implemented. This flowchart will serve as our roadmap, helping you understand how each piece fits into the larger puzzle of our sentiment-based music recommendation system.
+As we progress through this post, we'll delve deeper into each of these stages, exploring the challenges we faced and the solutions we implemented. This flowchart will serve as our roadmap, helping you understand how each piece fits into the larger puzzle of my sentiment-based music recommendation system.
 
 ### The Data
 **Timeframe**: April 2016 - August 2024 
