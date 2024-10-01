@@ -84,8 +84,7 @@ To get around this limitation, we use a technique called the sliding window appr
 
 
 ### Code Snippet of Sentiment Analysis Window Function: 
-<pre style="font-size: 80%;">
-<code>
+```python
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import pandas as pd
@@ -138,7 +137,7 @@ df['Sentiment_Label'] = lyrics_sentiment['label']
 df['Sentiment_Score'] = lyrics_sentiment['score']
 </code>
 </pre>
-
+```
 - **Results**: Classified song lyrics into one of 28 distinct sentiment categories (Love, Fear, Disappointment, Sadness, Nervousness, Annoyance, Disapproval, Disgust, Neutral, ... Relief, Gratitude, Pride), forming the basis for the mood-based recommendation system. The model assigned a sentiment based on the sentiment with the highest probability of being present among the 28 emotions the model was trained on. 
 
 ### Recommendation System
