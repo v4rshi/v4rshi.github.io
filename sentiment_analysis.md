@@ -78,13 +78,14 @@ def clean_lyrics(lyrics):
 - **Importance**: Organized, structured data allowed for seamless integration with machine learning models and simplified future analysis.
 
 ### Sentiment Analysis
-- **Implementation**: Utilized a pre-trained transformer model from Hugging Face (like `distilbert-base-uncased`) with PyTorch for sentiment analysis. In this post, we’ll explore how to analyze the emotions expressed in song lyrics using a machine-learning model. We’re working with a model called [roberta-base-go_emotions](https://huggingface.co/SamLowe/roberta-base-go_emotions?text=My+job+search+is+horrible+and+leading+nowhere) (click the link to see more detailed documentation on HuggingFace), which can identify different emotions based on the lyrics provided. However, this model has a limitation: it can only process up to 512 tokens (words or parts of words) at a time.
+**Implementation**: Utilized a pre-trained transformer model from Hugging Face (like `distilbert-base-uncased`) with PyTorch for sentiment analysis. In this post, we’ll explore how to analyze the emotions expressed in song lyrics using a machine-learning model. We’re working with a model called [roberta-base-go_emotions](https://huggingface.co/SamLowe/roberta-base-go_emotions?text=My+job+search+is+horrible+and+leading+nowhere) (click the link to see more detailed documentation on HuggingFace), which can identify 28 different emotions based on the lyrics (e.g. Love, Anger, Fear, etc.) provided, giving richer detail than a simple "Positive", "Negative" and "Neutral" assessment. However, this model has a limitation: it can only process up to 512 tokens (words or parts of words) at a time.
 
 To get around this limitation, we use a technique called the sliding window approach using PyTorch. This method involves breaking the lyrics into overlapping sections, allowing us to analyze the entire song, even if it exceeds 512 tokens. The result is a clear understanding of the emotions in the lyrics, which can be useful for artists, producers, and fans alike.
 
 
 ### Code Snippet of Sentiment Analysis Window Function: 
-```python
+<pre style="font-size: 80%;">
+<code>
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import pandas as pd
@@ -135,13 +136,13 @@ print(lyrics_sentiment)
 # Add sentiment results to the original DataFrame
 df['Sentiment_Label'] = lyrics_sentiment['label']
 df['Sentiment_Score'] = lyrics_sentiment['score']
+</code>
+</pre>
 
-```
-
-- **Results**: Classified song lyrics into sentiment categories (positive, negative, neutral), forming the basis for the mood-based recommendation system.
+- **Results**: Classified song lyrics into one of 28 distinct sentiment categories (Love, Fear, Disappointment, Sadness, Nervousness, Annoyance, Disapproval, Disgust, Neutral, ... Relief, Gratitude, Pride), forming the basis for the mood-based recommendation system. The model assigned a sentiment based on the sentiment with the highest probability of being present among the 28 emotions the model was trained on. 
 
 ### Recommendation System
-- **Concept**: Built a dynamic recommendation engine where users pick a mood, and the system recommends songs based on historical sentiment analysis of lyrics.
+- **Concept**: Built a bespoke, mood-based recommendation engine where users pick a mood, and the system recommends songs based on historical sentiment analysis of lyrics.
 - **Algorithm**: Employed a combination of collaborative filtering and sentiment-based recommendations, factoring in user preferences and the emotional tone of songs.
 
 ### Interactive HTML Page
