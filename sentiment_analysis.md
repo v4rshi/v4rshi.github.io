@@ -168,6 +168,8 @@ This calculation helps balance between recommending popular songs and suggesting
 - Ensured a visually appealing, engaging layout for users.
 - Provided clear feedback when users select an emotion or interact with the carousel.
 
+<img src="images/mood_ring_final.gif?raw=true" width="1000"/>
+
 **Prototype Available**: Check out the mood-based recommendation system prototype by clicking below!
 
 <nav style="text-align: center;">
