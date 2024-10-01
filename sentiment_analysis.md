@@ -52,7 +52,7 @@ Understanding the emotional impact of music is essential in today’s music land
 - This cleaning process was essential to prepare the lyrics for sentiment analysis.
 
 ### Code Snippet of Data Preparation: 
-```javascript
+```python
 def clean_lyrics(lyrics):
     # Remove anything within square brackets (like [Chorus], [Verse])
     lyrics = re.sub(r'\[.*?\]', '', lyrics)
@@ -84,7 +84,7 @@ To get around this limitation, we use a technique called the sliding window appr
 
 
 ### Code Snippet of Sentiment Analysis Window Function: 
-```javascript
+```python
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import pandas as pd
