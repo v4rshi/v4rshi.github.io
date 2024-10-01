@@ -12,9 +12,9 @@ This project aims to perform sentiment analysis on Spotify data to build a perso
 ### Motivation & Hypothesis: 
 Understanding the emotional impact of music is essential in today’s music landscape. This analysis aims to uncover how sentiment influences music preferences and listener engagement, ultimately leading to a more personalized recommendation system.
 
-## Key Focus Areas
+### Key Focus Areas
 
-### Data Ingestion
+#### Data Ingestion
 - **Overview**: Gathered historical musical data from Spotify using the Spotify API.
 - **Steps Taken**: 
   - Collected personal listening history, including track metadata (name, artist, album, duration).
@@ -23,20 +23,20 @@ Understanding the emotional impact of music is essential in today’s music land
   - **Libraries**: `spotipy` (for Spotify API interaction), `pandas` (for data manipulation), and `numpy` (for numerical operations).
   - **Method**: Deduplication was handled using pandas' `drop_duplicates()` method.
 
-### Lyrics Fetching
+#### Lyrics Fetching
 - **Approach**: Fetched song lyrics via the Genius API by matching track names and artist information. 
 - **Challenges**:
   - Faced API rate limits, which required batching requests.
   - Some API responses were slow or incomplete, leading to missing lyrics.
 
-### Data Cleaning
+#### Data Cleaning
 - **Method**: Used regular expressions (regex) to clean up the fetched lyrics, removing unwanted characters and formatting anomalies (e.g., brackets, newlines, special symbols). The code cleans song lyrics by removing metadata and non-ASCII characters, fetches them from the Genius API while caching results to prevent redundant calls, and processes a DataFrame to ensure only valid, clean lyrics are retained, eliminating any unwanted special characters. Additionally, it includes a delay to respect API rate limits
 - **Example**:
   - **Raw**: "[Verse 1] I’m walking on sunshine! (Yeah, yeah)"
   - **Cleaned**: "I'm walking on sunshine"
 - This cleaning process was essential to prepare the lyrics for sentiment analysis.
 
-### Code Snippet of Data Preparation: 
+#### Code Snippet of Data Preparation: 
 ```python
 def clean_lyrics(lyrics):
     # Remove anything within square brackets (like [Chorus], [Verse])
@@ -51,24 +51,13 @@ def clean_lyrics(lyrics):
     lyrics = '\n'.join([line for line in lyrics.split('\n') if line.strip()])
     return lyrics.strip()  # Return the cleaned lyrics, stripped of extra spaces
 ```
-
-### Data Storage
-- **Format**: Data was stored in CSV files with the following columns:
-  - Track Name (string)
-  - Artist (string)
-  - Album (string)
-  - Duration (int)
-  - Lyrics (string)
-  - Sentiment (string)
-- **Importance**: Organized, structured data allowed for seamless integration with machine learning models and simplified future analysis.
-
-### Sentiment Analysis
-**Implementation**: Utilized a pre-trained transformer model from Hugging Face (like `distilbert-base-uncased`) with PyTorch for sentiment analysis. In this post, we’ll explore how to analyze the emotions expressed in song lyrics using a machine-learning model. We’re working with a model called [roberta-base-go_emotions](https://huggingface.co/SamLowe/roberta-base-go_emotions?text=My+job+search+is+horrible+and+leading+nowhere) (click the link to see more detailed documentation on HuggingFace), which can identify 28 different emotions based on the lyrics (e.g. Love, Anger, Fear, etc.) provided, giving richer detail than a simple "Positive", "Negative" and "Neutral" assessment. However, this model has a limitation: it can only process up to 512 tokens (words or parts of words) at a time.
+#### Sentiment Analysis
+**Implementation**: Utilized a pre-trained transformer model from Hugging Face with PyTorch for sentiment analysis. In this post, we’ll explore how to analyze the emotions expressed in song lyrics using a machine-learning model. We’re working with a model called [roberta-base-go_emotions](https://huggingface.co/SamLowe/roberta-base-go_emotions?text=My+job+search+is+horrible+and+leading+nowhere) (click the link to see more detailed documentation on HuggingFace), which can identify 28 different emotions based on the lyrics (e.g. Love, Anger, Fear, etc.) provided, giving richer detail than a simple "Positive", "Negative" and "Neutral" assessment. However, this model has a limitation: it can only process up to 512 tokens (words or parts of words) at a time.
 
 To get around this limitation, we use a technique called the sliding window approach using PyTorch. This method involves breaking the lyrics into overlapping sections, allowing us to analyze the entire song, even if it exceeds 512 tokens. The result is a clear understanding of the emotions in the lyrics, which can be useful for artists, producers, and fans alike.
 
 
-### Code Snippet of Sentiment Analysis Window Function: 
+#### Code Snippet of Sentiment Analysis Window Function: 
 ```python
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
@@ -125,7 +114,7 @@ df['Sentiment_Score'] = lyrics_sentiment['score']
 ```
 - **Results**: Classified song lyrics into one of 28 distinct sentiment categories (Love, Fear, Disappointment, Sadness, Nervousness, Annoyance, Disapproval, Disgust, Neutral, ... Relief, Gratitude, Pride), forming the basis for the mood-based recommendation system. The model assigned a sentiment based on the sentiment with the highest probability of being present among the 28 emotions the model was trained on. 
 
-### Recommendation System
+#### Recommendation System
 - **Concept**: Built a bespoke, popularity, release date and mood-based recommendation engine where users pick a mood, and the system recommends songs based on historical sentiment analysis of lyrics.
 - **Algorithm**: 
 In this part of the project, we focus on recommending songs based on the user’s chosen mood or sentiment. The system uses the Spotify API to fetch song details and applies a custom popularity score based on how recently the song was released. This recommendation system is inspired by this [post](https://medium.com/@obielinda/building-a-spotify-recommendation-system-d4b67018eac2) Here’s a breakdown of the key features:
@@ -148,7 +137,7 @@ This approach creates a dynamic recommendation system that not only tailors musi
 
 ---
 
-### Key Code Snippet
+#### Key Code Snippet
 
 ```python
 # Calculate weighted popularity based on release date
@@ -166,7 +155,7 @@ def calculate_weighted_popularity(release_date):
 
 This calculation helps balance between recommending popular songs and suggesting newer tracks that fit the user’s mood and filtering based on sentiment. 
 
-### Interactive HTML Page
+#### Interactive HTML Page
 
 - **Design**: 
   - Created an intuitive HTML page where users can select an emotion from a list.
@@ -174,7 +163,7 @@ This calculation helps balance between recommending popular songs and suggesting
 - **Functionality**: 
   - The page dynamically generates recommendations based on user sentiment input, enhancing the user experience with personalized music choices.
 
-### UX Considerations for Carousel Design
+#### UX Considerations for Carousel Design
 - Focused on intuitive navigation and accessibility.
 - Ensured a visually appealing, engaging layout for users.
 - Provided clear feedback when users select an emotion or interact with the carousel.
@@ -192,21 +181,19 @@ This calculation helps balance between recommending popular songs and suggesting
 
 ---
 
-### Next Steps
+#### Next Steps
 - **Improvements**:
   - Fine-tune the recommendation algorithm for better accuracy.
   - Enhance the UI/UX to improve user engagement and interactivity.
 
-### Applications of the Analysis
+#### Applications of the Analysis
 - **Impact**: Sentiment analysis can enhance user experience on music platforms by offering personalized recommendations based on emotional tone, mood, or preferences.
 
-### Ethical Considerations
+#### Ethical Considerations
 - Discuss potential privacy concerns regarding user data collection.
 - Evaluate the ethical implications of using sentiment analysis in music recommendations.
 
 ---
-
-### Refrences: 
 
 
 
