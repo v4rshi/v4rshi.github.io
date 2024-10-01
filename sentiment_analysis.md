@@ -4,21 +4,6 @@
 ### Project Overview
 This project aims to perform sentiment analysis on Spotify data to build a personalized recommendation system. By analyzing the emotional qualities of music, the project seeks to enhance personalized listening experiences and provide insights into user preferences.
 
-I am still working on populating this page and ironing out some kinks, but in the meantime click on the link below to explore my prototype Musical Mood Ring! Select a 'Sentiment' to discover songs with similar vibes!
-
-
-<nav style="text-align: center;">
-  <div style="display: inline-block; background-color: #ffe6f5; border-radius: 25px; padding: 10px 20px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">
-    <a href="mood_ring.html" style="font-family: 'Bagel Fat One', sans-serif; font-size: 24px; background: linear-gradient(90deg, #ff6666, #ffb366, #66ff66, #33ccff, #6699ff, #cc99ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none;">
-      V's Musical Mood Ring
-    </a>
-  </div>
-</nav>
-<br> <br>
-
-# THE BELOW IS A WORK IN PROGRESS!!
-
-
 ### The Data
 **Timeframe**: April 2016 - August 2024 
 
@@ -145,17 +130,21 @@ df['Sentiment_Score'] = lyrics_sentiment['score']
 - **Algorithm**: 
 In this part of the project, we focus on recommending songs based on the user’s chosen mood or sentiment. The system uses the Spotify API to fetch song details and applies a custom popularity score based on how recently the song was released. This recommendation system is inspired by this [post](https://medium.com/@obielinda/building-a-spotify-recommendation-system-d4b67018eac2) Here’s a breakdown of the key features:
 
-1. **Weighted Popularity Calculation**: The function `calculate_weighted_popularity()` assigns a score to each song based on its release date. Recent songs get higher scores, making the system favor newer music while still considering older tracks.
+In this part of the project, the goal is to recommend songs based on the user’s selected mood or sentiment. The system gathers song details using the Spotify API and ranks them by how recently they were released, giving more weight to newer songs. Here’s a summary of the key features:
 
-2. **Normalizing Features**: The audio features of the songs, such as danceability and energy, are adjusted using a process called Min-Max Scaling. This ensures that different song features are on the same scale, making the recommendation process more accurate.
+- **Popularity Based on Release Date**: The system assigns a score to each song depending on how recently it was released. Newer songs receive higher scores, ensuring the recommendations highlight recent music while still including older tracks.
 
-3. **Spotify API Integration**: The Spotify API is used to gather details about each song, including the song’s name, artist, link, album art, and a preview URL. This provides richer information for the recommendations.
+- **Normalizing Song Features**: To make recommendations more accurate, the system adjusts different audio features—such as danceability, energy, and mood—so they are comparable. This helps in providing more balanced song suggestions.
 
-4. **Content-Based Recommendations**: The function `content_based_recommendations_by_sentiment()` suggests songs that match the mood (sentiment) selected by the user, making the recommendations mood-specific.
+- **Fetching Detailed Song Information**: Using the Spotify API, the system pulls up detailed song information like the song title, artist, Spotify link, album cover, and a short preview. This adds more context to the recommendations.
 
-5. **Hybrid Recommendations**: In addition to mood matching, `hybrid_recommendations_by_sentiment()` factors in song popularity. It combines the sentiment-based filtering with the weighted popularity score to suggest a balanced list of songs.
+- **Mood-Based Recommendations**: The system filters songs based on their mood (or sentiment), giving users music that aligns with the emotional tone they’ve selected. This ensures the recommendations match the user’s current feeling.
 
-6. **Mood Selection Menu**: A dropdown menu lets users pick a mood. Based on this choice, the system instantly shows song recommendations that match that mood.
+- **Combining Mood and Popularity**: In addition to matching the mood, the system considers how popular the song is. It combines the mood-based suggestions with the popularity score to give a more balanced recommendation list.
+
+- **User-Friendly Mood Selection**: A simple dropdown menu allows users to select their mood, and the system instantly shows songs that fit their emotional state.
+
+This approach creates a dynamic recommendation system that not only tailors music to your mood but also keeps the results fresh by prioritizing newer tracks.
 
 ---
 
@@ -178,6 +167,17 @@ def calculate_weighted_popularity(release_date):
 This calculation helps balance between recommending popular songs and suggesting newer tracks that fit the user’s mood and filtering based on sentiment. 
 
 ### Interactive HTML Page
+CLICK ON THIS TO SEE USE MY MUSICAL MOOD RING! 
+
+<nav style="text-align: center;">
+  <div style="display: inline-block; background-color: #ffe6f5; border-radius: 25px; padding: 10px 20px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">
+    <a href="mood_ring.html" style="font-family: 'Bagel Fat One', sans-serif; font-size: 24px; background: linear-gradient(90deg, #ff6666, #ffb366, #66ff66, #33ccff, #6699ff, #cc99ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none;">
+      V's Musical Mood Ring
+    </a>
+  </div>
+</nav>
+<br> <br>
+
 - **Design**: 
   - Created an intuitive HTML page where users can select an emotion from a list.
   - Users are presented with a carousel of song recommendations featuring album art, a preview of the song, and links to listen on Spotify.
