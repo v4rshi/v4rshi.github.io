@@ -51,6 +51,21 @@ Understanding the emotional impact of music is essential in today’s music land
   - **Cleaned**: "I'm walking on sunshine"
 - This cleaning process was essential to prepare the lyrics for sentiment analysis.
 
+```javascript
+def clean_lyrics(lyrics):
+    # Remove anything within square brackets (like [Chorus], [Verse])
+    lyrics = re.sub(r'\[.*?\]', '', lyrics)
+    # Remove phrases indicating contributors to the lyrics (case insensitive)
+    lyrics = re.sub(r'\b\d+\s+contributor(?:s)?\b', '', lyrics, flags=re.IGNORECASE)
+    # Remove the word 'translation'
+    lyrics = re.sub(r'\btranslation\b', '', lyrics, flags=re.IGNORECASE)
+    # Remove any non-ASCII characters (such as emojis or special symbols)
+    lyrics = re.sub(r'[^\x00-\x7F]+', '', lyrics)
+    # Remove empty lines from the lyrics
+    lyrics = '\n'.join([line for line in lyrics.split('\n') if line.strip()])
+    return lyrics.strip()  # Return the cleaned lyrics, stripped of extra spaces
+```
+
 ### Data Storage
 - **Format**: Data was stored in CSV files with the following columns:
   - Track Name (string)
