@@ -117,7 +117,7 @@ df['Sentiment_Score'] = lyrics_sentiment['score']
 #### Recommendation System
 - **Concept**: Built a bespoke, popularity, release date and mood-based recommendation engine where users pick a mood, and the system recommends songs based on historical sentiment analysis of lyrics.
 - **Algorithm**: 
-In this part of the project, we focus on recommending songs based on the user’s chosen mood or sentiment. The system uses the Spotify API to fetch song details and applies a custom popularity score based on how recently the song was released. This recommendation system is inspired by this [post](https://medium.com/@obielinda/building-a-spotify-recommendation-system-d4b67018eac2) Here’s a breakdown of the key features:
+In this part of the project, we focus on recommending songs based on the user’s chosen mood or sentiment. The system uses the Spotify API to fetch song details and applies a custom popularity score based on how recently the song was released. This recommendation system is inspired by this [post](https://medium.com/@obielinda/building-a-spotify-recommendation-system-d4b67018eac2). Here’s a breakdown of the key features:
 
 In this part of the project, the goal is to recommend songs based on the user’s selected mood or sentiment. The system gathers song details using the Spotify API and ranks them by how recently they were released, giving more weight to newer songs. Here’s a summary of the key features:
 
