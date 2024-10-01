@@ -4,6 +4,7 @@
 ### Project Overview
 This project aims to perform sentiment analysis on Spotify data to build a personalized recommendation system. By analyzing the emotional qualities of music, the project seeks to enhance personalized listening experiences and provide insights into user preferences.
 
+```mermaid
 graph TD
     A[Data Collection] --> B[Data Processing]
     B --> C[Sentiment Analysis]
@@ -46,7 +47,7 @@ graph TD
     class C,C1,C2 orange;
     class D,D1,D2 purple;
     class E,E1,E2 red;
-
+```
 ### The Data
 **Timeframe**: April 2016 - August 2024 
 
