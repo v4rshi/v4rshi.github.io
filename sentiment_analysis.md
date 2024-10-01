@@ -167,16 +167,6 @@ def calculate_weighted_popularity(release_date):
 This calculation helps balance between recommending popular songs and suggesting newer tracks that fit the user’s mood and filtering based on sentiment. 
 
 ### Interactive HTML Page
-CLICK ON THIS TO SEE USE MY MUSICAL MOOD RING! 
-
-<nav style="text-align: center;">
-  <div style="display: inline-block; background-color: #ffe6f5; border-radius: 25px; padding: 10px 20px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">
-    <a href="mood_ring.html" style="font-family: 'Bagel Fat One', sans-serif; font-size: 24px; background: linear-gradient(90deg, #ff6666, #ffb366, #66ff66, #33ccff, #6699ff, #cc99ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none;">
-      V's Musical Mood Ring
-    </a>
-  </div>
-</nav>
-<br> <br>
 
 - **Design**: 
   - Created an intuitive HTML page where users can select an emotion from a list.
@@ -189,7 +179,16 @@ CLICK ON THIS TO SEE USE MY MUSICAL MOOD RING!
 - Ensured a visually appealing, engaging layout for users.
 - Provided clear feedback when users select an emotion or interact with the carousel.
 
-**Prototype Available**: Check out the mood-based recommendation system prototype [here]!
+**Prototype Available**: Check out the mood-based recommendation system prototype by clicking below!
+
+<nav style="text-align: center;">
+  <div style="display: inline-block; background-color: #ffe6f5; border-radius: 25px; padding: 10px 20px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">
+    <a href="mood_ring.html" style="font-family: 'Bagel Fat One', sans-serif; font-size: 24px; background: linear-gradient(90deg, #ff6666, #ffb366, #66ff66, #33ccff, #6699ff, #cc99ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none;">
+      V's Musical Mood Ring
+    </a>
+  </div>
+</nav>
+<br> <br>
 
 ---
 
