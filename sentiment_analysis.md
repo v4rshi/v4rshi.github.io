@@ -15,7 +15,6 @@ To give you a clear picture of how my Spotify sentiment analysis and recommendat
     </script>
 </head>
 
-
 ```mermaid
 graph TD
     A[Data Collection] --> B[Data Processing]
