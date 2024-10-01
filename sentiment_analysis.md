@@ -2,7 +2,7 @@
 <h2 style="font-family: 'Bungee', sans-serif; color: #00d0e3; font-size: 24px;">Sentiment Analysis on Spotify Data and Recommendation System</h2>
 
 ### Project Overview
-This project aims to perform sentiment analysis on Spotify data to build a dynamic recommendation system. By analyzing the emotional qualities of music, the project seeks to enhance personalized listening experiences and provide insights into user preferences.
+This project aims to perform sentiment analysis on Spotify data to build a personalized recommendation system. By analyzing the emotional qualities of music, the project seeks to enhance personalized listening experiences and provide insights into user preferences.
 
 I am still working on populating this page and ironing out some kinks, but in the meantime click on the link below to explore my prototype Musical Mood Ring! Select a 'Sentiment' to discover songs with similar vibes!
 
@@ -30,67 +30,82 @@ Understanding the emotional impact of music is essential in today’s music land
 ## Key Focus Areas
 
 ### Data Ingestion
-- Process of gathering musical history data from Spotify.
-- Steps taken to remove duplicate songs.
-- Tools and libraries utilized for data ingestion.
+- **Overview**: Gathered historical musical data from Spotify using the Spotify API.
+- **Steps Taken**: 
+  - Collected personal listening history, including track metadata (name, artist, album, duration).
+  - Filtered and removed duplicate songs to ensure data integrity.
+- **Tools Used**: 
+  - **Libraries**: `spotipy` (for Spotify API interaction), `pandas` (for data manipulation), and `numpy` (for numerical operations).
+  - **Method**: Deduplication was handled using pandas' `drop_duplicates()` method.
 
 ### Lyrics Fetching
-- Utilizing the Genius API to fetch lyrics based on track names and artists.
-- Discussion of challenges faced, such as API rate limits and slow response times.
+- **Approach**: Fetched song lyrics via the Genius API by matching track names and artist information.
+- **Challenges**:
+  - Faced API rate limits, which required batching requests.
+  - Some API responses were slow or incomplete, leading to missing lyrics.
 
 ### Data Cleaning
-- Cleaning lyrics using regex patterns.
-- Rationale behind chosen formatting with examples of raw vs. cleaned lyrics.
+- **Method**: Used regular expressions (regex) to clean up the fetched lyrics, removing unwanted characters and formatting anomalies (e.g., brackets, newlines, special symbols).
+- **Example**:
+  - **Raw**: "[Verse 1] I’m walking on sunshine! (Yeah, yeah)"
+  - **Cleaned**: "I'm walking on sunshine"
+- This cleaning process was essential to prepare the lyrics for sentiment analysis.
 
 ### Data Storage
-- Format of the saved data (CSV) and its structure (columns, data types).
-- Importance of organized data for subsequent analysis.
+- **Format**: Data was stored in CSV files with the following columns:
+  - Track Name (string)
+  - Artist (string)
+  - Album (string)
+  - Duration (int)
+  - Lyrics (string)
+  - Sentiment (string)
+- **Importance**: Organized, structured data allowed for seamless integration with machine learning models and simplified future analysis.
 
 ### Sentiment Analysis
-- Implementing a pre-trained model from Hugging Face to run sentiment analysis using PyTorch.
-- Explanation of the results obtained from the analysis.
+- **Implementation**: Utilized a pre-trained transformer model from Hugging Face (like `distilbert-base-uncased`) with PyTorch for sentiment analysis.
+- **Results**: Classified song lyrics into sentiment categories (positive, negative, neutral), forming the basis for the mood-based recommendation system.
 
 ### Recommendation System
-- Building a dynamic recommendation system using sentiment as a feature.
-- How user-selected sentiment leads to song recommendations and overview of the algorithm used to generate new recommendations.
+- **Concept**: Built a dynamic recommendation engine where users pick a mood, and the system recommends songs based on historical sentiment analysis of lyrics.
+- **Algorithm**: Employed a combination of collaborative filtering and sentiment-based recommendations, factoring in user preferences and the emotional tone of songs.
 
 ### Interactive HTML Page
-- Creating a user-friendly HTML page where users can select an emotion.
-- Overview of the HTML page functionality and how users can interact with it.
-- Features of the carousel displaying songs, album art, previews, and links to Spotify based on historical data.
+- **Design**: 
+  - Created an intuitive HTML page where users can select an emotion from a list.
+  - Users are presented with a carousel of song recommendations featuring album art, a preview of the song, and links to listen on Spotify.
+- **Functionality**: 
+  - The page dynamically generates recommendations based on user sentiment input, enhancing the user experience with personalized music choices.
 
-### UX Considerations for Carousel Design:
-- Ensuring intuitive navigation and accessibility for all users.
-- Designing an engaging and visually appealing layout to enhance user interaction.
-- Providing clear feedback on user actions, such as song selection and emotional response.
-I am still working out the kinks, but in the mean-time, I developed a mood-based recommendation system prototype - check it out! 
+### UX Considerations for Carousel Design
+- Focused on intuitive navigation and accessibility.
+- Ensured a visually appealing, engaging layout for users.
+- Provided clear feedback when users select an emotion or interact with the carousel.
 
+**Prototype Available**: Check out the mood-based recommendation system prototype [here]!
 
--
-## Next Steps
-- Discuss potential future improvements and extensions to the project, such as enhancing the recommendation algorithm or refining the user interface.
+---
+
+### Next Steps
+- **Improvements**:
+  - Fine-tune the recommendation algorithm for better accuracy.
+  - Enhance the UI/UX to improve user engagement and interactivity.
 
 ### Applications of the Analysis
-- Explore how sentiment analysis can enhance user experience on music platforms through personalized recommendations.
+- **Impact**: Sentiment analysis can enhance user experience on music platforms by offering personalized recommendations based on emotional tone, mood, or preferences.
 
 ### Ethical Considerations
-- Highlight any ethical concerns related to data privacy and the implications of using sentiment analysis in recommendations.
+- Discuss potential privacy concerns regarding user data collection.
+- Evaluate the ethical implications of using sentiment analysis in music recommendations.
 
-### Feedback
-- We welcome your thoughts and feedback! Feel free to reach out with questions or comments.
+---
 
-### References
-*coming soon*
+### Refrences: 
+
+
+
+
+
 <link href='https://fonts.googleapis.com/css?family=Bagel Fat One' rel='stylesheet'>
-
-
-
-
-
-
-
-
-
 
 
 <style>
