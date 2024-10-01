@@ -8,50 +8,59 @@ This project aims to perform sentiment analysis on Spotify data to build a perso
 
 To give you a clear picture of how my Spotify sentiment analysis and recommendation system works, we've created a visual representation of my data pipeline. This flowchart illustrates the main steps of my process, from initial data collection to the final user interface. Let's take a look at the overall structure before we dive into the details of each component:
 
-```mermaid
-graph TD
-    A[Data Collection] --> B[Data Processing]
-    B --> C[Sentiment Analysis]
-    C --> D[Recommendation Engine]
-    D --> E[User Interface]
+<head>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
 
-    subgraph A[Data Collection]
-        A1[Spotify API]
-        A2[Genius API]
-    end
+<div class="mermaid">
+    graph TD
+        A[Data Collection] --> B[Data Processing]
+        B --> C[Sentiment Analysis]
+        C --> D[Recommendation Engine]
+        D --> E[User Interface]
 
-    subgraph B[Data Processing]
-        B1[Remove Duplicates]
-        B2[Clean Lyrics]
-    end
+        subgraph A[Data Collection]
+            A1[Spotify API]
+            A2[Genius API]
+        end
 
-    subgraph C[Sentiment Analysis]
-        C1[RoBERTa Model]
-        C2[Emotion Classification]
-    end
+        subgraph B[Data Processing]
+            B1[Remove Duplicates]
+            B2[Clean Lyrics]
+        end
 
-    subgraph D[Recommendation Engine]
-        D1[Mood-based Filtering]
-        D2[Popularity Scoring]
-    end
+        subgraph C[Sentiment Analysis]
+            C1[RoBERTa Model]
+            C2[Emotion Classification]
+        end
 
-    subgraph E[User Interface]
-        E1[Select Emotion]
-        E2[Display Recommendations]
-    end
+        subgraph D[Recommendation Engine]
+            D1[Mood-based Filtering]
+            D2[Popularity Scoring]
+        end
 
-    classDef blue fill:#e6f3ff,stroke:#7cb9e8,stroke-width:2px;
-    classDef green fill:#e6fff2,stroke:#66c2a5,stroke-width:2px;
-    classDef orange fill:#fff2e6,stroke:#ffa07a,stroke-width:2px;
-    classDef purple fill:#f3e6ff,stroke:#9370db,stroke-width:2px;
-    classDef red fill:#ffe6e6,stroke:#ff7f7f,stroke-width:2px;
+        subgraph E[User Interface]
+            E1[Select Emotion]
+            E2[Display Recommendations]
+        end
 
-    class A,A1,A2 blue;
-    class B,B1,B2 green;
-    class C,C1,C2 orange;
-    class D,D1,D2 purple;
-    class E,E1,E2 red;
-```
+        classDef blue fill:#e6f3ff,stroke:#7cb9e8,stroke-width:2px;
+        classDef green fill:#e6fff2,stroke:#66c2a5,stroke-width:2px;
+        classDef orange fill:#fff2e6,stroke:#ffa07a,stroke-width:2px;
+        classDef purple fill:#f3e6ff,stroke:#9370db,stroke-width:2px;
+        classDef red fill:#ffe6e6,stroke:#ff7f7f,stroke-width:2px;
+
+        class A,A1,A2 blue;
+        class B,B1,B2 green;
+        class C,C1,C2 orange;
+        class D,D1,D2 purple;
+        class E,E1,E2 red;
+</div>
+
+
 This flowchart outlines the five main stages of the pipeline:
 
 1. Data Collection (Blue): We start by gathering data from two primary sources - the Spotify API for user listening history and the Genius API for song lyrics.
