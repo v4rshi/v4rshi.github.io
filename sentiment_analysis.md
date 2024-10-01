@@ -7,7 +7,7 @@ This project aims to perform sentiment analysis on Spotify data to build a perso
 #### Data Pipeline Flowchart
 
 To give you a clear picture of how my Spotify sentiment analysis and recommendation system works, we've created a visual representation of my data pipeline. This flowchart illustrates the main steps of my process, from initial data collection to the final user interface. Let's take a look at the overall structure before we dive into the details of each component:
-
+ 
 <head>
     <script type="module">
         import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
