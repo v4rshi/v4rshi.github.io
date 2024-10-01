@@ -4,6 +4,49 @@
 ### Project Overview
 This project aims to perform sentiment analysis on Spotify data to build a personalized recommendation system. By analyzing the emotional qualities of music, the project seeks to enhance personalized listening experiences and provide insights into user preferences.
 
+graph TD
+    A[Data Collection] --> B[Data Processing]
+    B --> C[Sentiment Analysis]
+    C --> D[Recommendation Engine]
+    D --> E[User Interface]
+
+    subgraph A[Data Collection]
+        A1[Spotify API]
+        A2[Genius API]
+    end
+
+    subgraph B[Data Processing]
+        B1[Remove Duplicates]
+        B2[Clean Lyrics]
+    end
+
+    subgraph C[Sentiment Analysis]
+        C1[RoBERTa Model]
+        C2[Emotion Classification]
+    end
+
+    subgraph D[Recommendation Engine]
+        D1[Mood-based Filtering]
+        D2[Popularity Scoring]
+    end
+
+    subgraph E[User Interface]
+        E1[Select Emotion]
+        E2[Display Recommendations]
+    end
+
+    classDef blue fill:#e6f3ff,stroke:#7cb9e8,stroke-width:2px;
+    classDef green fill:#e6fff2,stroke:#66c2a5,stroke-width:2px;
+    classDef orange fill:#fff2e6,stroke:#ffa07a,stroke-width:2px;
+    classDef purple fill:#f3e6ff,stroke:#9370db,stroke-width:2px;
+    classDef red fill:#ffe6e6,stroke:#ff7f7f,stroke-width:2px;
+
+    class A,A1,A2 blue;
+    class B,B1,B2 green;
+    class C,C1,C2 orange;
+    class D,D1,D2 purple;
+    class E,E1,E2 red;
+
 ### The Data
 **Timeframe**: April 2016 - August 2024 
 
