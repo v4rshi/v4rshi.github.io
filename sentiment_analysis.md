@@ -8,7 +8,7 @@ This project aims to perform sentiment analysis on Spotify data to build a perso
 
 To give you a clear picture of how my Spotify sentiment analysis and recommendation system works, we've created a visual representation of my data pipeline. This flowchart illustrates the main steps of my process, from initial data collection to the final user interface. Let's take a look at the overall structure before we dive into the details of each component:
 
-<img src="images/spotify_project/flowchart.png?raw=true" width="1000"/>
+<img src="images/spotify_project/flowchart.png?raw=true" width="300"/>
 
 This flowchart outlines the five main stages of the pipeline:
 
