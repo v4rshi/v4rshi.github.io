@@ -41,7 +41,7 @@ To provide a clear picture of how our Spotify sentiment analysis and recommendat
     <img src="images/spotify_project/flowchart.png?raw=true" width="300" class="zoom" alt="Zoomable Image"/>
 </div>
 
-1. **Data Collection (Blue)**: We begin by gathering data from two primary sources - the Spotify API for user listening history and the Genius API for song lyrics.
+1. **Data Collection (Blue)**: We begin by gathering data from two primary sources - the [Spotify API](https://spotipy.readthedocs.io/en/2.24.0/) for user listening history and the [Genius API](https://docs.genius.com/) for song lyrics.
 
 2. **Data Processing (Green)**: In this stage, we clean and prepare our data. This involves removing duplicates from the Spotify data and cleaning the lyrics obtained from Genius.
 
