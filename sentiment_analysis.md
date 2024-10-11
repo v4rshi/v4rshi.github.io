@@ -51,7 +51,7 @@ Understanding the emotional impact of music is essential in today’s music land
 
 ## Key Focus Areas
 
-### 1. Data Ingestion
+### 1. Data Collection
 
 **Overview**: We gathered historical musical data from Spotify using the Spotify API.
 
