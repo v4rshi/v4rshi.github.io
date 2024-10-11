@@ -11,62 +11,66 @@
 </style>
 
 
-### Project Overview
-This project aims to perform sentiment analysis on Spotify data (specifically lyrics of songs I listened to over the last 9 years) to build a personalized, mood-based recommendation system. By analyzing the emotional qualities of music, the project seeks to enhance personalized listening experiences and provide insights into user preferences.
+## Project Overview
+This project aims to perform sentiment analysis on Spotify data to build a personalized recommendation system. By analyzing the emotional qualities of music, the project seeks to enhance personalized listening experiences and provide insights into user preferences.
 
-#### Data Pipeline Flowchart
+### Data Pipeline Flowchart
 
-To give you a clear picture of how my Spotify sentiment analysis and recommendation system works, I've created a visual representation of my data pipeline. This flowchart illustrates the main steps of my process, from initial data collection to the final user interface. Let's take a look at the overall structure before we dive into the details of each component:
+To provide a clear picture of how our Spotify sentiment analysis and recommendation system works, we've created a visual representation of the data pipeline. This flowchart illustrates the main steps of our process, from initial data collection to the final user interface:
 
 <div style="text-align: center;">
     <img src="images/spotify_project/flowchart.png?raw=true" width="300" class="zoom" alt="Zoomable Image"/>
 </div>
 
-This flowchart outlines the five main stages of the pipeline:
+1. **Data Collection (Blue)**: We begin by gathering data from two primary sources - the Spotify API for user listening history and the Genius API for song lyrics.
 
-1. Data Collection (Blue): We start by gathering data from two primary sources - the Spotify API for user listening history and the Genius API for song lyrics.
+2. **Data Processing (Green)**: In this stage, we clean and prepare our data. This involves removing duplicates from the Spotify data and cleaning the lyrics obtained from Genius.
 
-2. Data Processing (Green): In this stage, we clean and prepare our data. This involves removing duplicates from the Spotify data and cleaning the lyrics obtained from Genius.
+3. **Sentiment Analysis (Orange)**: Here, we use a RoBERTa model to analyze the cleaned lyrics and classify the emotions expressed in each song.
 
-3. Sentiment Analysis (Orange): Here, we use a RoBERTa model to analyze the cleaned lyrics and classify the emotions expressed in each song.
+4. **Recommendation Engine (Purple)**: This is where the magic happens. We combine mood-based filtering with popularity scoring to generate personalized song recommendations.
 
-4. Recommendation Engine (Purple): This is where the magic happens. We combine mood-based filtering with popularity scoring to generate personalized song recommendations.
+5. **User Interface (Red)**: Finally, we present our results to the user. They can select their current mood, and our system will display tailored song recommendations.
 
-5. User Interface (Red): Finally, we present our results to the user. They can select their current mood, and our system will display tailored song recommendations.
+## The Data
 
-As we progress through this post, we'll delve deeper into each of these stages, exploring the challenges we faced and the solutions we implemented. This flowchart will serve as our roadmap, helping you understand how each piece fits into the larger puzzle of my sentiment-based music recommendation system.
+- **Timeframe**: April 2016 - August 2024
+- **Attributes**: Musical history data, including track names, artists, genres, tempo, release date, lyrics, and sentiment scores
 
-### The Data
-**Timeframe**: April 2016 - August 2024 
-
-**Attributes**: Musical history data, including track names, artists, genres, tempo, release date, lyrics, and sentiment scores
-
-### Motivation & Hypothesis: 
+## Motivation & Hypothesis: 
 Understanding the emotional impact of music is essential in today’s music landscape. This analysis aims to uncover how sentiment influences music preferences and listener engagement, ultimately leading to a more personalized recommendation system.
 
-### Key Focus Areas
+## Key Focus Areas
 
-#### Data Ingestion
-- **Overview**: Gathered historical musical data from Spotify using the Spotify API.
-- **Steps Taken**: 
-  - Collected personal listening history, including track metadata (name, artist, album, duration).
-  - Filtered and removed duplicate songs to ensure data integrity.
-- **Tools Used**: 
-  - **Libraries**: `spotipy` (for Spotify API interaction), `pandas` (for data manipulation), and `numpy` (for numerical operations).
-  - **Method**: Deduplication was handled using pandas' `drop_duplicates()` method.
+### 1. Data Ingestion
 
-#### Lyrics Fetching
-- **Approach**: Fetched song lyrics via the Genius API by matching track names and artist information. 
-- **Challenges**:
-  - Faced API rate limits, which required batching requests.
-  - Some API responses were slow or incomplete, leading to missing lyrics.
+**Overview**: We gathered historical musical data from Spotify using the Spotify API.
 
-#### Data Cleaning
-- **Method**: Used regular expressions (regex) to clean up the fetched lyrics, removing unwanted characters and formatting anomalies (e.g., brackets, newlines, special symbols). The code cleans song lyrics by removing metadata and non-ASCII characters, fetches them from the Genius API while caching results to prevent redundant calls, and processes a DataFrame to ensure only valid, clean lyrics are retained, eliminating any unwanted special characters. Additionally, it includes a delay to respect API rate limits
-- **Example**:
-  - **Raw**: "[Verse 1] I’m walking on sunshine! (Yeah, yeah)"
-  - **Cleaned**: "I'm walking on sunshine"
-- This cleaning process was essential to prepare the lyrics for sentiment analysis.
+**Steps Taken**:
+- Collected personal listening history, including track metadata (name, artist, album, duration).
+- Filtered and removed duplicate songs to ensure data integrity.
+
+**Tools Used**:
+- Libraries: spotipy (for Spotify API interaction), pandas (for data manipulation), and numpy (for numerical operations).
+- Method: Deduplication was handled using pandas' `drop_duplicates()` method.
+
+### 2. Lyrics Fetching
+
+**Approach**: We fetched song lyrics via the Genius API by matching track names and artist information.
+
+**Challenges**:
+- Faced API rate limits, which required batching requests.
+- Some API responses were slow or incomplete, leading to missing lyrics.
+
+### 3. Data Cleaning
+
+**Method**: We used regular expressions (regex) to clean up the fetched lyrics, removing unwanted characters and formatting anomalies (e.g., brackets, newlines, special symbols).
+
+**Example**:
+- Raw: `"[Verse 1] I'm walking on sunshine! (Yeah, yeah)"`
+- Cleaned: `"I'm walking on sunshine"`
+
+This cleaning process was essential to prepare the lyrics for sentiment analysis.
 
 Here are some before and after images: 
 
@@ -112,13 +116,13 @@ def clean_lyrics(lyrics):
 ```
 
 
-#### Sentiment Analysis
+## Sentiment Analysis
 **Implementation**: Utilized a pre-trained transformer model from Hugging Face with PyTorch for sentiment analysis. In this post, we’ll explore how to analyze the emotions expressed in song lyrics using a machine-learning model. We’re working with a model called [roberta-base-go_emotions](https://huggingface.co/SamLowe/roberta-base-go_emotions?text=My+job+search+is+horrible+and+leading+nowhere) (click the link to see more detailed documentation on HuggingFace), which can identify 28 different emotions based on the lyrics (e.g. Love, Anger, Fear, etc.) provided, giving richer detail than a simple "Positive", "Negative" and "Neutral" assessment. However, this model has a limitation: it can only process up to 512 tokens (words or parts of words) at a time.
 
 To get around this limitation, we use a technique called the sliding window approach using PyTorch. This method involves breaking the lyrics into overlapping sections, allowing us to analyze the entire song, even if it exceeds 512 tokens. The result is a clear understanding of the emotions in the lyrics, which can be useful for artists, producers, and fans alike.
 
 
-#### Code Snippet of Sentiment Analysis Window Function: 
+### Code Snippet of Sentiment Analysis Window Function: 
 
 
 ```python
@@ -173,7 +177,7 @@ print(lyrics_sentiment)
 df['Sentiment_Label'] = lyrics_sentiment['label']
 df['Sentiment_Score'] = lyrics_sentiment['score']
 ```
-#### Explanation of the Sliding Window Method
+### Explanation of the Sliding Window Method
 
 1. The process starts with a long text input (like song lyrics).
 2. The text is split into overlapping windows. Typically, the window size is 512 tokens, and the stride (overlap) is 256 tokens.
@@ -193,7 +197,7 @@ This process continues until the entire text is covered. By using overlapping wi
     <img src="images/spotify_project/sliding_window.png?raw=true" width="300" class="zoom" alt="Zoomable Image"/>
 </div>
 
-#### Sliding Window Implementation Details
+### Sliding Window Implementation Details
 
 The main steps in the code that implement this process are:
 
@@ -238,7 +242,7 @@ From the visualization, I noticed that the "Neutral" sentiment dominates, which 
 Sentiment analysis of song lyrics is a tricky task because of the creative and often ambiguous nature of the text. I know it’ll take some trial and error, but I’m confident that with a few more iterations, I’ll be able to improve the accuracy of my results.
 
 
-#### Recommendation System
+## Recommendation System
 - **Concept**: Built a bespoke, popularity, release date and mood-based recommendation engine where users pick a mood, and the system recommends songs based on historical sentiment analysis of lyrics.
 - **Algorithm**: 
 In this part of the project, we focus on recommending songs based on the user’s chosen mood or sentiment. The system uses the Spotify API to fetch song details and applies a custom popularity score based on how recently the song was released. This recommendation system is inspired by this [post](https://medium.com/@obielinda/building-a-spotify-recommendation-system-d4b67018eac2). Here’s a breakdown of the key features:
@@ -261,7 +265,7 @@ This approach creates a dynamic recommendation system that not only tailors musi
 
 ---
 
-#### Key Code Snippet
+### Key Code Snippet
 
 ```python
 # Calculate weighted popularity based on release date
@@ -287,7 +291,7 @@ This calculation helps balance between recommending popular songs and suggesting
 - **Functionality**: 
   - The page dynamically generates recommendations based on user sentiment input, enhancing the user experience with personalized music choices.
 
-#### UX Considerations for Carousel Design
+### UX Considerations for Carousel Design
 - Focused on intuitive navigation and accessibility.
 - Ensured a visually appealing, engaging layout for users.
 - Provided clear feedback when users select an emotion or interact with the carousel.
@@ -307,7 +311,7 @@ This calculation helps balance between recommending popular songs and suggesting
 
 ---
 
-#### Next Steps
+## Next Steps
 - **Improvements** : Moving forward, I plan to fine-tune the recommendation algorithm to improve its accuracy. Additionally, I want to enhance the UI/UX to boost user engagement and interactivity, ensuring the platform feels more intuitive and enjoyable to use.
 
 - **Applications of the Analysis** : The sentiment analysis I’ve developed has the potential to make a meaningful impact by improving user experience on music platforms. Personalized recommendations based on emotional tone, mood, or individual preferences could transform how users discover music, making it feel more tailored to their current feelings and needs.
