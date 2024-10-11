@@ -172,8 +172,6 @@ print(lyrics_sentiment)
 # Add sentiment results to the original DataFrame
 df['Sentiment_Label'] = lyrics_sentiment['label']
 df['Sentiment_Score'] = lyrics_sentiment['score']
-</code>
-</pre>
 ```
 #### Explanation of the Sliding Window Method
 
@@ -207,6 +205,38 @@ The main steps in the code that implement this process are:
 This technique is particularly useful for long texts that exceed the maximum input size of the sentiment analysis model, allowing for comprehensive analysis of the entire text while maintaining local context.
 
 - **Results**: Classified song lyrics into one of 28 distinct sentiment categories (Love, Fear, Disappointment, Sadness, Nervousness, Annoyance, Disapproval, Disgust, Neutral, ... Relief, Gratitude, Pride), forming the basis for the mood-based recommendation system. The model assigned a sentiment based on the sentiment with the highest probability of being present among the 28 emotions the model was trained on. 
+
+<iframe src="images/spotify_project/sentiment_bar_chart" style="width: 100%; height: calc(100vw * 3 / 4);"></iframe>
+
+From the visualization, I noticed that the "Neutral" sentiment dominates, which aligns with my observation that the Genius API did not always consistently scrape lyrics correctly. This prevalence of neutral sentiment suggests there may be some areas for improvement in my data extraction and cleaning process. After reflecting on the results, I've come up with a few possible reasons and ideas for refinement:
+
+1. **Data granularity:**  
+   My current sentiment analysis might not be capturing the full emotional depth of the lyrics. To address this, I could try a more fine-grained emotion classification model or adjust the thresholds for what gets labeled as neutral.
+
+2. **Context sensitivity:**  
+   Song lyrics often use metaphors, irony, and complex emotional themes that general-purpose sentiment analysis models might struggle to interpret. Fine-tuning my model on a dataset specific to song lyrics could help improve its accuracy.
+
+3. **Sliding window approach:**  
+   I’m currently using a sliding window to analyze sentiment and then averaging across the windows. This might be smoothing out more pronounced emotions in certain parts of the lyrics. I could experiment with different aggregation methods, like using the maximum sentiment score instead of the average, to capture these more intense emotions.
+
+4. **Preprocessing:**  
+   It’s also possible that my data cleaning process is unintentionally stripping out important emotional cues. I plan to review my preprocessing steps to ensure I’m not neutralizing text that holds meaningful sentiment.
+
+5. **Model selection:**  
+   I’m using the 'SamLowe/roberta-base-go_emotions' model, which might not be the best fit for analyzing song lyrics. I could experiment with other pre-trained models that are better suited for detecting emotions in creative, lyrical text.
+
+6. **Threshold adjustment:**  
+   Another option is adjusting the threshold for classifying sentiment as neutral. By setting a higher minimum confidence score for non-neutral classifications, I might reduce the number of lyrics labeled as neutral.
+
+### How I plan to refine my analysis:
+- Experimenting with different pre-trained models or fine-tuning the current model on a dataset of labeled song lyrics.
+- Tweaking the sliding window parameters (window size and stride) to see if that improves how well sentiment is captured.
+- Trying a more sophisticated aggregation method to better combine sentiments across different windows.
+- Reviewing and refining the data cleaning process to ensure that important emotional cues in the lyrics are preserved.
+- Exploring a multi-label classification approach, where a song can have multiple sentiment labels, each with varying intensities.
+
+Sentiment analysis of song lyrics is a tricky task because of the creative and often ambiguous nature of the text. I know it’ll take some trial and error, but I’m confident that with a few more iterations, I’ll be able to improve the accuracy of my results.
+
 
 #### Recommendation System
 - **Concept**: Built a bespoke, popularity, release date and mood-based recommendation engine where users pick a mood, and the system recommends songs based on historical sentiment analysis of lyrics.
