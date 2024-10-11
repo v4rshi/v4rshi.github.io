@@ -12,11 +12,11 @@
 
 
 ### Project Overview
-This project aims to perform sentiment analysis on Spotify data to build a personalized recommendation system. By analyzing the emotional qualities of music, the project seeks to enhance personalized listening experiences and provide insights into user preferences.
+This project aims to perform sentiment analysis on Spotify data (specifically lyrics of songs I listened to over the last 9 years) to build a personalized, mood-based recommendation system. By analyzing the emotional qualities of music, the project seeks to enhance personalized listening experiences and provide insights into user preferences.
 
 #### Data Pipeline Flowchart
 
-To give you a clear picture of how my Spotify sentiment analysis and recommendation system works, we've created a visual representation of my data pipeline. This flowchart illustrates the main steps of my process, from initial data collection to the final user interface. Let's take a look at the overall structure before we dive into the details of each component:
+To give you a clear picture of how my Spotify sentiment analysis and recommendation system works, I've created a visual representation of my data pipeline. This flowchart illustrates the main steps of my process, from initial data collection to the final user interface. Let's take a look at the overall structure before we dive into the details of each component:
 
 <div style="text-align: center;">
     <img src="images/spotify_project/flowchart.png?raw=true" width="300" class="zoom" alt="Zoomable Image"/>
