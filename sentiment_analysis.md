@@ -95,7 +95,6 @@ Here are some before and after images:
 </div>
 
 #### Code Snippet of Data Preparation: 
-<small>
     
 ```python
 def clean_lyrics(lyrics):
@@ -111,7 +110,7 @@ def clean_lyrics(lyrics):
     lyrics = '\n'.join([line for line in lyrics.split('\n') if line.strip()])
     return lyrics.strip()  # Return the cleaned lyrics, stripped of extra spaces
 ```
-</small>
+
 
 #### Sentiment Analysis
 **Implementation**: Utilized a pre-trained transformer model from Hugging Face with PyTorch for sentiment analysis. In this post, we’ll explore how to analyze the emotions expressed in song lyrics using a machine-learning model. We’re working with a model called [roberta-base-go_emotions](https://huggingface.co/SamLowe/roberta-base-go_emotions?text=My+job+search+is+horrible+and+leading+nowhere) (click the link to see more detailed documentation on HuggingFace), which can identify 28 different emotions based on the lyrics (e.g. Love, Anger, Fear, etc.) provided, giving richer detail than a simple "Positive", "Negative" and "Neutral" assessment. However, this model has a limitation: it can only process up to 512 tokens (words or parts of words) at a time.
@@ -120,7 +119,7 @@ To get around this limitation, we use a technique called the sliding window appr
 
 
 #### Code Snippet of Sentiment Analysis Window Function: 
-<small>
+
 
 ```python
 import torch
@@ -176,7 +175,37 @@ df['Sentiment_Score'] = lyrics_sentiment['score']
 </code>
 </pre>
 ```
-</small>
+### Explanation of the Sliding Window Method**
+
+1. The process starts with a long text input (like song lyrics).
+2. The text is split into overlapping windows. Typically, the window size is 512 tokens, and the stride (overlap) is 256 tokens.
+3. Each window is processed separately by the sentiment analysis model.
+4. The results from all windows are averaged to get the final sentiment.
+
+The "Sliding Window Process" subgraph at the bottom shows how the windows overlap:
+
+- Window 1 covers the first chunk of text.
+- Window 2 starts halfway through Window 1 and covers the next chunk.
+- Window 3 starts halfway through Window 2 and covers the next chunk.
+
+This process continues until the entire text is covered. By using overlapping windows, the algorithm ensures that no part of the text is analyzed in isolation, which helps to maintain context throughout the analysis.
+
+
+<div style="text-align: center;">
+    <img src="images/spotify_project/sliding_window.png?raw=true" width="300" class="zoom" alt="Zoomable Image"/>
+</div>
+
+#### Implementation Details
+
+The main steps in the code that implement this process are:
+
+1. The `sliding_window_sentiment_analysis` function processes the text in chunks.
+2. It calculates the number of windows based on the text length, window size, and stride.
+3. For each window, it runs the sentiment analysis model and stores the results.
+4. Finally, it averages the results from all windows to get the final sentiment and confidence score.
+
+This technique is particularly useful for long texts that exceed the maximum input size of the sentiment analysis model, allowing for comprehensive analysis of the entire text while maintaining local context.
+
 - **Results**: Classified song lyrics into one of 28 distinct sentiment categories (Love, Fear, Disappointment, Sadness, Nervousness, Annoyance, Disapproval, Disgust, Neutral, ... Relief, Gratitude, Pride), forming the basis for the mood-based recommendation system. The model assigned a sentiment based on the sentiment with the highest probability of being present among the 28 emotions the model was trained on. 
 
 #### Recommendation System
@@ -203,8 +232,7 @@ This approach creates a dynamic recommendation system that not only tailors musi
 ---
 
 #### Key Code Snippet
-<small>
-    
+
 ```python
 # Calculate weighted popularity based on release date
 def calculate_weighted_popularity(release_date):
@@ -213,7 +241,6 @@ def calculate_weighted_popularity(release_date):
     weight = 1 / (time_span.days + 1)  # Newer songs get a higher score
     return weight
 ```
-</small>
 
 **What It Does**:
 1. **Parse Release Date**: Converts the song's release date from a string to a date format.
