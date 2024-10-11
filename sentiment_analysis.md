@@ -1,6 +1,10 @@
 <link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
-<h2 style="font-family: 'Bungee', sans-serif; color: #00d0e3; font-size: 24px;">Sentiment Analysis on Spotify Data and Recommendation System</h2>
 
+<h2 style="font-family: 'Bungee', sans-serif; color: #00d0e3; font-size: 24px;">Sentiment Analysis on Spotify Data and Recommendation System</h2>
+#### Author: Varshi S, 9 minute read. 
+
+#### Click here to see the Jupyter Notebooks for [this project]()!
+---
 <style>
 .zoom {
   transition: transform 0.5s ease;
