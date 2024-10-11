@@ -1,6 +1,16 @@
 <link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
 <h2 style="font-family: 'Bungee', sans-serif; color: #00d0e3; font-size: 24px;">Sentiment Analysis on Spotify Data and Recommendation System</h2>
 
+<style>
+.zoom {
+  transition: transform 0.5s ease;
+}
+.zoom.zoomed {
+  transform: scale(2.5);
+}
+</style>
+
+
 ### Project Overview
 This project aims to perform sentiment analysis on Spotify data to build a personalized recommendation system. By analyzing the emotional qualities of music, the project seeks to enhance personalized listening experiences and provide insights into user preferences.
 
@@ -9,7 +19,7 @@ This project aims to perform sentiment analysis on Spotify data to build a perso
 To give you a clear picture of how my Spotify sentiment analysis and recommendation system works, we've created a visual representation of my data pipeline. This flowchart illustrates the main steps of my process, from initial data collection to the final user interface. Let's take a look at the overall structure before we dive into the details of each component:
 
 <div style="text-align: center;">
-    <img src="images/spotify_project/flowchart.png?raw=true" width="300"/>
+    <img src="images/spotify_project/flowchart.png?raw=true" width="300" class="zoom" alt="Zoomable Image"/>
 </div>
 
 This flowchart outlines the five main stages of the pipeline:
@@ -75,11 +85,11 @@ Here are some before and after images:
 
 <div style="display: flex; justify-content: center;">
     <div style="margin-right: 10px; text-align: center;">
-        <img src="images/spotify_project/nonsense_1.png?raw=true" width="300"/>
+        <img src="images/spotify_project/nonsense_1.png?raw=true" width="300" class="zoom" alt="Zoomable Image"/>
         <p>Track Names and Artist Names</p>
     </div>
     <div style="text-align: center;">
-        <img src="images/spotify_project/nonsense_2.png?raw=true" width="300"/>
+        <img src="images/spotify_project/nonsense_2.png?raw=true" width="300" class="zoom" alt="Zoomable Image"/>
         <p>Track Names and Artist Names as Lists</p>
     </div>
 </div>
@@ -225,7 +235,7 @@ This calculation helps balance between recommending popular songs and suggesting
 - Ensured a visually appealing, engaging layout for users.
 - Provided clear feedback when users select an emotion or interact with the carousel.
 
-<img src="images/mood_ring_final.gif?raw=true" width="1000"/>
+<img src="images/mood_ring_final.gif?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
 **Prototype Available**: Check out the mood-based recommendation system prototype by clicking below!
 
@@ -268,6 +278,16 @@ This calculation helps balance between recommending popular songs and suggesting
 </style>
 
 <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.zoom').forEach(function(element) {
+    element.addEventListener('click', function() {
+      this.classList.toggle('zoomed');
+    });
+  });
+});
+</script>
 
 
 <br>
