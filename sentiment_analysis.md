@@ -58,7 +58,23 @@ Understanding the emotional impact of music is essential in today’s music land
   - **Cleaned**: "I'm walking on sunshine"
 - This cleaning process was essential to prepare the lyrics for sentiment analysis.
 
+Here are some before and after images: 
+
+<div style="display: flex; justify-content: center;">
+    <div style="margin-right: 10px; text-align: center;">
+        <img src="images/spotify_project/Lyrics Before.png?raw=true" width="300"/>
+        <p>Lyrics Before Cleaning</p>
+    </div>
+    <div style="text-align: center;">
+        <img src="images/spotify_project/Lyrics After.png?raw=true" width="300"/>
+        <p>Lyrics After Cleaning</p>
+    </div>
+</div>
+
+
 #### Code Snippet of Data Preparation: 
+<small>
+    
 ```python
 def clean_lyrics(lyrics):
     # Remove anything within square brackets (like [Chorus], [Verse])
@@ -73,6 +89,8 @@ def clean_lyrics(lyrics):
     lyrics = '\n'.join([line for line in lyrics.split('\n') if line.strip()])
     return lyrics.strip()  # Return the cleaned lyrics, stripped of extra spaces
 ```
+</small>
+
 #### Sentiment Analysis
 **Implementation**: Utilized a pre-trained transformer model from Hugging Face with PyTorch for sentiment analysis. In this post, we’ll explore how to analyze the emotions expressed in song lyrics using a machine-learning model. We’re working with a model called [roberta-base-go_emotions](https://huggingface.co/SamLowe/roberta-base-go_emotions?text=My+job+search+is+horrible+and+leading+nowhere) (click the link to see more detailed documentation on HuggingFace), which can identify 28 different emotions based on the lyrics (e.g. Love, Anger, Fear, etc.) provided, giving richer detail than a simple "Positive", "Negative" and "Neutral" assessment. However, this model has a limitation: it can only process up to 512 tokens (words or parts of words) at a time.
 
@@ -80,6 +98,8 @@ To get around this limitation, we use a technique called the sliding window appr
 
 
 #### Code Snippet of Sentiment Analysis Window Function: 
+<small>
+
 ```python
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
@@ -134,6 +154,7 @@ df['Sentiment_Score'] = lyrics_sentiment['score']
 </code>
 </pre>
 ```
+</small>
 - **Results**: Classified song lyrics into one of 28 distinct sentiment categories (Love, Fear, Disappointment, Sadness, Nervousness, Annoyance, Disapproval, Disgust, Neutral, ... Relief, Gratitude, Pride), forming the basis for the mood-based recommendation system. The model assigned a sentiment based on the sentiment with the highest probability of being present among the 28 emotions the model was trained on. 
 
 #### Recommendation System
@@ -160,7 +181,8 @@ This approach creates a dynamic recommendation system that not only tailors musi
 ---
 
 #### Key Code Snippet
-
+<small>
+    
 ```python
 # Calculate weighted popularity based on release date
 def calculate_weighted_popularity(release_date):
@@ -169,6 +191,7 @@ def calculate_weighted_popularity(release_date):
     weight = 1 / (time_span.days + 1)  # Newer songs get a higher score
     return weight
 ```
+</small>
 
 **What It Does**:
 1. **Parse Release Date**: Converts the song's release date from a string to a date format.
