@@ -175,7 +175,7 @@ df['Sentiment_Score'] = lyrics_sentiment['score']
 </code>
 </pre>
 ```
-### Explanation of the Sliding Window Method**
+#### Explanation of the Sliding Window Method
 
 1. The process starts with a long text input (like song lyrics).
 2. The text is split into overlapping windows. Typically, the window size is 512 tokens, and the stride (overlap) is 256 tokens.
@@ -195,7 +195,7 @@ This process continues until the entire text is covered. By using overlapping wi
     <img src="images/spotify_project/sliding_window.png?raw=true" width="300" class="zoom" alt="Zoomable Image"/>
 </div>
 
-#### Implementation Details
+#### Sliding Window Implementation Details
 
 The main steps in the code that implement this process are:
 
