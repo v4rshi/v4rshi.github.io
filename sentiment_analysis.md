@@ -248,7 +248,7 @@ From the visualization, I noticed that the "Neutral" sentiment dominates, which 
 - Reviewing and refining the data cleaning process to ensure that important emotional cues in the lyrics are preserved.
 - Exploring a multi-label classification approach, where a song can have multiple sentiment labels, each with varying intensities.
 
-Sentiment analysis of song lyrics is a tricky task because of the creative and often ambiguous nature of the text. I know it’ll take some trial and error, but I’m confident that with a few more iterations, I’ll be able to improve the accuracy of my results.
+Sentiment analysis of song lyrics is a tricky task because of the creative and often ambiguous nature of the text. I know it’ll take some trial and error, but I’m confident that with a few more iterations, I’ll be able to improve the accuracy of my results. For now, I plan to continue with my project and refine as I go! 
 
 
 ## Recommendation System
