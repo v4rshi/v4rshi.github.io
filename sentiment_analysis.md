@@ -8,7 +8,18 @@
 - [Sentiment Analysis](https://github.com/v4rshi/v4rshi.github.io/blob/master/notebooks/sentiment_analysis.ipynb)
 - [Recommendation System](https://github.com/v4rshi/v4rshi.github.io/blob/master/notebooks/recommender.ipynb)
 
+**Prototype Available**: Check out the mood-based recommendation system prototype by clicking below!
 
+<nav style="text-align: center;">
+  <div style="display: inline-block; background-color: #ffe6f5; border-radius: 25px; padding: 10px 20px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">
+    <a href="mood_ring.html" style="font-family: 'Bagel Fat One', sans-serif; font-size: 42px; background: linear-gradient(90deg, #ff6666, #ffb366, #66ff66, #33ccff, #6699ff, #cc99ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none;">
+      V's Musical Mood Ring
+    </a>
+  </div>
+</nav>
+<br> 
+
+---
 ---
 <style>
 .zoom {
@@ -307,18 +318,7 @@ This calculation helps balance between recommending popular songs and suggesting
 
 <img src="images/mood_ring_final.gif?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
-**Prototype Available**: Check out the mood-based recommendation system prototype by clicking below!
-
-<nav style="text-align: center;">
-  <div style="display: inline-block; background-color: #ffe6f5; border-radius: 25px; padding: 10px 20px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">
-    <a href="mood_ring.html" style="font-family: 'Bagel Fat One', sans-serif; font-size: 42px; background: linear-gradient(90deg, #ff6666, #ffb366, #66ff66, #33ccff, #6699ff, #cc99ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none;">
-      V's Musical Mood Ring
-    </a>
-  </div>
-</nav>
-<br> 
-
----
+ ---
 
 ## Next Steps
 - **Improvements** : Moving forward, I plan to fine-tune the recommendation algorithm to improve its accuracy. Additionally, I want to enhance the UI/UX to boost user engagement and interactivity, ensuring the platform feels more intuitive and enjoyable to use.
