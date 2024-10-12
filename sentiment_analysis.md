@@ -311,11 +311,17 @@ This calculation helps balance between recommending popular songs and suggesting
   - Users are presented with a carousel of song recommendations featuring album art, a preview of the song, and links to listen on Spotify.
 - **Functionality**: 
   - The page dynamically generates recommendations based on user sentiment input, enhancing the user experience with personalized music choices.
+ 
+<div style="text-align: center;">
+    <img src="images/spotify_project/carousel.png?raw=true" width="300" class="zoom" alt="Zoomable Image"/>
+    <p>An example of a song in a carousel card deck presented to the user when the sentiment "Sad" is selected.</p>
+</div>
 
 ### UX Considerations for Carousel Design
 - Focused on intuitive navigation and accessibility.
 - Ensured a visually appealing, engaging layout for users.
 - Provided clear feedback when users select an emotion or interact with the carousel.
+- Included album art, a direct link to the song on Spotify, and when available provided users an audio clip preview of the song. 
 
 <img src="images/mood_ring_final.gif?raw=true" width="1000" class="zoom" alt="Zoomable Image"/>
 
