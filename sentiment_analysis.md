@@ -95,11 +95,11 @@ Here are some before and after images:
 
 <div style="display: flex; justify-content: center;">
     <div style="margin-right: 10px; text-align: center;">
-        <img src="images/spotify_project/Lyrics Before.png?raw=true" width="300" class="zoom" alt="Zoomable Image"/>
+        <img src="images/spotify_project/lyrics_before.png?raw=true" width="300" class="zoom" alt="Zoomable Image"/>
         <p>Lyrics Before Cleaning</p>
     </div>
     <div style="text-align: center;">
-        <img src="images/spotify_project/Lyrics After.png?raw=true" width="300" class="zoom" alt="Zoomable Image"/>
+        <img src="images/spotify_project/lyrics_after.png?raw=true" width="300" class="zoom" alt="Zoomable Image"/>
         <p>Lyrics After Cleaning</p>
     </div>
 </div>
