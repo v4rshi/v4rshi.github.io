@@ -80,6 +80,8 @@ Understanding the emotional impact of music is essential in today’s music land
 **Challenges**:
 - Faced API rate limits, which required batching requests.
 - Some API responses were slow or incomplete, leading to missing lyrics.
+- Some songs were not matched to lyrics at all, or were not in English
+- Regex was required was fairly complicated and could use some fine-tuning
 
 ### 3. Data Cleaning
 
@@ -109,11 +111,11 @@ Here are some before and after images:
 <div style="display: flex; justify-content: center;">
     <div style="margin-right: 10px; text-align: center;">
         <img src="images/spotify_project/nonsense_1.png?raw=true" width="300" class="zoom" alt="Zoomable Image"/>
-        <p>Track Names and Artist Names</p>
+        <p>Only Track Names and Artist Names (No Lyrics)</p>
     </div>
     <div style="text-align: center;">
         <img src="images/spotify_project/nonsense_2.png?raw=true" width="300" class="zoom" alt="Zoomable Image"/>
-        <p>Track Names and Artist Names as Lists</p>
+        <p>Track Names and Artist Names as Numbered List (No Lyrics)</p>
     </div>
 </div>
 
