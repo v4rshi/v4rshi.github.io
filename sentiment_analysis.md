@@ -314,7 +314,7 @@ This calculation helps balance between recommending popular songs and suggesting
  
 <div style="text-align: center;">
     <img src="images/spotify_project/carousel.png?raw=true" width="300" class="zoom" alt="Zoomable Image"/>
-    <p>An example of a song in a carousel card deck presented to the user when the sentiment "Sad" is selected.</p>
+    <p>Example: The recommender presents one of five potential songs shown after selecting 'sadness', featuring 'Marea (we've lost dancing)' with album art and Spotify link.</p>
 </div>
 
 ### UX Considerations for Carousel Design
