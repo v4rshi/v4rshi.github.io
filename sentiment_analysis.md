@@ -35,21 +35,21 @@ This project aims to perform sentiment analysis on Spotify data to build a perso
 
 ### Data Pipeline Flowchart
 
-To provide a clear picture of how our Spotify sentiment analysis and recommendation system works, we've created a visual representation of the data pipeline. This flowchart illustrates the main steps of our process, from initial data collection to the final user interface:
+To provide a clear picture of how our Spotify sentiment analysis and recommendation system works, I've created a visual representation of the data pipeline. This flowchart illustrates the main steps of my process, from initial data collection to the final user interface:
 
 <div style="text-align: center;">
     <img src="images/spotify_project/flowchart.png?raw=true" width="300" class="zoom" alt="Zoomable Image"/>
 </div>
 
-1. **Data Collection (Blue)**: We begin by gathering data from two primary sources - the [Spotify API](https://spotipy.readthedocs.io/en/2.24.0/) for user listening history and the [Genius API](https://docs.genius.com/) for song lyrics.
+1. **Data Collection (Blue)**: I begin by gathering data from two primary sources - the [Spotify API](https://spotipy.readthedocs.io/en/2.24.0/) for user listening history and the [Genius API](https://docs.genius.com/) for song lyrics.
 
-2. **Data Processing (Green)**: In this stage, we clean and prepare our data. This involves removing duplicates from the Spotify data and cleaning the lyrics obtained from Genius.
+2. **Data Processing (Green)**: In this stage, I clean and prepare the data. This involves removing duplicates from the Spotify data and cleaning the lyrics obtained from Genius.
 
-3. **Sentiment Analysis (Orange)**: Here, we use a RoBERTa model to analyze the cleaned lyrics and classify the emotions expressed in each song.
+3. **Sentiment Analysis (Orange)**: Here, I use a RoBERTa model to analyze the cleaned lyrics and classify the emotions expressed in each song.
 
-4. **Recommendation Engine (Purple)**: This is where the magic happens. We combine mood-based filtering with popularity scoring to generate personalized song recommendations.
+4. **Recommendation Engine (Purple)**: This is where the magic happens. I combine mood-based filtering with popularity scoring to generate personalized song recommendations.
 
-5. **User Interface (Red)**: Finally, we present our results to the user. They can select their current mood, and our system will display tailored song recommendations.
+5. **User Interface (Red)**: Finally, we present our results to the user. They can select their current mood, and the system will display tailored song recommendations.
 
 ## The Data
 
@@ -63,7 +63,7 @@ Understanding the emotional impact of music is essential in today’s music land
 
 ### 1. Data Collection
 
-**Overview**: We gathered historical musical data from Spotify using the Spotify API.
+**Overview**: I gathered historical musical data from Spotify using [Exportify](https://exportify.net/).
 
 **Steps Taken**:
 - Collected personal listening history, including track metadata (name, artist, album, duration).
@@ -75,7 +75,7 @@ Understanding the emotional impact of music is essential in today’s music land
 
 ### 2. Lyrics Fetching
 
-**Approach**: We fetched song lyrics via the Genius API by matching track names and artist information.
+**Approach**: I fetched song lyrics via the Genius API by matching track names and artist information.
 
 **Challenges**:
 - Faced API rate limits, which required batching requests.
@@ -85,7 +85,7 @@ Understanding the emotional impact of music is essential in today’s music land
 
 ### 3. Data Cleaning
 
-**Method**: We used regular expressions (regex) to clean up the fetched lyrics, removing unwanted characters and formatting anomalies (e.g., brackets, newlines, special symbols).
+**Method**: I used regular expressions (regex) to clean up the fetched lyrics, removing unwanted characters and formatting anomalies (e.g., brackets, newlines, special symbols).
 
 **Example**:
 - Raw: `"[Verse 1] I'm walking on sunshine! (Yeah, yeah)"`
@@ -138,9 +138,9 @@ def clean_lyrics(lyrics):
 
 
 ## Sentiment Analysis
-**Implementation**: Utilized a pre-trained transformer model from Hugging Face with PyTorch for sentiment analysis. In this post, we’ll explore how to analyze the emotions expressed in song lyrics using a machine-learning model. We’re working with a model called [roberta-base-go_emotions](https://huggingface.co/SamLowe/roberta-base-go_emotions?text=My+job+search+is+horrible+and+leading+nowhere) (click the link to see more detailed documentation on HuggingFace), which can identify 28 different emotions based on the lyrics (e.g. Love, Anger, Fear, etc.) provided, giving richer detail than a simple "Positive", "Negative" and "Neutral" assessment. However, this model has a limitation: it can only process up to 512 tokens (words or parts of words) at a time.
+**Implementation**: Utilized a pre-trained transformer model from Hugging Face with PyTorch for sentiment analysis. In this post, I’ll explore how to analyze the emotions expressed in song lyrics using a machine-learning model. We’re working with a model called [roberta-base-go_emotions](https://huggingface.co/SamLowe/roberta-base-go_emotions?text=My+job+search+is+horrible+and+leading+nowhere) (click the link to see more detailed documentation on HuggingFace), which can identify 28 different emotions based on the lyrics (e.g. Love, Anger, Fear, etc.) provided, giving richer detail than a simple "Positive", "Negative" and "Neutral" assessment. However, this model has a limitation: it can only process up to 512 tokens (words or parts of words) at a time.
 
-To get around this limitation, we use a technique called the sliding window approach using PyTorch. This method involves breaking the lyrics into overlapping sections, allowing us to analyze the entire song, even if it exceeds 512 tokens. The result is a clear understanding of the emotions in the lyrics, which can be useful for artists, producers, and fans alike.
+To get around this limitation, I use a technique called the sliding window approach using PyTorch. This method involves breaking the lyrics into overlapping sections, allowing us to analyze the entire song, even if it exceeds 512 tokens. The result is a clear understanding of the emotions in the lyrics, which can be useful for artists, producers, and fans alike.
 
 
 ### Code Snippet of Sentiment Analysis Window Function: 
